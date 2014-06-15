@@ -1,0 +1,6884 @@
+(<format> skeinforge gcode </format>)
+(<version> 12.03.14 </version>)
+(<created> 14.06.15|17:5 </created>)
+(<extruderInitialization>)
+(<craftTypeName> extrusion </craftTypeName>)
+M105
+(<decimalPlacesCarried> 3 </decimalPlacesCarried>)
+(<layerThickness> 0.27 </layerThickness>)
+(<infillWidth> 0.4 </infillWidth>)
+(<volumeFraction> 0.82 </volumeFraction>)
+(<infillPerimeterOverlap> 0.3 </infillPerimeterOverlap>)
+(<sharpestProduct> 0.866 </sharpestProduct>)
+(<layerHeight> 0.27 </layerHeight>)
+(<threadSequenceString> loops edge infill </threadSequenceString>)
+(<maximumZFeedRatePerSecond> 999.0 </maximumZFeedRatePerSecond>)
+(<objectFirstLayerFeedRateInfillMultiplier> 0.5 </objectFirstLayerFeedRateInfillMultiplier>)
+(<operatingFeedRatePerSecond> 80.0 </operatingFeedRatePerSecond>)
+(<objectFirstLayerFlowRateInfillMultiplier> 0.5 </objectFirstLayerFlowRateInfillMultiplier>)
+(<operatingFlowRate> 80.0 </operatingFlowRate>)
+(<orbitalFeedRatePerSecond> 0.0 </orbitalFeedRatePerSecond>)
+(<travelFeedRatePerSecond> 150.0 </travelFeedRatePerSecond>)
+(<edgeWidth> 0.4 </edgeWidth>)
+(<perimeterWidth> 0.4 </perimeterWidth>)
+(<profileName> ABS </profileName>)
+(<settings>)
+(<setting> alteration Activate_Alteration True </setting>)
+(<setting> alteration Name_of_End_File:  </setting>)
+(<setting> alteration Name_of_Start_File:  </setting>)
+(<setting> alteration Remove_Redundant_Mcode True </setting>)
+(<setting> alteration Replace_Variable_with_Setting True </setting>)
+(<setting> comb Activate_Comb True </setting>)
+(<setting> comb Running_Jump_Space_(mm): 2.0 </setting>)
+(<setting> dimension Activate_Dimension True </setting>)
+(<setting> dimension Absolute_Extrusion_Distance True </setting>)
+(<setting> dimension Relative_Extrusion_Distance False </setting>)
+(<setting> dimension Extruder_Retraction_Speed_(mm/s): 80.0 </setting>)
+(<setting> dimension Filament_Diameter_(mm): 1.7 </setting>)
+(<setting> dimension Filament_Packing_Density_(ratio): 0.85 </setting>)
+(<setting> dimension Maximum_E_Value_before_Reset_(float): 91234.0 </setting>)
+(<setting> dimension Minimum_Travel_for_Retraction_(millimeters): 1.0 </setting>)
+(<setting> dimension Retract_Within_Island False </setting>)
+(<setting> dimension Retraction_Distance_(millimeters): 1.0 </setting>)
+(<setting> dimension Restart_Extra_Distance_(millimeters): 0.0 </setting>)
+(<setting> export Activate_Export True </setting>)
+(<setting> export Add_Descriptive_Extension False </setting>)
+(<setting> export Add_Export_Suffix False </setting>)
+(<setting> export Add_Profile_Extension False </setting>)
+(<setting> export Add_Timestamp_Extension False </setting>)
+(<setting> export Also_Send_Output_To:  </setting>)
+(<setting> export Analyze_Gcode True </setting>)
+(<setting> export Do_Not_Delete_Comments True </setting>)
+(<setting> export Delete_Crafting_Comments False </setting>)
+(<setting> export Delete_All_Comments False </setting>)
+(<setting> export Do_Not_Change_Output True </setting>)
+(<setting> export binary_16_byte False </setting>)
+(<setting> export gcode_step False </setting>)
+(<setting> export gcode_time_segment False </setting>)
+(<setting> export gcode_small False </setting>)
+(<setting> export File_Extension: gcode </setting>)
+(<setting> export Name_of_Replace_File: replace.csv </setting>)
+(<setting> export Save_Penultimate_Gcode False </setting>)
+(<setting> fill Activate_Fill True </setting>)
+(<setting> fill Diaphragm_Period_(layers): 100 </setting>)
+(<setting> fill Diaphragm_Thickness_(layers): 0 </setting>)
+(<setting> fill Extra_Shells_on_Alternating_Solid_Layer_(layers): 3 </setting>)
+(<setting> fill Extra_Shells_on_Base_(layers): 3 </setting>)
+(<setting> fill Extra_Shells_on_Sparse_Layer_(layers): 3 </setting>)
+(<setting> fill Grid_Circle_Separation_over_Perimeter_Width_(ratio): 0.2 </setting>)
+(<setting> fill Grid_Extra_Overlap_(ratio): 0.1 </setting>)
+(<setting> fill Grid_Junction_Separation_Band_Height_(layers): 10 </setting>)
+(<setting> fill Grid_Junction_Separation_over_Octogon_Radius_At_End_(ratio): 0.0 </setting>)
+(<setting> fill Grid_Junction_Separation_over_Octogon_Radius_At_Middle_(ratio): 0.0 </setting>)
+(<setting> fill Infill_Begin_Rotation_(degrees): 90.0 </setting>)
+(<setting> fill Infill_Begin_Rotation_Repeat_(layers): 1 </setting>)
+(<setting> fill Infill_Odd_Layer_Extra_Rotation_(degrees): 90.0 </setting>)
+(<setting> fill Grid_Circular False </setting>)
+(<setting> fill Grid_Hexagonal True </setting>)
+(<setting> fill Grid_Rectangular False </setting>)
+(<setting> fill Line False </setting>)
+(<setting> fill Infill_Perimeter_Overlap_(ratio): 0.3 </setting>)
+(<setting> fill Infill_Solidity_(ratio): 0.1 </setting>)
+(<setting> fill Sharpest_Angle_(degrees): 60.0 </setting>)
+(<setting> fill Solid_Surface_Thickness_(layers): 3 </setting>)
+(<setting> fill Lower_Left True </setting>)
+(<setting> fill Nearest False </setting>)
+(<setting> fill Surrounding_Angle_(degrees): 60.0 </setting>)
+(<setting> fill Infill_>_Loops_>_Perimeter False </setting>)
+(<setting> fill Infill_>_Perimeter_>_Loops False </setting>)
+(<setting> fill Loops_>_Infill_>_Perimeter False </setting>)
+(<setting> fill Loops_>_Perimeter_>_Infill True </setting>)
+(<setting> fill Perimeter_>_Infill_>_Loops False </setting>)
+(<setting> fill Perimeter_>_Loops_>_Infill False </setting>)
+(<setting> home Activate_Home True </setting>)
+(<setting> home Name_of_Home_File: home.gcode </setting>)
+(<setting> jitter Activate_Jitter True </setting>)
+(<setting> jitter Jitter_Over_Perimeter_Width_(ratio): 2.0 </setting>)
+(<setting> raft Activate_Raft True </setting>)
+(<setting> raft Add_Raft,_Elevate_Nozzle,_Orbit: False </setting>)
+(<setting> raft Base_Feed_Rate_Multiplier_(ratio): 0.75 </setting>)
+(<setting> raft Base_Flow_Rate_Multiplier_(ratio): 0.6 </setting>)
+(<setting> raft Base_Infill_Density_(ratio): 0.3 </setting>)
+(<setting> raft Base_Layer_Thickness_over_Layer_Thickness: 2.2 </setting>)
+(<setting> raft Base_Layers_(integer): 1 </setting>)
+(<setting> raft Base_Nozzle_Lift_over_Base_Layer_Thickness_(ratio): 0.3 </setting>)
+(<setting> raft Initial_Circling: False </setting>)
+(<setting> raft Infill_Overhang_over_Extrusion_Width_(ratio): 0.1 </setting>)
+(<setting> raft Interface_Feed_Rate_Multiplier_(ratio): 1.5 </setting>)
+(<setting> raft Interface_Flow_Rate_Multiplier_(ratio): 0.7 </setting>)
+(<setting> raft Interface_Infill_Density_(ratio): 0.4 </setting>)
+(<setting> raft Interface_Layer_Thickness_over_Layer_Thickness: 1.8 </setting>)
+(<setting> raft Interface_Layers_(integer): 2 </setting>)
+(<setting> raft Interface_Nozzle_Lift_over_Interface_Layer_Thickness_(ratio): 0.3 </setting>)
+(<setting> raft Name_of_Support_End_File: support_end.gcode </setting>)
+(<setting> raft Name_of_Support_Start_File: support_start.gcode </setting>)
+(<setting> raft Operating_Nozzle_Lift_over_Layer_Thickness_(ratio): 0.0 </setting>)
+(<setting> raft Raft_Additional_Margin_over_Length_(%): 2.5 </setting>)
+(<setting> raft Raft_Margin_(mm): 2.5 </setting>)
+(<setting> raft Support_Cross_Hatch False </setting>)
+(<setting> raft Support_Flow_Rate_over_Operating_Flow_Rate_(ratio): 0.7 </setting>)
+(<setting> raft Support_Gap_over_Perimeter_Extrusion_Width_(ratio): 0.005 </setting>)
+(<setting> raft None True </setting>)
+(<setting> raft Empty_Layers_Only False </setting>)
+(<setting> raft Everywhere False </setting>)
+(<setting> raft Exterior_Only False </setting>)
+(<setting> raft Support_Minimum_Angle_(degrees): 45.0 </setting>)
+(<setting> speed Activate_Speed True </setting>)
+(<setting> speed Add_Flow_Rate: True </setting>)
+(<setting> speed Bridge_Feed_Rate_Multiplier_(ratio): 1.0 </setting>)
+(<setting> speed Bridge_Flow_Rate_Multiplier_(ratio): 1.0 </setting>)
+(<setting> speed Duty_Cyle_at_Beginning_(portion): 1.0 </setting>)
+(<setting> speed Duty_Cyle_at_Ending_(portion): 0.0 </setting>)
+(<setting> speed Feed_Rate_(mm/s): 80.0 </setting>)
+(<setting> speed Flow_Rate_Setting_(float): 80.0 </setting>)
+(<setting> speed Object_First_Layer_Feed_Rate_Infill_Multiplier_(ratio): 0.5 </setting>)
+(<setting> speed Object_First_Layer_Feed_Rate_Perimeter_Multiplier_(ratio): 0.5 </setting>)
+(<setting> speed Object_First_Layer_Flow_Rate_Infill_Multiplier_(ratio): 0.5 </setting>)
+(<setting> speed Object_First_Layer_Flow_Rate_Perimeter_Multiplier_(ratio): 0.5 </setting>)
+(<setting> speed Orbital_Feed_Rate_over_Operating_Feed_Rate_(ratio): 0.0 </setting>)
+(<setting> speed Maximum_Z_Feed_Rate_(mm/s): 999.0 </setting>)
+(<setting> speed Perimeter_Feed_Rate_Multiplier_(ratio): 0.5 </setting>)
+(<setting> speed Perimeter_Flow_Rate_Multiplier_(ratio): 0.5 </setting>)
+(<setting> speed Travel_Feed_Rate_(mm/s): 150.0 </setting>)
+(</settings>)
+(<timeStampPreface> 20140615_170550 </timeStampPreface>)
+(<procedureName> carve </procedureName>)
+(<procedureName> preface </procedureName>)
+(<procedureName> inset </procedureName>)
+(<procedureName> fill </procedureName>)
+(<procedureName> speed </procedureName>)
+(<procedureName> raft </procedureName>)
+(<procedureName> jitter </procedureName>)
+(<procedureName> comb </procedureName>)
+(<procedureName> dimension </procedureName>)
+(<procedureName> alteration </procedureName>)
+(<procedureName> export </procedureName>)
+(</extruderInitialization>)
+(<crafting>)
+;M113 S1.0
+;M108 R20.0
+(<layer> 20.135 )
+(<rotation> (6.12323399574e-17+1j) )
+(<nestedRing>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X68.072 Y6.953 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X65.003 Y7.292 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X60.471 Y8.052 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X57.588 Y8.703 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X55.471 Y9.366 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X54.787 Y9.665 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X53.653 Y10.267 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X52.421 Y11.122 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X51.435 Y12.093 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X50.861 Y12.887 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X50.515 Y13.555 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X49.851 Y15.642 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X49.583 Y18.028 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X50.487 Y105.602 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X50.794 Y107.974 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X51.476 Y110.125 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X51.82 Y110.832 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X52.405 Y111.659 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X53.413 Y112.615 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X54.703 Y113.408 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X55.854 Y113.903 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X56.721 Y114.176 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X59.253 Y114.77 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X62.187 Y115.231 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X69.199 Y115.959 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X69.266 Y122.435 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X1.742 Y123.132 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X1.676 Y116.657 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X4.774 Y116.152 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X9.207 Y115.191 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X12.101 Y114.411 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X14.312 Y113.66 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X15.038 Y113.347 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X16.171 Y112.743 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X17.413 Y111.864 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X18.383 Y110.876 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X18.929 Y110.088 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X19.262 Y109.406 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X19.9 Y107.337 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X20.158 Y105.042 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X19.253 Y17.369 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X18.934 Y14.91 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X18.228 Y12.844 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X17.869 Y12.207 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X17.284 Y11.457 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X16.296 Y10.549 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X15.074 Y9.762 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X13.955 Y9.217 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X13.265 Y8.949 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X11.125 Y8.484 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X8.028 Y8.14 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X0.548 Y7.652 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X0.482 Y1.18 Z20.135 </boundaryPoint>)
+(<boundaryPoint> X68.006 Y0.482 Z20.135 </boundaryPoint>)
+(<edge> outer )
+G1 X0.68 Y1.38 Z20.14 F9000.0
+G1 F4800.0
+G1 E1.0
+G1 F9000.0
+M101
+G1 X0.68 Y1.38 Z20.14 F1200.0 E1.0
+G1 X67.81 Y0.68 Z20.14 F1200.0 E4.758
+G1 X67.87 Y6.77 Z20.14 F1200.0 E5.099
+G1 X64.97 Y7.09 Z20.14 F1200.0 E5.262
+G1 X60.43 Y7.86 Z20.14 F1200.0 E5.52
+G1 X57.54 Y8.51 Z20.14 F1200.0 E5.686
+G1 X55.4 Y9.18 Z20.14 F1200.0 E5.811
+G1 X54.7 Y9.48 Z20.14 F1200.0 E5.854
+G1 X53.55 Y10.1 Z20.14 F1200.0 E5.927
+G1 X52.29 Y10.97 Z20.14 F1200.0 E6.013
+G1 X51.28 Y11.96 Z20.14 F1200.0 E6.092
+G1 X50.69 Y12.78 Z20.14 F1200.0 E6.149
+G1 X50.33 Y13.48 Z20.14 F1200.0 E6.192
+G1 X49.65 Y15.6 Z20.14 F1200.0 E6.317
+G1 X49.38 Y18.02 Z20.14 F1200.0 E6.453
+G1 X50.29 Y105.62 Z20.14 F1200.0 E11.357
+G1 X50.6 Y108.02 Z20.14 F1200.0 E11.493
+G1 X51.29 Y110.2 Z20.14 F1200.0 E11.621
+G1 X51.65 Y110.93 Z20.14 F1200.0 E11.667
+G1 X52.25 Y111.79 Z20.14 F1200.0 E11.725
+G1 X53.29 Y112.77 Z20.14 F1200.0 E11.805
+G1 X54.61 Y113.59 Z20.14 F1200.0 E11.892
+G1 X55.78 Y114.09 Z20.14 F1200.0 E11.964
+G1 X56.67 Y114.37 Z20.14 F1200.0 E12.015
+G1 X59.22 Y114.97 Z20.14 F1200.0 E12.162
+G1 X62.16 Y115.43 Z20.14 F1200.0 E12.329
+G1 X69.0 Y116.14 Z20.14 F1200.0 E12.714
+G1 X69.06 Y122.24 Z20.14 F1200.0 E13.055
+G1 X1.94 Y122.93 Z20.14 F1200.0 E16.813
+G1 X1.88 Y116.83 Z20.14 F1200.0 E17.154
+G1 X4.81 Y116.35 Z20.14 F1200.0 E17.321
+G1 X9.25 Y115.39 Z20.14 F1200.0 E17.575
+G1 X12.16 Y114.6 Z20.14 F1200.0 E17.744
+G1 X14.38 Y113.85 Z20.14 F1200.0 E17.875
+G1 X15.13 Y113.53 Z20.14 F1200.0 E17.92
+G1 X16.28 Y112.91 Z20.14 F1200.0 E17.993
+G1 X17.54 Y112.02 Z20.14 F1200.0 E18.08
+G1 X18.54 Y111.0 Z20.14 F1200.0 E18.16
+G1 X19.1 Y110.19 Z20.14 F1200.0 E18.215
+G1 X19.45 Y109.48 Z20.14 F1200.0 E18.259
+G1 X20.1 Y107.38 Z20.14 F1200.0 E18.383
+G1 X20.36 Y105.05 Z20.14 F1200.0 E18.514
+G1 X19.45 Y17.36 Z20.14 F1200.0 E23.423
+G1 X19.13 Y14.86 Z20.14 F1200.0 E23.564
+G1 X18.41 Y12.76 Z20.14 F1200.0 E23.688
+G1 X18.04 Y12.1 Z20.14 F1200.0 E23.731
+G1 X17.43 Y11.32 Z20.14 F1200.0 E23.786
+G1 X16.42 Y10.39 Z20.14 F1200.0 E23.863
+G1 X15.17 Y9.59 Z20.14 F1200.0 E23.946
+G1 X14.04 Y9.03 Z20.14 F1200.0 E24.017
+G1 X13.32 Y8.76 Z20.14 F1200.0 E24.059
+G1 X11.16 Y8.29 Z20.14 F1200.0 E24.183
+G1 X8.05 Y7.94 Z20.14 F1200.0 E24.359
+G1 X0.75 Y7.46 Z20.14 F1200.0 E24.768
+G1 X0.68 Y1.38 Z20.14 F1200.0 E25.108
+G1 F4800.0
+G1 E24.412
+G1 F1200.0
+M103
+(</edge>)
+(</boundaryPerimeter>)
+(<loop> outer )
+;M108 R40.0
+G1 X1.9 Y2.57 Z20.14 F9000.0
+G1 F4800.0
+G1 E25.108
+G1 F9000.0
+M101
+G1 X1.9 Y2.56 Z20.14 F2400.0 E25.109
+G1 X66.62 Y1.9 Z20.14 F2400.0 E28.732
+G1 X66.66 Y5.7 Z20.14 F2400.0 E28.945
+G1 X64.81 Y5.91 Z20.14 F2400.0 E29.049
+G1 X60.2 Y6.68 Z20.14 F2400.0 E29.311
+G1 X57.22 Y7.35 Z20.14 F2400.0 E29.482
+G1 X54.98 Y8.05 Z20.14 F2400.0 E29.613
+G1 X54.18 Y8.4 Z20.14 F2400.0 E29.662
+G1 X52.92 Y9.07 Z20.14 F2400.0 E29.742
+G1 X51.52 Y10.04 Z20.14 F2400.0 E29.837
+G1 X50.37 Y11.18 Z20.14 F2400.0 E29.928
+G1 X49.67 Y12.15 Z20.14 F2400.0 E29.995
+G1 X49.22 Y13.02 Z20.14 F2400.0 E30.05
+G1 X48.48 Y15.35 Z20.14 F2400.0 E30.187
+G1 X48.18 Y17.96 Z20.14 F2400.0 E30.334
+G1 X49.09 Y105.7 Z20.14 F2400.0 E35.246
+G1 X49.42 Y108.28 Z20.14 F2400.0 E35.391
+G1 X50.17 Y110.65 Z20.14 F2400.0 E35.53
+G1 X50.61 Y111.55 Z20.14 F2400.0 E35.586
+G1 X51.34 Y112.58 Z20.14 F2400.0 E35.657
+G1 X52.55 Y113.73 Z20.14 F2400.0 E35.751
+G1 X54.06 Y114.65 Z20.14 F2400.0 E35.849
+G1 X55.37 Y115.22 Z20.14 F2400.0 E35.929
+G1 X56.35 Y115.53 Z20.14 F2400.0 E35.987
+G1 X58.98 Y116.14 Z20.14 F2400.0 E36.138
+G1 X62.01 Y116.62 Z20.14 F2400.0 E36.31
+G1 X67.81 Y117.22 Z20.14 F2400.0 E36.636
+G1 X67.85 Y121.05 Z20.14 F2400.0 E36.851
+G1 X3.13 Y121.72 Z20.14 F2400.0 E40.474
+G1 X3.09 Y117.84 Z20.14 F2400.0 E40.691
+G1 X5.04 Y117.53 Z20.14 F2400.0 E40.801
+G1 X9.54 Y116.55 Z20.14 F2400.0 E41.059
+G1 X12.51 Y115.75 Z20.14 F2400.0 E41.231
+G1 X14.81 Y114.97 Z20.14 F2400.0 E41.368
+G1 X15.64 Y114.61 Z20.14 F2400.0 E41.418
+G1 X16.91 Y113.94 Z20.14 F2400.0 E41.498
+G1 X18.32 Y112.93 Z20.14 F2400.0 E41.595
+G1 X19.47 Y111.77 Z20.14 F2400.0 E41.687
+G1 X20.14 Y110.8 Z20.14 F2400.0 E41.753
+G1 X20.57 Y109.92 Z20.14 F2400.0 E41.808
+G1 X21.28 Y107.62 Z20.14 F2400.0 E41.942
+G1 X21.56 Y105.11 Z20.14 F2400.0 E42.084
+G1 X20.65 Y17.27 Z20.14 F2400.0 E47.001
+G1 X20.3 Y14.59 Z20.14 F2400.0 E47.152
+G1 X19.51 Y12.27 Z20.14 F2400.0 E47.29
+G1 X19.04 Y11.43 Z20.14 F2400.0 E47.344
+G1 X18.32 Y10.51 Z20.14 F2400.0 E47.409
+G1 X17.16 Y9.44 Z20.14 F2400.0 E47.498
+G1 X15.76 Y8.54 Z20.14 F2400.0 E47.59
+G1 X14.52 Y7.93 Z20.14 F2400.0 E47.668
+G1 X13.67 Y7.6 Z20.14 F2400.0 E47.719
+G1 X11.35 Y7.1 Z20.14 F2400.0 E47.852
+G1 X8.15 Y6.75 Z20.14 F2400.0 E48.032
+G1 X1.94 Y6.34 Z20.14 F2400.0 E48.381
+G1 X1.9 Y2.57 Z20.14 F2400.0 E48.591
+G1 F4800.0
+G1 E48.591
+G1 F2400.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X1.5 Y2.58 Z20.14 F9000.0
+G1 F4800.0
+G1 E48.591
+G1 F9000.0
+M101
+G1 X1.5 Y2.57 Z20.14 F2400.0 E48.592
+G1 X1.49 Y2.17 Z20.14 F2400.0 E48.614
+G1 X67.02 Y1.49 Z20.14 F2400.0 E52.282
+G1 X67.06 Y6.06 Z20.14 F2400.0 E52.538
+G1 X64.86 Y6.3 Z20.14 F2400.0 E52.662
+G1 X60.28 Y7.07 Z20.14 F2400.0 E52.922
+G1 X57.33 Y7.74 Z20.14 F2400.0 E53.091
+G1 X55.12 Y8.43 Z20.14 F2400.0 E53.221
+G1 X54.35 Y8.76 Z20.14 F2400.0 E53.268
+G1 X53.13 Y9.41 Z20.14 F2400.0 E53.345
+G1 X51.78 Y10.35 Z20.14 F2400.0 E53.437
+G1 X50.67 Y11.44 Z20.14 F2400.0 E53.524
+G1 X50.01 Y12.36 Z20.14 F2400.0 E53.588
+G1 X49.59 Y13.17 Z20.14 F2400.0 E53.639
+G1 X48.87 Y15.43 Z20.14 F2400.0 E53.772
+G1 X48.58 Y17.98 Z20.14 F2400.0 E53.915
+G1 X49.49 Y105.67 Z20.14 F2400.0 E58.824
+G1 X49.81 Y108.19 Z20.14 F2400.0 E58.967
+G1 X50.55 Y110.5 Z20.14 F2400.0 E59.102
+G1 X50.96 Y111.34 Z20.14 F2400.0 E59.155
+G1 X51.65 Y112.32 Z20.14 F2400.0 E59.221
+G1 X52.8 Y113.41 Z20.14 F2400.0 E59.31
+G1 X54.24 Y114.3 Z20.14 F2400.0 E59.405
+G1 X55.51 Y114.84 Z20.14 F2400.0 E59.482
+G1 X56.46 Y115.14 Z20.14 F2400.0 E59.538
+G1 X59.06 Y115.75 Z20.14 F2400.0 E59.688
+G1 X62.06 Y116.22 Z20.14 F2400.0 E59.858
+G1 X68.21 Y116.86 Z20.14 F2400.0 E60.204
+G1 X68.26 Y121.44 Z20.14 F2400.0 E60.46
+G1 X2.73 Y122.12 Z20.14 F2400.0 E64.128
+G1 X2.69 Y117.51 Z20.14 F2400.0 E64.387
+G1 X4.96 Y117.14 Z20.14 F2400.0 E64.516
+G1 X9.44 Y116.16 Z20.14 F2400.0 E64.773
+G1 X12.39 Y115.37 Z20.14 F2400.0 E64.944
+G1 X14.67 Y114.59 Z20.14 F2400.0 E65.078
+G1 X15.47 Y114.25 Z20.14 F2400.0 E65.127
+G1 X16.7 Y113.6 Z20.14 F2400.0 E65.205
+G1 X18.06 Y112.63 Z20.14 F2400.0 E65.299
+G1 X19.16 Y111.52 Z20.14 F2400.0 E65.386
+G1 X19.79 Y110.59 Z20.14 F2400.0 E65.449
+G1 X20.2 Y109.78 Z20.14 F2400.0 E65.5
+G1 X20.88 Y107.54 Z20.14 F2400.0 E65.63
+G1 X21.16 Y105.09 Z20.14 F2400.0 E65.768
+G1 X20.25 Y17.3 Z20.14 F2400.0 E70.683
+G1 X19.91 Y14.68 Z20.14 F2400.0 E70.831
+G1 X19.14 Y12.43 Z20.14 F2400.0 E70.964
+G1 X18.7 Y11.65 Z20.14 F2400.0 E71.014
+G1 X18.02 Y10.78 Z20.14 F2400.0 E71.076
+G1 X16.91 Y9.76 Z20.14 F2400.0 E71.161
+G1 X15.56 Y8.89 Z20.14 F2400.0 E71.25
+G1 X14.36 Y8.3 Z20.14 F2400.0 E71.326
+G1 X13.55 Y7.99 Z20.14 F2400.0 E71.374
+G1 X11.29 Y7.5 Z20.14 F2400.0 E71.504
+G1 X8.12 Y7.14 Z20.14 F2400.0 E71.682
+G1 X1.54 Y6.71 Z20.14 F2400.0 E72.051
+G1 X1.5 Y2.58 Z20.14 F2400.0 E72.283
+G1 F4800.0
+G1 E72.283
+G1 F2400.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X1.1 Y2.58 Z20.14 F9000.0
+G1 F4800.0
+G1 E72.283
+G1 F9000.0
+M101
+G1 X1.1 Y2.57 Z20.14 F2400.0 E72.283
+G1 X1.09 Y1.77 Z20.14 F2400.0 E72.328
+G1 X67.41 Y1.09 Z20.14 F2400.0 E76.041
+G1 X67.47 Y6.42 Z20.14 F2400.0 E76.339
+G1 X64.92 Y6.7 Z20.14 F2400.0 E76.483
+G1 X60.35 Y7.46 Z20.14 F2400.0 E76.742
+G1 X57.43 Y8.12 Z20.14 F2400.0 E76.909
+G1 X55.26 Y8.8 Z20.14 F2400.0 E77.037
+G1 X54.53 Y9.12 Z20.14 F2400.0 E77.082
+G1 X53.34 Y9.75 Z20.14 F2400.0 E77.157
+G1 X52.04 Y10.66 Z20.14 F2400.0 E77.246
+G1 X50.98 Y11.7 Z20.14 F2400.0 E77.329
+G1 X50.35 Y12.57 Z20.14 F2400.0 E77.389
+G1 X49.96 Y13.32 Z20.14 F2400.0 E77.436
+G1 X49.26 Y15.52 Z20.14 F2400.0 E77.565
+G1 X48.98 Y18.0 Z20.14 F2400.0 E77.705
+G1 X49.89 Y105.64 Z20.14 F2400.0 E82.611
+G1 X50.21 Y108.1 Z20.14 F2400.0 E82.75
+G1 X50.92 Y110.35 Z20.14 F2400.0 E82.882
+G1 X51.3 Y111.14 Z20.14 F2400.0 E82.931
+G1 X51.95 Y112.05 Z20.14 F2400.0 E82.994
+G1 X53.05 Y113.09 Z20.14 F2400.0 E83.079
+G1 X54.43 Y113.94 Z20.14 F2400.0 E83.169
+G1 X55.65 Y114.47 Z20.14 F2400.0 E83.244
+G1 X56.56 Y114.75 Z20.14 F2400.0 E83.297
+G1 X59.14 Y115.36 Z20.14 F2400.0 E83.446
+G1 X62.11 Y115.83 Z20.14 F2400.0 E83.614
+G1 X68.61 Y116.5 Z20.14 F2400.0 E83.979
+G1 X68.66 Y121.84 Z20.14 F2400.0 E84.278
+G1 X2.34 Y122.53 Z20.14 F2400.0 E87.991
+G1 X2.28 Y117.17 Z20.14 F2400.0 E88.291
+G1 X4.89 Y116.74 Z20.14 F2400.0 E88.439
+G1 X9.35 Y115.77 Z20.14 F2400.0 E88.695
+G1 X12.28 Y114.98 Z20.14 F2400.0 E88.864
+G1 X14.53 Y114.22 Z20.14 F2400.0 E88.998
+G1 X15.3 Y113.89 Z20.14 F2400.0 E89.045
+G1 X16.49 Y113.25 Z20.14 F2400.0 E89.12
+G1 X17.8 Y112.32 Z20.14 F2400.0 E89.21
+G1 X18.85 Y111.26 Z20.14 F2400.0 E89.294
+G1 X19.45 Y110.39 Z20.14 F2400.0 E89.353
+G1 X19.82 Y109.63 Z20.14 F2400.0 E89.4
+G1 X20.49 Y107.46 Z20.14 F2400.0 E89.527
+G1 X20.76 Y105.07 Z20.14 F2400.0 E89.662
+G1 X19.85 Y17.33 Z20.14 F2400.0 E94.574
+G1 X19.52 Y14.77 Z20.14 F2400.0 E94.718
+G1 X18.78 Y12.6 Z20.14 F2400.0 E94.847
+G1 X18.37 Y11.87 Z20.14 F2400.0 E94.893
+G1 X17.73 Y11.05 Z20.14 F2400.0 E94.952
+G1 X16.66 Y10.07 Z20.14 F2400.0 E95.033
+G1 X15.37 Y9.24 Z20.14 F2400.0 E95.119
+G1 X14.2 Y8.67 Z20.14 F2400.0 E95.192
+G1 X13.44 Y8.37 Z20.14 F2400.0 E95.237
+G1 X11.22 Y7.89 Z20.14 F2400.0 E95.364
+G1 X8.08 Y7.54 Z20.14 F2400.0 E95.541
+G1 X1.14 Y7.09 Z20.14 F2400.0 E95.93
+G1 X1.1 Y2.58 Z20.14 F2400.0 E96.183
+G1 F4800.0
+G1 E95.183
+G1 F2400.0
+M103
+(</loop>)
+(<infill>)
+(<infillBoundary>)
+(<infillPoint> X66.659 Y5.701 Z20.135 </infillPoint>)
+(<infillPoint> X64.81 Y5.905 Z20.135 </infillPoint>)
+(<infillPoint> X60.201 Y6.678 Z20.135 </infillPoint>)
+(<infillPoint> X57.224 Y7.35 Z20.135 </infillPoint>)
+(<infillPoint> X54.98 Y8.053 Z20.135 </infillPoint>)
+(<infillPoint> X54.178 Y8.404 Z20.135 </infillPoint>)
+(<infillPoint> X52.923 Y9.069 Z20.135 </infillPoint>)
+(<infillPoint> X51.524 Y10.04 Z20.135 </infillPoint>)
+(<infillPoint> X50.369 Y11.178 Z20.135 </infillPoint>)
+(<infillPoint> X49.666 Y12.151 Z20.135 </infillPoint>)
+(<infillPoint> X49.217 Y13.017 Z20.135 </infillPoint>)
+(<infillPoint> X48.475 Y15.349 Z20.135 </infillPoint>)
+(<infillPoint> X48.182 Y17.957 Z20.135 </infillPoint>)
+(<infillPoint> X49.088 Y105.699 Z20.135 </infillPoint>)
+(<infillPoint> X49.422 Y108.278 Z20.135 </infillPoint>)
+(<infillPoint> X50.172 Y110.646 Z20.135 </infillPoint>)
+(<infillPoint> X50.611 Y111.547 Z20.135 </infillPoint>)
+(<infillPoint> X51.342 Y112.58 Z20.135 </infillPoint>)
+(<infillPoint> X52.555 Y113.731 Z20.135 </infillPoint>)
+(<infillPoint> X54.056 Y114.654 Z20.135 </infillPoint>)
+(<infillPoint> X55.366 Y115.217 Z20.135 </infillPoint>)
+(<infillPoint> X56.35 Y115.527 Z20.135 </infillPoint>)
+(<infillPoint> X58.984 Y116.145 Z20.135 </infillPoint>)
+(<infillPoint> X62.006 Y116.62 Z20.135 </infillPoint>)
+(<infillPoint> X67.812 Y117.223 Z20.135 </infillPoint>)
+(<infillPoint> X67.852 Y121.05 Z20.135 </infillPoint>)
+(<infillPoint> X3.128 Y121.718 Z20.135 </infillPoint>)
+(<infillPoint> X3.088 Y117.845 Z20.135 </infillPoint>)
+(<infillPoint> X5.035 Y117.528 Z20.135 </infillPoint>)
+(<infillPoint> X9.538 Y116.552 Z20.135 </infillPoint>)
+(<infillPoint> X12.509 Y115.751 Z20.135 </infillPoint>)
+(<infillPoint> X14.815 Y114.968 Z20.135 </infillPoint>)
+(<infillPoint> X15.645 Y114.61 Z20.135 </infillPoint>)
+(<infillPoint> X16.908 Y113.937 Z20.135 </infillPoint>)
+(<infillPoint> X18.324 Y112.934 Z20.135 </infillPoint>)
+(<infillPoint> X19.466 Y111.772 Z20.135 </infillPoint>)
+(<infillPoint> X20.14 Y110.798 Z20.135 </infillPoint>)
+(<infillPoint> X20.568 Y109.923 Z20.135 </infillPoint>)
+(<infillPoint> X21.277 Y107.624 Z20.135 </infillPoint>)
+(<infillPoint> X21.559 Y105.113 Z20.135 </infillPoint>)
+(<infillPoint> X20.652 Y17.271 Z20.135 </infillPoint>)
+(<infillPoint> X20.304 Y14.59 Z20.135 </infillPoint>)
+(<infillPoint> X19.511 Y12.269 Z20.135 </infillPoint>)
+(<infillPoint> X19.037 Y11.428 Z20.135 </infillPoint>)
+(<infillPoint> X18.317 Y10.505 Z20.135 </infillPoint>)
+(<infillPoint> X17.155 Y9.437 Z20.135 </infillPoint>)
+(<infillPoint> X15.762 Y8.54 Z20.135 </infillPoint>)
+(<infillPoint> X14.516 Y7.933 Z20.135 </infillPoint>)
+(<infillPoint> X13.67 Y7.604 Z20.135 </infillPoint>)
+(<infillPoint> X11.352 Y7.101 Z20.135 </infillPoint>)
+(<infillPoint> X8.151 Y6.745 Z20.135 </infillPoint>)
+(<infillPoint> X1.935 Y6.339 Z20.135 </infillPoint>)
+(<infillPoint> X1.896 Y2.565 Z20.135 </infillPoint>)
+(<infillPoint> X66.62 Y1.896 Z20.135 </infillPoint>)
+(</infillBoundary>)
+G1 X13.38 Y8.57 Z20.14 F9000.0
+G1 X20.0 Y12.83 Z20.14 F9000.0
+G1 F4800.0
+G1 E96.183
+G1 F9000.0
+M101
+G1 X20.0 Y2.66 Z20.14 F2400.0 E96.753
+G1 X19.6 Y2.66 Z20.14 F2400.0 E96.775
+G1 X19.6 Y11.86 Z20.14 F2400.0 E97.29
+G1 X19.2 Y11.18 Z20.14 F2400.0 E97.334
+G1 X19.2 Y2.67 Z20.14 F2400.0 E97.81
+G1 X18.8 Y2.67 Z20.14 F2400.0 E97.833
+G1 X18.8 Y10.67 Z20.14 F2400.0 E98.28
+G1 X18.4 Y10.2 Z20.14 F2400.0 E98.315
+G1 X18.4 Y2.67 Z20.14 F2400.0 E98.736
+G1 X18.0 Y2.68 Z20.14 F2400.0 E98.758
+G1 X18.0 Y9.83 Z20.14 F2400.0 E99.159
+G1 X17.6 Y9.47 Z20.14 F2400.0 E99.189
+G1 X17.6 Y2.68 Z20.14 F2400.0 E99.569
+G1 X17.2 Y2.69 Z20.14 F2400.0 E99.591
+G1 X17.2 Y9.13 Z20.14 F2400.0 E99.952
+G1 X16.8 Y8.88 Z20.14 F2400.0 E99.979
+G1 X16.8 Y2.69 Z20.14 F2400.0 E100.325
+G1 X16.4 Y2.7 Z20.14 F2400.0 E100.347
+G1 X16.4 Y8.62 Z20.14 F2400.0 E100.679
+G1 X16.0 Y8.36 Z20.14 F2400.0 E100.706
+G1 X16.0 Y2.7 Z20.14 F2400.0 E101.022
+G1 X15.6 Y2.7 Z20.14 F2400.0 E101.045
+G1 X15.6 Y8.15 Z20.14 F2400.0 E101.35
+G1 X15.2 Y7.96 Z20.14 F2400.0 E101.375
+G1 X15.2 Y2.71 Z20.14 F2400.0 E101.668
+G1 X14.8 Y2.71 Z20.14 F2400.0 E101.691
+G1 X14.8 Y7.76 Z20.14 F2400.0 E101.973
+G1 X14.4 Y7.59 Z20.14 F2400.0 E101.998
+G1 X14.4 Y2.72 Z20.14 F2400.0 E102.27
+G1 X14.0 Y2.72 Z20.14 F2400.0 E102.293
+G1 X14.0 Y7.43 Z20.14 F2400.0 E102.557
+G1 X13.6 Y7.3 Z20.14 F2400.0 E102.58
+G1 X13.6 Y2.72 Z20.14 F2400.0 E102.836
+G1 X13.2 Y2.73 Z20.14 F2400.0 E102.859
+G1 X13.2 Y7.22 Z20.14 F2400.0 E103.11
+G1 X12.8 Y7.13 Z20.14 F2400.0 E103.133
+G1 X12.8 Y2.73 Z20.14 F2400.0 E103.379
+G1 X12.4 Y2.74 Z20.14 F2400.0 E103.401
+G1 X12.4 Y7.04 Z20.14 F2400.0 E103.642
+G1 X12.0 Y6.96 Z20.14 F2400.0 E103.665
+G1 X12.0 Y2.74 Z20.14 F2400.0 E103.901
+G1 X11.6 Y2.75 Z20.14 F2400.0 E103.924
+G1 X11.6 Y6.87 Z20.14 F2400.0 E104.154
+G1 X11.2 Y6.8 Z20.14 F2400.0 E104.177
+G1 X11.2 Y2.75 Z20.14 F2400.0 E104.404
+G1 X10.8 Y2.75 Z20.14 F2400.0 E104.426
+G1 X10.8 Y6.76 Z20.14 F2400.0 E104.65
+G1 X10.4 Y6.71 Z20.14 F2400.0 E104.673
+G1 X10.4 Y2.76 Z20.14 F2400.0 E104.894
+G1 X10.0 Y2.76 Z20.14 F2400.0 E104.917
+G1 X10.0 Y6.67 Z20.14 F2400.0 E105.135
+G1 X9.6 Y6.62 Z20.14 F2400.0 E105.158
+G1 X9.6 Y2.77 Z20.14 F2400.0 E105.374
+G1 X9.2 Y2.77 Z20.14 F2400.0 E105.396
+G1 X9.2 Y6.58 Z20.14 F2400.0 E105.61
+G1 X8.8 Y6.54 Z20.14 F2400.0 E105.632
+G1 X8.8 Y2.77 Z20.14 F2400.0 E105.843
+G1 X8.4 Y2.78 Z20.14 F2400.0 E105.865
+G1 X8.4 Y6.49 Z20.14 F2400.0 E106.073
+G1 X8.0 Y6.46 Z20.14 F2400.0 E106.095
+G1 X8.0 Y2.78 Z20.14 F2400.0 E106.301
+G1 X7.6 Y2.79 Z20.14 F2400.0 E106.323
+G1 X7.6 Y6.43 Z20.14 F2400.0 E106.527
+G1 X7.2 Y6.4 Z20.14 F2400.0 E106.55
+G1 X7.2 Y2.79 Z20.14 F2400.0 E106.752
+G1 X6.8 Y2.79 Z20.14 F2400.0 E106.774
+G1 X6.8 Y6.38 Z20.14 F2400.0 E106.975
+G1 X6.4 Y6.35 Z20.14 F2400.0 E106.997
+G1 X6.4 Y2.8 Z20.14 F2400.0 E107.196
+G1 X6.0 Y2.8 Z20.14 F2400.0 E107.218
+G1 X6.0 Y6.32 Z20.14 F2400.0 E107.415
+G1 X5.6 Y6.3 Z20.14 F2400.0 E107.438
+G1 X5.6 Y2.81 Z20.14 F2400.0 E107.633
+G1 X5.2 Y2.81 Z20.14 F2400.0 E107.656
+G1 X5.2 Y6.27 Z20.14 F2400.0 E107.849
+G1 X4.8 Y6.25 Z20.14 F2400.0 E107.872
+G1 X4.8 Y2.81 Z20.14 F2400.0 E108.064
+G1 X4.4 Y2.82 Z20.14 F2400.0 E108.086
+G1 X4.4 Y6.22 Z20.14 F2400.0 E108.277
+G1 X4.0 Y6.19 Z20.14 F2400.0 E108.299
+G1 X4.0 Y2.82 Z20.14 F2400.0 E108.488
+G1 X3.6 Y2.83 Z20.14 F2400.0 E108.51
+G1 X3.6 Y6.17 Z20.14 F2400.0 E108.697
+G1 X3.2 Y6.14 Z20.14 F2400.0 E108.72
+G1 X3.2 Y2.83 Z20.14 F2400.0 E108.905
+G1 X2.8 Y2.84 Z20.14 F2400.0 E108.927
+G1 X2.8 Y6.12 Z20.14 F2400.0 E109.111
+G1 X2.4 Y6.04 Z20.14 F2400.0 E109.134
+G1 X2.4 Y2.85 Z20.14 F2400.0 E109.312
+G1 F4800.0
+G1 E108.312
+G1 F2400.0
+M103
+G1 X22.0 Y2.64 Z20.14 F9000.0
+G1 F4800.0
+G1 E109.312
+G1 F9000.0
+M101
+G1 X22.0 Y121.24 Z20.14 F2400.0 E115.951
+G1 X21.6 Y121.25 Z20.14 F2400.0 E115.974
+G1 X21.6 Y107.25 Z20.14 F2400.0 E116.757
+G1 F4800.0
+G1 E116.138
+G1 F2400.0
+M103
+G1 X21.2 Y108.82 Z20.14 F9000.0
+G1 F4800.0
+G1 E116.757
+G1 F9000.0
+M101
+G1 X21.2 Y121.25 Z20.14 F2400.0 E117.453
+G1 X20.8 Y121.25 Z20.14 F2400.0 E117.475
+G1 X20.8 Y110.08 Z20.14 F2400.0 E118.1
+G1 X19.2 Y112.44 Z20.14 F2400.0 E118.26
+G1 X19.2 Y121.27 Z20.14 F2400.0 E118.754
+G1 X19.6 Y121.27 Z20.14 F2400.0 E118.777
+G1 X19.6 Y112.03 Z20.14 F2400.0 E119.294
+G1 F4800.0
+G1 E119.294
+G1 F2400.0
+M103
+G1 X20.0 Y111.49 Z20.14 F9000.0
+G1 F4800.0
+G1 E119.294
+G1 F9000.0
+M101
+G1 X20.0 Y121.26 Z20.14 F2400.0 E119.84
+G1 X20.4 Y121.26 Z20.14 F2400.0 E119.863
+G1 X20.4 Y110.9 Z20.14 F2400.0 E120.443
+G1 F4800.0
+G1 E119.443
+G1 F2400.0
+M103
+G1 X18.8 Y112.85 Z20.14 F9000.0
+G1 F4800.0
+G1 E120.443
+G1 F9000.0
+M101
+G1 X18.8 Y121.28 Z20.14 F2400.0 E120.914
+G1 X18.4 Y121.28 Z20.14 F2400.0 E120.937
+G1 X18.4 Y113.22 Z20.14 F2400.0 E121.388
+G1 X18.0 Y113.51 Z20.14 F2400.0 E121.415
+G1 X18.0 Y121.28 Z20.14 F2400.0 E121.85
+G1 X17.6 Y121.29 Z20.14 F2400.0 E121.873
+G1 X17.6 Y113.79 Z20.14 F2400.0 E122.292
+G1 X17.2 Y114.07 Z20.14 F2400.0 E122.32
+G1 X17.2 Y121.29 Z20.14 F2400.0 E122.724
+G1 X16.8 Y121.3 Z20.14 F2400.0 E122.746
+G1 X16.8 Y114.31 Z20.14 F2400.0 E123.137
+G1 X16.4 Y114.53 Z20.14 F2400.0 E123.163
+G1 X16.4 Y121.3 Z20.14 F2400.0 E123.542
+G1 X16.0 Y121.31 Z20.14 F2400.0 E123.565
+G1 X16.0 Y114.74 Z20.14 F2400.0 E123.932
+G1 X15.6 Y114.93 Z20.14 F2400.0 E123.957
+G1 X15.6 Y121.31 Z20.14 F2400.0 E124.314
+G1 X15.2 Y121.31 Z20.14 F2400.0 E124.336
+G1 X15.2 Y115.11 Z20.14 F2400.0 E124.684
+G1 X14.8 Y115.27 Z20.14 F2400.0 E124.708
+G1 X14.8 Y121.32 Z20.14 F2400.0 E125.046
+G1 X14.4 Y121.32 Z20.14 F2400.0 E125.069
+G1 X14.4 Y115.4 Z20.14 F2400.0 E125.4
+G1 X14.0 Y115.54 Z20.14 F2400.0 E125.424
+G1 X14.0 Y121.33 Z20.14 F2400.0 E125.748
+G1 X13.6 Y121.33 Z20.14 F2400.0 E125.77
+G1 X13.6 Y115.68 Z20.14 F2400.0 E126.086
+G1 X13.2 Y115.81 Z20.14 F2400.0 E126.11
+G1 X13.2 Y121.33 Z20.14 F2400.0 E126.419
+G1 X12.8 Y121.34 Z20.14 F2400.0 E126.442
+G1 X12.8 Y115.95 Z20.14 F2400.0 E126.743
+G1 X12.4 Y116.07 Z20.14 F2400.0 E126.767
+G1 X12.4 Y121.34 Z20.14 F2400.0 E127.062
+G1 X12.0 Y121.35 Z20.14 F2400.0 E127.084
+G1 X12.0 Y116.18 Z20.14 F2400.0 E127.373
+G1 X11.6 Y116.29 Z20.14 F2400.0 E127.397
+G1 X11.6 Y121.35 Z20.14 F2400.0 E127.68
+G1 X11.2 Y121.35 Z20.14 F2400.0 E127.703
+G1 X11.2 Y116.39 Z20.14 F2400.0 E127.98
+G1 X10.8 Y116.5 Z20.14 F2400.0 E128.003
+G1 X10.8 Y121.36 Z20.14 F2400.0 E128.275
+G1 X10.4 Y121.36 Z20.14 F2400.0 E128.298
+G1 X10.4 Y116.61 Z20.14 F2400.0 E128.564
+G1 X10.0 Y116.72 Z20.14 F2400.0 E128.587
+G1 X10.0 Y121.37 Z20.14 F2400.0 E128.847
+G1 X9.6 Y121.37 Z20.14 F2400.0 E128.87
+G1 X9.6 Y116.83 Z20.14 F2400.0 E129.124
+G1 X9.2 Y116.91 Z20.14 F2400.0 E129.147
+G1 X9.2 Y121.38 Z20.14 F2400.0 E129.397
+G1 X8.8 Y121.38 Z20.14 F2400.0 E129.419
+G1 X8.8 Y116.99 Z20.14 F2400.0 E129.665
+G1 X8.4 Y117.07 Z20.14 F2400.0 E129.688
+G1 X8.4 Y121.38 Z20.14 F2400.0 E129.93
+G1 X8.0 Y121.39 Z20.14 F2400.0 E129.952
+G1 X8.0 Y117.15 Z20.14 F2400.0 E130.19
+G1 X7.6 Y117.23 Z20.14 F2400.0 E130.212
+G1 X7.6 Y121.39 Z20.14 F2400.0 E130.445
+G1 X7.2 Y121.4 Z20.14 F2400.0 E130.468
+G1 X7.2 Y117.31 Z20.14 F2400.0 E130.696
+G1 X6.8 Y117.39 Z20.14 F2400.0 E130.719
+G1 X6.8 Y121.4 Z20.14 F2400.0 E130.944
+G1 X6.4 Y121.4 Z20.14 F2400.0 E130.966
+G1 X6.4 Y117.47 Z20.14 F2400.0 E131.186
+G1 X6.0 Y117.55 Z20.14 F2400.0 E131.209
+G1 X6.0 Y121.41 Z20.14 F2400.0 E131.425
+G1 X5.6 Y121.41 Z20.14 F2400.0 E131.447
+G1 X5.6 Y117.63 Z20.14 F2400.0 E131.659
+G1 X5.2 Y117.71 Z20.14 F2400.0 E131.682
+G1 X5.2 Y121.42 Z20.14 F2400.0 E131.889
+G1 X4.8 Y121.42 Z20.14 F2400.0 E131.911
+G1 X4.8 Y117.79 Z20.14 F2400.0 E132.114
+G1 X4.4 Y117.88 Z20.14 F2400.0 E132.137
+G1 X4.4 Y121.42 Z20.14 F2400.0 E132.336
+G1 X4.0 Y121.43 Z20.14 F2400.0 E132.358
+G1 X4.0 Y117.96 Z20.14 F2400.0 E132.553
+G1 X3.6 Y118.04 Z20.14 F2400.0 E132.576
+G1 X3.6 Y121.4 Z20.14 F2400.0 E132.764
+G1 F4800.0
+G1 E131.764
+G1 F2400.0
+M103
+G1 X22.4 Y121.24 Z20.14 F9000.0
+G1 F4800.0
+G1 E132.764
+G1 F9000.0
+M101
+G1 X22.4 Y2.63 Z20.14 F2400.0 E139.403
+G1 X22.8 Y2.63 Z20.14 F2400.0 E139.426
+G1 X22.8 Y121.23 Z20.14 F2400.0 E146.065
+G1 X23.2 Y121.23 Z20.14 F2400.0 E146.087
+G1 X23.2 Y2.63 Z20.14 F2400.0 E152.727
+G1 X23.6 Y2.62 Z20.14 F2400.0 E152.749
+G1 X23.6 Y121.23 Z20.14 F2400.0 E159.388
+G1 X24.0 Y121.22 Z20.14 F2400.0 E159.411
+G1 X24.0 Y2.62 Z20.14 F2400.0 E166.05
+G1 X24.4 Y2.61 Z20.14 F2400.0 E166.072
+G1 X24.4 Y121.22 Z20.14 F2400.0 E172.711
+G1 X24.8 Y121.21 Z20.14 F2400.0 E172.734
+G1 X24.8 Y2.61 Z20.14 F2400.0 E179.373
+G1 X25.2 Y2.6 Z20.14 F2400.0 E179.396
+G1 X25.2 Y121.21 Z20.14 F2400.0 E186.035
+G1 X25.6 Y121.21 Z20.14 F2400.0 E186.057
+G1 X25.6 Y2.6 Z20.14 F2400.0 E192.697
+G1 X26.0 Y2.6 Z20.14 F2400.0 E192.719
+G1 X26.0 Y121.2 Z20.14 F2400.0 E199.358
+G1 X26.4 Y121.2 Z20.14 F2400.0 E199.381
+G1 X26.4 Y2.59 Z20.14 F2400.0 E206.02
+G1 X26.8 Y2.59 Z20.14 F2400.0 E206.042
+G1 X26.8 Y121.19 Z20.14 F2400.0 E212.682
+G1 X27.2 Y121.19 Z20.14 F2400.0 E212.704
+G1 X27.2 Y2.58 Z20.14 F2400.0 E219.343
+G1 X27.6 Y2.58 Z20.14 F2400.0 E219.366
+G1 X27.6 Y121.19 Z20.14 F2400.0 E226.005
+G1 X28.0 Y121.18 Z20.14 F2400.0 E226.027
+G1 X28.0 Y2.58 Z20.14 F2400.0 E232.667
+G1 X28.4 Y2.57 Z20.14 F2400.0 E232.689
+G1 X28.4 Y121.18 Z20.14 F2400.0 E239.328
+G1 X28.8 Y121.17 Z20.14 F2400.0 E239.351
+G1 X28.8 Y2.57 Z20.14 F2400.0 E245.99
+G1 X29.2 Y2.56 Z20.14 F2400.0 E246.012
+G1 X29.2 Y121.17 Z20.14 F2400.0 E252.652
+G1 X29.6 Y121.16 Z20.14 F2400.0 E252.674
+G1 X29.6 Y2.56 Z20.14 F2400.0 E259.313
+G1 X30.0 Y2.56 Z20.14 F2400.0 E259.336
+G1 X30.0 Y121.16 Z20.14 F2400.0 E265.975
+G1 X30.4 Y121.16 Z20.14 F2400.0 E265.997
+G1 X30.4 Y2.55 Z20.14 F2400.0 E272.637
+G1 X30.8 Y2.55 Z20.14 F2400.0 E272.659
+G1 X30.8 Y121.15 Z20.14 F2400.0 E279.298
+G1 X31.2 Y121.15 Z20.14 F2400.0 E279.321
+G1 X31.2 Y2.54 Z20.14 F2400.0 E285.96
+G1 X31.6 Y2.54 Z20.14 F2400.0 E285.982
+G1 X31.6 Y121.14 Z20.14 F2400.0 E292.622
+G1 X32.0 Y121.14 Z20.14 F2400.0 E292.644
+G1 X32.0 Y2.53 Z20.14 F2400.0 E299.283
+G1 X32.4 Y2.53 Z20.14 F2400.0 E299.306
+G1 X32.4 Y121.14 Z20.14 F2400.0 E305.945
+G1 X32.8 Y121.13 Z20.14 F2400.0 E305.967
+G1 X32.8 Y2.53 Z20.14 F2400.0 E312.607
+G1 X33.2 Y2.52 Z20.14 F2400.0 E312.629
+G1 X33.2 Y121.13 Z20.14 F2400.0 E319.268
+G1 X33.6 Y121.12 Z20.14 F2400.0 E319.291
+G1 X33.6 Y2.52 Z20.14 F2400.0 E325.93
+G1 X34.0 Y2.51 Z20.14 F2400.0 E325.952
+G1 X34.0 Y121.12 Z20.14 F2400.0 E332.592
+G1 X34.4 Y121.11 Z20.14 F2400.0 E332.614
+G1 X34.4 Y2.51 Z20.14 F2400.0 E339.253
+G1 X34.8 Y2.5 Z20.14 F2400.0 E339.276
+G1 X34.8 Y121.11 Z20.14 F2400.0 E345.915
+G1 X35.2 Y121.11 Z20.14 F2400.0 E345.937
+G1 X35.2 Y2.5 Z20.14 F2400.0 E352.577
+G1 X35.6 Y2.5 Z20.14 F2400.0 E352.599
+G1 X35.6 Y121.1 Z20.14 F2400.0 E359.238
+G1 X36.0 Y121.1 Z20.14 F2400.0 E359.261
+G1 X36.0 Y2.49 Z20.14 F2400.0 E365.9
+G1 X36.4 Y2.49 Z20.14 F2400.0 E365.922
+G1 X36.4 Y121.09 Z20.14 F2400.0 E372.562
+G1 X36.8 Y121.09 Z20.14 F2400.0 E372.584
+G1 X36.8 Y2.48 Z20.14 F2400.0 E379.223
+G1 X37.2 Y2.48 Z20.14 F2400.0 E379.246
+G1 X37.2 Y121.09 Z20.14 F2400.0 E385.885
+G1 X37.6 Y121.08 Z20.14 F2400.0 E385.907
+G1 X37.6 Y2.48 Z20.14 F2400.0 E392.547
+G1 X38.0 Y2.47 Z20.14 F2400.0 E392.569
+G1 X38.0 Y121.08 Z20.14 F2400.0 E399.209
+G1 X38.4 Y121.07 Z20.14 F2400.0 E399.231
+G1 X38.4 Y2.47 Z20.14 F2400.0 E405.87
+G1 X38.8 Y2.46 Z20.14 F2400.0 E405.893
+G1 X38.8 Y121.07 Z20.14 F2400.0 E412.532
+G1 X39.2 Y121.06 Z20.14 F2400.0 E412.554
+G1 X39.2 Y2.46 Z20.14 F2400.0 E419.194
+G1 X39.6 Y2.46 Z20.14 F2400.0 E419.216
+G1 X39.6 Y121.06 Z20.14 F2400.0 E425.855
+G1 X40.0 Y121.06 Z20.14 F2400.0 E425.878
+G1 X40.0 Y2.45 Z20.14 F2400.0 E432.517
+G1 X40.4 Y2.45 Z20.14 F2400.0 E432.539
+G1 X40.4 Y121.05 Z20.14 F2400.0 E439.179
+G1 X40.8 Y121.05 Z20.14 F2400.0 E439.201
+G1 X40.8 Y2.44 Z20.14 F2400.0 E445.84
+G1 X41.2 Y2.44 Z20.14 F2400.0 E445.863
+G1 X41.2 Y121.05 Z20.14 F2400.0 E452.502
+G1 X41.6 Y121.04 Z20.14 F2400.0 E452.524
+G1 X41.6 Y2.44 Z20.14 F2400.0 E459.164
+G1 X42.0 Y2.43 Z20.14 F2400.0 E459.186
+G1 X42.0 Y121.04 Z20.14 F2400.0 E465.825
+G1 X42.4 Y121.03 Z20.14 F2400.0 E465.848
+G1 X42.4 Y2.43 Z20.14 F2400.0 E472.487
+G1 X42.8 Y2.42 Z20.14 F2400.0 E472.509
+G1 X42.8 Y121.03 Z20.14 F2400.0 E479.149
+G1 X43.2 Y121.02 Z20.14 F2400.0 E479.171
+G1 X43.2 Y2.42 Z20.14 F2400.0 E485.81
+G1 X43.6 Y2.41 Z20.14 F2400.0 E485.833
+G1 X43.6 Y121.02 Z20.14 F2400.0 E492.472
+G1 X44.0 Y121.02 Z20.14 F2400.0 E492.494
+G1 X44.0 Y2.41 Z20.14 F2400.0 E499.134
+G1 X44.4 Y2.41 Z20.14 F2400.0 E499.156
+G1 X44.4 Y121.01 Z20.14 F2400.0 E505.795
+G1 X44.8 Y121.01 Z20.14 F2400.0 E505.818
+G1 X44.8 Y2.4 Z20.14 F2400.0 E512.457
+G1 X45.2 Y2.4 Z20.14 F2400.0 E512.479
+G1 X45.2 Y121.0 Z20.14 F2400.0 E519.119
+G1 X45.6 Y121.0 Z20.14 F2400.0 E519.141
+G1 X45.6 Y2.39 Z20.14 F2400.0 E525.78
+G1 X46.0 Y2.39 Z20.14 F2400.0 E525.803
+G1 X46.0 Y121.0 Z20.14 F2400.0 E532.442
+G1 X46.4 Y120.99 Z20.14 F2400.0 E532.464
+G1 X46.4 Y2.38 Z20.14 F2400.0 E539.104
+G1 X46.8 Y2.38 Z20.14 F2400.0 E539.126
+G1 X46.8 Y120.99 Z20.14 F2400.0 E545.766
+G1 X47.2 Y120.98 Z20.14 F2400.0 E545.788
+G1 X47.2 Y2.38 Z20.14 F2400.0 E552.427
+G1 X47.6 Y2.37 Z20.14 F2400.0 E552.45
+G1 X47.6 Y120.98 Z20.14 F2400.0 E559.089
+G1 X48.0 Y120.97 Z20.14 F2400.0 E559.111
+G1 X48.0 Y2.37 Z20.14 F2400.0 E565.751
+G1 X48.4 Y2.37 Z20.14 F2400.0 E565.773
+G1 X48.4 Y14.66 Z20.14 F2400.0 E566.461
+G1 F4800.0
+G1 E566.142
+G1 F2400.0
+M103
+G1 X48.8 Y13.4 Z20.14 F9000.0
+G1 F4800.0
+G1 E566.461
+G1 F9000.0
+M101
+G1 X48.8 Y2.36 Z20.14 F2400.0 E567.079
+G1 X49.2 Y2.36 Z20.14 F2400.0 E567.102
+G1 X49.2 Y12.44 Z20.14 F2400.0 E567.666
+G1 X49.6 Y11.76 Z20.14 F2400.0 E567.71
+G1 X49.6 Y2.35 Z20.14 F2400.0 E568.237
+G1 X50.0 Y2.35 Z20.14 F2400.0 E568.26
+G1 X50.0 Y11.21 Z20.14 F2400.0 E568.756
+G1 X50.4 Y10.75 Z20.14 F2400.0 E568.79
+G1 X50.4 Y2.34 Z20.14 F2400.0 E569.26
+G1 X50.8 Y2.34 Z20.14 F2400.0 E569.283
+G1 X50.8 Y10.36 Z20.14 F2400.0 E569.732
+G1 X51.2 Y9.97 Z20.14 F2400.0 E569.763
+G1 X51.2 Y2.34 Z20.14 F2400.0 E570.19
+G1 X51.6 Y2.33 Z20.14 F2400.0 E570.213
+G1 X51.6 Y9.65 Z20.14 F2400.0 E570.622
+G1 X52.0 Y9.37 Z20.14 F2400.0 E570.65
+G1 X52.0 Y2.33 Z20.14 F2400.0 E571.044
+G1 X52.4 Y2.32 Z20.14 F2400.0 E571.066
+G1 X52.4 Y9.09 Z20.14 F2400.0 E571.445
+G1 X52.8 Y8.82 Z20.14 F2400.0 E571.472
+G1 X52.8 Y2.32 Z20.14 F2400.0 E571.836
+G1 X53.2 Y2.31 Z20.14 F2400.0 E571.858
+G1 X53.2 Y8.62 Z20.14 F2400.0 E572.211
+G1 X53.6 Y8.42 Z20.14 F2400.0 E572.236
+G1 X53.6 Y2.31 Z20.14 F2400.0 E572.578
+G1 X54.0 Y2.31 Z20.14 F2400.0 E572.601
+G1 X54.0 Y8.23 Z20.14 F2400.0 E572.932
+G1 X54.4 Y8.03 Z20.14 F2400.0 E572.957
+G1 X54.4 Y2.3 Z20.14 F2400.0 E573.278
+G1 X54.8 Y2.3 Z20.14 F2400.0 E573.3
+G1 X54.8 Y7.83 Z20.14 F2400.0 E573.61
+G1 X55.2 Y7.69 Z20.14 F2400.0 E573.633
+G1 X55.2 Y2.29 Z20.14 F2400.0 E573.935
+G1 X55.6 Y2.29 Z20.14 F2400.0 E573.958
+G1 X55.6 Y7.57 Z20.14 F2400.0 E574.253
+G1 X56.0 Y7.44 Z20.14 F2400.0 E574.277
+G1 X56.0 Y2.29 Z20.14 F2400.0 E574.565
+G1 X56.4 Y2.28 Z20.14 F2400.0 E574.587
+G1 X56.4 Y7.32 Z20.14 F2400.0 E574.869
+G1 X56.8 Y7.19 Z20.14 F2400.0 E574.893
+G1 X56.8 Y2.28 Z20.14 F2400.0 E575.168
+G1 X57.2 Y2.27 Z20.14 F2400.0 E575.19
+G1 X57.2 Y7.07 Z20.14 F2400.0 E575.458
+G1 X57.6 Y6.98 Z20.14 F2400.0 E575.481
+G1 X57.6 Y2.27 Z20.14 F2400.0 E575.745
+G1 X58.0 Y2.27 Z20.14 F2400.0 E575.767
+G1 X58.0 Y6.89 Z20.14 F2400.0 E576.026
+G1 X58.4 Y6.8 Z20.14 F2400.0 E576.049
+G1 X58.4 Y2.26 Z20.14 F2400.0 E576.303
+G1 X58.8 Y2.26 Z20.14 F2400.0 E576.325
+G1 X58.8 Y6.71 Z20.14 F2400.0 E576.574
+G1 X59.2 Y6.62 Z20.14 F2400.0 E576.597
+G1 X59.2 Y2.25 Z20.14 F2400.0 E576.842
+G1 X59.6 Y2.25 Z20.14 F2400.0 E576.864
+G1 X59.6 Y6.53 Z20.14 F2400.0 E577.103
+G1 X60.0 Y6.44 Z20.14 F2400.0 E577.126
+G1 X60.0 Y2.25 Z20.14 F2400.0 E577.361
+G1 X60.4 Y2.24 Z20.14 F2400.0 E577.383
+G1 X60.4 Y6.36 Z20.14 F2400.0 E577.614
+G1 X60.8 Y6.3 Z20.14 F2400.0 E577.637
+G1 X60.8 Y2.24 Z20.14 F2400.0 E577.864
+G1 X61.2 Y2.23 Z20.14 F2400.0 E577.887
+G1 X61.2 Y6.24 Z20.14 F2400.0 E578.111
+G1 X61.6 Y6.18 Z20.14 F2400.0 E578.134
+G1 X61.6 Y2.23 Z20.14 F2400.0 E578.355
+G1 X62.0 Y2.22 Z20.14 F2400.0 E578.378
+G1 X62.0 Y6.12 Z20.14 F2400.0 E578.596
+G1 X62.4 Y6.06 Z20.14 F2400.0 E578.618
+G1 X62.4 Y2.22 Z20.14 F2400.0 E578.833
+G1 X62.8 Y2.22 Z20.14 F2400.0 E578.855
+G1 X62.8 Y6.0 Z20.14 F2400.0 E579.067
+G1 X63.2 Y5.94 Z20.14 F2400.0 E579.09
+G1 X63.2 Y2.21 Z20.14 F2400.0 E579.298
+G1 X63.6 Y2.21 Z20.14 F2400.0 E579.321
+G1 X63.6 Y5.88 Z20.14 F2400.0 E579.526
+G1 X64.0 Y5.81 Z20.14 F2400.0 E579.549
+G1 X64.0 Y2.2 Z20.14 F2400.0 E579.751
+G1 X64.4 Y2.2 Z20.14 F2400.0 E579.773
+G1 X64.4 Y5.75 Z20.14 F2400.0 E579.972
+G1 X64.8 Y5.69 Z20.14 F2400.0 E579.995
+G1 X64.8 Y2.19 Z20.14 F2400.0 E580.19
+G1 X65.2 Y2.19 Z20.14 F2400.0 E580.213
+G1 X65.2 Y5.63 Z20.14 F2400.0 E580.405
+G1 X65.6 Y5.57 Z20.14 F2400.0 E580.428
+G1 X65.6 Y2.19 Z20.14 F2400.0 E580.617
+G1 X66.0 Y2.18 Z20.14 F2400.0 E580.64
+G1 X66.0 Y5.51 Z20.14 F2400.0 E580.826
+G1 F4800.0
+G1 E579.826
+G1 F2400.0
+M103
+G1 X20.8 Y16.23 Z20.14 F9000.0
+G1 F4800.0
+G1 E580.826
+G1 F9000.0
+M101
+G1 X20.8 Y2.65 Z20.14 F2400.0 E581.586
+G1 X20.4 Y2.65 Z20.14 F2400.0 E581.608
+G1 X20.4 Y14.01 Z20.14 F2400.0 E582.244
+G1 F4800.0
+G1 E581.244
+G1 F2400.0
+M103
+G1 X21.6 Y81.98 Z20.14 F9000.0
+G1 F4800.0
+G1 E582.244
+G1 F9000.0
+M101
+G1 X21.6 Y2.64 Z20.14 F2400.0 E586.685
+G1 X21.2 Y2.65 Z20.14 F2400.0 E586.707
+G1 X21.2 Y43.23 Z20.14 F2400.0 E588.979
+G1 F4800.0
+G1 E587.979
+G1 F2400.0
+M103
+G1 X48.8 Y104.93 Z20.14 F9000.0
+G1 F4800.0
+G1 E588.979
+G1 F9000.0
+M101
+G1 X48.8 Y120.97 Z20.14 F2400.0 E589.876
+G1 X48.4 Y120.97 Z20.14 F2400.0 E589.899
+G1 X48.4 Y66.18 Z20.14 F2400.0 E592.966
+G1 F4800.0
+G1 E591.966
+G1 F2400.0
+M103
+G1 X50.09 Y105.63 Z20.14 F9000.0
+G1 X51.48 Y111.03 Z20.14 F9000.0
+G1 X54.52 Y113.76 Z20.14 F9000.0
+G1 X67.2 Y117.44 Z20.14 F9000.0
+G1 F4800.0
+G1 E592.966
+G1 F9000.0
+M101
+G1 X67.2 Y120.78 Z20.14 F2400.0 E593.152
+G1 X66.8 Y120.78 Z20.14 F2400.0 E593.175
+G1 X66.8 Y117.4 Z20.14 F2400.0 E593.364
+G1 X66.4 Y117.36 Z20.14 F2400.0 E593.387
+G1 X66.4 Y120.78 Z20.14 F2400.0 E593.578
+G1 X66.0 Y120.79 Z20.14 F2400.0 E593.601
+G1 X66.0 Y117.32 Z20.14 F2400.0 E593.795
+G1 X65.6 Y117.27 Z20.14 F2400.0 E593.818
+G1 X65.6 Y120.79 Z20.14 F2400.0 E594.015
+G1 X65.2 Y120.8 Z20.14 F2400.0 E594.037
+G1 X65.2 Y117.23 Z20.14 F2400.0 E594.237
+G1 X64.8 Y117.19 Z20.14 F2400.0 E594.259
+G1 X64.8 Y120.8 Z20.14 F2400.0 E594.461
+G1 X64.4 Y120.81 Z20.14 F2400.0 E594.484
+G1 X64.4 Y117.15 Z20.14 F2400.0 E594.688
+G1 X64.0 Y117.11 Z20.14 F2400.0 E594.711
+G1 X64.0 Y120.81 Z20.14 F2400.0 E594.918
+G1 X63.6 Y120.81 Z20.14 F2400.0 E594.94
+G1 X63.6 Y117.07 Z20.14 F2400.0 E595.15
+G1 X63.2 Y117.03 Z20.14 F2400.0 E595.172
+G1 X63.2 Y120.82 Z20.14 F2400.0 E595.385
+G1 X62.8 Y120.82 Z20.14 F2400.0 E595.407
+G1 X62.8 Y116.98 Z20.14 F2400.0 E595.622
+G1 X62.4 Y116.94 Z20.14 F2400.0 E595.645
+G1 X62.4 Y120.83 Z20.14 F2400.0 E595.862
+G1 X62.0 Y120.83 Z20.14 F2400.0 E595.884
+G1 X62.0 Y116.9 Z20.14 F2400.0 E596.104
+G1 X61.6 Y116.84 Z20.14 F2400.0 E596.127
+G1 X61.6 Y120.83 Z20.14 F2400.0 E596.351
+G1 X61.2 Y120.84 Z20.14 F2400.0 E596.373
+G1 X61.2 Y116.78 Z20.14 F2400.0 E596.6
+G1 X60.8 Y116.71 Z20.14 F2400.0 E596.623
+G1 X60.8 Y120.84 Z20.14 F2400.0 E596.854
+G1 X60.4 Y120.85 Z20.14 F2400.0 E596.876
+G1 X60.4 Y116.65 Z20.14 F2400.0 E597.111
+G1 X60.0 Y116.59 Z20.14 F2400.0 E597.134
+G1 X60.0 Y120.85 Z20.14 F2400.0 E597.373
+G1 X59.6 Y120.86 Z20.14 F2400.0 E597.395
+G1 X59.6 Y116.53 Z20.14 F2400.0 E597.637
+G1 X59.2 Y116.46 Z20.14 F2400.0 E597.66
+G1 X59.2 Y120.86 Z20.14 F2400.0 E597.906
+G1 X58.8 Y120.86 Z20.14 F2400.0 E597.929
+G1 X58.8 Y116.39 Z20.14 F2400.0 E598.179
+G1 X58.4 Y116.3 Z20.14 F2400.0 E598.202
+G1 X58.4 Y120.87 Z20.14 F2400.0 E598.458
+G1 X58.0 Y120.87 Z20.14 F2400.0 E598.48
+G1 X58.0 Y116.2 Z20.14 F2400.0 E598.742
+G1 X57.6 Y116.11 Z20.14 F2400.0 E598.765
+G1 X57.6 Y120.88 Z20.14 F2400.0 E599.032
+G1 X57.2 Y120.88 Z20.14 F2400.0 E599.054
+G1 X57.2 Y116.01 Z20.14 F2400.0 E599.326
+G1 X56.8 Y115.92 Z20.14 F2400.0 E599.349
+G1 X56.8 Y120.88 Z20.14 F2400.0 E599.627
+G1 X56.4 Y120.89 Z20.14 F2400.0 E599.65
+G1 X56.4 Y115.83 Z20.14 F2400.0 E599.933
+G1 X56.0 Y115.71 Z20.14 F2400.0 E599.956
+G1 X56.0 Y120.89 Z20.14 F2400.0 E600.246
+G1 X55.6 Y120.9 Z20.14 F2400.0 E600.269
+G1 X55.6 Y115.58 Z20.14 F2400.0 E600.566
+G1 X55.2 Y115.45 Z20.14 F2400.0 E600.59
+G1 X55.2 Y120.9 Z20.14 F2400.0 E600.895
+G1 X54.8 Y120.9 Z20.14 F2400.0 E600.917
+G1 X54.8 Y115.28 Z20.14 F2400.0 E601.232
+G1 X54.4 Y115.11 Z20.14 F2400.0 E601.256
+G1 X54.4 Y120.91 Z20.14 F2400.0 E601.581
+G1 X54.0 Y120.91 Z20.14 F2400.0 E601.603
+G1 X54.0 Y114.93 Z20.14 F2400.0 E601.938
+G1 X53.6 Y114.7 Z20.14 F2400.0 E601.964
+G1 X53.6 Y120.92 Z20.14 F2400.0 E602.312
+G1 X53.2 Y120.92 Z20.14 F2400.0 E602.334
+G1 X53.2 Y114.46 Z20.14 F2400.0 E602.696
+G1 X52.8 Y114.21 Z20.14 F2400.0 E602.722
+G1 X52.8 Y120.92 Z20.14 F2400.0 E603.098
+G1 X52.4 Y120.93 Z20.14 F2400.0 E603.121
+G1 X52.4 Y113.96 Z20.14 F2400.0 E603.511
+G1 X52.0 Y113.59 Z20.14 F2400.0 E603.541
+G1 X52.0 Y120.93 Z20.14 F2400.0 E603.952
+G1 X51.6 Y120.94 Z20.14 F2400.0 E603.975
+G1 X51.6 Y113.21 Z20.14 F2400.0 E604.407
+G1 X51.2 Y112.83 Z20.14 F2400.0 E604.438
+G1 X51.2 Y120.94 Z20.14 F2400.0 E604.892
+G1 X50.8 Y120.95 Z20.14 F2400.0 E604.914
+G1 X50.8 Y112.3 Z20.14 F2400.0 E605.398
+G1 X50.4 Y111.73 Z20.14 F2400.0 E605.437
+G1 X50.4 Y120.95 Z20.14 F2400.0 E605.953
+G1 X50.0 Y120.95 Z20.14 F2400.0 E605.975
+G1 X50.0 Y110.93 Z20.14 F2400.0 E606.537
+G1 X49.6 Y109.77 Z20.14 F2400.0 E606.605
+G1 X49.6 Y120.96 Z20.14 F2400.0 E607.232
+G1 X49.2 Y120.96 Z20.14 F2400.0 E607.254
+G1 X49.2 Y108.5 Z20.14 F2400.0 E607.952
+G1 F4800.0
+G1 E606.952
+G1 F2400.0
+M103
+(</infill>)
+(</nestedRing>)
+(</rotation>)
+(</layer>)
+;M108 R80.0
+(<layer> 20.405 )
+(<rotation> (-1+1.22464679915e-16j) )
+(<nestedRing>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X67.815 Y6.717 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X64.954 Y7.042 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X60.422 Y7.802 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X57.539 Y8.453 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X55.374 Y9.131 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X54.69 Y9.43 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X53.512 Y10.056 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X52.222 Y10.958 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X51.255 Y11.913 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X50.65 Y12.746 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X50.28 Y13.458 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X49.601 Y15.593 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X49.328 Y18.028 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X50.232 Y105.602 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X50.544 Y108.024 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X51.241 Y110.222 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X51.609 Y110.973 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X52.225 Y111.839 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X53.272 Y112.827 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X54.606 Y113.643 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X55.757 Y114.138 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X56.672 Y114.425 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X59.204 Y115.019 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X62.138 Y115.48 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X68.947 Y116.191 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X69.009 Y122.183 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X1.994 Y122.875 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X1.933 Y116.88 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X4.823 Y116.401 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X9.256 Y115.44 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X12.198 Y114.646 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X14.409 Y113.895 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X15.135 Y113.582 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X16.312 Y112.955 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X17.593 Y112.044 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X18.547 Y111.075 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X19.14 Y110.229 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X19.497 Y109.503 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X20.15 Y107.387 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X20.413 Y105.042 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X19.508 Y17.369 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X19.184 Y14.861 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X18.463 Y12.747 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X18.08 Y12.066 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X17.464 Y11.277 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X16.437 Y10.338 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X15.215 Y9.551 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X14.052 Y8.982 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X13.314 Y8.699 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X11.174 Y8.234 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X8.028 Y7.885 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X0.8 Y7.414 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X0.739 Y1.432 Z20.405 </boundaryPoint>)
+(<boundaryPoint> X67.754 Y0.739 Z20.405 </boundaryPoint>)
+(<loop> outer )
+G1 X19.65 Y17.34 Z20.41 F9000.0
+G1 X18.59 Y12.68 Z20.41 F9000.0
+G1 X16.54 Y10.23 Z20.41 F9000.0
+G1 X2.16 Y3.13 Z20.41 F9000.0
+G1 F4800.0
+G1 E607.952
+G1 F9000.0
+M101
+G1 X2.15 Y2.82 Z20.41 F4800.0 E607.969
+G1 X66.37 Y2.15 Z20.41 F4800.0 E611.564
+G1 X66.4 Y5.47 Z20.41 F4800.0 E611.749
+G1 X60.15 Y6.43 Z20.41 F4800.0 E612.103
+G1 X57.17 Y7.1 Z20.41 F4800.0 E612.274
+G1 X54.88 Y7.82 Z20.41 F4800.0 E612.409
+G1 X52.78 Y8.86 Z20.41 F4800.0 E612.54
+G1 X51.32 Y9.88 Z20.41 F4800.0 E612.64
+G1 X50.19 Y11.0 Z20.41 F4800.0 E612.729
+G1 X49.46 Y12.01 Z20.41 F4800.0 E612.799
+G1 X48.98 Y12.92 Z20.41 F4800.0 E612.856
+G1 X48.23 Y15.3 Z20.41 F4800.0 E612.996
+G1 X47.93 Y17.96 Z20.41 F4800.0 E613.146
+G1 X48.83 Y105.7 Z20.41 F4800.0 E618.058
+G1 X49.17 Y108.33 Z20.41 F4800.0 E618.206
+G1 X49.94 Y110.74 Z20.41 F4800.0 E618.348
+G1 X50.4 Y111.69 Z20.41 F4800.0 E618.407
+G1 X51.16 Y112.76 Z20.41 F4800.0 E618.48
+G1 X52.42 Y113.94 Z20.41 F4800.0 E618.577
+G1 X53.96 Y114.89 Z20.41 F4800.0 E618.678
+G1 X55.27 Y115.45 Z20.41 F4800.0 E618.758
+G1 X58.94 Y116.39 Z20.41 F4800.0 E618.97
+G1 X61.96 Y116.87 Z20.41 F4800.0 E619.141
+G1 X67.56 Y117.45 Z20.41 F4800.0 E619.456
+G1 X67.59 Y120.8 Z20.41 F4800.0 E619.644
+G1 X3.38 Y121.46 Z20.41 F4800.0 E623.238
+G1 X3.35 Y118.06 Z20.41 F4800.0 E623.428
+G1 X9.59 Y116.8 Z20.41 F4800.0 E623.785
+G1 X12.61 Y115.99 Z20.41 F4800.0 E623.96
+G1 X14.91 Y115.2 Z20.41 F4800.0 E624.096
+G1 X17.05 Y114.15 Z20.41 F4800.0 E624.23
+G1 X18.5 Y113.11 Z20.41 F4800.0 E624.33
+G1 X19.63 Y111.97 Z20.41 F4800.0 E624.419
+G1 X20.35 Y110.94 Z20.41 F4800.0 E624.49
+G1 X20.8 Y110.02 Z20.41 F4800.0 E624.547
+G1 X21.53 Y107.67 Z20.41 F4800.0 E624.685
+G1 X21.81 Y105.11 Z20.41 F4800.0 E624.829
+G1 X20.91 Y17.27 Z20.41 F4800.0 E629.746
+G1 X20.55 Y14.54 Z20.41 F4800.0 E629.901
+G1 X19.75 Y12.17 Z20.41 F4800.0 E630.041
+G1 X19.25 Y11.29 Z20.41 F4800.0 E630.097
+G1 X18.5 Y10.32 Z20.41 F4800.0 E630.166
+G1 X17.29 Y9.22 Z20.41 F4800.0 E630.257
+G1 X15.9 Y8.33 Z20.41 F4800.0 E630.35
+G1 X13.72 Y7.35 Z20.41 F4800.0 E630.484
+G1 X11.4 Y6.85 Z20.41 F4800.0 E630.616
+G1 X2.19 Y6.1 Z20.41 F4800.0 E631.134
+G1 X2.16 Y3.13 Z20.41 F4800.0 E631.3
+G1 F4800.0
+G1 E631.3
+G1 F4800.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X1.84 Y2.42 Z20.41 F9000.0
+G1 F4800.0
+G1 E631.3
+G1 F9000.0
+M101
+G1 X2.15 Y2.42 Z20.41 F4800.0 E631.318
+G1 X66.76 Y1.75 Z20.41 F4800.0 E634.935
+G1 X66.81 Y5.83 Z20.41 F4800.0 E635.163
+G1 X64.81 Y6.05 Z20.41 F4800.0 E635.275
+G1 X60.23 Y6.82 Z20.41 F4800.0 E635.536
+G1 X57.28 Y7.49 Z20.41 F4800.0 E635.705
+G1 X55.02 Y8.19 Z20.41 F4800.0 E635.837
+G1 X54.25 Y8.53 Z20.41 F4800.0 E635.884
+G1 X52.99 Y9.2 Z20.41 F4800.0 E635.964
+G1 X51.58 Y10.19 Z20.41 F4800.0 E636.061
+G1 X50.49 Y11.26 Z20.41 F4800.0 E636.146
+G1 X49.8 Y12.22 Z20.41 F4800.0 E636.212
+G1 X49.35 Y13.07 Z20.41 F4800.0 E636.266
+G1 X48.62 Y15.38 Z20.41 F4800.0 E636.402
+G1 X48.33 Y17.98 Z20.41 F4800.0 E636.548
+G1 X49.23 Y105.67 Z20.41 F4800.0 E641.457
+G1 X49.56 Y108.24 Z20.41 F4800.0 E641.602
+G1 X50.31 Y110.59 Z20.41 F4800.0 E641.741
+G1 X50.75 Y111.49 Z20.41 F4800.0 E641.796
+G1 X51.47 Y112.5 Z20.41 F4800.0 E641.866
+G1 X52.66 Y113.63 Z20.41 F4800.0 E641.958
+G1 X54.15 Y114.53 Z20.41 F4800.0 E642.055
+G1 X55.41 Y115.08 Z20.41 F4800.0 E642.132
+G1 X56.41 Y115.39 Z20.41 F4800.0 E642.191
+G1 X59.01 Y116.0 Z20.41 F4800.0 E642.34
+G1 X62.01 Y116.47 Z20.41 F4800.0 E642.51
+G1 X67.96 Y117.09 Z20.41 F4800.0 E642.845
+G1 X68.0 Y121.19 Z20.41 F4800.0 E643.074
+G1 X2.98 Y121.86 Z20.41 F4800.0 E646.714
+G1 X2.94 Y117.73 Z20.41 F4800.0 E646.946
+G1 X5.01 Y117.38 Z20.41 F4800.0 E647.063
+G1 X9.49 Y116.41 Z20.41 F4800.0 E647.32
+G1 X12.49 Y115.6 Z20.41 F4800.0 E647.494
+G1 X14.77 Y114.83 Z20.41 F4800.0 E647.628
+G1 X15.57 Y114.48 Z20.41 F4800.0 E647.677
+G1 X16.84 Y113.81 Z20.41 F4800.0 E647.758
+G1 X18.24 Y112.81 Z20.41 F4800.0 E647.854
+G1 X19.32 Y111.72 Z20.41 F4800.0 E647.94
+G1 X20.0 Y110.74 Z20.41 F4800.0 E648.007
+G1 X20.43 Y109.87 Z20.41 F4800.0 E648.061
+G1 X21.13 Y107.59 Z20.41 F4800.0 E648.194
+G1 X21.41 Y105.09 Z20.41 F4800.0 E648.335
+G1 X20.51 Y17.3 Z20.41 F4800.0 E653.25
+G1 X20.16 Y14.63 Z20.41 F4800.0 E653.4
+G1 X19.38 Y12.34 Z20.41 F4800.0 E653.536
+G1 X18.91 Y11.51 Z20.41 F4800.0 E653.589
+G1 X18.2 Y10.6 Z20.41 F4800.0 E653.654
+G1 X17.05 Y9.54 Z20.41 F4800.0 E653.742
+G1 X15.71 Y8.68 Z20.41 F4800.0 E653.831
+G1 X14.45 Y8.06 Z20.41 F4800.0 E653.909
+G1 X13.6 Y7.74 Z20.41 F4800.0 E653.96
+G1 X11.34 Y7.25 Z20.41 F4800.0 E654.09
+G1 X8.12 Y6.89 Z20.41 F4800.0 E654.271
+G1 X1.79 Y6.48 Z20.41 F4800.0 E654.626
+G1 X1.75 Y2.42 Z20.41 F4800.0 E654.853
+G1 X1.84 Y2.42 Z20.41 F4800.0 E654.858
+G1 F4800.0
+G1 E654.858
+G1 F4800.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X1.83 Y2.02 Z20.41 F9000.0
+G1 F4800.0
+G1 E654.858
+G1 F9000.0
+M101
+G1 X2.15 Y2.02 Z20.41 F4800.0 E654.875
+G1 X67.16 Y1.34 Z20.41 F4800.0 E658.515
+G1 X67.21 Y6.18 Z20.41 F4800.0 E658.786
+G1 X64.87 Y6.45 Z20.41 F4800.0 E658.918
+G1 X60.31 Y7.21 Z20.41 F4800.0 E659.177
+G1 X57.38 Y7.87 Z20.41 F4800.0 E659.344
+G1 X55.16 Y8.57 Z20.41 F4800.0 E659.475
+G1 X54.43 Y8.89 Z20.41 F4800.0 E659.52
+G1 X53.2 Y9.54 Z20.41 F4800.0 E659.598
+G1 X51.84 Y10.49 Z20.41 F4800.0 E659.691
+G1 X50.8 Y11.52 Z20.41 F4800.0 E659.772
+G1 X50.14 Y12.43 Z20.41 F4800.0 E659.835
+G1 X49.72 Y13.23 Z20.41 F4800.0 E659.885
+G1 X49.01 Y15.47 Z20.41 F4800.0 E660.017
+G1 X48.73 Y18.0 Z20.41 F4800.0 E660.16
+G1 X49.63 Y105.64 Z20.41 F4800.0 E665.066
+G1 X49.96 Y108.15 Z20.41 F4800.0 E665.208
+G1 X50.68 Y110.45 Z20.41 F4800.0 E665.342
+G1 X51.09 Y111.28 Z20.41 F4800.0 E665.394
+G1 X51.77 Y112.23 Z20.41 F4800.0 E665.46
+G1 X52.91 Y113.31 Z20.41 F4800.0 E665.547
+G1 X54.33 Y114.18 Z20.41 F4800.0 E665.641
+G1 X55.55 Y114.7 Z20.41 F4800.0 E665.715
+G1 X56.51 Y115.0 Z20.41 F4800.0 E665.772
+G1 X59.09 Y115.61 Z20.41 F4800.0 E665.92
+G1 X62.06 Y116.08 Z20.41 F4800.0 E666.088
+G1 X68.35 Y116.73 Z20.41 F4800.0 E666.442
+G1 X68.4 Y121.59 Z20.41 F4800.0 E666.714
+G1 X2.59 Y122.27 Z20.41 F4800.0 E670.399
+G1 X2.54 Y117.39 Z20.41 F4800.0 E670.672
+G1 X4.94 Y116.99 Z20.41 F4800.0 E670.808
+G1 X9.4 Y116.02 Z20.41 F4800.0 E671.063
+G1 X12.37 Y115.22 Z20.41 F4800.0 E671.236
+G1 X14.63 Y114.45 Z20.41 F4800.0 E671.369
+G1 X15.39 Y114.12 Z20.41 F4800.0 E671.416
+G1 X16.63 Y113.47 Z20.41 F4800.0 E671.494
+G1 X17.98 Y112.5 Z20.41 F4800.0 E671.587
+G1 X19.01 Y111.46 Z20.41 F4800.0 E671.669
+G1 X19.66 Y110.53 Z20.41 F4800.0 E671.732
+G1 X20.06 Y109.72 Z20.41 F4800.0 E671.783
+G1 X20.74 Y107.51 Z20.41 F4800.0 E671.913
+G1 X21.01 Y105.07 Z20.41 F4800.0 E672.05
+G1 X20.11 Y17.33 Z20.41 F4800.0 E676.962
+G1 X19.77 Y14.72 Z20.41 F4800.0 E677.109
+G1 X19.01 Y12.5 Z20.41 F4800.0 E677.24
+G1 X18.58 Y11.73 Z20.41 F4800.0 E677.29
+G1 X17.91 Y10.87 Z20.41 F4800.0 E677.351
+G1 X16.8 Y9.86 Z20.41 F4800.0 E677.435
+G1 X15.51 Y9.03 Z20.41 F4800.0 E677.521
+G1 X14.29 Y8.43 Z20.41 F4800.0 E677.597
+G1 X13.49 Y8.12 Z20.41 F4800.0 E677.645
+G1 X11.27 Y7.64 Z20.41 F4800.0 E677.772
+G1 X8.08 Y7.29 Z20.41 F4800.0 E677.952
+G1 X1.39 Y6.85 Z20.41 F4800.0 E678.327
+G1 X1.34 Y2.03 Z20.41 F4800.0 E678.597
+G1 X1.83 Y2.02 Z20.41 F4800.0 E678.624
+G1 F4800.0
+G1 E678.624
+G1 F4800.0
+M103
+(</loop>)
+(<edge> outer )
+;M108 R40.0
+G1 X1.83 Y1.62 Z20.41 F9000.0
+G1 F4800.0
+G1 E678.624
+G1 F9000.0
+M101
+G1 X2.14 Y1.62 Z20.41 F2400.0 E678.642
+G1 X67.56 Y0.94 Z20.41 F2400.0 E682.304
+G1 X67.61 Y6.54 Z20.41 F2400.0 E682.617
+G1 X64.93 Y6.84 Z20.41 F2400.0 E682.769
+G1 X60.38 Y7.61 Z20.41 F2400.0 E683.026
+G1 X57.49 Y8.26 Z20.41 F2400.0 E683.193
+G1 X55.3 Y8.94 Z20.41 F2400.0 E683.321
+G1 X54.6 Y9.25 Z20.41 F2400.0 E683.363
+G1 X53.41 Y9.88 Z20.41 F2400.0 E683.439
+G1 X52.09 Y10.8 Z20.41 F2400.0 E683.529
+G1 X51.1 Y11.78 Z20.41 F2400.0 E683.607
+G1 X50.48 Y12.64 Z20.41 F2400.0 E683.666
+G1 X50.09 Y13.38 Z20.41 F2400.0 E683.713
+G1 X49.4 Y15.55 Z20.41 F2400.0 E683.84
+G1 X49.13 Y18.02 Z20.41 F2400.0 E683.979
+G1 X50.03 Y105.62 Z20.41 F2400.0 E688.883
+G1 X50.35 Y108.07 Z20.41 F2400.0 E689.022
+G1 X51.05 Y110.3 Z20.41 F2400.0 E689.153
+G1 X51.44 Y111.08 Z20.41 F2400.0 E689.201
+G1 X52.07 Y111.97 Z20.41 F2400.0 E689.263
+G1 X53.15 Y112.99 Z20.41 F2400.0 E689.345
+G1 X54.51 Y113.82 Z20.41 F2400.0 E689.435
+G1 X55.69 Y114.33 Z20.41 F2400.0 E689.506
+G1 X56.62 Y114.62 Z20.41 F2400.0 E689.561
+G1 X59.17 Y115.22 Z20.41 F2400.0 E689.708
+G1 X62.11 Y115.68 Z20.41 F2400.0 E689.874
+G1 X68.75 Y116.37 Z20.41 F2400.0 E690.248
+G1 X68.81 Y121.98 Z20.41 F2400.0 E690.562
+G1 X2.19 Y122.67 Z20.41 F2400.0 E694.291
+G1 X2.13 Y117.05 Z20.41 F2400.0 E694.606
+G1 X4.86 Y116.6 Z20.41 F2400.0 E694.761
+G1 X9.3 Y115.63 Z20.41 F2400.0 E695.015
+G1 X12.26 Y114.84 Z20.41 F2400.0 E695.187
+G1 X14.48 Y114.08 Z20.41 F2400.0 E695.318
+G1 X15.22 Y113.76 Z20.41 F2400.0 E695.363
+G1 X16.42 Y113.13 Z20.41 F2400.0 E695.439
+G1 X17.72 Y112.2 Z20.41 F2400.0 E695.529
+G1 X18.7 Y111.2 Z20.41 F2400.0 E695.607
+G1 X19.31 Y110.33 Z20.41 F2400.0 E695.667
+G1 X19.68 Y109.58 Z20.41 F2400.0 E695.714
+G1 X20.35 Y107.43 Z20.41 F2400.0 E695.839
+G1 X20.61 Y105.05 Z20.41 F2400.0 E695.973
+G1 X19.71 Y17.36 Z20.41 F2400.0 E700.883
+G1 X19.38 Y14.81 Z20.41 F2400.0 E701.026
+G1 X18.65 Y12.66 Z20.41 F2400.0 E701.153
+G1 X18.25 Y11.96 Z20.41 F2400.0 E701.199
+G1 X17.61 Y11.14 Z20.41 F2400.0 E701.257
+G1 X16.56 Y10.18 Z20.41 F2400.0 E701.336
+G1 X15.31 Y9.38 Z20.41 F2400.0 E701.419
+G1 X14.13 Y8.8 Z20.41 F2400.0 E701.493
+G1 X13.37 Y8.51 Z20.41 F2400.0 E701.539
+G1 X11.21 Y8.04 Z20.41 F2400.0 E701.663
+G1 X8.05 Y7.69 Z20.41 F2400.0 E701.841
+G1 X1.0 Y7.23 Z20.41 F2400.0 E702.236
+G1 X0.94 Y1.63 Z20.41 F2400.0 E702.549
+G1 X1.83 Y1.62 Z20.41 F2400.0 E702.599
+G1 F4800.0
+G1 E701.599
+G1 F2400.0
+M103
+(</edge>)
+(</boundaryPerimeter>)
+(<infill>)
+(<infillBoundary>)
+(<infillPoint> X66.402 Y5.468 Z20.405 </infillPoint>)
+(<infillPoint> X60.152 Y6.428 Z20.405 </infillPoint>)
+(<infillPoint> X57.175 Y7.1 Z20.405 </infillPoint>)
+(<infillPoint> X54.883 Y7.818 Z20.405 </infillPoint>)
+(<infillPoint> X52.78 Y8.86 Z20.405 </infillPoint>)
+(<infillPoint> X51.323 Y9.879 Z20.405 </infillPoint>)
+(<infillPoint> X50.19 Y10.997 Z20.405 </infillPoint>)
+(<infillPoint> X49.456 Y12.008 Z20.405 </infillPoint>)
+(<infillPoint> X48.982 Y12.919 Z20.405 </infillPoint>)
+(<infillPoint> X48.225 Y15.3 Z20.405 </infillPoint>)
+(<infillPoint> X47.927 Y17.957 Z20.405 </infillPoint>)
+(<infillPoint> X48.833 Y105.699 Z20.405 </infillPoint>)
+(<infillPoint> X49.172 Y108.327 Z20.405 </infillPoint>)
+(<infillPoint> X49.938 Y110.744 Z20.405 </infillPoint>)
+(<infillPoint> X50.402 Y111.692 Z20.405 </infillPoint>)
+(<infillPoint> X51.164 Y112.763 Z20.405 </infillPoint>)
+(<infillPoint> X52.417 Y113.945 Z20.405 </infillPoint>)
+(<infillPoint> X53.961 Y114.89 Z20.405 </infillPoint>)
+(<infillPoint> X55.27 Y115.452 Z20.405 </infillPoint>)
+(<infillPoint> X58.935 Y116.394 Z20.405 </infillPoint>)
+(<infillPoint> X61.957 Y116.869 Z20.405 </infillPoint>)
+(<infillPoint> X67.56 Y117.454 Z20.405 </infillPoint>)
+(<infillPoint> X67.595 Y120.798 Z20.405 </infillPoint>)
+(<infillPoint> X3.38 Y121.461 Z20.405 </infillPoint>)
+(<infillPoint> X3.345 Y118.065 Z20.405 </infillPoint>)
+(<infillPoint> X9.587 Y116.801 Z20.405 </infillPoint>)
+(<infillPoint> X12.606 Y115.986 Z20.405 </infillPoint>)
+(<infillPoint> X14.912 Y115.203 Z20.405 </infillPoint>)
+(<infillPoint> X17.05 Y114.148 Z20.405 </infillPoint>)
+(<infillPoint> X18.504 Y113.114 Z20.405 </infillPoint>)
+(<infillPoint> X19.626 Y111.974 Z20.405 </infillPoint>)
+(<infillPoint> X20.349 Y110.944 Z20.405 </infillPoint>)
+(<infillPoint> X20.802 Y110.022 Z20.405 </infillPoint>)
+(<infillPoint> X21.527 Y107.674 Z20.405 </infillPoint>)
+(<infillPoint> X21.814 Y105.113 Z20.405 </infillPoint>)
+(<infillPoint> X20.907 Y17.272 Z20.405 </infillPoint>)
+(<infillPoint> X20.554 Y14.542 Z20.405 </infillPoint>)
+(<infillPoint> X19.746 Y12.173 Z20.405 </infillPoint>)
+(<infillPoint> X19.248 Y11.288 Z20.405 </infillPoint>)
+(<infillPoint> X18.495 Y10.323 Z20.405 </infillPoint>)
+(<infillPoint> X17.294 Y9.225 Z20.405 </infillPoint>)
+(<infillPoint> X15.904 Y8.33 Z20.405 </infillPoint>)
+(<infillPoint> X13.716 Y7.354 Z20.405 </infillPoint>)
+(<infillPoint> X11.4 Y6.851 Z20.405 </infillPoint>)
+(<infillPoint> X2.187 Y6.101 Z20.405 </infillPoint>)
+(<infillPoint> X2.153 Y2.817 Z20.405 </infillPoint>)
+(<infillPoint> X66.368 Y2.153 Z20.405 </infillPoint>)
+(</infillBoundary>)
+;M108 R80.0
+G1 X4.39 Y6.0 Z20.41 F9000.0
+G1 F4800.0
+G1 E702.599
+G1 F9000.0
+M101
+G1 X61.09 Y6.0 Z20.41 F4800.0 E705.773
+G1 X63.7 Y5.6 Z20.41 F4800.0 E705.92
+G1 X2.46 Y5.6 Z20.41 F4800.0 E709.348
+G1 X2.46 Y5.2 Z20.41 F4800.0 E709.371
+G1 X66.12 Y5.2 Z20.41 F4800.0 E712.934
+G1 X66.11 Y4.8 Z20.41 F4800.0 E712.957
+G1 X2.45 Y4.8 Z20.41 F4800.0 E716.52
+G1 X2.45 Y4.4 Z20.41 F4800.0 E716.543
+G1 X66.11 Y4.4 Z20.41 F4800.0 E720.107
+G1 X66.11 Y4.0 Z20.41 F4800.0 E720.129
+G1 X2.44 Y4.0 Z20.41 F4800.0 E723.693
+G1 X2.44 Y3.6 Z20.41 F4800.0 E723.715
+G1 X66.1 Y3.6 Z20.41 F4800.0 E727.279
+G1 X66.1 Y3.2 Z20.41 F4800.0 E727.301
+G1 X2.56 Y3.2 Z20.41 F4800.0 E730.858
+G1 F4800.0
+G1 E729.858
+G1 F4800.0
+M103
+G1 X13.43 Y8.32 Z20.41 F9000.0
+G1 X17.76 Y11.01 Z20.41 F9000.0
+G1 X19.57 Y14.77 Z20.41 F9000.0
+G1 X20.81 Y105.06 Z20.41 F9000.0
+G1 X19.87 Y109.65 Z20.41 F9000.0
+G1 X16.36 Y114.8 Z20.41 F9000.0
+G1 F4800.0
+G1 E730.858
+G1 F9000.0
+M101
+G1 X53.28 Y114.8 Z20.41 F4800.0 E732.924
+G1 X52.62 Y114.4 Z20.41 F4800.0 E732.967
+G1 X17.17 Y114.4 Z20.41 F4800.0 E734.952
+G1 X17.74 Y114.0 Z20.41 F4800.0 E734.991
+G1 X52.07 Y114.0 Z20.41 F4800.0 E736.912
+G1 X51.64 Y113.6 Z20.41 F4800.0 E736.945
+G1 X18.3 Y113.6 Z20.41 F4800.0 E738.811
+G1 X18.81 Y113.2 Z20.41 F4800.0 E738.847
+G1 X51.22 Y113.2 Z20.41 F4800.0 E740.662
+G1 X50.85 Y112.8 Z20.41 F4800.0 E740.692
+G1 X19.21 Y112.8 Z20.41 F4800.0 E742.463
+G1 X19.6 Y112.4 Z20.41 F4800.0 E742.495
+G1 X50.56 Y112.4 Z20.41 F4800.0 E744.228
+G1 X50.28 Y112.0 Z20.41 F4800.0 E744.255
+G1 X19.95 Y112.0 Z20.41 F4800.0 E745.953
+G1 X20.23 Y111.6 Z20.41 F4800.0 E745.98
+G1 X50.05 Y111.6 Z20.41 F4800.0 E747.649
+G1 X49.85 Y111.2 Z20.41 F4800.0 E747.674
+G1 X20.51 Y111.2 Z20.41 F4800.0 E749.317
+G1 X20.73 Y110.8 Z20.41 F4800.0 E749.342
+G1 X49.66 Y110.8 Z20.41 F4800.0 E750.962
+G1 X49.53 Y110.4 Z20.41 F4800.0 E750.985
+G1 X20.93 Y110.4 Z20.41 F4800.0 E752.586
+G1 X21.1 Y110.0 Z20.41 F4800.0 E752.611
+G1 X49.41 Y110.0 Z20.41 F4800.0 E754.195
+G1 X49.28 Y109.6 Z20.41 F4800.0 E754.219
+G1 X21.23 Y109.6 Z20.41 F4800.0 E755.789
+G1 X21.35 Y109.2 Z20.41 F4800.0 E755.813
+G1 X49.15 Y109.2 Z20.41 F4800.0 E757.369
+G1 X49.03 Y108.8 Z20.41 F4800.0 E757.393
+G1 X21.47 Y108.8 Z20.41 F4800.0 E758.935
+G1 X21.6 Y108.4 Z20.41 F4800.0 E758.959
+G1 X48.9 Y108.4 Z20.41 F4800.0 E760.487
+G1 X48.85 Y108.0 Z20.41 F4800.0 E760.51
+G1 X21.72 Y108.0 Z20.41 F4800.0 E762.028
+G1 X21.82 Y107.6 Z20.41 F4800.0 E762.051
+G1 X48.8 Y107.6 Z20.41 F4800.0 E763.562
+G1 X48.74 Y107.2 Z20.41 F4800.0 E763.584
+G1 X21.86 Y107.2 Z20.41 F4800.0 E765.089
+G1 X21.91 Y106.8 Z20.41 F4800.0 E765.112
+G1 X48.69 Y106.8 Z20.41 F4800.0 E766.611
+G1 X48.64 Y106.4 Z20.41 F4800.0 E766.634
+G1 X21.95 Y106.4 Z20.41 F4800.0 E768.128
+G1 X22.0 Y106.0 Z20.41 F4800.0 E768.15
+G1 X48.59 Y106.0 Z20.41 F4800.0 E769.639
+G1 X48.55 Y105.6 Z20.41 F4800.0 E769.661
+G1 X22.04 Y105.6 Z20.41 F4800.0 E771.145
+G1 X22.09 Y105.2 Z20.41 F4800.0 E771.168
+G1 X48.55 Y105.2 Z20.41 F4800.0 E772.649
+G1 X48.54 Y104.8 Z20.41 F4800.0 E772.671
+G1 X22.09 Y104.8 Z20.41 F4800.0 E774.152
+G1 X22.09 Y104.4 Z20.41 F4800.0 E774.175
+G1 X48.54 Y104.4 Z20.41 F4800.0 E775.656
+G1 X48.53 Y104.0 Z20.41 F4800.0 E775.678
+G1 X22.08 Y104.0 Z20.41 F4800.0 E777.159
+G1 X22.08 Y103.6 Z20.41 F4800.0 E777.181
+G1 X48.53 Y103.6 Z20.41 F4800.0 E778.662
+G1 X48.53 Y103.2 Z20.41 F4800.0 E778.684
+G1 X22.07 Y103.2 Z20.41 F4800.0 E780.165
+G1 X22.07 Y102.8 Z20.41 F4800.0 E780.187
+G1 X48.52 Y102.8 Z20.41 F4800.0 E781.668
+G1 X48.52 Y102.4 Z20.41 F4800.0 E781.691
+G1 X22.07 Y102.4 Z20.41 F4800.0 E783.171
+G1 X22.06 Y102.0 Z20.41 F4800.0 E783.194
+G1 X48.52 Y102.0 Z20.41 F4800.0 E784.675
+G1 X48.51 Y101.6 Z20.41 F4800.0 E784.697
+G1 X22.06 Y101.6 Z20.41 F4800.0 E786.178
+G1 X22.05 Y101.2 Z20.41 F4800.0 E786.2
+G1 X48.51 Y101.2 Z20.41 F4800.0 E787.681
+G1 X48.5 Y100.8 Z20.41 F4800.0 E787.703
+G1 X22.05 Y100.8 Z20.41 F4800.0 E789.184
+G1 X22.05 Y100.4 Z20.41 F4800.0 E789.206
+G1 X48.5 Y100.4 Z20.41 F4800.0 E790.687
+G1 X48.49 Y100.0 Z20.41 F4800.0 E790.71
+G1 X22.04 Y100.0 Z20.41 F4800.0 E792.19
+G1 X22.04 Y99.6 Z20.41 F4800.0 E792.213
+G1 X48.49 Y99.6 Z20.41 F4800.0 E793.694
+G1 X48.49 Y99.2 Z20.41 F4800.0 E793.716
+G1 X22.03 Y99.2 Z20.41 F4800.0 E795.197
+G1 X22.03 Y98.8 Z20.41 F4800.0 E795.219
+G1 X48.48 Y98.8 Z20.41 F4800.0 E796.7
+G1 X48.48 Y98.4 Z20.41 F4800.0 E796.722
+G1 X22.02 Y98.4 Z20.41 F4800.0 E798.203
+G1 X22.02 Y98.0 Z20.41 F4800.0 E798.226
+G1 X48.47 Y98.0 Z20.41 F4800.0 E799.706
+G1 X48.47 Y97.6 Z20.41 F4800.0 E799.729
+G1 X22.02 Y97.6 Z20.41 F4800.0 E801.21
+G1 X22.01 Y97.2 Z20.41 F4800.0 E801.232
+G1 X48.47 Y97.2 Z20.41 F4800.0 E802.713
+G1 X48.46 Y96.8 Z20.41 F4800.0 E802.735
+G1 X22.01 Y96.8 Z20.41 F4800.0 E804.216
+G1 X22.0 Y96.4 Z20.41 F4800.0 E804.238
+G1 X48.46 Y96.4 Z20.41 F4800.0 E805.719
+G1 X48.45 Y96.0 Z20.41 F4800.0 E805.741
+G1 X22.0 Y96.0 Z20.41 F4800.0 E807.222
+G1 X22.0 Y95.6 Z20.41 F4800.0 E807.245
+G1 X48.45 Y95.6 Z20.41 F4800.0 E808.725
+G1 X48.45 Y95.2 Z20.41 F4800.0 E808.748
+G1 X21.99 Y95.2 Z20.41 F4800.0 E810.229
+G1 X21.99 Y94.8 Z20.41 F4800.0 E810.251
+G1 X48.44 Y94.8 Z20.41 F4800.0 E811.732
+G1 X48.44 Y94.4 Z20.41 F4800.0 E811.754
+G1 X21.98 Y94.4 Z20.41 F4800.0 E813.235
+G1 X21.98 Y94.0 Z20.41 F4800.0 E813.257
+G1 X48.43 Y94.0 Z20.41 F4800.0 E814.738
+G1 X48.43 Y93.6 Z20.41 F4800.0 E814.761
+G1 X21.98 Y93.6 Z20.41 F4800.0 E816.241
+G1 X21.97 Y93.2 Z20.41 F4800.0 E816.264
+G1 X48.42 Y93.2 Z20.41 F4800.0 E817.745
+G1 X48.42 Y92.8 Z20.41 F4800.0 E817.767
+G1 X21.97 Y92.8 Z20.41 F4800.0 E819.248
+G1 X21.96 Y92.4 Z20.41 F4800.0 E819.27
+G1 X48.42 Y92.4 Z20.41 F4800.0 E820.751
+G1 X48.41 Y92.0 Z20.41 F4800.0 E820.773
+G1 X21.96 Y92.0 Z20.41 F4800.0 E822.254
+G1 X21.95 Y91.6 Z20.41 F4800.0 E822.277
+G1 X48.41 Y91.6 Z20.41 F4800.0 E823.757
+G1 X48.4 Y91.2 Z20.41 F4800.0 E823.78
+G1 X21.95 Y91.2 Z20.41 F4800.0 E825.26
+G1 X21.95 Y90.8 Z20.41 F4800.0 E825.283
+G1 X48.4 Y90.8 Z20.41 F4800.0 E826.764
+G1 X48.4 Y90.4 Z20.41 F4800.0 E826.786
+G1 X21.94 Y90.4 Z20.41 F4800.0 E828.267
+G1 X21.94 Y90.0 Z20.41 F4800.0 E828.289
+G1 X48.39 Y90.0 Z20.41 F4800.0 E829.77
+G1 X48.39 Y89.6 Z20.41 F4800.0 E829.792
+G1 X21.93 Y89.6 Z20.41 F4800.0 E831.273
+G1 X21.93 Y89.2 Z20.41 F4800.0 E831.296
+G1 X48.38 Y89.2 Z20.41 F4800.0 E832.776
+G1 X48.38 Y88.8 Z20.41 F4800.0 E832.799
+G1 X21.93 Y88.8 Z20.41 F4800.0 E834.28
+G1 X21.92 Y88.4 Z20.41 F4800.0 E834.302
+G1 X48.37 Y88.4 Z20.41 F4800.0 E835.783
+G1 X48.37 Y88.0 Z20.41 F4800.0 E835.805
+G1 X21.92 Y88.0 Z20.41 F4800.0 E837.286
+G1 X21.91 Y87.6 Z20.41 F4800.0 E837.308
+G1 X48.37 Y87.6 Z20.41 F4800.0 E838.789
+G1 X48.36 Y87.2 Z20.41 F4800.0 E838.811
+G1 X21.91 Y87.2 Z20.41 F4800.0 E840.292
+G1 X21.91 Y86.8 Z20.41 F4800.0 E840.315
+G1 X48.36 Y86.8 Z20.41 F4800.0 E841.795
+G1 X48.35 Y86.4 Z20.41 F4800.0 E841.818
+G1 X21.9 Y86.4 Z20.41 F4800.0 E843.299
+G1 X21.9 Y86.0 Z20.41 F4800.0 E843.321
+G1 X48.35 Y86.0 Z20.41 F4800.0 E844.802
+G1 X48.34 Y85.6 Z20.41 F4800.0 E844.824
+G1 X21.89 Y85.6 Z20.41 F4800.0 E846.305
+G1 X21.89 Y85.2 Z20.41 F4800.0 E846.327
+G1 X48.34 Y85.2 Z20.41 F4800.0 E847.808
+G1 X48.34 Y84.8 Z20.41 F4800.0 E847.831
+G1 X21.88 Y84.8 Z20.41 F4800.0 E849.311
+G1 X21.88 Y84.4 Z20.41 F4800.0 E849.334
+G1 X48.33 Y84.4 Z20.41 F4800.0 E850.814
+G1 X48.33 Y84.0 Z20.41 F4800.0 E850.837
+G1 X21.88 Y84.0 Z20.41 F4800.0 E852.318
+G1 X21.87 Y83.6 Z20.41 F4800.0 E852.34
+G1 X48.33 Y83.6 Z20.41 F4800.0 E853.821
+G1 X48.32 Y83.2 Z20.41 F4800.0 E853.843
+G1 X21.87 Y83.2 Z20.41 F4800.0 E855.324
+G1 X21.86 Y82.8 Z20.41 F4800.0 E855.346
+G1 X48.32 Y82.8 Z20.41 F4800.0 E856.827
+G1 X48.31 Y82.4 Z20.41 F4800.0 E856.85
+G1 X21.86 Y82.4 Z20.41 F4800.0 E858.33
+G1 X21.86 Y82.0 Z20.41 F4800.0 E858.353
+G1 X48.31 Y82.0 Z20.41 F4800.0 E859.834
+G1 X48.3 Y81.6 Z20.41 F4800.0 E859.856
+G1 X21.85 Y81.6 Z20.41 F4800.0 E861.337
+G1 X21.85 Y81.2 Z20.41 F4800.0 E861.359
+G1 X48.3 Y81.2 Z20.41 F4800.0 E862.84
+G1 X48.3 Y80.8 Z20.41 F4800.0 E862.862
+G1 X21.84 Y80.8 Z20.41 F4800.0 E864.343
+G1 X21.84 Y80.4 Z20.41 F4800.0 E864.366
+G1 X48.29 Y80.4 Z20.41 F4800.0 E865.846
+G1 X48.29 Y80.0 Z20.41 F4800.0 E865.869
+G1 X21.84 Y80.0 Z20.41 F4800.0 E867.349
+G1 X21.83 Y79.6 Z20.41 F4800.0 E867.372
+G1 X48.28 Y79.6 Z20.41 F4800.0 E868.853
+G1 X48.28 Y79.2 Z20.41 F4800.0 E868.875
+G1 X21.83 Y79.2 Z20.41 F4800.0 E870.356
+G1 X21.82 Y78.8 Z20.41 F4800.0 E870.378
+G1 X48.27 Y78.8 Z20.41 F4800.0 E871.859
+G1 X48.27 Y78.4 Z20.41 F4800.0 E871.881
+G1 X21.82 Y78.4 Z20.41 F4800.0 E873.362
+G1 X21.81 Y78.0 Z20.41 F4800.0 E873.385
+G1 X48.27 Y78.0 Z20.41 F4800.0 E874.865
+G1 X48.26 Y77.6 Z20.41 F4800.0 E874.888
+G1 X21.81 Y77.6 Z20.41 F4800.0 E876.369
+G1 X21.81 Y77.2 Z20.41 F4800.0 E876.391
+G1 X48.26 Y77.2 Z20.41 F4800.0 E877.872
+G1 X48.26 Y76.8 Z20.41 F4800.0 E877.894
+G1 X21.8 Y76.8 Z20.41 F4800.0 E879.375
+G1 X21.8 Y76.4 Z20.41 F4800.0 E879.397
+G1 X48.25 Y76.4 Z20.41 F4800.0 E880.878
+G1 X48.25 Y76.0 Z20.41 F4800.0 E880.9
+G1 X21.79 Y76.0 Z20.41 F4800.0 E882.381
+G1 X21.79 Y75.6 Z20.41 F4800.0 E882.404
+G1 X48.24 Y75.6 Z20.41 F4800.0 E883.884
+G1 X48.24 Y75.2 Z20.41 F4800.0 E883.907
+G1 X21.79 Y75.2 Z20.41 F4800.0 E885.388
+G1 X21.78 Y74.8 Z20.41 F4800.0 E885.41
+G1 X48.23 Y74.8 Z20.41 F4800.0 E886.891
+G1 X48.23 Y74.4 Z20.41 F4800.0 E886.913
+G1 X21.78 Y74.4 Z20.41 F4800.0 E888.394
+G1 X21.77 Y74.0 Z20.41 F4800.0 E888.416
+G1 X48.23 Y74.0 Z20.41 F4800.0 E889.897
+G1 X48.22 Y73.6 Z20.41 F4800.0 E889.92
+G1 X21.77 Y73.6 Z20.41 F4800.0 E891.4
+G1 X21.76 Y73.2 Z20.41 F4800.0 E891.423
+G1 X48.22 Y73.2 Z20.41 F4800.0 E892.904
+G1 X48.21 Y72.8 Z20.41 F4800.0 E892.926
+G1 X21.76 Y72.8 Z20.41 F4800.0 E894.407
+G1 X21.76 Y72.4 Z20.41 F4800.0 E894.429
+G1 X48.21 Y72.4 Z20.41 F4800.0 E895.91
+G1 X48.2 Y72.0 Z20.41 F4800.0 E895.932
+G1 X21.75 Y72.0 Z20.41 F4800.0 E897.413
+G1 X21.75 Y71.6 Z20.41 F4800.0 E897.435
+G1 X48.2 Y71.6 Z20.41 F4800.0 E898.916
+G1 X48.2 Y71.2 Z20.41 F4800.0 E898.939
+G1 X21.74 Y71.2 Z20.41 F4800.0 E900.419
+G1 X21.74 Y70.8 Z20.41 F4800.0 E900.442
+G1 X48.19 Y70.8 Z20.41 F4800.0 E901.923
+G1 X48.19 Y70.4 Z20.41 F4800.0 E901.945
+G1 X21.73 Y70.4 Z20.41 F4800.0 E903.426
+G1 X21.73 Y70.0 Z20.41 F4800.0 E903.448
+G1 X48.18 Y70.0 Z20.41 F4800.0 E904.929
+G1 X48.18 Y69.6 Z20.41 F4800.0 E904.951
+G1 X21.73 Y69.6 Z20.41 F4800.0 E906.432
+G1 X21.72 Y69.2 Z20.41 F4800.0 E906.455
+G1 X48.18 Y69.2 Z20.41 F4800.0 E907.935
+G1 X48.17 Y68.8 Z20.41 F4800.0 E907.958
+G1 X21.72 Y68.8 Z20.41 F4800.0 E909.439
+G1 X21.71 Y68.4 Z20.41 F4800.0 E909.461
+G1 X48.17 Y68.4 Z20.41 F4800.0 E910.942
+G1 X48.16 Y68.0 Z20.41 F4800.0 E910.964
+G1 X21.71 Y68.0 Z20.41 F4800.0 E912.445
+G1 X21.71 Y67.6 Z20.41 F4800.0 E912.467
+G1 X48.16 Y67.6 Z20.41 F4800.0 E913.948
+G1 X48.16 Y67.2 Z20.41 F4800.0 E913.97
+G1 X21.7 Y67.2 Z20.41 F4800.0 E915.451
+G1 X21.7 Y66.8 Z20.41 F4800.0 E915.474
+G1 X48.15 Y66.8 Z20.41 F4800.0 E916.954
+G1 X48.15 Y66.4 Z20.41 F4800.0 E916.977
+G1 X21.69 Y66.4 Z20.41 F4800.0 E918.458
+G1 X21.69 Y66.0 Z20.41 F4800.0 E918.48
+G1 X48.14 Y66.0 Z20.41 F4800.0 E919.961
+G1 X48.14 Y65.6 Z20.41 F4800.0 E919.983
+G1 X21.69 Y65.6 Z20.41 F4800.0 E921.464
+G1 X21.68 Y65.2 Z20.41 F4800.0 E921.486
+G1 X48.13 Y65.2 Z20.41 F4800.0 E922.967
+G1 X48.13 Y64.8 Z20.41 F4800.0 E922.99
+G1 X21.68 Y64.8 Z20.41 F4800.0 E924.47
+G1 X21.67 Y64.4 Z20.41 F4800.0 E924.493
+G1 X48.13 Y64.4 Z20.41 F4800.0 E925.973
+G1 X48.12 Y64.0 Z20.41 F4800.0 E925.996
+G1 X21.67 Y64.0 Z20.41 F4800.0 E927.477
+G1 X21.66 Y63.6 Z20.41 F4800.0 E927.499
+G1 X48.12 Y63.6 Z20.41 F4800.0 E928.98
+G1 X48.11 Y63.2 Z20.41 F4800.0 E929.002
+G1 X21.66 Y63.2 Z20.41 F4800.0 E930.483
+G1 X21.66 Y62.8 Z20.41 F4800.0 E930.505
+G1 X48.11 Y62.8 Z20.41 F4800.0 E931.986
+G1 X48.11 Y62.4 Z20.41 F4800.0 E932.009
+G1 X21.65 Y62.4 Z20.41 F4800.0 E933.489
+G1 X21.65 Y62.0 Z20.41 F4800.0 E933.512
+G1 X48.1 Y62.0 Z20.41 F4800.0 E934.993
+G1 X48.1 Y61.6 Z20.41 F4800.0 E935.015
+G1 X21.64 Y61.6 Z20.41 F4800.0 E936.496
+G1 X21.64 Y61.2 Z20.41 F4800.0 E936.518
+G1 X48.09 Y61.2 Z20.41 F4800.0 E937.999
+G1 X48.09 Y60.8 Z20.41 F4800.0 E938.021
+G1 X21.64 Y60.8 Z20.41 F4800.0 E939.502
+G1 X21.63 Y60.4 Z20.41 F4800.0 E939.524
+G1 X48.09 Y60.4 Z20.41 F4800.0 E941.005
+G1 X48.08 Y60.0 Z20.41 F4800.0 E941.028
+G1 X21.63 Y60.0 Z20.41 F4800.0 E942.508
+G1 X21.62 Y59.6 Z20.41 F4800.0 E942.531
+G1 X48.08 Y59.6 Z20.41 F4800.0 E944.012
+G1 X48.07 Y59.2 Z20.41 F4800.0 E944.034
+G1 X21.62 Y59.2 Z20.41 F4800.0 E945.515
+G1 X21.62 Y58.8 Z20.41 F4800.0 E945.537
+G1 X48.07 Y58.8 Z20.41 F4800.0 E947.018
+G1 X48.06 Y58.4 Z20.41 F4800.0 E947.04
+G1 X21.61 Y58.4 Z20.41 F4800.0 E948.521
+G1 X21.61 Y58.0 Z20.41 F4800.0 E948.544
+G1 X48.06 Y58.0 Z20.41 F4800.0 E950.024
+G1 X48.06 Y57.6 Z20.41 F4800.0 E950.047
+G1 X21.6 Y57.6 Z20.41 F4800.0 E951.527
+G1 X21.6 Y57.2 Z20.41 F4800.0 E951.55
+G1 X48.05 Y57.2 Z20.41 F4800.0 E953.031
+G1 X48.05 Y56.8 Z20.41 F4800.0 E953.053
+G1 X21.59 Y56.8 Z20.41 F4800.0 E954.534
+G1 X21.59 Y56.4 Z20.41 F4800.0 E954.556
+G1 X48.04 Y56.4 Z20.41 F4800.0 E956.037
+G1 X48.04 Y56.0 Z20.41 F4800.0 E956.059
+G1 X21.59 Y56.0 Z20.41 F4800.0 E957.54
+G1 X21.58 Y55.6 Z20.41 F4800.0 E957.563
+G1 X48.04 Y55.6 Z20.41 F4800.0 E959.043
+G1 X48.03 Y55.2 Z20.41 F4800.0 E959.066
+G1 X21.58 Y55.2 Z20.41 F4800.0 E960.547
+G1 X21.57 Y54.8 Z20.41 F4800.0 E960.569
+G1 X48.03 Y54.8 Z20.41 F4800.0 E962.05
+G1 X48.02 Y54.4 Z20.41 F4800.0 E962.072
+G1 X21.57 Y54.4 Z20.41 F4800.0 E963.553
+G1 X21.57 Y54.0 Z20.41 F4800.0 E963.575
+G1 X48.02 Y54.0 Z20.41 F4800.0 E965.056
+G1 X48.02 Y53.6 Z20.41 F4800.0 E965.078
+G1 X21.56 Y53.6 Z20.41 F4800.0 E966.559
+G1 X21.56 Y53.2 Z20.41 F4800.0 E966.582
+G1 X48.01 Y53.2 Z20.41 F4800.0 E968.062
+G1 X48.01 Y52.8 Z20.41 F4800.0 E968.085
+G1 X21.55 Y52.8 Z20.41 F4800.0 E969.566
+G1 X21.55 Y52.4 Z20.41 F4800.0 E969.588
+G1 X48.0 Y52.4 Z20.41 F4800.0 E971.069
+G1 X48.0 Y52.0 Z20.41 F4800.0 E971.091
+G1 X21.55 Y52.0 Z20.41 F4800.0 E972.572
+G1 X21.54 Y51.6 Z20.41 F4800.0 E972.594
+G1 X47.99 Y51.6 Z20.41 F4800.0 E974.075
+G1 X47.99 Y51.2 Z20.41 F4800.0 E974.098
+G1 X21.54 Y51.2 Z20.41 F4800.0 E975.578
+G1 X21.53 Y50.8 Z20.41 F4800.0 E975.601
+G1 X47.99 Y50.8 Z20.41 F4800.0 E977.082
+G1 X47.98 Y50.4 Z20.41 F4800.0 E977.104
+G1 X21.53 Y50.4 Z20.41 F4800.0 E978.585
+G1 X21.52 Y50.0 Z20.41 F4800.0 E978.607
+G1 X47.98 Y50.0 Z20.41 F4800.0 E980.088
+G1 X47.97 Y49.6 Z20.41 F4800.0 E980.11
+G1 X21.52 Y49.6 Z20.41 F4800.0 E981.591
+G1 X21.52 Y49.2 Z20.41 F4800.0 E981.613
+G1 X47.97 Y49.2 Z20.41 F4800.0 E983.094
+G1 X47.97 Y48.8 Z20.41 F4800.0 E983.117
+G1 X21.51 Y48.8 Z20.41 F4800.0 E984.597
+G1 X21.51 Y48.4 Z20.41 F4800.0 E984.62
+G1 X47.96 Y48.4 Z20.41 F4800.0 E986.101
+G1 X47.96 Y48.0 Z20.41 F4800.0 E986.123
+G1 X21.5 Y48.0 Z20.41 F4800.0 E987.604
+G1 X21.5 Y47.6 Z20.41 F4800.0 E987.626
+G1 X47.95 Y47.6 Z20.41 F4800.0 E989.107
+G1 X47.95 Y47.2 Z20.41 F4800.0 E989.129
+G1 X21.5 Y47.2 Z20.41 F4800.0 E990.61
+G1 X21.49 Y46.8 Z20.41 F4800.0 E990.633
+G1 X47.95 Y46.8 Z20.41 F4800.0 E992.113
+G1 X47.94 Y46.4 Z20.41 F4800.0 E992.136
+G1 X21.49 Y46.4 Z20.41 F4800.0 E993.616
+G1 X21.48 Y46.0 Z20.41 F4800.0 E993.639
+G1 X47.94 Y46.0 Z20.41 F4800.0 E995.12
+G1 X47.93 Y45.6 Z20.41 F4800.0 E995.142
+G1 X21.48 Y45.6 Z20.41 F4800.0 E996.623
+G1 X21.48 Y45.2 Z20.41 F4800.0 E996.645
+G1 X47.93 Y45.2 Z20.41 F4800.0 E998.126
+G1 X47.92 Y44.8 Z20.41 F4800.0 E998.148
+G1 X21.47 Y44.8 Z20.41 F4800.0 E999.629
+G1 X21.47 Y44.4 Z20.41 F4800.0 E999.652
+G1 X47.92 Y44.4 Z20.41 F4800.0 E1001.132
+G1 X47.92 Y44.0 Z20.41 F4800.0 E1001.155
+G1 X21.46 Y44.0 Z20.41 F4800.0 E1002.636
+G1 X21.46 Y43.6 Z20.41 F4800.0 E1002.658
+G1 X47.91 Y43.6 Z20.41 F4800.0 E1004.139
+G1 X47.91 Y43.2 Z20.41 F4800.0 E1004.161
+G1 X21.45 Y43.2 Z20.41 F4800.0 E1005.642
+G1 X21.45 Y42.8 Z20.41 F4800.0 E1005.664
+G1 X47.9 Y42.8 Z20.41 F4800.0 E1007.145
+G1 X47.9 Y42.4 Z20.41 F4800.0 E1007.167
+G1 X21.45 Y42.4 Z20.41 F4800.0 E1008.648
+G1 X21.44 Y42.0 Z20.41 F4800.0 E1008.671
+G1 X47.9 Y42.0 Z20.41 F4800.0 E1010.151
+G1 X47.89 Y41.6 Z20.41 F4800.0 E1010.174
+G1 X21.44 Y41.6 Z20.41 F4800.0 E1011.655
+G1 X21.43 Y41.2 Z20.41 F4800.0 E1011.677
+G1 X47.89 Y41.2 Z20.41 F4800.0 E1013.158
+G1 X47.88 Y40.8 Z20.41 F4800.0 E1013.18
+G1 X21.43 Y40.8 Z20.41 F4800.0 E1014.661
+G1 X21.43 Y40.4 Z20.41 F4800.0 E1014.683
+G1 X47.88 Y40.4 Z20.41 F4800.0 E1016.164
+G1 X47.88 Y40.0 Z20.41 F4800.0 E1016.187
+G1 X21.42 Y40.0 Z20.41 F4800.0 E1017.667
+G1 X21.42 Y39.6 Z20.41 F4800.0 E1017.69
+G1 X47.87 Y39.6 Z20.41 F4800.0 E1019.17
+G1 X47.87 Y39.2 Z20.41 F4800.0 E1019.193
+G1 X21.41 Y39.2 Z20.41 F4800.0 E1020.674
+G1 X21.41 Y38.8 Z20.41 F4800.0 E1020.696
+G1 X47.86 Y38.8 Z20.41 F4800.0 E1022.177
+G1 X47.86 Y38.4 Z20.41 F4800.0 E1022.199
+G1 X21.41 Y38.4 Z20.41 F4800.0 E1023.68
+G1 X21.4 Y38.0 Z20.41 F4800.0 E1023.702
+G1 X47.85 Y38.0 Z20.41 F4800.0 E1025.183
+G1 X47.85 Y37.6 Z20.41 F4800.0 E1025.206
+G1 X21.4 Y37.6 Z20.41 F4800.0 E1026.686
+G1 X21.39 Y37.2 Z20.41 F4800.0 E1026.709
+G1 X47.85 Y37.2 Z20.41 F4800.0 E1028.19
+G1 X47.84 Y36.8 Z20.41 F4800.0 E1028.212
+G1 X21.39 Y36.8 Z20.41 F4800.0 E1029.693
+G1 X21.39 Y36.4 Z20.41 F4800.0 E1029.715
+G1 X47.84 Y36.4 Z20.41 F4800.0 E1031.196
+G1 X47.83 Y36.0 Z20.41 F4800.0 E1031.218
+G1 X21.38 Y36.0 Z20.41 F4800.0 E1032.699
+G1 X21.38 Y35.6 Z20.41 F4800.0 E1032.721
+G1 X47.83 Y35.6 Z20.41 F4800.0 E1034.202
+G1 X47.83 Y35.2 Z20.41 F4800.0 E1034.225
+G1 X21.37 Y35.2 Z20.41 F4800.0 E1035.705
+G1 X21.37 Y34.8 Z20.41 F4800.0 E1035.728
+G1 X47.82 Y34.8 Z20.41 F4800.0 E1037.209
+G1 X47.82 Y34.4 Z20.41 F4800.0 E1037.231
+G1 X21.36 Y34.4 Z20.41 F4800.0 E1038.712
+G1 X21.36 Y34.0 Z20.41 F4800.0 E1038.734
+G1 X47.81 Y34.0 Z20.41 F4800.0 E1040.215
+G1 X47.81 Y33.6 Z20.41 F4800.0 E1040.237
+G1 X21.36 Y33.6 Z20.41 F4800.0 E1041.718
+G1 X21.35 Y33.2 Z20.41 F4800.0 E1041.741
+G1 X47.8 Y33.2 Z20.41 F4800.0 E1043.221
+G1 X47.8 Y32.8 Z20.41 F4800.0 E1043.244
+G1 X21.35 Y32.8 Z20.41 F4800.0 E1044.724
+G1 X21.34 Y32.4 Z20.41 F4800.0 E1044.747
+G1 X47.8 Y32.4 Z20.41 F4800.0 E1046.228
+G1 X47.79 Y32.0 Z20.41 F4800.0 E1046.25
+G1 X21.34 Y32.0 Z20.41 F4800.0 E1047.731
+G1 X21.34 Y31.6 Z20.41 F4800.0 E1047.753
+G1 X47.79 Y31.6 Z20.41 F4800.0 E1049.234
+G1 X47.78 Y31.2 Z20.41 F4800.0 E1049.256
+G1 X21.33 Y31.2 Z20.41 F4800.0 E1050.737
+G1 X21.33 Y30.8 Z20.41 F4800.0 E1050.76
+G1 X47.78 Y30.8 Z20.41 F4800.0 E1052.24
+G1 X47.78 Y30.4 Z20.41 F4800.0 E1052.263
+G1 X21.32 Y30.4 Z20.41 F4800.0 E1053.744
+G1 X21.32 Y30.0 Z20.41 F4800.0 E1053.766
+G1 X47.77 Y30.0 Z20.41 F4800.0 E1055.247
+G1 X47.77 Y29.6 Z20.41 F4800.0 E1055.269
+G1 X21.31 Y29.6 Z20.41 F4800.0 E1056.75
+G1 X21.31 Y29.2 Z20.41 F4800.0 E1056.772
+G1 X47.76 Y29.2 Z20.41 F4800.0 E1058.253
+G1 X47.76 Y28.8 Z20.41 F4800.0 E1058.275
+G1 X21.31 Y28.8 Z20.41 F4800.0 E1059.756
+G1 X21.3 Y28.4 Z20.41 F4800.0 E1059.779
+G1 X47.76 Y28.4 Z20.41 F4800.0 E1061.259
+G1 X47.75 Y28.0 Z20.41 F4800.0 E1061.282
+G1 X21.3 Y28.0 Z20.41 F4800.0 E1062.763
+G1 X21.29 Y27.6 Z20.41 F4800.0 E1062.785
+G1 X47.75 Y27.6 Z20.41 F4800.0 E1064.266
+G1 X47.74 Y27.2 Z20.41 F4800.0 E1064.288
+G1 X21.29 Y27.2 Z20.41 F4800.0 E1065.769
+G1 X21.29 Y26.8 Z20.41 F4800.0 E1065.791
+G1 X47.74 Y26.8 Z20.41 F4800.0 E1067.272
+G1 X47.73 Y26.4 Z20.41 F4800.0 E1067.295
+G1 X21.28 Y26.4 Z20.41 F4800.0 E1068.775
+G1 X21.28 Y26.0 Z20.41 F4800.0 E1068.798
+G1 X47.73 Y26.0 Z20.41 F4800.0 E1070.279
+G1 X47.73 Y25.6 Z20.41 F4800.0 E1070.301
+G1 X21.27 Y25.6 Z20.41 F4800.0 E1071.782
+G1 X21.27 Y25.2 Z20.41 F4800.0 E1071.804
+G1 X47.72 Y25.2 Z20.41 F4800.0 E1073.285
+G1 X47.72 Y24.8 Z20.41 F4800.0 E1073.307
+G1 X21.27 Y24.8 Z20.41 F4800.0 E1074.788
+G1 X21.26 Y24.4 Z20.41 F4800.0 E1074.81
+G1 X47.71 Y24.4 Z20.41 F4800.0 E1076.291
+G1 X47.71 Y24.0 Z20.41 F4800.0 E1076.314
+G1 X21.26 Y24.0 Z20.41 F4800.0 E1077.794
+G1 X21.25 Y23.6 Z20.41 F4800.0 E1077.817
+G1 X47.7 Y23.6 Z20.41 F4800.0 E1079.298
+G1 X47.7 Y23.2 Z20.41 F4800.0 E1079.32
+G1 X21.25 Y23.2 Z20.41 F4800.0 E1080.801
+G1 X21.24 Y22.8 Z20.41 F4800.0 E1080.823
+G1 X47.7 Y22.8 Z20.41 F4800.0 E1082.304
+G1 X47.69 Y22.4 Z20.41 F4800.0 E1082.326
+G1 X21.24 Y22.4 Z20.41 F4800.0 E1083.807
+G1 X21.24 Y22.0 Z20.41 F4800.0 E1083.83
+G1 X47.69 Y22.0 Z20.41 F4800.0 E1085.31
+G1 X47.69 Y21.6 Z20.41 F4800.0 E1085.333
+G1 X21.23 Y21.6 Z20.41 F4800.0 E1086.813
+G1 X21.23 Y21.2 Z20.41 F4800.0 E1086.836
+G1 X47.68 Y21.2 Z20.41 F4800.0 E1088.317
+G1 X47.68 Y20.8 Z20.41 F4800.0 E1088.339
+G1 X21.22 Y20.8 Z20.41 F4800.0 E1089.82
+G1 X21.22 Y20.4 Z20.41 F4800.0 E1089.842
+G1 X47.67 Y20.4 Z20.41 F4800.0 E1091.323
+G1 X47.67 Y20.0 Z20.41 F4800.0 E1091.345
+G1 X21.21 Y20.0 Z20.41 F4800.0 E1092.826
+G1 X21.21 Y19.6 Z20.41 F4800.0 E1092.849
+G1 X47.66 Y19.6 Z20.41 F4800.0 E1094.329
+G1 X47.66 Y19.2 Z20.41 F4800.0 E1094.352
+G1 X21.21 Y19.2 Z20.41 F4800.0 E1095.833
+G1 X21.2 Y18.8 Z20.41 F4800.0 E1095.855
+G1 X47.66 Y18.8 Z20.41 F4800.0 E1097.336
+G1 X47.65 Y18.4 Z20.41 F4800.0 E1097.358
+G1 X21.2 Y18.4 Z20.41 F4800.0 E1098.839
+G1 X21.2 Y18.0 Z20.41 F4800.0 E1098.861
+G1 X47.65 Y18.0 Z20.41 F4800.0 E1100.342
+G1 X47.69 Y17.6 Z20.41 F4800.0 E1100.365
+G1 X21.19 Y17.6 Z20.41 F4800.0 E1101.848
+G1 X21.18 Y17.2 Z20.41 F4800.0 E1101.87
+G1 X47.73 Y17.2 Z20.41 F4800.0 E1103.356
+G1 X47.77 Y16.8 Z20.41 F4800.0 E1103.379
+G1 X21.13 Y16.8 Z20.41 F4800.0 E1104.87
+G1 X21.08 Y16.4 Z20.41 F4800.0 E1104.893
+G1 X47.82 Y16.4 Z20.41 F4800.0 E1106.39
+G1 X47.87 Y16.0 Z20.41 F4800.0 E1106.413
+G1 X21.02 Y16.0 Z20.41 F4800.0 E1107.915
+G1 X20.97 Y15.6 Z20.41 F4800.0 E1107.938
+G1 X47.91 Y15.6 Z20.41 F4800.0 E1109.446
+G1 X47.96 Y15.2 Z20.41 F4800.0 E1109.468
+G1 X20.92 Y15.2 Z20.41 F4800.0 E1110.982
+G1 X20.87 Y14.8 Z20.41 F4800.0 E1111.004
+G1 X48.09 Y14.8 Z20.41 F4800.0 E1112.528
+G1 X48.22 Y14.4 Z20.41 F4800.0 E1112.552
+G1 X20.8 Y14.4 Z20.41 F4800.0 E1114.086
+G1 X20.66 Y14.0 Z20.41 F4800.0 E1114.11
+G1 X48.34 Y14.0 Z20.41 F4800.0 E1115.659
+G1 X48.47 Y13.6 Z20.41 F4800.0 E1115.683
+G1 X20.53 Y13.6 Z20.41 F4800.0 E1117.247
+G1 X20.39 Y13.2 Z20.41 F4800.0 E1117.271
+G1 X48.6 Y13.2 Z20.41 F4800.0 E1118.85
+G1 X48.73 Y12.8 Z20.41 F4800.0 E1118.873
+G1 X20.26 Y12.8 Z20.41 F4800.0 E1120.467
+G1 X20.12 Y12.4 Z20.41 F4800.0 E1120.491
+G1 X48.94 Y12.4 Z20.41 F4800.0 E1122.104
+G1 X49.14 Y12.0 Z20.41 F4800.0 E1122.129
+G1 X19.97 Y12.0 Z20.41 F4800.0 E1123.762
+G1 X19.75 Y11.6 Z20.41 F4800.0 E1123.788
+G1 X49.41 Y11.6 Z20.41 F4800.0 E1125.448
+G1 X49.7 Y11.2 Z20.41 F4800.0 E1125.476
+G1 X19.52 Y11.2 Z20.41 F4800.0 E1127.165
+G1 X19.22 Y10.8 Z20.41 F4800.0 E1127.193
+G1 X49.99 Y10.8 Z20.41 F4800.0 E1128.915
+G1 X50.4 Y10.4 Z20.41 F4800.0 E1128.947
+G1 X18.91 Y10.4 Z20.41 F4800.0 E1130.71
+G1 X18.56 Y10.0 Z20.41 F4800.0 E1130.739
+G1 X50.8 Y10.0 Z20.41 F4800.0 E1132.544
+G1 X51.23 Y9.6 Z20.41 F4800.0 E1132.577
+G1 X18.12 Y9.6 Z20.41 F4800.0 E1134.431
+G1 X17.68 Y9.2 Z20.41 F4800.0 E1134.464
+G1 X51.8 Y9.2 Z20.41 F4800.0 E1136.374
+G1 X52.38 Y8.8 Z20.41 F4800.0 E1136.413
+G1 X17.15 Y8.8 Z20.41 F4800.0 E1138.385
+G1 X16.53 Y8.4 Z20.41 F4800.0 E1138.426
+G1 X53.08 Y8.4 Z20.41 F4800.0 E1140.472
+G1 X53.88 Y8.0 Z20.41 F4800.0 E1140.523
+G1 X15.85 Y8.0 Z20.41 F4800.0 E1142.652
+G1 X14.96 Y7.6 Z20.41 F4800.0 E1142.707
+G1 X54.69 Y7.6 Z20.41 F4800.0 E1144.931
+G1 X55.92 Y7.2 Z20.41 F4800.0 E1145.003
+G1 X14.06 Y7.2 Z20.41 F4800.0 E1147.346
+G1 X12.49 Y6.8 Z20.41 F4800.0 E1147.437
+G1 X57.23 Y6.8 Z20.41 F4800.0 E1149.942
+G1 X59.0 Y6.4 Z20.41 F4800.0 E1150.044
+G1 X9.31 Y6.4 Z20.41 F4800.0 E1152.825
+G1 F4800.0
+G1 E1151.825
+G1 F4800.0
+M103
+G1 X30.92 Y2.8 Z20.41 F9000.0
+G1 F4800.0
+G1 E1152.825
+G1 F9000.0
+M101
+G1 X66.09 Y2.8 Z20.41 F4800.0 E1154.794
+G1 F4800.0
+G1 E1153.794
+G1 F4800.0
+M103
+G1 X55.23 Y8.76 Z20.41 F9000.0
+G1 X50.95 Y11.65 Z20.41 F9000.0
+G1 X49.21 Y15.51 Z20.41 F9000.0
+G1 X49.83 Y105.63 Z20.41 F9000.0
+G1 X50.87 Y110.37 Z20.41 F9000.0
+G1 X53.97 Y115.2 Z20.41 F9000.0
+G1 F4800.0
+G1 E1154.794
+G1 F9000.0
+M101
+G1 X15.55 Y115.2 Z20.41 F4800.0 E1156.945
+G1 F4800.0
+G1 E1156.926
+G1 F4800.0
+M103
+G1 X14.61 Y115.6 Z20.41 F9000.0
+G1 F4800.0
+G1 E1156.945
+G1 F9000.0
+M101
+G1 X54.9 Y115.6 Z20.41 F4800.0 E1159.2
+G1 F4800.0
+G1 E1158.771
+G1 F4800.0
+M103
+G1 X56.28 Y116.0 Z20.41 F9000.0
+G1 F4800.0
+G1 E1159.2
+G1 F9000.0
+M101
+G1 X13.44 Y116.0 Z20.41 F4800.0 E1161.599
+G1 F4800.0
+G1 E1161.25
+G1 F4800.0
+M103
+G1 X12.15 Y116.4 Z20.41 F9000.0
+G1 F4800.0
+G1 E1161.599
+G1 F9000.0
+M101
+G1 X57.83 Y116.4 Z20.41 F4800.0 E1164.156
+G1 F4800.0
+G1 E1163.231
+G1 F4800.0
+M103
+G1 X59.72 Y116.8 Z20.41 F9000.0
+G1 F4800.0
+G1 E1164.156
+G1 F9000.0
+M101
+G1 X10.66 Y116.8 Z20.41 F4800.0 E1166.902
+G1 F4800.0
+G1 E1166.216
+G1 F4800.0
+M103
+G1 X9.03 Y117.2 Z20.41 F9000.0
+G1 F4800.0
+G1 E1166.902
+G1 F9000.0
+M101
+G1 X62.43 Y117.2 Z20.41 F4800.0 E1169.892
+G1 F4800.0
+G1 E1168.892
+G1 F4800.0
+M103
+G1 X66.26 Y117.6 Z20.41 F9000.0
+G1 F4800.0
+G1 E1169.892
+G1 F9000.0
+M101
+G1 X7.05 Y117.6 Z20.41 F4800.0 E1173.206
+G1 F4800.0
+G1 E1172.206
+G1 F4800.0
+M103
+G1 X5.08 Y118.0 Z20.41 F9000.0
+G1 F4800.0
+G1 E1173.206
+G1 F9000.0
+M101
+G1 X67.29 Y118.0 Z20.41 F4800.0 E1176.688
+G1 F4800.0
+G1 E1175.688
+G1 F4800.0
+M103
+G1 X40.24 Y120.8 Z20.41 F9000.0
+G1 F4800.0
+G1 E1176.688
+G1 F9000.0
+M101
+G1 X3.65 Y120.8 Z20.41 F4800.0 E1178.736
+G1 X3.65 Y120.4 Z20.41 F4800.0 E1178.759
+G1 X67.2 Y120.4 Z20.41 F4800.0 E1182.316
+G1 X67.31 Y120.0 Z20.41 F4800.0 E1182.34
+G1 X3.65 Y120.0 Z20.41 F4800.0 E1185.903
+G1 X3.64 Y119.6 Z20.41 F4800.0 E1185.926
+G1 X67.3 Y119.6 Z20.41 F4800.0 E1189.489
+G1 X67.3 Y119.2 Z20.41 F4800.0 E1189.512
+G1 X3.64 Y119.2 Z20.41 F4800.0 E1193.075
+G1 X3.63 Y118.8 Z20.41 F4800.0 E1193.098
+G1 X67.29 Y118.8 Z20.41 F4800.0 E1196.661
+G1 X67.29 Y118.4 Z20.41 F4800.0 E1196.684
+G1 X3.63 Y118.4 Z20.41 F4800.0 E1200.247
+G1 F4800.0
+G1 E1199.247
+G1 F4800.0
+M103
+(</infill>)
+(</nestedRing>)
+(</rotation>)
+(</layer>)
+(<operatingLayerEnd> </operatingLayerEnd>)
+(<layer> 20.675 )
+(<rotation> (6.12323399574e-17+1j) )
+(<nestedRing>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X67.558 Y6.486 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X64.904 Y6.793 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X60.372 Y7.553 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X57.489 Y8.204 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X55.276 Y8.896 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X54.592 Y9.195 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X53.37 Y9.844 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X52.042 Y10.778 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X51.075 Y11.733 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X50.438 Y12.604 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X50.045 Y13.36 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X49.352 Y15.543 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X49.074 Y18.028 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X49.978 Y105.602 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X50.295 Y108.073 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X51.006 Y110.32 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X51.397 Y111.115 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X52.045 Y112.019 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X53.13 Y113.038 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X54.508 Y113.878 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X55.659 Y114.373 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X56.622 Y114.675 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X59.154 Y115.269 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X62.088 Y115.73 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X68.695 Y116.422 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X68.752 Y121.931 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X2.246 Y122.618 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X2.19 Y117.102 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X4.873 Y116.651 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X9.306 Y115.69 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X12.296 Y114.881 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X14.507 Y114.13 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X15.233 Y113.817 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X16.454 Y113.166 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X17.773 Y112.224 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X18.806 Y111.159 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X19.352 Y110.371 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X19.732 Y109.601 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X20.399 Y107.436 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X20.667 Y105.042 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X19.762 Y17.369 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X19.433 Y14.811 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X18.698 Y12.649 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X18.292 Y11.924 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X17.644 Y11.097 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X16.579 Y10.126 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X15.357 Y9.339 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X14.15 Y8.747 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X13.364 Y8.45 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X11.224 Y7.985 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X8.028 Y7.631 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X1.052 Y7.175 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X0.996 Y1.684 Z20.675 </boundaryPoint>)
+(<boundaryPoint> X67.502 Y0.996 Z20.675 </boundaryPoint>)
+(<loop> outer )
+G1 X14.55 Y114.27 Z20.68 F9000.0
+G1 X18.85 Y111.33 Z20.68 F9000.0
+G1 X20.54 Y107.47 Z20.68 F9000.0
+G1 X19.91 Y17.34 Z20.68 F9000.0
+G1 X18.83 Y12.58 Z20.68 F9000.0
+G1 X16.68 Y10.02 Z20.68 F9000.0
+G1 X2.59 Y3.07 Z20.68 F9000.0
+G1 F4800.0
+G1 E1200.247
+G1 F9000.0
+M101
+G1 X66.12 Y2.41 Z20.68 F4800.0 E1203.803
+G1 X66.14 Y5.25 Z20.68 F4800.0 E1203.962
+G1 X60.1 Y6.18 Z20.68 F4800.0 E1204.304
+G1 X57.13 Y6.85 Z20.68 F4800.0 E1204.476
+G1 X54.78 Y7.59 Z20.68 F4800.0 E1204.613
+G1 X52.64 Y8.64 Z20.68 F4800.0 E1204.747
+G1 X51.14 Y9.7 Z20.68 F4800.0 E1204.849
+G1 X50.01 Y10.82 Z20.68 F4800.0 E1204.938
+G1 X49.24 Y11.86 Z20.68 F4800.0 E1205.011
+G1 X48.75 Y12.82 Z20.68 F4800.0 E1205.071
+G1 X47.98 Y15.25 Z20.68 F4800.0 E1205.214
+G1 X47.67 Y17.96 Z20.68 F4800.0 E1205.366
+G1 X48.58 Y105.7 Z20.68 F4800.0 E1210.278
+G1 X48.92 Y108.38 Z20.68 F4800.0 E1210.429
+G1 X49.7 Y110.84 Z20.68 F4800.0 E1210.574
+G1 X50.19 Y111.84 Z20.68 F4800.0 E1210.636
+G1 X50.99 Y112.95 Z20.68 F4800.0 E1210.713
+G1 X52.28 Y114.16 Z20.68 F4800.0 E1210.812
+G1 X53.86 Y115.13 Z20.68 F4800.0 E1210.916
+G1 X55.18 Y115.69 Z20.68 F4800.0 E1210.996
+G1 X58.88 Y116.64 Z20.68 F4800.0 E1211.21
+G1 X61.91 Y117.12 Z20.68 F4800.0 E1211.381
+G1 X67.31 Y117.68 Z20.68 F4800.0 E1211.685
+G1 X67.34 Y120.55 Z20.68 F4800.0 E1211.846
+G1 X3.63 Y121.2 Z20.68 F4800.0 E1215.412
+G1 X3.6 Y118.27 Z20.68 F4800.0 E1215.576
+G1 X9.63 Y117.05 Z20.68 F4800.0 E1215.921
+G1 X12.7 Y116.22 Z20.68 F4800.0 E1216.098
+G1 X15.02 Y115.43 Z20.68 F4800.0 E1216.235
+G1 X17.19 Y114.36 Z20.68 F4800.0 E1216.371
+G1 X18.69 Y113.29 Z20.68 F4800.0 E1216.474
+G1 X19.89 Y112.05 Z20.68 F4800.0 E1216.571
+G1 X20.56 Y111.08 Z20.68 F4800.0 E1216.637
+G1 X21.04 Y110.12 Z20.68 F4800.0 E1216.697
+G1 X21.78 Y107.72 Z20.68 F4800.0 E1216.837
+G1 X22.07 Y105.11 Z20.68 F4800.0 E1216.984
+G1 X21.16 Y17.27 Z20.68 F4800.0 E1221.902
+G1 X20.8 Y14.49 Z20.68 F4800.0 E1222.058
+G1 X19.98 Y12.08 Z20.68 F4800.0 E1222.201
+G1 X19.46 Y11.15 Z20.68 F4800.0 E1222.261
+G1 X18.67 Y10.14 Z20.68 F4800.0 E1222.332
+G1 X17.44 Y9.01 Z20.68 F4800.0 E1222.426
+G1 X16.05 Y8.12 Z20.68 F4800.0 E1222.519
+G1 X14.71 Y7.46 Z20.68 F4800.0 E1222.602
+G1 X13.76 Y7.1 Z20.68 F4800.0 E1222.659
+G1 X11.45 Y6.6 Z20.68 F4800.0 E1222.792
+G1 X2.44 Y5.87 Z20.68 F4800.0 E1223.297
+G1 X2.41 Y3.07 Z20.68 F4800.0 E1223.454
+G1 X2.59 Y3.07 Z20.68 F4800.0 E1223.464
+G1 F4800.0
+G1 E1223.464
+G1 F4800.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X2.59 Y2.67 Z20.68 F9000.0
+G1 F4800.0
+G1 E1223.464
+G1 F9000.0
+M101
+G1 X66.51 Y2.01 Z20.68 F4800.0 E1227.043
+G1 X66.55 Y5.6 Z20.68 F4800.0 E1227.244
+G1 X60.18 Y6.57 Z20.68 F4800.0 E1227.604
+G1 X57.23 Y7.24 Z20.68 F4800.0 E1227.774
+G1 X54.92 Y7.96 Z20.68 F4800.0 E1227.909
+G1 X52.85 Y8.99 Z20.68 F4800.0 E1228.039
+G1 X51.4 Y10.01 Z20.68 F4800.0 E1228.138
+G1 X50.31 Y11.08 Z20.68 F4800.0 E1228.223
+G1 X49.59 Y12.07 Z20.68 F4800.0 E1228.292
+G1 X49.12 Y12.97 Z20.68 F4800.0 E1228.349
+G1 X48.37 Y15.33 Z20.68 F4800.0 E1228.488
+G1 X48.07 Y17.98 Z20.68 F4800.0 E1228.636
+G1 X48.98 Y105.67 Z20.68 F4800.0 E1233.546
+G1 X49.31 Y108.29 Z20.68 F4800.0 E1233.693
+G1 X50.08 Y110.69 Z20.68 F4800.0 E1233.835
+G1 X50.54 Y111.63 Z20.68 F4800.0 E1233.893
+G1 X51.29 Y112.68 Z20.68 F4800.0 E1233.965
+G1 X52.52 Y113.84 Z20.68 F4800.0 E1234.06
+G1 X54.05 Y114.77 Z20.68 F4800.0 E1234.16
+G1 X55.31 Y115.31 Z20.68 F4800.0 E1234.237
+G1 X58.96 Y116.25 Z20.68 F4800.0 E1234.448
+G1 X61.96 Y116.72 Z20.68 F4800.0 E1234.618
+G1 X67.7 Y117.32 Z20.68 F4800.0 E1234.941
+G1 X67.74 Y120.94 Z20.68 F4800.0 E1235.144
+G1 X3.24 Y121.61 Z20.68 F4800.0 E1238.755
+G1 X3.2 Y117.95 Z20.68 F4800.0 E1238.96
+G1 X9.54 Y116.66 Z20.68 F4800.0 E1239.322
+G1 X12.59 Y115.84 Z20.68 F4800.0 E1239.499
+G1 X14.87 Y115.06 Z20.68 F4800.0 E1239.633
+G1 X16.98 Y114.02 Z20.68 F4800.0 E1239.766
+G1 X18.43 Y112.98 Z20.68 F4800.0 E1239.865
+G1 X19.58 Y111.8 Z20.68 F4800.0 E1239.958
+G1 X20.22 Y110.88 Z20.68 F4800.0 E1240.02
+G1 X20.66 Y109.97 Z20.68 F4800.0 E1240.077
+G1 X21.38 Y107.64 Z20.68 F4800.0 E1240.213
+G1 X21.67 Y105.09 Z20.68 F4800.0 E1240.357
+G1 X20.76 Y17.3 Z20.68 F4800.0 E1245.272
+G1 X20.41 Y14.58 Z20.68 F4800.0 E1245.425
+G1 X19.61 Y12.24 Z20.68 F4800.0 E1245.563
+G1 X19.13 Y11.37 Z20.68 F4800.0 E1245.619
+G1 X18.38 Y10.41 Z20.68 F4800.0 E1245.687
+G1 X17.19 Y9.33 Z20.68 F4800.0 E1245.777
+G1 X15.85 Y8.47 Z20.68 F4800.0 E1245.867
+G1 X14.55 Y7.83 Z20.68 F4800.0 E1245.948
+G1 X13.65 Y7.49 Z20.68 F4800.0 E1246.002
+G1 X11.39 Y7.0 Z20.68 F4800.0 E1246.131
+G1 X2.04 Y6.24 Z20.68 F4800.0 E1246.656
+G1 X2.01 Y2.67 Z20.68 F4800.0 E1246.855
+G1 X2.41 Y2.67 Z20.68 F4800.0 E1246.878
+G1 X2.59 Y2.67 Z20.68 F4800.0 E1246.888
+G1 F4800.0
+G1 E1246.888
+G1 F4800.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X2.58 Y2.27 Z20.68 F9000.0
+G1 F4800.0
+G1 E1246.888
+G1 F9000.0
+M101
+G1 X66.91 Y1.6 Z20.68 F4800.0 E1250.489
+G1 X66.95 Y5.95 Z20.68 F4800.0 E1250.733
+G1 X64.82 Y6.2 Z20.68 F4800.0 E1250.853
+G1 X60.26 Y6.96 Z20.68 F4800.0 E1251.112
+G1 X57.33 Y7.62 Z20.68 F4800.0 E1251.28
+G1 X55.07 Y8.33 Z20.68 F4800.0 E1251.412
+G1 X54.33 Y8.65 Z20.68 F4800.0 E1251.457
+G1 X53.05 Y9.33 Z20.68 F4800.0 E1251.538
+G1 X51.66 Y10.32 Z20.68 F4800.0 E1251.634
+G1 X50.62 Y11.34 Z20.68 F4800.0 E1251.716
+G1 X49.93 Y12.29 Z20.68 F4800.0 E1251.781
+G1 X49.49 Y13.13 Z20.68 F4800.0 E1251.834
+G1 X48.76 Y15.42 Z20.68 F4800.0 E1251.969
+G1 X48.47 Y18.0 Z20.68 F4800.0 E1252.114
+G1 X49.38 Y105.64 Z20.68 F4800.0 E1257.021
+G1 X49.71 Y108.2 Z20.68 F4800.0 E1257.165
+G1 X50.45 Y110.54 Z20.68 F4800.0 E1257.303
+G1 X50.88 Y111.42 Z20.68 F4800.0 E1257.357
+G1 X51.59 Y112.42 Z20.68 F4800.0 E1257.426
+G1 X52.77 Y113.52 Z20.68 F4800.0 E1257.516
+G1 X54.23 Y114.41 Z20.68 F4800.0 E1257.612
+G1 X55.45 Y114.94 Z20.68 F4800.0 E1257.686
+G1 X56.46 Y115.25 Z20.68 F4800.0 E1257.746
+G1 X59.04 Y115.86 Z20.68 F4800.0 E1257.894
+G1 X62.01 Y116.33 Z20.68 F4800.0 E1258.062
+G1 X68.1 Y116.96 Z20.68 F4800.0 E1258.405
+G1 X68.15 Y121.34 Z20.68 F4800.0 E1258.65
+G1 X2.84 Y122.01 Z20.68 F4800.0 E1262.306
+G1 X2.79 Y117.61 Z20.68 F4800.0 E1262.552
+G1 X4.99 Y117.24 Z20.68 F4800.0 E1262.677
+G1 X9.45 Y116.27 Z20.68 F4800.0 E1262.932
+G1 X12.47 Y115.45 Z20.68 F4800.0 E1263.107
+G1 X14.72 Y114.69 Z20.68 F4800.0 E1263.241
+G1 X15.49 Y114.36 Z20.68 F4800.0 E1263.288
+G1 X16.77 Y113.68 Z20.68 F4800.0 E1263.369
+G1 X18.17 Y112.68 Z20.68 F4800.0 E1263.465
+G1 X19.27 Y111.54 Z20.68 F4800.0 E1263.553
+G1 X19.87 Y110.68 Z20.68 F4800.0 E1263.612
+G1 X20.29 Y109.82 Z20.68 F4800.0 E1263.665
+G1 X20.99 Y107.56 Z20.68 F4800.0 E1263.798
+G1 X21.27 Y105.07 Z20.68 F4800.0 E1263.938
+G1 X20.36 Y17.33 Z20.68 F4800.0 E1268.85
+G1 X20.02 Y14.68 Z20.68 F4800.0 E1269.0
+G1 X19.25 Y12.4 Z20.68 F4800.0 E1269.134
+G1 X18.79 Y11.59 Z20.68 F4800.0 E1269.186
+G1 X18.09 Y10.69 Z20.68 F4800.0 E1269.251
+G1 X16.95 Y9.65 Z20.68 F4800.0 E1269.337
+G1 X15.65 Y8.82 Z20.68 F4800.0 E1269.423
+G1 X14.39 Y8.2 Z20.68 F4800.0 E1269.502
+G1 X13.54 Y7.87 Z20.68 F4800.0 E1269.553
+G1 X11.32 Y7.39 Z20.68 F4800.0 E1269.68
+G1 X8.08 Y7.03 Z20.68 F4800.0 E1269.862
+G1 X1.65 Y6.61 Z20.68 F4800.0 E1270.223
+G1 X1.6 Y2.28 Z20.68 F4800.0 E1270.466
+G1 X2.4 Y2.27 Z20.68 F4800.0 E1270.511
+G1 X2.58 Y2.27 Z20.68 F4800.0 E1270.521
+G1 F4800.0
+G1 E1270.521
+G1 F4800.0
+M103
+(</loop>)
+(<edge> outer )
+;M108 R40.0
+G1 X2.58 Y1.87 Z20.68 F9000.0
+G1 F4800.0
+G1 E1270.521
+G1 F9000.0
+M101
+G1 X67.3 Y1.2 Z20.68 F2400.0 E1274.144
+G1 X67.36 Y6.31 Z20.68 F2400.0 E1274.43
+G1 X64.88 Y6.59 Z20.68 F2400.0 E1274.57
+G1 X60.33 Y7.36 Z20.68 F2400.0 E1274.828
+G1 X57.44 Y8.01 Z20.68 F2400.0 E1274.994
+G1 X55.21 Y8.71 Z20.68 F2400.0 E1275.125
+G1 X54.51 Y9.02 Z20.68 F2400.0 E1275.168
+G1 X53.27 Y9.67 Z20.68 F2400.0 E1275.246
+G1 X51.91 Y10.62 Z20.68 F2400.0 E1275.339
+G1 X50.92 Y11.6 Z20.68 F2400.0 E1275.417
+G1 X50.27 Y12.5 Z20.68 F2400.0 E1275.479
+G1 X49.86 Y13.28 Z20.68 F2400.0 E1275.528
+G1 X49.16 Y15.5 Z20.68 F2400.0 E1275.659
+G1 X48.87 Y18.02 Z20.68 F2400.0 E1275.8
+G1 X49.78 Y105.62 Z20.68 F2400.0 E1280.704
+G1 X50.1 Y108.12 Z20.68 F2400.0 E1280.845
+G1 X50.82 Y110.39 Z20.68 F2400.0 E1280.979
+G1 X51.23 Y111.22 Z20.68 F2400.0 E1281.031
+G1 X51.89 Y112.15 Z20.68 F2400.0 E1281.095
+G1 X53.01 Y113.2 Z20.68 F2400.0 E1281.18
+G1 X54.42 Y114.06 Z20.68 F2400.0 E1281.273
+G1 X55.59 Y114.56 Z20.68 F2400.0 E1281.344
+G1 X56.57 Y114.87 Z20.68 F2400.0 E1281.402
+G1 X59.12 Y115.47 Z20.68 F2400.0 E1281.548
+G1 X62.06 Y115.93 Z20.68 F2400.0 E1281.715
+G1 X68.5 Y116.6 Z20.68 F2400.0 E1282.077
+G1 X68.55 Y121.73 Z20.68 F2400.0 E1282.364
+G1 X2.44 Y122.42 Z20.68 F2400.0 E1286.065
+G1 X2.39 Y117.27 Z20.68 F2400.0 E1286.353
+G1 X4.91 Y116.85 Z20.68 F2400.0 E1286.496
+G1 X9.35 Y115.88 Z20.68 F2400.0 E1286.751
+G1 X12.35 Y115.07 Z20.68 F2400.0 E1286.925
+G1 X14.58 Y114.32 Z20.68 F2400.0 E1287.056
+G1 X15.32 Y114.0 Z20.68 F2400.0 E1287.101
+G1 X16.56 Y113.34 Z20.68 F2400.0 E1287.18
+G1 X17.9 Y112.38 Z20.68 F2400.0 E1287.272
+G1 X18.96 Y111.29 Z20.68 F2400.0 E1287.357
+G1 X19.52 Y110.47 Z20.68 F2400.0 E1287.413
+G1 X19.92 Y109.67 Z20.68 F2400.0 E1287.463
+G1 X20.6 Y107.48 Z20.68 F2400.0 E1287.591
+G1 X20.87 Y105.05 Z20.68 F2400.0 E1287.728
+G1 X19.96 Y17.36 Z20.68 F2400.0 E1292.637
+G1 X19.63 Y14.77 Z20.68 F2400.0 E1292.783
+G1 X18.88 Y12.57 Z20.68 F2400.0 E1292.913
+G1 X18.46 Y11.81 Z20.68 F2400.0 E1292.962
+G1 X17.79 Y10.96 Z20.68 F2400.0 E1293.022
+G1 X16.7 Y9.97 Z20.68 F2400.0 E1293.105
+G1 X15.46 Y9.16 Z20.68 F2400.0 E1293.188
+G1 X14.23 Y8.56 Z20.68 F2400.0 E1293.264
+G1 X13.42 Y8.26 Z20.68 F2400.0 E1293.313
+G1 X11.26 Y7.79 Z20.68 F2400.0 E1293.437
+G1 X8.05 Y7.43 Z20.68 F2400.0 E1293.618
+G1 X1.25 Y6.99 Z20.68 F2400.0 E1293.999
+G1 X1.2 Y1.88 Z20.68 F2400.0 E1294.285
+G1 X2.4 Y1.87 Z20.68 F2400.0 E1294.352
+G1 X2.58 Y1.87 Z20.68 F2400.0 E1294.362
+G1 F4800.0
+G1 E1293.362
+G1 F2400.0
+M103
+(</edge>)
+(</boundaryPerimeter>)
+(<infill>)
+(<infillBoundary>)
+(<infillPoint> X66.145 Y5.253 Z20.675 </infillPoint>)
+(<infillPoint> X60.105 Y6.178 Z20.675 </infillPoint>)
+(<infillPoint> X57.125 Y6.851 Z20.675 </infillPoint>)
+(<infillPoint> X54.776 Y7.586 Z20.675 </infillPoint>)
+(<infillPoint> X52.641 Y8.645 Z20.675 </infillPoint>)
+(<infillPoint> X51.141 Y9.7 Z20.675 </infillPoint>)
+(<infillPoint> X50.011 Y10.816 Z20.675 </infillPoint>)
+(<infillPoint> X49.245 Y11.864 Z20.675 </infillPoint>)
+(<infillPoint> X48.747 Y12.821 Z20.675 </infillPoint>)
+(<infillPoint> X47.976 Y15.251 Z20.675 </infillPoint>)
+(<infillPoint> X47.673 Y17.957 Z20.675 </infillPoint>)
+(<infillPoint> X48.579 Y105.699 Z20.675 </infillPoint>)
+(<infillPoint> X48.922 Y108.376 Z20.675 </infillPoint>)
+(<infillPoint> X49.703 Y110.843 Z20.675 </infillPoint>)
+(<infillPoint> X50.192 Y111.837 Z20.675 </infillPoint>)
+(<infillPoint> X50.987 Y112.946 Z20.675 </infillPoint>)
+(<infillPoint> X52.277 Y114.158 Z20.675 </infillPoint>)
+(<infillPoint> X53.864 Y115.125 Z20.675 </infillPoint>)
+(<infillPoint> X55.181 Y115.692 Z20.675 </infillPoint>)
+(<infillPoint> X58.881 Y116.643 Z20.675 </infillPoint>)
+(<infillPoint> X61.906 Y117.119 Z20.675 </infillPoint>)
+(<infillPoint> X67.308 Y117.684 Z20.675 </infillPoint>)
+(<infillPoint> X67.338 Y120.546 Z20.675 </infillPoint>)
+(<infillPoint> X3.632 Y121.204 Z20.675 </infillPoint>)
+(<infillPoint> X3.602 Y118.273 Z20.675 </infillPoint>)
+(<infillPoint> X9.635 Y117.051 Z20.675 </infillPoint>)
+(<infillPoint> X12.704 Y116.221 Z20.675 </infillPoint>)
+(<infillPoint> X15.02 Y115.434 Z20.675 </infillPoint>)
+(<infillPoint> X17.188 Y114.362 Z20.675 </infillPoint>)
+(<infillPoint> X18.69 Y113.29 Z20.675 </infillPoint>)
+(<infillPoint> X19.891 Y112.051 Z20.675 </infillPoint>)
+(<infillPoint> X20.562 Y111.083 Z20.675 </infillPoint>)
+(<infillPoint> X21.037 Y110.12 Z20.675 </infillPoint>)
+(<infillPoint> X21.776 Y107.722 Z20.675 </infillPoint>)
+(<infillPoint> X22.068 Y105.113 Z20.675 </infillPoint>)
+(<infillPoint> X21.161 Y17.272 Z20.675 </infillPoint>)
+(<infillPoint> X20.804 Y14.493 Z20.675 </infillPoint>)
+(<infillPoint> X19.982 Y12.077 Z20.675 </infillPoint>)
+(<infillPoint> X19.461 Y11.146 Z20.675 </infillPoint>)
+(<infillPoint> X18.674 Y10.141 Z20.675 </infillPoint>)
+(<infillPoint> X17.436 Y9.012 Z20.675 </infillPoint>)
+(<infillPoint> X16.047 Y8.118 Z20.675 </infillPoint>)
+(<infillPoint> X14.707 Y7.461 Z20.675 </infillPoint>)
+(<infillPoint> X13.762 Y7.104 Z20.675 </infillPoint>)
+(<infillPoint> X11.445 Y6.6 Z20.675 </infillPoint>)
+(<infillPoint> X2.439 Y5.868 Z20.675 </infillPoint>)
+(<infillPoint> X2.41 Y3.069 Z20.675 </infillPoint>)
+(<infillPoint> X66.116 Y2.41 Z20.675 </infillPoint>)
+(</infillBoundary>)
+;M108 R80.0
+G1 X14.5 Y8.47 Z20.68 F9000.0
+G1 X20.4 Y12.44 Z20.68 F9000.0
+G1 F4800.0
+G1 E1294.362
+G1 F9000.0
+M101
+G1 X20.4 Y3.16 Z20.68 F4800.0 E1294.881
+G1 X20.0 Y3.17 Z20.68 F4800.0 E1294.904
+G1 X20.0 Y11.54 Z20.68 F4800.0 E1295.372
+G1 X19.6 Y10.87 Z20.68 F4800.0 E1295.416
+G1 X19.6 Y3.17 Z20.68 F4800.0 E1295.846
+G1 X19.2 Y3.18 Z20.68 F4800.0 E1295.869
+G1 X19.2 Y10.36 Z20.68 F4800.0 E1296.271
+G1 X18.8 Y9.88 Z20.68 F4800.0 E1296.306
+G1 X18.8 Y3.18 Z20.68 F4800.0 E1296.681
+G1 X18.4 Y3.18 Z20.68 F4800.0 E1296.703
+G1 X18.4 Y9.51 Z20.68 F4800.0 E1297.058
+G1 X18.0 Y9.15 Z20.68 F4800.0 E1297.088
+G1 X18.0 Y3.19 Z20.68 F4800.0 E1297.422
+G1 X17.6 Y3.19 Z20.68 F4800.0 E1297.444
+G1 X17.6 Y8.79 Z20.68 F4800.0 E1297.757
+G1 X17.2 Y8.53 Z20.68 F4800.0 E1297.784
+G1 X17.2 Y3.2 Z20.68 F4800.0 E1298.082
+G1 X16.8 Y3.2 Z20.68 F4800.0 E1298.104
+G1 X16.8 Y8.27 Z20.68 F4800.0 E1298.388
+G1 X16.4 Y8.01 Z20.68 F4800.0 E1298.415
+G1 X16.4 Y3.21 Z20.68 F4800.0 E1298.684
+G1 X16.0 Y3.21 Z20.68 F4800.0 E1298.706
+G1 X16.0 Y7.78 Z20.68 F4800.0 E1298.962
+G1 X15.6 Y7.59 Z20.68 F4800.0 E1298.987
+G1 X15.6 Y3.21 Z20.68 F4800.0 E1299.232
+G1 X15.2 Y3.22 Z20.68 F4800.0 E1299.255
+G1 X15.2 Y7.39 Z20.68 F4800.0 E1299.488
+G1 X14.8 Y7.2 Z20.68 F4800.0 E1299.513
+G1 X14.8 Y3.22 Z20.68 F4800.0 E1299.736
+G1 X14.4 Y3.23 Z20.68 F4800.0 E1299.758
+G1 X14.4 Y7.05 Z20.68 F4800.0 E1299.972
+G1 X14.0 Y6.89 Z20.68 F4800.0 E1299.996
+G1 X14.0 Y3.23 Z20.68 F4800.0 E1300.201
+G1 X13.6 Y3.23 Z20.68 F4800.0 E1300.223
+G1 X13.6 Y6.78 Z20.68 F4800.0 E1300.422
+G1 X13.2 Y6.7 Z20.68 F4800.0 E1300.445
+G1 X13.2 Y3.24 Z20.68 F4800.0 E1300.638
+G1 X12.8 Y3.24 Z20.68 F4800.0 E1300.661
+G1 X12.8 Y6.61 Z20.68 F4800.0 E1300.849
+G1 X12.4 Y6.52 Z20.68 F4800.0 E1300.872
+G1 X12.4 Y3.25 Z20.68 F4800.0 E1301.055
+G1 X12.0 Y3.25 Z20.68 F4800.0 E1301.078
+G1 X12.0 Y6.43 Z20.68 F4800.0 E1301.256
+G1 X11.6 Y6.35 Z20.68 F4800.0 E1301.279
+G1 X11.6 Y3.25 Z20.68 F4800.0 E1301.452
+G1 X11.2 Y3.26 Z20.68 F4800.0 E1301.475
+G1 X11.2 Y6.3 Z20.68 F4800.0 E1301.645
+G1 X10.8 Y6.27 Z20.68 F4800.0 E1301.667
+G1 X10.8 Y3.26 Z20.68 F4800.0 E1301.835
+G1 X10.4 Y3.27 Z20.68 F4800.0 E1301.858
+G1 X10.4 Y6.23 Z20.68 F4800.0 E1302.024
+G1 X10.0 Y6.2 Z20.68 F4800.0 E1302.046
+G1 X10.0 Y3.27 Z20.68 F4800.0 E1302.21
+G1 X9.6 Y3.27 Z20.68 F4800.0 E1302.233
+G1 X9.6 Y6.17 Z20.68 F4800.0 E1302.395
+G1 X9.2 Y6.14 Z20.68 F4800.0 E1302.417
+G1 X9.2 Y3.28 Z20.68 F4800.0 E1302.577
+G1 X8.8 Y3.28 Z20.68 F4800.0 E1302.6
+G1 X8.8 Y6.1 Z20.68 F4800.0 E1302.758
+G1 X8.4 Y6.07 Z20.68 F4800.0 E1302.78
+G1 X8.4 Y3.29 Z20.68 F4800.0 E1302.936
+G1 X8.0 Y3.29 Z20.68 F4800.0 E1302.958
+G1 X8.0 Y6.04 Z20.68 F4800.0 E1303.112
+G1 X7.6 Y6.01 Z20.68 F4800.0 E1303.135
+G1 X7.6 Y3.3 Z20.68 F4800.0 E1303.286
+G1 X7.2 Y3.3 Z20.68 F4800.0 E1303.309
+G1 X7.2 Y5.97 Z20.68 F4800.0 E1303.458
+G1 X6.8 Y5.94 Z20.68 F4800.0 E1303.481
+G1 X6.8 Y3.3 Z20.68 F4800.0 E1303.628
+G1 X6.4 Y3.31 Z20.68 F4800.0 E1303.651
+G1 X6.4 Y5.91 Z20.68 F4800.0 E1303.796
+G1 X6.0 Y5.88 Z20.68 F4800.0 E1303.819
+G1 X6.0 Y3.31 Z20.68 F4800.0 E1303.963
+G1 X5.6 Y3.32 Z20.68 F4800.0 E1303.985
+G1 X5.6 Y5.84 Z20.68 F4800.0 E1304.126
+G1 X5.2 Y5.81 Z20.68 F4800.0 E1304.149
+G1 X5.2 Y3.32 Z20.68 F4800.0 E1304.288
+G1 X4.8 Y3.33 Z20.68 F4800.0 E1304.311
+G1 X4.8 Y5.78 Z20.68 F4800.0 E1304.448
+G1 X4.4 Y5.75 Z20.68 F4800.0 E1304.471
+G1 X4.4 Y3.33 Z20.68 F4800.0 E1304.606
+G1 X4.0 Y3.33 Z20.68 F4800.0 E1304.628
+G1 X4.0 Y5.71 Z20.68 F4800.0 E1304.762
+G1 X3.6 Y5.68 Z20.68 F4800.0 E1304.784
+G1 X3.6 Y3.34 Z20.68 F4800.0 E1304.915
+G1 X3.2 Y3.34 Z20.68 F4800.0 E1304.938
+G1 X3.2 Y5.65 Z20.68 F4800.0 E1305.067
+G1 X2.8 Y5.46 Z20.68 F4800.0 E1305.092
+G1 X2.8 Y3.47 Z20.68 F4800.0 E1305.203
+G1 F4800.0
+G1 E1304.203
+G1 F4800.0
+M103
+G1 X22.4 Y3.14 Z20.68 F9000.0
+G1 F4800.0
+G1 E1305.203
+G1 F9000.0
+M101
+G1 X22.4 Y120.73 Z20.68 F4800.0 E1311.785
+G1 X22.8 Y120.73 Z20.68 F4800.0 E1311.808
+G1 X22.8 Y3.14 Z20.68 F4800.0 E1318.39
+G1 X23.2 Y3.13 Z20.68 F4800.0 E1318.412
+G1 X23.2 Y120.72 Z20.68 F4800.0 E1324.995
+G1 X23.6 Y120.72 Z20.68 F4800.0 E1325.017
+G1 X23.6 Y3.13 Z20.68 F4800.0 E1331.599
+G1 X24.0 Y3.13 Z20.68 F4800.0 E1331.622
+G1 X24.0 Y120.71 Z20.68 F4800.0 E1338.204
+G1 X24.4 Y120.71 Z20.68 F4800.0 E1338.226
+G1 X24.4 Y3.12 Z20.68 F4800.0 E1344.809
+G1 X24.8 Y3.12 Z20.68 F4800.0 E1344.831
+G1 X24.8 Y120.7 Z20.68 F4800.0 E1351.413
+G1 X25.2 Y120.7 Z20.68 F4800.0 E1351.436
+G1 X25.2 Y3.11 Z20.68 F4800.0 E1358.018
+G1 X25.6 Y3.11 Z20.68 F4800.0 E1358.04
+G1 X25.6 Y120.7 Z20.68 F4800.0 E1364.623
+G1 X26.0 Y120.69 Z20.68 F4800.0 E1364.645
+G1 X26.0 Y3.1 Z20.68 F4800.0 E1371.228
+G1 X26.4 Y3.1 Z20.68 F4800.0 E1371.25
+G1 X26.4 Y120.69 Z20.68 F4800.0 E1377.832
+G1 X26.8 Y120.68 Z20.68 F4800.0 E1377.855
+G1 X26.8 Y3.1 Z20.68 F4800.0 E1384.437
+G1 X27.2 Y3.09 Z20.68 F4800.0 E1384.459
+G1 X27.2 Y120.68 Z20.68 F4800.0 E1391.042
+G1 X27.6 Y120.68 Z20.68 F4800.0 E1391.064
+G1 X27.6 Y3.09 Z20.68 F4800.0 E1397.646
+G1 X28.0 Y3.08 Z20.68 F4800.0 E1397.669
+G1 X28.0 Y120.67 Z20.68 F4800.0 E1404.251
+G1 X28.4 Y120.67 Z20.68 F4800.0 E1404.273
+G1 X28.4 Y3.08 Z20.68 F4800.0 E1410.856
+G1 X28.8 Y3.08 Z20.68 F4800.0 E1410.878
+G1 X28.8 Y120.66 Z20.68 F4800.0 E1417.46
+G1 X29.2 Y120.66 Z20.68 F4800.0 E1417.483
+G1 X29.2 Y3.07 Z20.68 F4800.0 E1424.065
+G1 X29.6 Y3.07 Z20.68 F4800.0 E1424.087
+G1 X29.6 Y120.66 Z20.68 F4800.0 E1430.67
+G1 X30.0 Y120.65 Z20.68 F4800.0 E1430.692
+G1 X30.0 Y3.06 Z20.68 F4800.0 E1437.274
+G1 X30.4 Y3.06 Z20.68 F4800.0 E1437.297
+G1 X30.4 Y120.65 Z20.68 F4800.0 E1443.879
+G1 X30.8 Y120.64 Z20.68 F4800.0 E1443.901
+G1 X30.8 Y3.06 Z20.68 F4800.0 E1450.484
+G1 X31.2 Y3.05 Z20.68 F4800.0 E1450.506
+G1 X31.2 Y120.64 Z20.68 F4800.0 E1457.088
+G1 X31.6 Y120.64 Z20.68 F4800.0 E1457.111
+G1 X31.6 Y3.05 Z20.68 F4800.0 E1463.693
+G1 X32.0 Y3.04 Z20.68 F4800.0 E1463.715
+G1 X32.0 Y120.63 Z20.68 F4800.0 E1470.298
+G1 X32.4 Y120.63 Z20.68 F4800.0 E1470.32
+G1 X32.4 Y3.04 Z20.68 F4800.0 E1476.902
+G1 X32.8 Y3.04 Z20.68 F4800.0 E1476.925
+G1 X32.8 Y120.62 Z20.68 F4800.0 E1483.507
+G1 X33.2 Y120.62 Z20.68 F4800.0 E1483.53
+G1 X33.2 Y3.03 Z20.68 F4800.0 E1490.112
+G1 X33.6 Y3.03 Z20.68 F4800.0 E1490.134
+G1 X33.6 Y120.61 Z20.68 F4800.0 E1496.716
+G1 X34.0 Y120.61 Z20.68 F4800.0 E1496.739
+G1 X34.0 Y3.02 Z20.68 F4800.0 E1503.321
+G1 X34.4 Y3.02 Z20.68 F4800.0 E1503.344
+G1 X34.4 Y120.61 Z20.68 F4800.0 E1509.926
+G1 X34.8 Y120.6 Z20.68 F4800.0 E1509.948
+G1 X34.8 Y3.01 Z20.68 F4800.0 E1516.531
+G1 X35.2 Y3.01 Z20.68 F4800.0 E1516.553
+G1 X35.2 Y120.6 Z20.68 F4800.0 E1523.135
+G1 X35.6 Y120.59 Z20.68 F4800.0 E1523.158
+G1 X35.6 Y3.01 Z20.68 F4800.0 E1529.74
+G1 X36.0 Y3.0 Z20.68 F4800.0 E1529.762
+G1 X36.0 Y120.59 Z20.68 F4800.0 E1536.345
+G1 X36.4 Y120.58 Z20.68 F4800.0 E1536.367
+G1 X36.4 Y3.0 Z20.68 F4800.0 E1542.949
+G1 X36.8 Y2.99 Z20.68 F4800.0 E1542.972
+G1 X36.8 Y120.58 Z20.68 F4800.0 E1549.554
+G1 X37.2 Y120.58 Z20.68 F4800.0 E1549.576
+G1 X37.2 Y2.99 Z20.68 F4800.0 E1556.159
+G1 X37.6 Y2.98 Z20.68 F4800.0 E1556.181
+G1 X37.6 Y120.57 Z20.68 F4800.0 E1562.763
+G1 X38.0 Y120.57 Z20.68 F4800.0 E1562.786
+G1 X38.0 Y2.98 Z20.68 F4800.0 E1569.368
+G1 X38.4 Y2.98 Z20.68 F4800.0 E1569.39
+G1 X38.4 Y120.56 Z20.68 F4800.0 E1575.973
+G1 X38.8 Y120.56 Z20.68 F4800.0 E1575.995
+G1 X38.8 Y2.97 Z20.68 F4800.0 E1582.577
+G1 X39.2 Y2.97 Z20.68 F4800.0 E1582.6
+G1 X39.2 Y120.56 Z20.68 F4800.0 E1589.182
+G1 X39.6 Y120.55 Z20.68 F4800.0 E1589.204
+G1 X39.6 Y2.96 Z20.68 F4800.0 E1595.787
+G1 X40.0 Y2.96 Z20.68 F4800.0 E1595.809
+G1 X40.0 Y120.55 Z20.68 F4800.0 E1602.391
+G1 X40.4 Y120.54 Z20.68 F4800.0 E1602.414
+G1 X40.4 Y2.96 Z20.68 F4800.0 E1608.996
+G1 X40.8 Y2.95 Z20.68 F4800.0 E1609.019
+G1 X40.8 Y120.54 Z20.68 F4800.0 E1615.601
+G1 X41.2 Y120.54 Z20.68 F4800.0 E1615.623
+G1 X41.2 Y2.95 Z20.68 F4800.0 E1622.206
+G1 X41.6 Y2.94 Z20.68 F4800.0 E1622.228
+G1 X41.6 Y120.53 Z20.68 F4800.0 E1628.81
+G1 X42.0 Y120.53 Z20.68 F4800.0 E1628.833
+G1 X42.0 Y2.94 Z20.68 F4800.0 E1635.415
+G1 X42.4 Y2.94 Z20.68 F4800.0 E1635.437
+G1 X42.4 Y120.52 Z20.68 F4800.0 E1642.02
+G1 X42.8 Y120.52 Z20.68 F4800.0 E1642.042
+G1 X42.8 Y2.93 Z20.68 F4800.0 E1648.624
+G1 X43.2 Y2.93 Z20.68 F4800.0 E1648.647
+G1 X43.2 Y120.52 Z20.68 F4800.0 E1655.229
+G1 X43.6 Y120.51 Z20.68 F4800.0 E1655.251
+G1 X43.6 Y2.92 Z20.68 F4800.0 E1661.834
+G1 X44.0 Y2.92 Z20.68 F4800.0 E1661.856
+G1 X44.0 Y120.51 Z20.68 F4800.0 E1668.438
+G1 X44.4 Y120.5 Z20.68 F4800.0 E1668.461
+G1 X44.4 Y2.92 Z20.68 F4800.0 E1675.043
+G1 X44.8 Y2.91 Z20.68 F4800.0 E1675.066
+G1 X44.8 Y120.5 Z20.68 F4800.0 E1681.648
+G1 X45.2 Y120.49 Z20.68 F4800.0 E1681.67
+G1 X45.2 Y2.91 Z20.68 F4800.0 E1688.252
+G1 X45.6 Y2.9 Z20.68 F4800.0 E1688.275
+G1 X45.6 Y120.49 Z20.68 F4800.0 E1694.857
+G1 X46.0 Y120.49 Z20.68 F4800.0 E1694.88
+G1 X46.0 Y2.9 Z20.68 F4800.0 E1701.462
+G1 X46.4 Y2.89 Z20.68 F4800.0 E1701.484
+G1 X46.4 Y120.48 Z20.68 F4800.0 E1708.067
+G1 X46.8 Y120.48 Z20.68 F4800.0 E1708.089
+G1 X46.8 Y2.89 Z20.68 F4800.0 E1714.671
+G1 X47.2 Y2.89 Z20.68 F4800.0 E1714.694
+G1 X47.2 Y120.47 Z20.68 F4800.0 E1721.276
+G1 X47.6 Y120.47 Z20.68 F4800.0 E1721.298
+G1 X47.6 Y37.99 Z20.68 F4800.0 E1725.915
+G1 F4800.0
+G1 E1724.915
+G1 F4800.0
+M103
+G1 X47.6 Y16.09 Z20.68 F9000.0
+G1 F4800.0
+G1 E1725.915
+G1 F9000.0
+M101
+G1 X47.6 Y2.88 Z20.68 F4800.0 E1726.655
+G1 X48.0 Y2.88 Z20.68 F4800.0 E1726.677
+G1 X48.0 Y14.25 Z20.68 F4800.0 E1727.314
+G1 F4800.0
+G1 E1726.991
+G1 F4800.0
+M103
+G1 X48.4 Y12.99 Z20.68 F9000.0
+G1 F4800.0
+G1 E1727.314
+G1 F9000.0
+M101
+G1 X48.4 Y2.87 Z20.68 F4800.0 E1727.88
+G1 X48.8 Y2.87 Z20.68 F4800.0 E1727.902
+G1 X48.8 Y12.11 Z20.68 F4800.0 E1728.42
+G1 X49.2 Y11.45 Z20.68 F4800.0 E1728.463
+G1 X49.2 Y2.87 Z20.68 F4800.0 E1728.944
+G1 X49.6 Y2.86 Z20.68 F4800.0 E1728.966
+G1 X49.6 Y10.9 Z20.68 F4800.0 E1729.416
+G1 X50.0 Y10.43 Z20.68 F4800.0 E1729.451
+G1 X50.0 Y2.86 Z20.68 F4800.0 E1729.875
+G1 X50.4 Y2.85 Z20.68 F4800.0 E1729.897
+G1 X50.4 Y10.04 Z20.68 F4800.0 E1730.3
+G1 X50.8 Y9.64 Z20.68 F4800.0 E1730.331
+G1 X50.8 Y2.85 Z20.68 F4800.0 E1730.711
+G1 X51.2 Y2.85 Z20.68 F4800.0 E1730.734
+G1 X51.2 Y9.32 Z20.68 F4800.0 E1731.096
+G1 X51.6 Y9.04 Z20.68 F4800.0 E1731.123
+G1 X51.6 Y2.84 Z20.68 F4800.0 E1731.47
+G1 X52.0 Y2.84 Z20.68 F4800.0 E1731.492
+G1 X52.0 Y8.75 Z20.68 F4800.0 E1731.824
+G1 X52.4 Y8.47 Z20.68 F4800.0 E1731.851
+G1 X52.4 Y2.83 Z20.68 F4800.0 E1732.167
+G1 X52.8 Y2.83 Z20.68 F4800.0 E1732.189
+G1 X52.8 Y8.25 Z20.68 F4800.0 E1732.493
+G1 X53.2 Y8.05 Z20.68 F4800.0 E1732.518
+G1 X53.2 Y2.82 Z20.68 F4800.0 E1732.811
+G1 X53.6 Y2.82 Z20.68 F4800.0 E1732.833
+G1 X53.6 Y7.86 Z20.68 F4800.0 E1733.115
+G1 X54.0 Y7.66 Z20.68 F4800.0 E1733.14
+G1 X54.0 Y2.82 Z20.68 F4800.0 E1733.411
+G1 X54.4 Y2.81 Z20.68 F4800.0 E1733.434
+G1 X54.4 Y7.46 Z20.68 F4800.0 E1733.694
+G1 X54.8 Y7.29 Z20.68 F4800.0 E1733.718
+G1 X54.8 Y2.81 Z20.68 F4800.0 E1733.969
+G1 X55.2 Y2.8 Z20.68 F4800.0 E1733.991
+G1 X55.2 Y7.16 Z20.68 F4800.0 E1734.235
+G1 X55.6 Y7.03 Z20.68 F4800.0 E1734.259
+G1 X55.6 Y2.8 Z20.68 F4800.0 E1734.496
+G1 X56.0 Y2.79 Z20.68 F4800.0 E1734.518
+G1 X56.0 Y6.91 Z20.68 F4800.0 E1734.748
+G1 X56.4 Y6.78 Z20.68 F4800.0 E1734.772
+G1 X56.4 Y2.79 Z20.68 F4800.0 E1734.995
+G1 X56.8 Y2.79 Z20.68 F4800.0 E1735.018
+G1 X56.8 Y6.66 Z20.68 F4800.0 E1735.235
+G1 X57.2 Y6.55 Z20.68 F4800.0 E1735.258
+G1 X57.2 Y2.78 Z20.68 F4800.0 E1735.469
+G1 X57.6 Y2.78 Z20.68 F4800.0 E1735.491
+G1 X57.6 Y6.46 Z20.68 F4800.0 E1735.697
+G1 X58.0 Y6.37 Z20.68 F4800.0 E1735.72
+G1 X58.0 Y2.77 Z20.68 F4800.0 E1735.921
+G1 X58.4 Y2.77 Z20.68 F4800.0 E1735.943
+G1 X58.4 Y6.28 Z20.68 F4800.0 E1736.139
+G1 X58.8 Y6.19 Z20.68 F4800.0 E1736.162
+G1 X58.8 Y2.77 Z20.68 F4800.0 E1736.354
+G1 X59.2 Y2.76 Z20.68 F4800.0 E1736.376
+G1 X59.2 Y6.09 Z20.68 F4800.0 E1736.563
+G1 X59.6 Y6.0 Z20.68 F4800.0 E1736.586
+G1 X59.6 Y2.76 Z20.68 F4800.0 E1736.768
+G1 X60.0 Y2.75 Z20.68 F4800.0 E1736.79
+G1 X60.0 Y5.92 Z20.68 F4800.0 E1736.967
+G1 X60.4 Y5.85 Z20.68 F4800.0 E1736.99
+G1 X60.4 Y2.75 Z20.68 F4800.0 E1737.163
+G1 X60.8 Y2.75 Z20.68 F4800.0 E1737.186
+G1 X60.8 Y5.79 Z20.68 F4800.0 E1737.356
+G1 X61.2 Y5.73 Z20.68 F4800.0 E1737.378
+G1 X61.2 Y2.74 Z20.68 F4800.0 E1737.546
+G1 X61.6 Y2.74 Z20.68 F4800.0 E1737.568
+G1 X61.6 Y5.67 Z20.68 F4800.0 E1737.732
+G1 X62.0 Y5.61 Z20.68 F4800.0 E1737.755
+G1 X62.0 Y2.73 Z20.68 F4800.0 E1737.915
+G1 X62.4 Y2.73 Z20.68 F4800.0 E1737.938
+G1 X62.4 Y5.54 Z20.68 F4800.0 E1738.095
+G1 X62.8 Y5.48 Z20.68 F4800.0 E1738.118
+G1 X62.8 Y2.73 Z20.68 F4800.0 E1738.272
+G1 X63.2 Y2.72 Z20.68 F4800.0 E1738.295
+G1 X63.2 Y5.42 Z20.68 F4800.0 E1738.446
+G1 X63.6 Y5.36 Z20.68 F4800.0 E1738.468
+G1 X63.6 Y2.72 Z20.68 F4800.0 E1738.617
+G1 X64.0 Y2.71 Z20.68 F4800.0 E1738.639
+G1 X64.0 Y5.3 Z20.68 F4800.0 E1738.784
+G1 X64.4 Y5.24 Z20.68 F4800.0 E1738.806
+G1 X64.4 Y2.71 Z20.68 F4800.0 E1738.948
+G1 X64.8 Y2.7 Z20.68 F4800.0 E1738.97
+G1 X64.8 Y5.18 Z20.68 F4800.0 E1739.109
+G1 X65.2 Y5.12 Z20.68 F4800.0 E1739.131
+G1 X65.2 Y2.7 Z20.68 F4800.0 E1739.266
+G1 X65.6 Y2.7 Z20.68 F4800.0 E1739.289
+G1 X65.6 Y5.05 Z20.68 F4800.0 E1739.421
+G1 F4800.0
+G1 E1738.421
+G1 F4800.0
+M103
+G1 X21.2 Y15.38 Z20.68 F9000.0
+G1 F4800.0
+G1 E1739.421
+G1 F9000.0
+M101
+G1 X21.2 Y3.15 Z20.68 F4800.0 E1740.105
+G1 X20.8 Y3.16 Z20.68 F4800.0 E1740.128
+G1 X20.8 Y13.61 Z20.68 F4800.0 E1740.713
+G1 F4800.0
+G1 E1739.713
+G1 F4800.0
+M103
+G1 X22.0 Y71.42 Z20.68 F9000.0
+G1 F4800.0
+G1 E1740.713
+G1 F9000.0
+M101
+G1 X22.0 Y3.15 Z20.68 F4800.0 E1744.534
+G1 X21.6 Y3.15 Z20.68 F4800.0 E1744.557
+G1 X21.6 Y32.67 Z20.68 F4800.0 E1746.209
+G1 F4800.0
+G1 E1745.209
+G1 F4800.0
+M103
+G1 X49.58 Y105.63 Z20.68 F9000.0
+G1 X51.05 Y111.32 Z20.68 F9000.0
+G1 X54.33 Y114.23 Z20.68 F9000.0
+G1 X66.8 Y117.91 Z20.68 F9000.0
+G1 F4800.0
+G1 E1746.209
+G1 F9000.0
+M101
+G1 X66.8 Y120.27 Z20.68 F4800.0 E1746.341
+G1 X66.4 Y120.28 Z20.68 F4800.0 E1746.363
+G1 X66.4 Y117.87 Z20.68 F4800.0 E1746.498
+G1 X66.0 Y117.83 Z20.68 F4800.0 E1746.52
+G1 X66.0 Y120.28 Z20.68 F4800.0 E1746.658
+G1 X65.6 Y120.28 Z20.68 F4800.0 E1746.68
+G1 X65.6 Y117.79 Z20.68 F4800.0 E1746.82
+G1 X65.2 Y117.75 Z20.68 F4800.0 E1746.842
+G1 X65.2 Y120.29 Z20.68 F4800.0 E1746.985
+G1 X64.8 Y120.29 Z20.68 F4800.0 E1747.007
+G1 X64.8 Y117.7 Z20.68 F4800.0 E1747.152
+G1 X64.4 Y117.66 Z20.68 F4800.0 E1747.174
+G1 X64.4 Y120.3 Z20.68 F4800.0 E1747.322
+G1 X64.0 Y120.3 Z20.68 F4800.0 E1747.344
+G1 X64.0 Y117.62 Z20.68 F4800.0 E1747.494
+G1 X63.6 Y117.58 Z20.68 F4800.0 E1747.517
+G1 X63.6 Y120.3 Z20.68 F4800.0 E1747.669
+G1 X63.2 Y120.31 Z20.68 F4800.0 E1747.692
+G1 X63.2 Y117.54 Z20.68 F4800.0 E1747.847
+G1 X62.8 Y117.49 Z20.68 F4800.0 E1747.87
+G1 X62.8 Y120.31 Z20.68 F4800.0 E1748.027
+G1 X62.4 Y120.32 Z20.68 F4800.0 E1748.05
+G1 X62.4 Y117.45 Z20.68 F4800.0 E1748.21
+G1 X62.0 Y117.41 Z20.68 F4800.0 E1748.233
+G1 X62.0 Y120.32 Z20.68 F4800.0 E1748.396
+G1 X61.6 Y120.33 Z20.68 F4800.0 E1748.418
+G1 X61.6 Y117.35 Z20.68 F4800.0 E1748.584
+G1 X61.2 Y117.29 Z20.68 F4800.0 E1748.607
+G1 X61.2 Y120.33 Z20.68 F4800.0 E1748.777
+G1 X60.8 Y120.33 Z20.68 F4800.0 E1748.799
+G1 X60.8 Y117.23 Z20.68 F4800.0 E1748.973
+G1 X60.4 Y117.17 Z20.68 F4800.0 E1748.996
+G1 X60.4 Y120.34 Z20.68 F4800.0 E1749.173
+G1 X60.0 Y120.34 Z20.68 F4800.0 E1749.196
+G1 X60.0 Y117.1 Z20.68 F4800.0 E1749.377
+G1 X59.6 Y117.04 Z20.68 F4800.0 E1749.4
+G1 X59.6 Y120.34 Z20.68 F4800.0 E1749.585
+G1 X59.2 Y120.35 Z20.68 F4800.0 E1749.607
+G1 X59.2 Y116.98 Z20.68 F4800.0 E1749.796
+G1 X58.8 Y116.91 Z20.68 F4800.0 E1749.819
+G1 X58.8 Y120.35 Z20.68 F4800.0 E1750.011
+G1 X58.4 Y120.36 Z20.68 F4800.0 E1750.034
+G1 X58.4 Y116.81 Z20.68 F4800.0 E1750.232
+G1 X58.0 Y116.71 Z20.68 F4800.0 E1750.255
+G1 X58.0 Y120.36 Z20.68 F4800.0 E1750.46
+G1 X57.6 Y120.37 Z20.68 F4800.0 E1750.483
+G1 X57.6 Y116.6 Z20.68 F4800.0 E1750.693
+G1 X57.2 Y116.5 Z20.68 F4800.0 E1750.716
+G1 X57.2 Y120.37 Z20.68 F4800.0 E1750.933
+G1 X56.8 Y120.37 Z20.68 F4800.0 E1750.955
+G1 X56.8 Y116.4 Z20.68 F4800.0 E1751.178
+G1 X56.4 Y116.29 Z20.68 F4800.0 E1751.201
+G1 X56.4 Y120.38 Z20.68 F4800.0 E1751.43
+G1 X56.0 Y120.38 Z20.68 F4800.0 E1751.452
+G1 X56.0 Y116.19 Z20.68 F4800.0 E1751.687
+G1 X55.6 Y116.09 Z20.68 F4800.0 E1751.71
+G1 X55.6 Y120.39 Z20.68 F4800.0 E1751.951
+G1 X55.2 Y120.39 Z20.68 F4800.0 E1751.973
+G1 X55.2 Y115.98 Z20.68 F4800.0 E1752.22
+G1 X54.8 Y115.83 Z20.68 F4800.0 E1752.244
+G1 X54.8 Y120.39 Z20.68 F4800.0 E1752.499
+G1 X54.4 Y120.4 Z20.68 F4800.0 E1752.521
+G1 X54.4 Y115.66 Z20.68 F4800.0 E1752.787
+G1 X54.0 Y115.49 Z20.68 F4800.0 E1752.811
+G1 X54.0 Y120.4 Z20.68 F4800.0 E1753.086
+G1 X53.6 Y120.41 Z20.68 F4800.0 E1753.109
+G1 X53.6 Y115.29 Z20.68 F4800.0 E1753.395
+G1 X53.2 Y115.05 Z20.68 F4800.0 E1753.421
+G1 X53.2 Y120.41 Z20.68 F4800.0 E1753.721
+G1 X52.8 Y120.42 Z20.68 F4800.0 E1753.744
+G1 X52.8 Y114.8 Z20.68 F4800.0 E1754.058
+G1 X52.4 Y114.56 Z20.68 F4800.0 E1754.084
+G1 X52.4 Y120.42 Z20.68 F4800.0 E1754.412
+G1 X52.0 Y120.42 Z20.68 F4800.0 E1754.434
+G1 X52.0 Y114.28 Z20.68 F4800.0 E1754.778
+G1 X51.6 Y113.91 Z20.68 F4800.0 E1754.809
+G1 X51.6 Y120.43 Z20.68 F4800.0 E1755.174
+G1 X51.2 Y120.43 Z20.68 F4800.0 E1755.197
+G1 X51.2 Y113.53 Z20.68 F4800.0 E1755.583
+G1 X50.8 Y113.15 Z20.68 F4800.0 E1755.614
+G1 X50.8 Y120.44 Z20.68 F4800.0 E1756.021
+G1 X50.4 Y120.44 Z20.68 F4800.0 E1756.044
+G1 X50.4 Y112.61 Z20.68 F4800.0 E1756.482
+G1 X50.0 Y112.05 Z20.68 F4800.0 E1756.521
+G1 X50.0 Y120.44 Z20.68 F4800.0 E1756.99
+G1 X49.6 Y120.45 Z20.68 F4800.0 E1757.013
+G1 X49.6 Y111.27 Z20.68 F4800.0 E1757.527
+G1 X49.2 Y110.18 Z20.68 F4800.0 E1757.592
+G1 X49.2 Y120.45 Z20.68 F4800.0 E1758.167
+G1 X48.8 Y120.46 Z20.68 F4800.0 E1758.189
+G1 X48.8 Y108.92 Z20.68 F4800.0 E1758.835
+G1 X48.4 Y106.5 Z20.68 F4800.0 E1758.972
+G1 X48.4 Y120.46 Z20.68 F4800.0 E1759.753
+G1 X48.0 Y120.47 Z20.68 F4800.0 E1759.776
+G1 X48.0 Y76.74 Z20.68 F4800.0 E1762.223
+G1 F4800.0
+G1 E1761.223
+G1 F4800.0
+M103
+G1 X22.0 Y107.94 Z20.68 F9000.0
+G1 F4800.0
+G1 E1762.223
+G1 F9000.0
+M101
+G1 X22.0 Y120.73 Z20.68 F4800.0 E1762.939
+G1 X21.6 Y120.74 Z20.68 F4800.0 E1762.961
+G1 X21.6 Y109.24 Z20.68 F4800.0 E1763.605
+G1 F4800.0
+G1 E1763.36
+G1 F4800.0
+M103
+G1 X21.2 Y110.42 Z20.68 F9000.0
+G1 F4800.0
+G1 E1763.605
+G1 F9000.0
+M101
+G1 X21.2 Y120.74 Z20.68 F4800.0 E1764.182
+G1 X20.8 Y120.75 Z20.68 F4800.0 E1764.205
+G1 X20.8 Y111.23 Z20.68 F4800.0 E1764.737
+G1 X20.4 Y111.81 Z20.68 F4800.0 E1764.777
+G1 X20.4 Y120.75 Z20.68 F4800.0 E1765.277
+G1 X20.0 Y120.75 Z20.68 F4800.0 E1765.3
+G1 X20.0 Y112.34 Z20.68 F4800.0 E1765.771
+G1 X19.6 Y112.75 Z20.68 F4800.0 E1765.803
+G1 X19.6 Y120.76 Z20.68 F4800.0 E1766.251
+G1 X19.2 Y120.76 Z20.68 F4800.0 E1766.273
+G1 X19.2 Y113.17 Z20.68 F4800.0 E1766.699
+G1 X18.8 Y113.56 Z20.68 F4800.0 E1766.73
+G1 X18.8 Y120.77 Z20.68 F4800.0 E1767.134
+G1 X18.4 Y120.77 Z20.68 F4800.0 E1767.156
+G1 X18.4 Y113.84 Z20.68 F4800.0 E1767.544
+G1 X18.0 Y114.13 Z20.68 F4800.0 E1767.571
+G1 X18.0 Y120.78 Z20.68 F4800.0 E1767.944
+G1 X17.6 Y120.78 Z20.68 F4800.0 E1767.966
+G1 X17.6 Y114.41 Z20.68 F4800.0 E1768.322
+G1 X17.2 Y114.67 Z20.68 F4800.0 E1768.349
+G1 X17.2 Y120.78 Z20.68 F4800.0 E1768.691
+G1 X16.8 Y120.79 Z20.68 F4800.0 E1768.714
+G1 X16.8 Y114.87 Z20.68 F4800.0 E1769.045
+G1 X16.4 Y115.06 Z20.68 F4800.0 E1769.07
+G1 X16.4 Y120.79 Z20.68 F4800.0 E1769.391
+G1 X16.0 Y120.8 Z20.68 F4800.0 E1769.413
+G1 X16.0 Y115.26 Z20.68 F4800.0 E1769.723
+G1 X15.6 Y115.46 Z20.68 F4800.0 E1769.748
+G1 X15.6 Y120.8 Z20.68 F4800.0 E1770.047
+G1 X15.2 Y120.8 Z20.68 F4800.0 E1770.069
+G1 X15.2 Y115.66 Z20.68 F4800.0 E1770.357
+G1 X14.8 Y115.81 Z20.68 F4800.0 E1770.381
+G1 X14.8 Y120.81 Z20.68 F4800.0 E1770.661
+G1 X14.4 Y120.81 Z20.68 F4800.0 E1770.684
+G1 X14.4 Y115.94 Z20.68 F4800.0 E1770.956
+G1 X14.0 Y116.08 Z20.68 F4800.0 E1770.98
+G1 X14.0 Y120.82 Z20.68 F4800.0 E1771.245
+G1 X13.6 Y120.82 Z20.68 F4800.0 E1771.268
+G1 X13.6 Y116.21 Z20.68 F4800.0 E1771.526
+G1 X13.2 Y116.35 Z20.68 F4800.0 E1771.549
+G1 X13.2 Y120.83 Z20.68 F4800.0 E1771.8
+G1 X12.8 Y120.83 Z20.68 F4800.0 E1771.822
+G1 X12.8 Y116.48 Z20.68 F4800.0 E1772.066
+G1 X12.4 Y116.59 Z20.68 F4800.0 E1772.089
+G1 X12.4 Y120.83 Z20.68 F4800.0 E1772.326
+G1 X12.0 Y120.84 Z20.68 F4800.0 E1772.349
+G1 X12.0 Y116.7 Z20.68 F4800.0 E1772.58
+G1 X11.6 Y116.81 Z20.68 F4800.0 E1772.603
+G1 X11.6 Y120.84 Z20.68 F4800.0 E1772.829
+G1 X11.2 Y120.84 Z20.68 F4800.0 E1772.851
+G1 X11.2 Y116.92 Z20.68 F4800.0 E1773.071
+G1 X10.8 Y117.03 Z20.68 F4800.0 E1773.094
+G1 X10.8 Y120.85 Z20.68 F4800.0 E1773.308
+G1 X10.4 Y120.85 Z20.68 F4800.0 E1773.331
+G1 X10.4 Y117.13 Z20.68 F4800.0 E1773.539
+G1 X10.0 Y117.24 Z20.68 F4800.0 E1773.562
+G1 X10.0 Y120.86 Z20.68 F4800.0 E1773.765
+G1 X9.6 Y120.86 Z20.68 F4800.0 E1773.787
+G1 X9.6 Y117.34 Z20.68 F4800.0 E1773.984
+G1 X9.2 Y117.42 Z20.68 F4800.0 E1774.007
+G1 X9.2 Y120.87 Z20.68 F4800.0 E1774.199
+G1 X8.8 Y120.87 Z20.68 F4800.0 E1774.222
+G1 X8.8 Y117.51 Z20.68 F4800.0 E1774.41
+G1 X8.4 Y117.59 Z20.68 F4800.0 E1774.433
+G1 X8.4 Y120.87 Z20.68 F4800.0 E1774.617
+G1 X8.0 Y120.88 Z20.68 F4800.0 E1774.639
+G1 X8.0 Y117.67 Z20.68 F4800.0 E1774.819
+G1 X7.6 Y117.75 Z20.68 F4800.0 E1774.842
+G1 X7.6 Y120.88 Z20.68 F4800.0 E1775.017
+G1 X7.2 Y120.89 Z20.68 F4800.0 E1775.04
+G1 X7.2 Y117.83 Z20.68 F4800.0 E1775.211
+G1 X6.8 Y117.91 Z20.68 F4800.0 E1775.234
+G1 X6.8 Y120.89 Z20.68 F4800.0 E1775.4
+G1 X6.4 Y120.89 Z20.68 F4800.0 E1775.423
+G1 X6.4 Y117.99 Z20.68 F4800.0 E1775.585
+G1 X6.0 Y118.07 Z20.68 F4800.0 E1775.608
+G1 X6.0 Y120.9 Z20.68 F4800.0 E1775.766
+G1 X5.6 Y120.9 Z20.68 F4800.0 E1775.789
+G1 X5.6 Y118.15 Z20.68 F4800.0 E1775.943
+G1 X5.2 Y118.23 Z20.68 F4800.0 E1775.966
+G1 X5.2 Y120.91 Z20.68 F4800.0 E1776.115
+G1 X4.8 Y120.91 Z20.68 F4800.0 E1776.137
+G1 X4.8 Y118.32 Z20.68 F4800.0 E1776.283
+G1 X4.4 Y118.4 Z20.68 F4800.0 E1776.306
+G1 X4.4 Y120.92 Z20.68 F4800.0 E1776.447
+G1 X4.0 Y120.78 Z20.68 F4800.0 E1776.47
+G1 X4.0 Y118.48 Z20.68 F4800.0 E1776.599
+G1 F4800.0
+G1 E1775.599
+G1 F4800.0
+M103
+(</infill>)
+(</nestedRing>)
+(</rotation>)
+(</layer>)
+(<layer> 20.945 )
+(<rotation> (-1+1.22464679915e-16j) )
+(<nestedRing>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X67.301 Y6.26 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X64.854 Y6.543 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X60.322 Y7.303 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X57.439 Y7.954 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X55.179 Y8.661 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X54.495 Y8.96 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X53.229 Y9.632 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X51.997 Y10.487 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X50.895 Y11.553 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X50.226 Y12.463 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X49.81 Y13.263 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X49.102 Y15.493 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X48.819 Y18.028 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X49.723 Y105.602 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X50.045 Y108.123 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X50.771 Y110.417 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X51.185 Y111.256 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X51.865 Y112.199 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X52.989 Y113.25 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X54.411 Y114.113 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X55.562 Y114.608 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X56.572 Y114.925 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X59.104 Y115.519 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X62.038 Y115.98 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X68.442 Y116.652 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X68.495 Y121.679 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X2.498 Y122.361 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X2.447 Y117.317 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X4.923 Y116.901 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X9.356 Y115.94 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X12.393 Y115.116 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X14.604 Y114.365 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X15.33 Y114.052 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X16.595 Y113.378 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X17.953 Y112.404 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X19.018 Y111.3 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X19.564 Y110.512 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X19.967 Y109.698 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X20.649 Y107.486 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X20.922 Y105.042 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X20.017 Y17.369 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X19.683 Y14.761 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X18.933 Y12.552 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X18.504 Y11.783 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X17.824 Y10.917 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X16.72 Y9.914 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X15.498 Y9.127 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X14.247 Y8.512 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X13.414 Y8.2 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X11.274 Y7.735 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X8.028 Y7.376 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X1.304 Y6.937 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X1.253 Y1.936 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X67.25 Y1.253 Z20.945 </boundaryPoint>)
+(<boundaryPoint> X67.256 Y1.813 Z20.945 </boundaryPoint>)
+(<loop> outer )
+G1 X14.65 Y114.5 Z20.95 F9000.0
+G1 X19.11 Y111.41 Z20.95 F9000.0
+G1 X20.79 Y107.52 Z20.95 F9000.0
+G1 X20.16 Y17.34 Z20.95 F9000.0
+G1 X19.06 Y12.49 Z20.95 F9000.0
+G1 X16.82 Y9.81 Z20.95 F9000.0
+G1 X2.67 Y3.44 Z20.95 F9000.0
+G1 F4800.0
+G1 E1776.599
+G1 F9000.0
+M101
+G1 X2.67 Y3.32 Z20.95 F4800.0 E1776.606
+G1 X65.86 Y2.67 Z20.95 F4800.0 E1780.144
+G1 X65.89 Y5.04 Z20.95 F4800.0 E1780.277
+G1 X60.06 Y5.93 Z20.95 F4800.0 E1780.607
+G1 X57.08 Y6.6 Z20.95 F4800.0 E1780.778
+G1 X54.67 Y7.35 Z20.95 F4800.0 E1780.919
+G1 X52.51 Y8.43 Z20.95 F4800.0 E1781.054
+G1 X51.1 Y9.4 Z20.95 F4800.0 E1781.15
+G1 X49.84 Y10.63 Z20.95 F4800.0 E1781.249
+G1 X49.03 Y11.72 Z20.95 F4800.0 E1781.325
+G1 X48.51 Y12.72 Z20.95 F4800.0 E1781.388
+G1 X47.73 Y15.2 Z20.95 F4800.0 E1781.533
+G1 X47.42 Y17.96 Z20.95 F4800.0 E1781.689
+G1 X48.32 Y105.7 Z20.95 F4800.0 E1786.6
+G1 X48.67 Y108.42 Z20.95 F4800.0 E1786.754
+G1 X49.47 Y110.94 Z20.95 F4800.0 E1786.902
+G1 X49.98 Y111.98 Z20.95 F4800.0 E1786.967
+G1 X50.81 Y113.13 Z20.95 F4800.0 E1787.046
+G1 X52.14 Y114.37 Z20.95 F4800.0 E1787.148
+G1 X53.77 Y115.36 Z20.95 F4800.0 E1787.255
+G1 X55.09 Y115.93 Z20.95 F4800.0 E1787.336
+G1 X58.84 Y116.9 Z20.95 F4800.0 E1787.552
+G1 X67.06 Y117.9 Z20.95 F4800.0 E1788.015
+G1 X67.08 Y120.29 Z20.95 F4800.0 E1788.149
+G1 X3.88 Y120.95 Z20.95 F4800.0 E1791.687
+G1 X3.86 Y118.48 Z20.95 F4800.0 E1791.825
+G1 X9.68 Y117.3 Z20.95 F4800.0 E1792.158
+G1 X12.81 Y116.45 Z20.95 F4800.0 E1792.339
+G1 X15.92 Y115.33 Z20.95 F4800.0 E1792.524
+G1 X17.34 Y114.57 Z20.95 F4800.0 E1792.614
+G1 X18.87 Y113.47 Z20.95 F4800.0 E1792.72
+G1 X20.1 Y112.19 Z20.95 F4800.0 E1792.82
+G1 X20.77 Y111.22 Z20.95 F4800.0 E1792.885
+G1 X21.27 Y110.22 Z20.95 F4800.0 E1792.948
+G1 X22.03 Y107.77 Z20.95 F4800.0 E1793.091
+G1 X22.32 Y105.11 Z20.95 F4800.0 E1793.241
+G1 X21.42 Y17.27 Z20.95 F4800.0 E1798.159
+G1 X21.05 Y14.44 Z20.95 F4800.0 E1798.318
+G1 X20.22 Y11.98 Z20.95 F4800.0 E1798.464
+G1 X19.67 Y11.01 Z20.95 F4800.0 E1798.526
+G1 X18.85 Y9.96 Z20.95 F4800.0 E1798.601
+G1 X17.58 Y8.8 Z20.95 F4800.0 E1798.697
+G1 X16.19 Y7.91 Z20.95 F4800.0 E1798.79
+G1 X14.8 Y7.22 Z20.95 F4800.0 E1798.876
+G1 X13.81 Y6.85 Z20.95 F4800.0 E1798.936
+G1 X11.49 Y6.35 Z20.95 F4800.0 E1799.068
+G1 X2.69 Y5.64 Z20.95 F4800.0 E1799.563
+G1 X2.67 Y3.44 Z20.95 F4800.0 E1799.685
+G1 F4800.0
+G1 E1799.685
+G1 F4800.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X2.27 Y3.45 Z20.95 F9000.0
+G1 F4800.0
+G1 E1799.685
+G1 F9000.0
+M101
+G1 X2.27 Y3.33 Z20.95 F4800.0 E1799.692
+G1 X2.26 Y2.93 Z20.95 F4800.0 E1799.715
+G1 X66.26 Y2.26 Z20.95 F4800.0 E1803.297
+G1 X66.29 Y5.38 Z20.95 F4800.0 E1803.472
+G1 X60.13 Y6.32 Z20.95 F4800.0 E1803.821
+G1 X57.18 Y6.99 Z20.95 F4800.0 E1803.99
+G1 X54.82 Y7.73 Z20.95 F4800.0 E1804.129
+G1 X52.71 Y8.77 Z20.95 F4800.0 E1804.26
+G1 X51.36 Y9.71 Z20.95 F4800.0 E1804.352
+G1 X50.14 Y10.89 Z20.95 F4800.0 E1804.447
+G1 X49.37 Y11.93 Z20.95 F4800.0 E1804.52
+G1 X48.88 Y12.88 Z20.95 F4800.0 E1804.579
+G1 X48.12 Y15.28 Z20.95 F4800.0 E1804.721
+G1 X47.82 Y17.98 Z20.95 F4800.0 E1804.872
+G1 X48.72 Y105.67 Z20.95 F4800.0 E1809.782
+G1 X49.06 Y108.34 Z20.95 F4800.0 E1809.932
+G1 X49.84 Y110.79 Z20.95 F4800.0 E1810.076
+G1 X50.33 Y111.77 Z20.95 F4800.0 E1810.137
+G1 X51.11 Y112.86 Z20.95 F4800.0 E1810.213
+G1 X52.38 Y114.05 Z20.95 F4800.0 E1810.31
+G1 X53.95 Y115.0 Z20.95 F4800.0 E1810.413
+G1 X55.22 Y115.55 Z20.95 F4800.0 E1810.49
+G1 X58.91 Y116.5 Z20.95 F4800.0 E1810.704
+G1 X67.45 Y117.55 Z20.95 F4800.0 E1811.185
+G1 X67.48 Y120.69 Z20.95 F4800.0 E1811.361
+G1 X3.49 Y121.35 Z20.95 F4800.0 E1814.944
+G1 X3.46 Y118.15 Z20.95 F4800.0 E1815.123
+G1 X9.59 Y116.91 Z20.95 F4800.0 E1815.473
+G1 X12.69 Y116.07 Z20.95 F4800.0 E1815.653
+G1 X15.75 Y114.96 Z20.95 F4800.0 E1815.835
+G1 X17.12 Y114.23 Z20.95 F4800.0 E1815.922
+G1 X18.61 Y113.16 Z20.95 F4800.0 E1816.025
+G1 X19.79 Y111.94 Z20.95 F4800.0 E1816.12
+G1 X20.43 Y111.02 Z20.95 F4800.0 E1816.182
+G1 X20.9 Y110.07 Z20.95 F4800.0 E1816.242
+G1 X21.63 Y107.69 Z20.95 F4800.0 E1816.381
+G1 X21.92 Y105.09 Z20.95 F4800.0 E1816.528
+G1 X21.02 Y17.3 Z20.95 F4800.0 E1821.442
+G1 X20.66 Y14.53 Z20.95 F4800.0 E1821.598
+G1 X19.85 Y12.14 Z20.95 F4800.0 E1821.74
+G1 X19.34 Y11.23 Z20.95 F4800.0 E1821.798
+G1 X18.56 Y10.23 Z20.95 F4800.0 E1821.869
+G1 X17.33 Y9.12 Z20.95 F4800.0 E1821.962
+G1 X15.99 Y8.26 Z20.95 F4800.0 E1822.051
+G1 X14.64 Y7.59 Z20.95 F4800.0 E1822.135
+G1 X13.7 Y7.24 Z20.95 F4800.0 E1822.192
+G1 X11.43 Y6.75 Z20.95 F4800.0 E1822.322
+G1 X2.29 Y6.0 Z20.95 F4800.0 E1822.835
+G1 X2.27 Y3.45 Z20.95 F4800.0 E1822.978
+G1 F4800.0
+G1 E1822.978
+G1 F4800.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X1.87 Y3.45 Z20.95 F9000.0
+G1 F4800.0
+G1 E1822.978
+G1 F9000.0
+M101
+G1 X1.87 Y3.33 Z20.95 F4800.0 E1822.985
+G1 X1.86 Y2.53 Z20.95 F4800.0 E1823.029
+G1 X66.6 Y1.86 Z20.95 F4800.0 E1826.654
+G1 X66.66 Y1.89 Z20.95 F4800.0 E1826.657
+G1 X66.7 Y5.73 Z20.95 F4800.0 E1826.872
+G1 X60.21 Y6.71 Z20.95 F4800.0 E1827.24
+G1 X57.28 Y7.37 Z20.95 F4800.0 E1827.407
+G1 X54.97 Y8.1 Z20.95 F4800.0 E1827.543
+G1 X52.92 Y9.12 Z20.95 F4800.0 E1827.671
+G1 X51.62 Y10.02 Z20.95 F4800.0 E1827.76
+G1 X50.44 Y11.16 Z20.95 F4800.0 E1827.851
+G1 X49.72 Y12.14 Z20.95 F4800.0 E1827.92
+G1 X49.25 Y13.03 Z20.95 F4800.0 E1827.976
+G1 X48.51 Y15.37 Z20.95 F4800.0 E1828.113
+G1 X48.22 Y18.0 Z20.95 F4800.0 E1828.261
+G1 X49.12 Y105.64 Z20.95 F4800.0 E1833.168
+G1 X49.46 Y108.25 Z20.95 F4800.0 E1833.315
+G1 X50.21 Y110.64 Z20.95 F4800.0 E1833.455
+G1 X50.67 Y111.57 Z20.95 F4800.0 E1833.513
+G1 X51.41 Y112.6 Z20.95 F4800.0 E1833.584
+G1 X52.63 Y113.73 Z20.95 F4800.0 E1833.677
+G1 X54.13 Y114.65 Z20.95 F4800.0 E1833.776
+G1 X55.35 Y115.17 Z20.95 F4800.0 E1833.85
+G1 X58.99 Y116.11 Z20.95 F4800.0 E1834.06
+G1 X67.85 Y117.19 Z20.95 F4800.0 E1834.56
+G1 X67.89 Y121.08 Z20.95 F4800.0 E1834.778
+G1 X3.09 Y121.75 Z20.95 F4800.0 E1838.405
+G1 X3.05 Y117.82 Z20.95 F4800.0 E1838.625
+G1 X9.5 Y116.52 Z20.95 F4800.0 E1838.993
+G1 X12.57 Y115.69 Z20.95 F4800.0 E1839.171
+G1 X15.59 Y114.59 Z20.95 F4800.0 E1839.351
+G1 X16.91 Y113.89 Z20.95 F4800.0 E1839.435
+G1 X18.35 Y112.86 Z20.95 F4800.0 E1839.534
+G1 X19.48 Y111.68 Z20.95 F4800.0 E1839.626
+G1 X20.08 Y110.82 Z20.95 F4800.0 E1839.685
+G1 X20.53 Y109.92 Z20.95 F4800.0 E1839.741
+G1 X21.24 Y107.61 Z20.95 F4800.0 E1839.876
+G1 X21.52 Y105.07 Z20.95 F4800.0 E1840.019
+G1 X20.62 Y17.33 Z20.95 F4800.0 E1844.931
+G1 X20.27 Y14.63 Z20.95 F4800.0 E1845.084
+G1 X19.48 Y12.31 Z20.95 F4800.0 E1845.221
+G1 X19.0 Y11.45 Z20.95 F4800.0 E1845.275
+G1 X18.27 Y10.51 Z20.95 F4800.0 E1845.343
+G1 X17.09 Y9.44 Z20.95 F4800.0 E1845.432
+G1 X15.79 Y8.6 Z20.95 F4800.0 E1845.518
+G1 X14.48 Y7.96 Z20.95 F4800.0 E1845.599
+G1 X13.58 Y7.62 Z20.95 F4800.0 E1845.653
+G1 X11.37 Y7.14 Z20.95 F4800.0 E1845.78
+G1 X1.9 Y6.38 Z20.95 F4800.0 E1846.312
+G1 X1.87 Y3.45 Z20.95 F4800.0 E1846.476
+G1 F4800.0
+G1 E1846.476
+G1 F4800.0
+M103
+(</loop>)
+(<edge> outer )
+;M108 R40.0
+G1 X1.47 Y3.46 Z20.95 F9000.0
+G1 F4800.0
+G1 E1846.476
+G1 F9000.0
+M101
+G1 X1.47 Y3.33 Z20.95 F2400.0 E1846.483
+G1 X1.46 Y2.13 Z20.95 F2400.0 E1846.55
+G1 X67.05 Y1.46 Z20.95 F2400.0 E1850.222
+G1 X67.1 Y6.08 Z20.95 F2400.0 E1850.481
+G1 X64.83 Y6.34 Z20.95 F2400.0 E1850.609
+G1 X60.28 Y7.11 Z20.95 F2400.0 E1850.867
+G1 X57.39 Y7.76 Z20.95 F2400.0 E1851.033
+G1 X55.11 Y8.47 Z20.95 F2400.0 E1851.167
+G1 X54.41 Y8.78 Z20.95 F2400.0 E1851.209
+G1 X53.13 Y9.46 Z20.95 F2400.0 E1851.291
+G1 X51.87 Y10.33 Z20.95 F2400.0 E1851.376
+G1 X50.74 Y11.42 Z20.95 F2400.0 E1851.464
+G1 X50.06 Y12.36 Z20.95 F2400.0 E1851.529
+G1 X49.63 Y13.19 Z20.95 F2400.0 E1851.581
+G1 X48.91 Y15.45 Z20.95 F2400.0 E1851.714
+G1 X48.62 Y18.02 Z20.95 F2400.0 E1851.859
+G1 X49.52 Y105.62 Z20.95 F2400.0 E1856.763
+G1 X49.85 Y108.17 Z20.95 F2400.0 E1856.907
+G1 X50.59 Y110.49 Z20.95 F2400.0 E1857.043
+G1 X51.01 Y111.36 Z20.95 F2400.0 E1857.097
+G1 X51.71 Y112.33 Z20.95 F2400.0 E1857.165
+G1 X52.87 Y113.41 Z20.95 F2400.0 E1857.253
+G1 X54.32 Y114.29 Z20.95 F2400.0 E1857.348
+G1 X55.49 Y114.8 Z20.95 F2400.0 E1857.419
+G1 X56.52 Y115.12 Z20.95 F2400.0 E1857.48
+G1 X59.07 Y115.72 Z20.95 F2400.0 E1857.626
+G1 X62.01 Y116.18 Z20.95 F2400.0 E1857.793
+G1 X68.24 Y116.83 Z20.95 F2400.0 E1858.144
+G1 X68.29 Y121.48 Z20.95 F2400.0 E1858.404
+G1 X2.7 Y122.16 Z20.95 F2400.0 E1862.076
+G1 X2.65 Y117.49 Z20.95 F2400.0 E1862.338
+G1 X4.96 Y117.1 Z20.95 F2400.0 E1862.469
+G1 X9.4 Y116.13 Z20.95 F2400.0 E1862.724
+G1 X12.45 Y115.31 Z20.95 F2400.0 E1862.9
+G1 X14.68 Y114.55 Z20.95 F2400.0 E1863.032
+G1 X15.42 Y114.23 Z20.95 F2400.0 E1863.077
+G1 X16.7 Y113.55 Z20.95 F2400.0 E1863.158
+G1 X18.08 Y112.56 Z20.95 F2400.0 E1863.254
+G1 X19.17 Y111.43 Z20.95 F2400.0 E1863.342
+G1 X19.74 Y110.61 Z20.95 F2400.0 E1863.397
+G1 X20.15 Y109.77 Z20.95 F2400.0 E1863.45
+G1 X20.85 Y107.53 Z20.95 F2400.0 E1863.581
+G1 X21.12 Y105.05 Z20.95 F2400.0 E1863.72
+G1 X20.22 Y17.36 Z20.95 F2400.0 E1868.63
+G1 X19.88 Y14.72 Z20.95 F2400.0 E1868.779
+G1 X19.12 Y12.47 Z20.95 F2400.0 E1868.911
+G1 X18.67 Y11.67 Z20.95 F2400.0 E1868.963
+G1 X17.97 Y10.78 Z20.95 F2400.0 E1869.026
+G1 X16.84 Y9.76 Z20.95 F2400.0 E1869.111
+G1 X15.6 Y8.95 Z20.95 F2400.0 E1869.194
+G1 X14.33 Y8.33 Z20.95 F2400.0 E1869.274
+G1 X13.47 Y8.01 Z20.95 F2400.0 E1869.325
+G1 X11.31 Y7.54 Z20.95 F2400.0 E1869.449
+G1 X8.05 Y7.18 Z20.95 F2400.0 E1869.632
+G1 X1.5 Y6.75 Z20.95 F2400.0 E1870.0
+G1 X1.47 Y3.46 Z20.95 F2400.0 E1870.184
+G1 F4800.0
+G1 E1869.184
+G1 F2400.0
+M103
+(</edge>)
+(</boundaryPerimeter>)
+(<infill>)
+(<infillBoundary>)
+(<infillPoint> X65.889 Y5.04 Z20.945 </infillPoint>)
+(<infillPoint> X60.058 Y5.927 Z20.945 </infillPoint>)
+(<infillPoint> X57.075 Y6.601 Z20.945 </infillPoint>)
+(<infillPoint> X54.669 Y7.354 Z20.945 </infillPoint>)
+(<infillPoint> X52.508 Y8.428 Z20.945 </infillPoint>)
+(<infillPoint> X51.105 Y9.402 Z20.945 </infillPoint>)
+(<infillPoint> X49.837 Y10.629 Z20.945 </infillPoint>)
+(<infillPoint> X49.034 Y11.721 Z20.945 </infillPoint>)
+(<infillPoint> X48.512 Y12.724 Z20.945 </infillPoint>)
+(<infillPoint> X47.726 Y15.201 Z20.945 </infillPoint>)
+(<infillPoint> X47.418 Y17.957 Z20.945 </infillPoint>)
+(<infillPoint> X48.324 Y105.698 Z20.945 </infillPoint>)
+(<infillPoint> X48.672 Y108.425 Z20.945 </infillPoint>)
+(<infillPoint> X49.468 Y110.941 Z20.945 </infillPoint>)
+(<infillPoint> X49.981 Y111.98 Z20.945 </infillPoint>)
+(<infillPoint> X50.809 Y113.128 Z20.945 </infillPoint>)
+(<infillPoint> X52.139 Y114.372 Z20.945 </infillPoint>)
+(<infillPoint> X53.768 Y115.361 Z20.945 </infillPoint>)
+(<infillPoint> X55.094 Y115.931 Z20.945 </infillPoint>)
+(<infillPoint> X58.84 Y116.896 Z20.945 </infillPoint>)
+(<infillPoint> X67.055 Y117.902 Z20.945 </infillPoint>)
+(<infillPoint> X67.08 Y120.294 Z20.945 </infillPoint>)
+(<infillPoint> X3.884 Y120.947 Z20.945 </infillPoint>)
+(<infillPoint> X3.859 Y118.477 Z20.945 </infillPoint>)
+(<infillPoint> X9.682 Y117.302 Z20.945 </infillPoint>)
+(<infillPoint> X12.81 Y116.454 Z20.945 </infillPoint>)
+(<infillPoint> X15.916 Y115.326 Z20.945 </infillPoint>)
+(<infillPoint> X17.335 Y114.57 Z20.945 </infillPoint>)
+(<infillPoint> X18.872 Y113.468 Z20.945 </infillPoint>)
+(<infillPoint> X20.104 Y112.19 Z20.945 </infillPoint>)
+(<infillPoint> X20.773 Y111.225 Z20.945 </infillPoint>)
+(<infillPoint> X21.272 Y110.218 Z20.945 </infillPoint>)
+(<infillPoint> X22.026 Y107.772 Z20.945 </infillPoint>)
+(<infillPoint> X22.323 Y105.113 Z20.945 </infillPoint>)
+(<infillPoint> X21.416 Y17.273 Z20.945 </infillPoint>)
+(<infillPoint> X21.054 Y14.444 Z20.945 </infillPoint>)
+(<infillPoint> X20.218 Y11.981 Z20.945 </infillPoint>)
+(<infillPoint> X19.673 Y11.005 Z20.945 </infillPoint>)
+(<infillPoint> X18.852 Y9.96 Z20.945 </infillPoint>)
+(<infillPoint> X17.576 Y8.8 Z20.945 </infillPoint>)
+(<infillPoint> X16.188 Y7.906 Z20.945 </infillPoint>)
+(<infillPoint> X14.803 Y7.225 Z20.945 </infillPoint>)
+(<infillPoint> X13.81 Y6.853 Z20.945 </infillPoint>)
+(<infillPoint> X11.489 Y6.349 Z20.945 </infillPoint>)
+(<infillPoint> X2.691 Y5.636 Z20.945 </infillPoint>)
+(<infillPoint> X2.667 Y3.321 Z20.945 </infillPoint>)
+(<infillPoint> X65.864 Y2.667 Z20.945 </infillPoint>)
+(</infillBoundary>)
+;M108 R80.0
+G1 X3.03 Y5.2 Z20.95 F9000.0
+G1 F4800.0
+G1 E1870.184
+G1 F9000.0
+M101
+G1 X2.96 Y4.8 Z20.95 F4800.0 E1870.207
+G1 X2.95 Y4.0 Z20.95 F4800.0 E1870.251
+G1 X3.17 Y3.6 Z20.95 F4800.0 E1870.277
+G1 X5.71 Y5.6 Z20.95 F4800.0 E1870.458
+G1 X10.73 Y5.61 Z20.95 F4800.0 E1870.739
+G1 X14.47 Y6.8 Z20.95 F4800.0 E1870.958
+G1 X16.2 Y7.6 Z20.95 F4800.0 E1871.065
+G1 X17.99 Y8.8 Z20.95 F4800.0 E1871.186
+G1 X19.24 Y10.0 Z20.95 F4800.0 E1871.283
+G1 X19.87 Y10.8 Z20.95 F4800.0 E1871.34
+G1 X20.52 Y12.0 Z20.95 F4800.0 E1871.416
+G1 X21.2 Y14.0 Z20.95 F4800.0 E1871.534
+G1 X21.44 Y13.47 Z20.95 F4800.0 E1871.567
+G1 X20.88 Y11.82 Z20.95 F4800.0 E1871.664
+G1 X20.45 Y11.0 Z20.95 F4800.0 E1871.717
+G1 X19.87 Y10.15 Z20.95 F4800.0 E1871.774
+G1 X17.86 Y4.0 Z20.95 F4800.0 E1872.136
+G1 X18.14 Y4.0 Z20.95 F4800.0 E1872.152
+G1 X21.86 Y6.67 Z20.95 F4800.0 E1872.408
+G1 X22.14 Y6.67 Z20.95 F4800.0 E1872.424
+G1 X25.86 Y4.0 Z20.95 F4800.0 E1872.68
+G1 X26.14 Y4.0 Z20.95 F4800.0 E1872.696
+G1 X29.86 Y12.0 Z20.95 F4800.0 E1873.19
+G1 X30.14 Y12.0 Z20.95 F4800.0 E1873.205
+G1 X33.86 Y14.67 Z20.95 F4800.0 E1873.461
+G1 X34.14 Y14.67 Z20.95 F4800.0 E1873.477
+G1 X37.86 Y12.0 Z20.95 F4800.0 E1873.733
+G1 X38.14 Y12.0 Z20.95 F4800.0 E1873.749
+G1 X41.86 Y14.67 Z20.95 F4800.0 E1874.005
+G1 X42.14 Y14.67 Z20.95 F4800.0 E1874.021
+G1 X45.86 Y12.0 Z20.95 F4800.0 E1874.277
+G1 X46.14 Y12.0 Z20.95 F4800.0 E1874.293
+G1 X47.44 Y15.2 Z20.95 F4800.0 E1874.486
+G1 X48.37 Y12.4 Z20.95 F4800.0 E1874.651
+G1 X48.78 Y11.6 Z20.95 F4800.0 E1874.702
+G1 X49.67 Y10.4 Z20.95 F4800.0 E1874.785
+G1 X50.91 Y9.2 Z20.95 F4800.0 E1874.882
+G1 X52.06 Y8.4 Z20.95 F4800.0 E1874.96
+G1 X53.55 Y7.6 Z20.95 F4800.0 E1875.055
+G1 F4800.0
+G1 E1874.055
+G1 F4800.0
+M103
+G1 X21.76 Y23.6 Z20.95 F9000.0
+G1 F4800.0
+G1 E1875.055
+G1 F9000.0
+M101
+G1 X21.86 Y28.0 Z20.95 F4800.0 E1875.301
+G1 X22.14 Y28.0 Z20.95 F4800.0 E1875.317
+G1 X21.81 Y28.4 Z20.95 F4800.0 E1875.346
+G1 X21.84 Y31.2 Z20.95 F4800.0 E1875.503
+G1 X26.14 Y30.67 Z20.95 F4800.0 E1875.745
+G1 X29.86 Y28.0 Z20.95 F4800.0 E1876.001
+G1 X30.14 Y28.0 Z20.95 F4800.0 E1876.017
+G1 X33.86 Y30.67 Z20.95 F4800.0 E1876.273
+G1 X34.14 Y30.67 Z20.95 F4800.0 E1876.289
+G1 X37.86 Y28.0 Z20.95 F4800.0 E1876.545
+G1 X38.14 Y28.0 Z20.95 F4800.0 E1876.561
+G1 X41.86 Y30.67 Z20.95 F4800.0 E1876.817
+G1 X47.27 Y31.2 Z20.95 F4800.0 E1877.122
+G1 X47.2 Y23.6 Z20.95 F4800.0 E1877.547
+G1 X21.76 Y23.2 Z20.95 F4800.0 E1878.971
+G1 X21.69 Y17.2 Z20.95 F4800.0 E1879.307
+G1 X21.38 Y14.8 Z20.95 F4800.0 E1879.443
+G1 X21.73 Y14.35 Z20.95 F4800.0 E1879.474
+G1 X21.86 Y12.0 Z20.95 F4800.0 E1879.606
+G1 X22.14 Y12.0 Z20.95 F4800.0 E1879.622
+G1 X25.86 Y20.0 Z20.95 F4800.0 E1880.116
+G1 X26.14 Y20.0 Z20.95 F4800.0 E1880.131
+G1 X29.86 Y22.67 Z20.95 F4800.0 E1880.388
+G1 X30.14 Y22.67 Z20.95 F4800.0 E1880.403
+G1 X33.86 Y20.0 Z20.95 F4800.0 E1880.659
+G1 X34.14 Y20.0 Z20.95 F4800.0 E1880.675
+G1 X37.86 Y22.67 Z20.95 F4800.0 E1880.931
+G1 X38.14 Y22.67 Z20.95 F4800.0 E1880.947
+G1 X41.86 Y20.0 Z20.95 F4800.0 E1881.203
+G1 X42.14 Y20.0 Z20.95 F4800.0 E1881.219
+G1 X47.19 Y23.2 Z20.95 F4800.0 E1881.554
+G1 X47.14 Y18.0 Z20.95 F4800.0 E1881.845
+G1 X47.4 Y15.6 Z20.95 F4800.0 E1881.98
+G1 F4800.0
+G1 E1880.98
+G1 F4800.0
+M103
+G1 X41.46 Y3.2 Z20.95 F9000.0
+G1 F4800.0
+G1 E1881.98
+G1 F9000.0
+M101
+G1 X41.86 Y4.0 Z20.95 F4800.0 E1882.03
+G1 X42.14 Y4.0 Z20.95 F4800.0 E1882.046
+G1 X45.86 Y6.67 Z20.95 F4800.0 E1882.302
+G1 X46.14 Y6.67 Z20.95 F4800.0 E1882.318
+G1 X49.86 Y4.0 Z20.95 F4800.0 E1882.574
+G1 X50.14 Y4.0 Z20.95 F4800.0 E1882.589
+G1 X54.35 Y7.2 Z20.95 F4800.0 E1882.885
+G1 X56.78 Y6.4 Z20.95 F4800.0 E1883.029
+G1 X57.86 Y4.0 Z20.95 F4800.0 E1883.176
+G1 X58.14 Y4.0 Z20.95 F4800.0 E1883.192
+G1 X58.47 Y6.0 Z20.95 F4800.0 E1883.305
+G1 X60.35 Y5.6 Z20.95 F4800.0 E1883.413
+G1 X65.6 Y4.8 Z20.95 F4800.0 E1883.71
+G1 X65.59 Y3.2 Z20.95 F4800.0 E1883.8
+G1 F4800.0
+G1 E1882.8
+G1 F4800.0
+M103
+G1 X55.04 Y8.29 Z20.95 F9000.0
+G1 X50.59 Y11.29 Z20.95 F9000.0
+G1 X48.71 Y15.41 Z20.95 F9000.0
+G1 X47.28 Y31.6 Z20.95 F9000.0
+G1 F4800.0
+G1 E1883.8
+G1 F9000.0
+M101
+G1 X47.36 Y39.2 Z20.95 F4800.0 E1884.225
+G1 X42.14 Y36.0 Z20.95 F4800.0 E1884.568
+G1 X41.86 Y36.0 Z20.95 F4800.0 E1884.584
+G1 X38.14 Y38.67 Z20.95 F4800.0 E1884.84
+G1 X37.86 Y38.67 Z20.95 F4800.0 E1884.856
+G1 X34.14 Y36.0 Z20.95 F4800.0 E1885.112
+G1 X33.86 Y36.0 Z20.95 F4800.0 E1885.127
+G1 X30.14 Y38.67 Z20.95 F4800.0 E1885.384
+G1 X29.86 Y38.67 Z20.95 F4800.0 E1885.399
+G1 X26.14 Y36.0 Z20.95 F4800.0 E1885.656
+G1 X25.86 Y36.0 Z20.95 F4800.0 E1885.671
+G1 X21.92 Y39.2 Z20.95 F4800.0 E1885.955
+G1 X21.84 Y31.6 Z20.95 F4800.0 E1886.381
+G1 F4800.0
+G1 E1885.381
+G1 F4800.0
+M103
+G1 X21.93 Y39.6 Z20.95 F9000.0
+G1 F4800.0
+G1 E1886.381
+G1 F9000.0
+M101
+G1 X21.97 Y43.6 Z20.95 F4800.0 E1886.605
+G1 X21.86 Y44.0 Z20.95 F4800.0 E1886.628
+G1 X21.98 Y44.4 Z20.95 F4800.0 E1886.651
+G1 X22.0 Y47.2 Z20.95 F4800.0 E1886.808
+G1 X22.41 Y47.2 Z20.95 F4800.0 E1886.83
+G1 X22.38 Y44.8 Z20.95 F4800.0 E1886.965
+G1 X22.14 Y44.0 Z20.95 F4800.0 E1887.011
+G1 X38.14 Y44.0 Z20.95 F4800.0 E1887.907
+G1 X41.86 Y46.67 Z20.95 F4800.0 E1888.163
+G1 X42.14 Y46.67 Z20.95 F4800.0 E1888.179
+G1 X47.44 Y47.6 Z20.95 F4800.0 E1888.48
+G1 X47.36 Y39.6 Z20.95 F4800.0 E1888.928
+G1 F4800.0
+G1 E1887.928
+G1 F4800.0
+M103
+G1 X47.45 Y48.0 Z20.95 F9000.0
+G1 F4800.0
+G1 E1888.928
+G1 F9000.0
+M101
+G1 X47.53 Y55.6 Z20.95 F4800.0 E1889.354
+G1 X42.14 Y52.0 Z20.95 F4800.0 E1889.716
+G1 X41.86 Y52.0 Z20.95 F4800.0 E1889.732
+G1 X34.14 Y46.67 Z20.95 F4800.0 E1890.257
+G1 X25.86 Y46.67 Z20.95 F4800.0 E1890.721
+G1 X22.01 Y47.6 Z20.95 F4800.0 E1890.942
+G1 X22.09 Y55.2 Z20.95 F4800.0 E1891.368
+G1 F4800.0
+G1 E1890.368
+G1 F4800.0
+M103
+G1 X22.17 Y63.2 Z20.95 F9000.0
+G1 F4800.0
+G1 E1891.368
+G1 F9000.0
+M101
+G1 X22.09 Y55.6 Z20.95 F4800.0 E1891.793
+G1 X25.86 Y52.0 Z20.95 F4800.0 E1892.085
+G1 X26.14 Y52.0 Z20.95 F4800.0 E1892.101
+G1 X29.86 Y54.67 Z20.95 F4800.0 E1892.357
+G1 X30.14 Y54.67 Z20.95 F4800.0 E1892.373
+G1 X33.86 Y52.0 Z20.95 F4800.0 E1892.629
+G1 X34.14 Y52.0 Z20.95 F4800.0 E1892.645
+G1 X37.86 Y60.0 Z20.95 F4800.0 E1893.138
+G1 X38.14 Y60.0 Z20.95 F4800.0 E1893.154
+G1 X41.86 Y62.67 Z20.95 F4800.0 E1893.41
+G1 X47.6 Y63.2 Z20.95 F4800.0 E1893.733
+G1 X47.53 Y56.0 Z20.95 F4800.0 E1894.136
+G1 F4800.0
+G1 E1893.136
+G1 F4800.0
+M103
+G1 X47.61 Y63.6 Z20.95 F9000.0
+G1 F4800.0
+G1 E1894.136
+G1 F9000.0
+M101
+G1 X47.69 Y71.2 Z20.95 F4800.0 E1894.562
+G1 X42.14 Y68.0 Z20.95 F4800.0 E1894.92
+G1 X41.86 Y68.0 Z20.95 F4800.0 E1894.936
+G1 X38.14 Y70.67 Z20.95 F4800.0 E1895.192
+G1 X37.86 Y70.67 Z20.95 F4800.0 E1895.208
+G1 X34.14 Y68.0 Z20.95 F4800.0 E1895.464
+G1 X33.86 Y68.0 Z20.95 F4800.0 E1895.48
+G1 X30.14 Y60.0 Z20.95 F4800.0 E1895.974
+G1 X29.86 Y60.0 Z20.95 F4800.0 E1895.989
+G1 X26.14 Y62.67 Z20.95 F4800.0 E1896.246
+G1 X25.86 Y62.67 Z20.95 F4800.0 E1896.261
+G1 X22.17 Y63.6 Z20.95 F4800.0 E1896.474
+G1 X22.25 Y71.2 Z20.95 F4800.0 E1896.9
+G1 F4800.0
+G1 E1895.9
+G1 F4800.0
+M103
+G1 X22.42 Y87.6 Z20.95 F9000.0
+G1 F4800.0
+G1 E1896.9
+G1 F9000.0
+M101
+G1 X22.5 Y95.2 Z20.95 F4800.0 E1897.325
+G1 X26.14 Y94.67 Z20.95 F4800.0 E1897.531
+G1 X29.86 Y92.0 Z20.95 F4800.0 E1897.787
+G1 X30.14 Y92.0 Z20.95 F4800.0 E1897.803
+G1 X33.86 Y94.67 Z20.95 F4800.0 E1898.059
+G1 X34.14 Y94.67 Z20.95 F4800.0 E1898.075
+G1 X37.86 Y92.0 Z20.95 F4800.0 E1898.331
+G1 X38.14 Y92.0 Z20.95 F4800.0 E1898.347
+G1 X41.86 Y94.67 Z20.95 F4800.0 E1898.603
+G1 X47.94 Y95.2 Z20.95 F4800.0 E1898.944
+G1 X47.86 Y87.6 Z20.95 F4800.0 E1899.37
+G1 F4800.0
+G1 E1898.37
+G1 F4800.0
+M103
+G1 X47.77 Y79.6 Z20.95 F9000.0
+G1 F4800.0
+G1 E1899.37
+G1 F9000.0
+M101
+G1 X47.85 Y87.2 Z20.95 F4800.0 E1899.795
+G1 X42.14 Y84.0 Z20.95 F4800.0 E1900.162
+G1 X41.86 Y84.0 Z20.95 F4800.0 E1900.177
+G1 X38.14 Y86.67 Z20.95 F4800.0 E1900.434
+G1 X37.86 Y86.67 Z20.95 F4800.0 E1900.449
+G1 X34.14 Y84.0 Z20.95 F4800.0 E1900.706
+G1 X33.86 Y84.0 Z20.95 F4800.0 E1900.721
+G1 X30.14 Y86.67 Z20.95 F4800.0 E1900.977
+G1 X29.86 Y86.67 Z20.95 F4800.0 E1900.993
+G1 X26.14 Y84.0 Z20.95 F4800.0 E1901.249
+G1 X25.86 Y84.0 Z20.95 F4800.0 E1901.265
+G1 X22.42 Y87.2 Z20.95 F4800.0 E1901.528
+G1 X22.26 Y71.6 Z20.95 F4800.0 E1902.401
+G1 X25.86 Y68.0 Z20.95 F4800.0 E1902.687
+G1 X26.14 Y68.0 Z20.95 F4800.0 E1902.702
+G1 X29.86 Y76.0 Z20.95 F4800.0 E1903.196
+G1 X30.14 Y76.0 Z20.95 F4800.0 E1903.212
+G1 X33.86 Y78.67 Z20.95 F4800.0 E1903.468
+G1 X34.14 Y78.67 Z20.95 F4800.0 E1903.484
+G1 X37.86 Y76.0 Z20.95 F4800.0 E1903.74
+G1 X38.14 Y76.0 Z20.95 F4800.0 E1903.756
+G1 X41.86 Y78.67 Z20.95 F4800.0 E1904.012
+G1 X47.77 Y79.2 Z20.95 F4800.0 E1904.344
+G1 X47.69 Y71.6 Z20.95 F4800.0 E1904.769
+G1 F4800.0
+G1 E1903.769
+G1 F4800.0
+M103
+G1 X47.94 Y95.6 Z20.95 F9000.0
+G1 F4800.0
+G1 E1904.769
+G1 F9000.0
+M101
+G1 X48.02 Y103.2 Z20.95 F4800.0 E1905.195
+G1 X42.14 Y100.0 Z20.95 F4800.0 E1905.569
+G1 X25.86 Y100.0 Z20.95 F4800.0 E1906.481
+G1 X22.58 Y103.2 Z20.95 F4800.0 E1906.737
+G1 X22.5 Y95.6 Z20.95 F4800.0 E1907.163
+G1 F4800.0
+G1 E1906.163
+G1 F4800.0
+M103
+G1 X20.85 Y111.6 Z20.95 F9000.0
+G1 F4800.0
+G1 E1907.163
+G1 F9000.0
+M101
+G1 X21.49 Y110.4 Z20.95 F4800.0 E1907.239
+G1 X22.25 Y108.0 Z20.95 F4800.0 E1907.38
+G1 X22.59 Y105.2 Z20.95 F4800.0 E1907.538
+G1 X22.59 Y103.6 Z20.95 F4800.0 E1907.627
+G1 X29.86 Y102.67 Z20.95 F4800.0 E1908.038
+G1 X38.14 Y102.67 Z20.95 F4800.0 E1908.501
+G1 X48.02 Y103.6 Z20.95 F4800.0 E1909.057
+G1 X48.04 Y105.6 Z20.95 F4800.0 E1909.169
+G1 X48.39 Y108.4 Z20.95 F4800.0 E1909.327
+G1 X49.28 Y111.2 Z20.95 F4800.0 E1909.491
+G1 F4800.0
+G1 E1908.491
+G1 F4800.0
+M103
+G1 X59.02 Y117.2 Z20.95 F9000.0
+G1 F4800.0
+G1 E1909.491
+G1 F9000.0
+M101
+G1 X54.55 Y116.0 Z20.95 F4800.0 E1909.75
+G1 X53.62 Y115.6 Z20.95 F4800.0 E1909.807
+G1 X51.76 Y114.4 Z20.95 F4800.0 E1909.931
+G1 X50.52 Y113.2 Z20.95 F4800.0 E1910.028
+G1 X49.68 Y112.0 Z20.95 F4800.0 E1910.109
+G1 X49.48 Y111.6 Z20.95 F4800.0 E1910.134
+G1 X46.14 Y108.0 Z20.95 F4800.0 E1910.409
+G1 X45.86 Y108.0 Z20.95 F4800.0 E1910.425
+G1 X42.14 Y110.67 Z20.95 F4800.0 E1910.681
+G1 X41.86 Y110.67 Z20.95 F4800.0 E1910.697
+G1 X38.14 Y108.0 Z20.95 F4800.0 E1910.953
+G1 X37.86 Y108.0 Z20.95 F4800.0 E1910.969
+G1 X34.14 Y110.67 Z20.95 F4800.0 E1911.225
+G1 X33.86 Y110.67 Z20.95 F4800.0 E1911.241
+G1 X30.14 Y108.0 Z20.95 F4800.0 E1911.497
+G1 X29.86 Y108.0 Z20.95 F4800.0 E1911.513
+G1 X26.14 Y110.67 Z20.95 F4800.0 E1911.769
+G1 X25.86 Y110.67 Z20.95 F4800.0 E1911.785
+G1 X20.58 Y112.0 Z20.95 F4800.0 E1912.09
+G1 X20.29 Y112.4 Z20.95 F4800.0 E1912.117
+G1 X19.13 Y113.6 Z20.95 F4800.0 E1912.21
+G1 X17.5 Y114.8 Z20.95 F4800.0 E1912.324
+G1 X15.98 Y115.6 Z20.95 F4800.0 E1912.42
+G1 X12.6 Y116.8 Z20.95 F4800.0 E1912.621
+G1 X9.62 Y117.6 Z20.95 F4800.0 E1912.793
+G1 F4800.0
+G1 E1911.793
+G1 F4800.0
+M103
+G1 X29.68 Y120.4 Z20.95 F9000.0
+G1 F4800.0
+G1 E1912.793
+G1 F9000.0
+M101
+G1 X22.14 Y118.67 Z20.95 F4800.0 E1913.227
+G1 X4.16 Y120.4 Z20.95 F4800.0 E1914.238
+G1 X4.14 Y118.8 Z20.95 F4800.0 E1914.327
+G1 X5.66 Y118.4 Z20.95 F4800.0 E1914.415
+G1 X5.86 Y118.67 Z20.95 F4800.0 E1914.434
+G1 X6.14 Y118.67 Z20.95 F4800.0 E1914.45
+G1 X7.64 Y118.0 Z20.95 F4800.0 E1914.541
+G1 X14.14 Y118.67 Z20.95 F4800.0 E1914.907
+G1 X17.86 Y116.0 Z20.95 F4800.0 E1915.164
+G1 X26.14 Y116.0 Z20.95 F4800.0 E1915.627
+G1 X29.86 Y118.67 Z20.95 F4800.0 E1915.883
+G1 X30.14 Y118.67 Z20.95 F4800.0 E1915.899
+G1 X33.86 Y116.0 Z20.95 F4800.0 E1916.155
+G1 X34.14 Y116.0 Z20.95 F4800.0 E1916.171
+G1 X37.86 Y118.67 Z20.95 F4800.0 E1916.427
+G1 X38.14 Y118.67 Z20.95 F4800.0 E1916.443
+G1 X41.86 Y116.0 Z20.95 F4800.0 E1916.699
+G1 X42.14 Y116.0 Z20.95 F4800.0 E1916.715
+G1 X45.86 Y118.67 Z20.95 F4800.0 E1916.971
+G1 X46.14 Y118.67 Z20.95 F4800.0 E1916.987
+G1 X49.86 Y116.0 Z20.95 F4800.0 E1917.243
+G1 X50.14 Y116.0 Z20.95 F4800.0 E1917.258
+G1 X53.86 Y118.67 Z20.95 F4800.0 E1917.515
+G1 X62.14 Y118.67 Z20.95 F4800.0 E1917.978
+G1 X62.29 Y117.6 Z20.95 F4800.0 E1918.038
+G1 X65.55 Y118.0 Z20.95 F4800.0 E1918.223
+G1 X66.78 Y118.4 Z20.95 F4800.0 E1918.295
+G1 X66.79 Y119.6 Z20.95 F4800.0 E1918.362
+G1 X66.59 Y120.0 Z20.95 F4800.0 E1918.387
+G1 F4800.0
+G1 E1917.387
+G1 F4800.0
+M103
+(</infill>)
+(</nestedRing>)
+(</rotation>)
+(</layer>)
+(<layer> 21.215 )
+(<rotation> (6.12323399574e-17+1j) )
+(<nestedRing>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X67.044 Y6.035 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X64.805 Y6.293 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X60.273 Y7.053 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X57.39 Y7.704 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X55.082 Y8.426 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X54.398 Y8.725 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X53.088 Y9.421 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X51.856 Y10.276 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X50.715 Y11.373 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X50.015 Y12.322 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X49.575 Y13.166 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X48.852 Y15.444 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X48.564 Y18.028 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X49.468 Y105.602 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X49.795 Y108.173 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X50.536 Y110.515 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X50.974 Y111.398 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X51.685 Y112.379 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X52.848 Y113.462 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X54.314 Y114.348 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X55.465 Y114.843 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X56.523 Y115.174 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X59.055 Y115.768 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X61.989 Y116.229 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X68.19 Y116.882 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X68.238 Y121.427 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X2.75 Y122.104 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X2.704 Y117.532 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X4.972 Y117.15 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X9.405 Y116.189 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X12.275 Y115.416 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X14.701 Y114.6 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X15.427 Y114.287 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X16.736 Y113.59 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X18.133 Y112.584 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X19.229 Y111.442 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X19.775 Y110.654 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X20.202 Y109.796 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X20.899 Y107.536 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X21.177 Y105.042 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X20.272 Y17.369 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X19.933 Y14.712 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X19.168 Y12.455 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X18.715 Y11.642 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X18.004 Y10.737 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X16.861 Y9.703 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X15.639 Y8.916 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X14.344 Y8.277 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X13.463 Y7.95 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X11.323 Y7.485 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X8.028 Y7.121 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X1.556 Y6.699 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X1.51 Y2.188 Z21.215 </boundaryPoint>)
+(<boundaryPoint> X66.998 Y1.51 Z21.215 </boundaryPoint>)
+(<loop> outer )
+G1 X61.99 Y116.38 Z21.21 F9000.0
+G1 X54.23 Y114.47 Z21.21 F9000.0
+G1 X50.84 Y111.46 Z21.21 F9000.0
+G1 X20.41 Y17.34 Z21.21 F9000.0
+G1 X19.3 Y12.39 Z21.21 F9000.0
+G1 X15.7 Y8.78 Z21.21 F9000.0
+G1 X2.93 Y4.0 Z21.21 F9000.0
+G1 F4800.0
+G1 E1918.387
+G1 F9000.0
+M101
+G1 X2.92 Y3.57 Z21.21 F4800.0 E1918.411
+G1 X65.61 Y2.92 Z21.21 F4800.0 E1921.921
+G1 X65.63 Y4.82 Z21.21 F4800.0 E1922.026
+G1 X60.01 Y5.68 Z21.21 F4800.0 E1922.345
+G1 X57.03 Y6.35 Z21.21 F4800.0 E1922.516
+G1 X54.57 Y7.12 Z21.21 F4800.0 E1922.66
+G1 X52.37 Y8.22 Z21.21 F4800.0 E1922.798
+G1 X50.97 Y9.19 Z21.21 F4800.0 E1922.893
+G1 X49.66 Y10.45 Z21.21 F4800.0 E1922.995
+G1 X48.82 Y11.58 Z21.21 F4800.0 E1923.074
+G1 X48.28 Y12.63 Z21.21 F4800.0 E1923.14
+G1 X47.48 Y15.15 Z21.21 F4800.0 E1923.288
+G1 X47.16 Y17.96 Z21.21 F4800.0 E1923.446
+G1 X48.07 Y105.7 Z21.21 F4800.0 E1928.358
+G1 X48.42 Y108.47 Z21.21 F4800.0 E1928.515
+G1 X49.23 Y111.04 Z21.21 F4800.0 E1928.665
+G1 X49.77 Y112.13 Z21.21 F4800.0 E1928.733
+G1 X50.63 Y113.31 Z21.21 F4800.0 E1928.815
+G1 X52.0 Y114.58 Z21.21 F4800.0 E1928.92
+G1 X53.67 Y115.6 Z21.21 F4800.0 E1929.029
+G1 X55.0 Y116.17 Z21.21 F4800.0 E1929.11
+G1 X58.79 Y117.14 Z21.21 F4800.0 E1929.329
+G1 X66.8 Y118.13 Z21.21 F4800.0 E1929.781
+G1 X66.82 Y120.04 Z21.21 F4800.0 E1929.888
+G1 X4.14 Y120.69 Z21.21 F4800.0 E1933.397
+G1 X4.12 Y118.69 Z21.21 F4800.0 E1933.509
+G1 X9.73 Y117.55 Z21.21 F4800.0 E1933.83
+G1 X12.68 Y116.76 Z21.21 F4800.0 E1934.001
+G1 X15.22 Y115.9 Z21.21 F4800.0 E1934.151
+G1 X17.47 Y114.79 Z21.21 F4800.0 E1934.291
+G1 X19.05 Y113.64 Z21.21 F4800.0 E1934.401
+G1 X20.32 Y112.33 Z21.21 F4800.0 E1934.503
+G1 X20.98 Y111.37 Z21.21 F4800.0 E1934.568
+G1 X21.51 Y110.32 Z21.21 F4800.0 E1934.634
+G1 X22.28 Y107.82 Z21.21 F4800.0 E1934.78
+G1 X22.58 Y105.11 Z21.21 F4800.0 E1934.933
+G1 X21.67 Y17.27 Z21.21 F4800.0 E1939.85
+G1 X21.3 Y14.4 Z21.21 F4800.0 E1940.012
+G1 X20.45 Y11.88 Z21.21 F4800.0 E1940.161
+G1 X19.88 Y10.86 Z21.21 F4800.0 E1940.226
+G1 X19.03 Y9.78 Z21.21 F4800.0 E1940.304
+G1 X17.71 Y8.59 Z21.21 F4800.0 E1940.403
+G1 X16.33 Y7.7 Z21.21 F4800.0 E1940.495
+G1 X14.9 Y6.99 Z21.21 F4800.0 E1940.584
+G1 X13.86 Y6.6 Z21.21 F4800.0 E1940.647
+G1 X11.54 Y6.1 Z21.21 F4800.0 E1940.78
+G1 X2.94 Y5.4 Z21.21 F4800.0 E1941.262
+G1 X2.93 Y4.0 Z21.21 F4800.0 E1941.34
+G1 F4800.0
+G1 E1941.34
+G1 F4800.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X2.53 Y4.01 Z21.21 F9000.0
+G1 F4800.0
+G1 E1941.34
+G1 F9000.0
+M101
+G1 X2.52 Y3.58 Z21.21 F4800.0 E1941.364
+G1 X2.52 Y3.18 Z21.21 F4800.0 E1941.387
+G1 X66.01 Y2.52 Z21.21 F4800.0 E1944.941
+G1 X66.03 Y5.16 Z21.21 F4800.0 E1945.089
+G1 X60.08 Y6.07 Z21.21 F4800.0 E1945.426
+G1 X57.13 Y6.74 Z21.21 F4800.0 E1945.595
+G1 X54.72 Y7.49 Z21.21 F4800.0 E1945.736
+G1 X52.57 Y8.56 Z21.21 F4800.0 E1945.871
+G1 X51.22 Y9.5 Z21.21 F4800.0 E1945.963
+G1 X49.96 Y10.71 Z21.21 F4800.0 E1946.061
+G1 X49.16 Y11.79 Z21.21 F4800.0 E1946.136
+G1 X48.65 Y12.78 Z21.21 F4800.0 E1946.198
+G1 X47.87 Y15.23 Z21.21 F4800.0 E1946.343
+G1 X47.56 Y17.98 Z21.21 F4800.0 E1946.497
+G1 X48.47 Y105.67 Z21.21 F4800.0 E1951.406
+G1 X48.81 Y108.39 Z21.21 F4800.0 E1951.56
+G1 X49.61 Y110.89 Z21.21 F4800.0 E1951.706
+G1 X50.12 Y111.92 Z21.21 F4800.0 E1951.771
+G1 X50.93 Y113.05 Z21.21 F4800.0 E1951.849
+G1 X52.24 Y114.26 Z21.21 F4800.0 E1951.949
+G1 X53.86 Y115.24 Z21.21 F4800.0 E1952.054
+G1 X55.13 Y115.79 Z21.21 F4800.0 E1952.132
+G1 X58.87 Y116.75 Z21.21 F4800.0 E1952.348
+G1 X67.2 Y117.78 Z21.21 F4800.0 E1952.818
+G1 X67.23 Y120.44 Z21.21 F4800.0 E1952.967
+G1 X3.74 Y121.09 Z21.21 F4800.0 E1956.521
+G1 X3.71 Y118.36 Z21.21 F4800.0 E1956.674
+G1 X9.64 Y117.16 Z21.21 F4800.0 E1957.012
+G1 X12.56 Y116.37 Z21.21 F4800.0 E1957.182
+G1 X15.07 Y115.53 Z21.21 F4800.0 E1957.33
+G1 X17.26 Y114.44 Z21.21 F4800.0 E1957.467
+G1 X18.79 Y113.34 Z21.21 F4800.0 E1957.572
+G1 X20.01 Y112.08 Z21.21 F4800.0 E1957.67
+G1 X20.64 Y111.16 Z21.21 F4800.0 E1957.733
+G1 X21.13 Y110.17 Z21.21 F4800.0 E1957.795
+G1 X21.88 Y107.74 Z21.21 F4800.0 E1957.937
+G1 X22.18 Y105.09 Z21.21 F4800.0 E1958.086
+G1 X21.27 Y17.3 Z21.21 F4800.0 E1963.001
+G1 X20.91 Y14.49 Z21.21 F4800.0 E1963.16
+G1 X20.09 Y12.05 Z21.21 F4800.0 E1963.304
+G1 X19.55 Y11.09 Z21.21 F4800.0 E1963.365
+G1 X18.74 Y10.05 Z21.21 F4800.0 E1963.439
+G1 X17.47 Y8.91 Z21.21 F4800.0 E1963.535
+G1 X16.13 Y8.04 Z21.21 F4800.0 E1963.624
+G1 X14.74 Y7.36 Z21.21 F4800.0 E1963.711
+G1 X13.74 Y6.99 Z21.21 F4800.0 E1963.77
+G1 X11.48 Y6.5 Z21.21 F4800.0 E1963.9
+G1 X2.55 Y5.77 Z21.21 F4800.0 E1964.402
+G1 X2.53 Y4.01 Z21.21 F4800.0 E1964.5
+G1 F4800.0
+G1 E1964.5
+G1 F4800.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X2.13 Y4.01 Z21.21 F9000.0
+G1 F4800.0
+G1 E1964.5
+G1 F9000.0
+M101
+G1 X2.12 Y3.58 Z21.21 F4800.0 E1964.524
+G1 X2.12 Y2.78 Z21.21 F4800.0 E1964.569
+G1 X66.4 Y2.12 Z21.21 F4800.0 E1968.168
+G1 X66.44 Y5.5 Z21.21 F4800.0 E1968.357
+G1 X60.16 Y6.46 Z21.21 F4800.0 E1968.713
+G1 X57.23 Y7.12 Z21.21 F4800.0 E1968.881
+G1 X54.87 Y7.86 Z21.21 F4800.0 E1969.019
+G1 X52.77 Y8.91 Z21.21 F4800.0 E1969.15
+G1 X51.48 Y9.81 Z21.21 F4800.0 E1969.239
+G1 X50.26 Y10.98 Z21.21 F4800.0 E1969.333
+G1 X49.5 Y12.0 Z21.21 F4800.0 E1969.405
+G1 X49.02 Y12.94 Z21.21 F4800.0 E1969.463
+G1 X48.26 Y15.32 Z21.21 F4800.0 E1969.603
+G1 X47.96 Y18.0 Z21.21 F4800.0 E1969.754
+G1 X48.87 Y105.64 Z21.21 F4800.0 E1974.661
+G1 X49.21 Y108.3 Z21.21 F4800.0 E1974.811
+G1 X49.98 Y110.74 Z21.21 F4800.0 E1974.954
+G1 X50.46 Y111.71 Z21.21 F4800.0 E1975.015
+G1 X51.23 Y112.78 Z21.21 F4800.0 E1975.088
+G1 X52.48 Y113.94 Z21.21 F4800.0 E1975.184
+G1 X54.04 Y114.88 Z21.21 F4800.0 E1975.286
+G1 X55.26 Y115.41 Z21.21 F4800.0 E1975.36
+G1 X58.94 Y116.36 Z21.21 F4800.0 E1975.573
+G1 X67.6 Y117.42 Z21.21 F4800.0 E1976.061
+G1 X67.63 Y120.83 Z21.21 F4800.0 E1976.252
+G1 X3.34 Y121.5 Z21.21 F4800.0 E1979.851
+G1 X3.31 Y118.04 Z21.21 F4800.0 E1980.045
+G1 X9.55 Y116.77 Z21.21 F4800.0 E1980.401
+G1 X12.45 Y115.99 Z21.21 F4800.0 E1980.569
+G1 X14.92 Y115.16 Z21.21 F4800.0 E1980.715
+G1 X17.05 Y114.1 Z21.21 F4800.0 E1980.848
+G1 X18.53 Y113.04 Z21.21 F4800.0 E1980.95
+G1 X19.7 Y111.82 Z21.21 F4800.0 E1981.044
+G1 X20.29 Y110.96 Z21.21 F4800.0 E1981.103
+G1 X20.76 Y110.02 Z21.21 F4800.0 E1981.162
+G1 X21.49 Y107.66 Z21.21 F4800.0 E1981.3
+G1 X21.78 Y105.07 Z21.21 F4800.0 E1981.446
+G1 X20.87 Y17.33 Z21.21 F4800.0 E1986.358
+G1 X20.52 Y14.58 Z21.21 F4800.0 E1986.513
+G1 X19.72 Y12.21 Z21.21 F4800.0 E1986.653
+G1 X19.22 Y11.31 Z21.21 F4800.0 E1986.711
+G1 X18.44 Y10.33 Z21.21 F4800.0 E1986.781
+G1 X17.23 Y9.22 Z21.21 F4800.0 E1986.873
+G1 X15.94 Y8.39 Z21.21 F4800.0 E1986.959
+G1 X14.58 Y7.72 Z21.21 F4800.0 E1987.043
+G1 X13.63 Y7.37 Z21.21 F4800.0 E1987.1
+G1 X11.42 Y6.89 Z21.21 F4800.0 E1987.227
+G1 X2.15 Y6.14 Z21.21 F4800.0 E1987.747
+G1 X2.13 Y4.01 Z21.21 F4800.0 E1987.866
+G1 F4800.0
+G1 E1987.866
+G1 F4800.0
+M103
+(</loop>)
+(<edge> outer )
+;M108 R40.0
+G1 X1.73 Y4.01 Z21.21 F9000.0
+G1 F4800.0
+G1 E1987.866
+G1 F9000.0
+M101
+G1 X1.72 Y3.59 Z21.21 F2400.0 E1987.89
+G1 X1.71 Y2.39 Z21.21 F2400.0 E1987.958
+G1 X66.8 Y1.71 Z21.21 F2400.0 E1991.601
+G1 X66.84 Y5.86 Z21.21 F2400.0 E1991.833
+G1 X64.78 Y6.09 Z21.21 F2400.0 E1991.95
+G1 X60.23 Y6.86 Z21.21 F2400.0 E1992.207
+G1 X57.34 Y7.51 Z21.21 F2400.0 E1992.374
+G1 X55.01 Y8.24 Z21.21 F2400.0 E1992.51
+G1 X54.31 Y8.54 Z21.21 F2400.0 E1992.553
+G1 X52.98 Y9.25 Z21.21 F2400.0 E1992.637
+G1 X51.73 Y10.12 Z21.21 F2400.0 E1992.723
+G1 X50.56 Y11.24 Z21.21 F2400.0 E1992.813
+G1 X49.84 Y12.22 Z21.21 F2400.0 E1992.881
+G1 X49.39 Y13.09 Z21.21 F2400.0 E1992.936
+G1 X48.66 Y15.4 Z21.21 F2400.0 E1993.072
+G1 X48.36 Y18.02 Z21.21 F2400.0 E1993.219
+G1 X49.27 Y105.62 Z21.21 F2400.0 E1998.123
+G1 X49.6 Y108.22 Z21.21 F2400.0 E1998.27
+G1 X50.35 Y110.59 Z21.21 F2400.0 E1998.409
+G1 X50.8 Y111.5 Z21.21 F2400.0 E1998.466
+G1 X51.53 Y112.51 Z21.21 F2400.0 E1998.536
+G1 X52.73 Y113.62 Z21.21 F2400.0 E1998.627
+G1 X54.22 Y114.53 Z21.21 F2400.0 E1998.725
+G1 X55.4 Y115.03 Z21.21 F2400.0 E1998.796
+G1 X56.47 Y115.37 Z21.21 F2400.0 E1998.859
+G1 X59.02 Y115.96 Z21.21 F2400.0 E1999.006
+G1 X61.96 Y116.43 Z21.21 F2400.0 E1999.173
+G1 X67.99 Y117.06 Z21.21 F2400.0 E1999.512
+G1 X68.04 Y121.23 Z21.21 F2400.0 E1999.745
+G1 X2.95 Y121.9 Z21.21 F2400.0 E2003.389
+G1 X2.91 Y117.7 Z21.21 F2400.0 E2003.624
+G1 X5.01 Y117.35 Z21.21 F2400.0 E2003.744
+G1 X9.45 Y116.38 Z21.21 F2400.0 E2003.998
+G1 X12.33 Y115.61 Z21.21 F2400.0 E2004.165
+G1 X14.77 Y114.79 Z21.21 F2400.0 E2004.309
+G1 X15.51 Y114.47 Z21.21 F2400.0 E2004.354
+G1 X16.84 Y113.76 Z21.21 F2400.0 E2004.439
+G1 X18.27 Y112.74 Z21.21 F2400.0 E2004.537
+G1 X19.38 Y111.57 Z21.21 F2400.0 E2004.627
+G1 X19.95 Y110.76 Z21.21 F2400.0 E2004.683
+G1 X20.39 Y109.87 Z21.21 F2400.0 E2004.738
+G1 X21.1 Y107.58 Z21.21 F2400.0 E2004.872
+G1 X21.38 Y105.05 Z21.21 F2400.0 E2005.015
+G1 X20.47 Y17.36 Z21.21 F2400.0 E2009.924
+G1 X20.13 Y14.67 Z21.21 F2400.0 E2010.076
+G1 X19.35 Y12.37 Z21.21 F2400.0 E2010.211
+G1 X18.88 Y11.53 Z21.21 F2400.0 E2010.265
+G1 X18.15 Y10.6 Z21.21 F2400.0 E2010.331
+G1 X16.98 Y9.54 Z21.21 F2400.0 E2010.42
+G1 X15.74 Y8.74 Z21.21 F2400.0 E2010.503
+G1 X14.42 Y8.09 Z21.21 F2400.0 E2010.585
+G1 X13.52 Y7.76 Z21.21 F2400.0 E2010.639
+G1 X11.36 Y7.29 Z21.21 F2400.0 E2010.763
+G1 X8.04 Y6.92 Z21.21 F2400.0 E2010.949
+G1 X1.75 Y6.51 Z21.21 F2400.0 E2011.302
+G1 X1.73 Y4.01 Z21.21 F2400.0 E2011.442
+G1 F4800.0
+G1 E2010.442
+G1 F2400.0
+M103
+(</edge>)
+(</boundaryPerimeter>)
+(<infill>)
+(<infillBoundary>)
+(<infillPoint> X65.632 Y4.815 Z21.215 </infillPoint>)
+(<infillPoint> X60.008 Y5.678 Z21.215 </infillPoint>)
+(<infillPoint> X57.026 Y6.351 Z21.215 </infillPoint>)
+(<infillPoint> X54.572 Y7.119 Z21.215 </infillPoint>)
+(<infillPoint> X52.367 Y8.218 Z21.215 </infillPoint>)
+(<infillPoint> X50.966 Y9.189 Z21.215 </infillPoint>)
+(<infillPoint> X49.659 Y10.446 Z21.215 </infillPoint>)
+(<infillPoint> X48.824 Y11.578 Z21.215 </infillPoint>)
+(<infillPoint> X48.277 Y12.627 Z21.215 </infillPoint>)
+(<infillPoint> X47.476 Y15.152 Z21.215 </infillPoint>)
+(<infillPoint> X47.163 Y17.957 Z21.215 </infillPoint>)
+(<infillPoint> X48.069 Y105.698 Z21.215 </infillPoint>)
+(<infillPoint> X48.422 Y108.475 Z21.215 </infillPoint>)
+(<infillPoint> X49.234 Y111.04 Z21.215 </infillPoint>)
+(<infillPoint> X49.772 Y112.125 Z21.215 </infillPoint>)
+(<infillPoint> X50.631 Y113.311 Z21.215 </infillPoint>)
+(<infillPoint> X52.0 Y114.585 Z21.215 </infillPoint>)
+(<infillPoint> X53.672 Y115.596 Z21.215 </infillPoint>)
+(<infillPoint> X54.997 Y116.166 Z21.215 </infillPoint>)
+(<infillPoint> X58.79 Y117.145 Z21.215 </infillPoint>)
+(<infillPoint> X66.803 Y118.131 Z21.215 </infillPoint>)
+(<infillPoint> X66.823 Y120.042 Z21.215 </infillPoint>)
+(<infillPoint> X4.136 Y120.69 Z21.215 </infillPoint>)
+(<infillPoint> X4.116 Y118.691 Z21.215 </infillPoint>)
+(<infillPoint> X9.73 Y117.551 Z21.215 </infillPoint>)
+(<infillPoint> X12.681 Y116.757 Z21.215 </infillPoint>)
+(<infillPoint> X15.222 Y115.902 Z21.215 </infillPoint>)
+(<infillPoint> X17.468 Y114.788 Z21.215 </infillPoint>)
+(<infillPoint> X19.055 Y113.645 Z21.215 </infillPoint>)
+(<infillPoint> X20.316 Y112.331 Z21.215 </infillPoint>)
+(<infillPoint> X20.983 Y111.368 Z21.215 </infillPoint>)
+(<infillPoint> X21.506 Y110.318 Z21.215 </infillPoint>)
+(<infillPoint> X22.276 Y107.822 Z21.215 </infillPoint>)
+(<infillPoint> X22.578 Y105.113 Z21.215 </infillPoint>)
+(<infillPoint> X21.671 Y17.273 Z21.215 </infillPoint>)
+(<infillPoint> X21.304 Y14.396 Z21.215 </infillPoint>)
+(<infillPoint> X20.453 Y11.885 Z21.215 </infillPoint>)
+(<infillPoint> X19.884 Y10.864 Z21.215 </infillPoint>)
+(<infillPoint> X19.031 Y9.779 Z21.215 </infillPoint>)
+(<infillPoint> X17.715 Y8.588 Z21.215 </infillPoint>)
+(<infillPoint> X16.33 Y7.696 Z21.215 </infillPoint>)
+(<infillPoint> X14.899 Y6.99 Z21.215 </infillPoint>)
+(<infillPoint> X13.857 Y6.603 Z21.215 </infillPoint>)
+(<infillPoint> X11.538 Y6.099 Z21.215 </infillPoint>)
+(<infillPoint> X2.943 Y5.398 Z21.215 </infillPoint>)
+(<infillPoint> X2.924 Y3.573 Z21.215 </infillPoint>)
+(<infillPoint> X65.612 Y2.924 Z21.215 </infillPoint>)
+(</infillBoundary>)
+;M108 R80.0
+G1 X13.57 Y7.57 Z21.21 F9000.0
+G1 X20.4 Y11.21 Z21.21 F9000.0
+G1 F4800.0
+G1 E2011.442
+G1 F9000.0
+M101
+G1 X20.4 Y3.67 Z21.21 F4800.0 E2011.864
+G1 X20.0 Y3.68 Z21.21 F4800.0 E2011.886
+G1 X20.0 Y10.56 Z21.21 F4800.0 E2012.271
+G1 X19.6 Y10.05 Z21.21 F4800.0 E2012.308
+G1 X19.6 Y3.68 Z21.21 F4800.0 E2012.664
+G1 X19.2 Y3.69 Z21.21 F4800.0 E2012.687
+G1 X19.2 Y9.55 Z21.21 F4800.0 E2013.015
+G1 X18.8 Y9.19 Z21.21 F4800.0 E2013.045
+G1 X18.8 Y3.69 Z21.21 F4800.0 E2013.353
+G1 X18.4 Y3.69 Z21.21 F4800.0 E2013.376
+G1 X18.4 Y8.83 Z21.21 F4800.0 E2013.663
+G1 X18.0 Y8.47 Z21.21 F4800.0 E2013.693
+G1 X18.0 Y3.7 Z21.21 F4800.0 E2013.961
+G1 X17.6 Y3.7 Z21.21 F4800.0 E2013.983
+G1 X17.6 Y8.18 Z21.21 F4800.0 E2014.234
+G1 X17.2 Y7.92 Z21.21 F4800.0 E2014.26
+G1 X17.2 Y3.71 Z21.21 F4800.0 E2014.496
+G1 X16.8 Y3.71 Z21.21 F4800.0 E2014.519
+G1 X16.8 Y7.67 Z21.21 F4800.0 E2014.74
+G1 X16.4 Y7.42 Z21.21 F4800.0 E2014.766
+G1 X16.4 Y3.71 Z21.21 F4800.0 E2014.974
+G1 X16.0 Y3.72 Z21.21 F4800.0 E2014.996
+G1 X16.0 Y7.22 Z21.21 F4800.0 E2015.192
+G1 X15.6 Y7.02 Z21.21 F4800.0 E2015.217
+G1 X15.6 Y3.72 Z21.21 F4800.0 E2015.402
+G1 X15.2 Y3.73 Z21.21 F4800.0 E2015.424
+G1 X15.2 Y6.83 Z21.21 F4800.0 E2015.598
+G1 X14.8 Y6.65 Z21.21 F4800.0 E2015.622
+G1 X14.8 Y3.73 Z21.21 F4800.0 E2015.786
+G1 X14.4 Y3.73 Z21.21 F4800.0 E2015.808
+G1 X14.4 Y6.51 Z21.21 F4800.0 E2015.964
+G1 X14.0 Y6.36 Z21.21 F4800.0 E2015.987
+G1 X14.0 Y3.74 Z21.21 F4800.0 E2016.134
+G1 X13.6 Y3.74 Z21.21 F4800.0 E2016.156
+G1 X13.6 Y6.26 Z21.21 F4800.0 E2016.297
+G1 X13.2 Y6.17 Z21.21 F4800.0 E2016.32
+G1 X13.2 Y3.75 Z21.21 F4800.0 E2016.456
+G1 X12.8 Y3.75 Z21.21 F4800.0 E2016.478
+G1 X12.8 Y6.09 Z21.21 F4800.0 E2016.609
+G1 X12.4 Y6.0 Z21.21 F4800.0 E2016.632
+G1 X12.4 Y3.75 Z21.21 F4800.0 E2016.758
+G1 X12.0 Y3.76 Z21.21 F4800.0 E2016.78
+G1 X12.0 Y5.91 Z21.21 F4800.0 E2016.901
+G1 X11.6 Y5.83 Z21.21 F4800.0 E2016.924
+G1 X11.6 Y3.76 Z21.21 F4800.0 E2017.039
+G1 X11.2 Y3.77 Z21.21 F4800.0 E2017.062
+G1 X11.2 Y5.79 Z21.21 F4800.0 E2017.175
+G1 X10.8 Y5.76 Z21.21 F4800.0 E2017.197
+G1 X10.8 Y3.77 Z21.21 F4800.0 E2017.308
+G1 X10.4 Y3.78 Z21.21 F4800.0 E2017.331
+G1 X10.4 Y5.72 Z21.21 F4800.0 E2017.44
+G1 X10.0 Y5.69 Z21.21 F4800.0 E2017.462
+G1 X10.0 Y3.78 Z21.21 F4800.0 E2017.569
+G1 X9.6 Y3.78 Z21.21 F4800.0 E2017.592
+G1 X9.6 Y5.66 Z21.21 F4800.0 E2017.697
+G1 X9.2 Y5.63 Z21.21 F4800.0 E2017.719
+G1 X9.2 Y3.79 Z21.21 F4800.0 E2017.822
+G1 X8.8 Y3.79 Z21.21 F4800.0 E2017.845
+G1 X8.8 Y5.59 Z21.21 F4800.0 E2017.946
+G1 X8.4 Y5.56 Z21.21 F4800.0 E2017.968
+G1 X8.4 Y3.8 Z21.21 F4800.0 E2018.067
+G1 X8.0 Y3.8 Z21.21 F4800.0 E2018.089
+G1 X8.0 Y5.53 Z21.21 F4800.0 E2018.186
+G1 X7.6 Y5.5 Z21.21 F4800.0 E2018.208
+G1 X7.6 Y3.81 Z21.21 F4800.0 E2018.303
+G1 X7.2 Y3.81 Z21.21 F4800.0 E2018.326
+G1 X7.2 Y5.46 Z21.21 F4800.0 E2018.418
+G1 X6.8 Y5.43 Z21.21 F4800.0 E2018.441
+G1 X6.8 Y3.81 Z21.21 F4800.0 E2018.531
+G1 X6.4 Y3.82 Z21.21 F4800.0 E2018.554
+G1 X6.4 Y5.4 Z21.21 F4800.0 E2018.642
+G1 X6.0 Y5.37 Z21.21 F4800.0 E2018.665
+G1 X6.0 Y3.82 Z21.21 F4800.0 E2018.751
+G1 X5.6 Y3.83 Z21.21 F4800.0 E2018.774
+G1 X5.6 Y5.33 Z21.21 F4800.0 E2018.858
+G1 X5.2 Y5.3 Z21.21 F4800.0 E2018.881
+G1 X5.2 Y3.83 Z21.21 F4800.0 E2018.963
+G1 X4.8 Y3.83 Z21.21 F4800.0 E2018.985
+G1 X4.8 Y5.27 Z21.21 F4800.0 E2019.066
+G1 X4.4 Y5.24 Z21.21 F4800.0 E2019.088
+G1 X4.4 Y3.84 Z21.21 F4800.0 E2019.166
+G1 X4.0 Y3.84 Z21.21 F4800.0 E2019.189
+G1 X4.0 Y5.2 Z21.21 F4800.0 E2019.265
+G1 X3.6 Y5.17 Z21.21 F4800.0 E2019.287
+G1 X3.6 Y3.85 Z21.21 F4800.0 E2019.362
+G1 F4800.0
+G1 E2018.362
+G1 F4800.0
+M103
+G1 X15.84 Y8.57 Z21.21 F9000.0
+G1 X21.2 Y13.22 Z21.21 F9000.0
+G1 F4800.0
+G1 E2019.362
+G1 F9000.0
+M101
+G1 X21.2 Y3.66 Z21.21 F4800.0 E2019.896
+G1 X20.8 Y3.67 Z21.21 F4800.0 E2019.919
+G1 X20.8 Y12.04 Z21.21 F4800.0 E2020.387
+G1 F4800.0
+G1 E2019.387
+G1 F4800.0
+M103
+G1 X22.0 Y22.01 Z21.21 F9000.0
+G1 F4800.0
+G1 E2020.387
+G1 F9000.0
+M101
+G1 X22.0 Y3.66 Z21.21 F4800.0 E2021.415
+G1 X21.6 Y3.66 Z21.21 F4800.0 E2021.437
+G1 X21.6 Y14.5 Z21.21 F4800.0 E2022.044
+G1 F4800.0
+G1 E2021.044
+G1 F4800.0
+M103
+G1 X47.2 Y48.65 Z21.21 F9000.0
+G1 F4800.0
+G1 E2022.044
+G1 F9000.0
+M101
+G1 X47.2 Y119.96 Z21.21 F4800.0 E2026.036
+G1 X46.8 Y119.97 Z21.21 F4800.0 E2026.058
+G1 X46.8 Y3.4 Z21.21 F4800.0 E2032.584
+G1 X47.2 Y3.4 Z21.21 F4800.0 E2032.606
+G1 X47.2 Y15.1 Z21.21 F4800.0 E2033.261
+G1 F4800.0
+G1 E2032.936
+G1 F4800.0
+M103
+G1 X47.6 Y13.84 Z21.21 F9000.0
+G1 F4800.0
+G1 E2033.261
+G1 F9000.0
+M101
+G1 X47.6 Y3.39 Z21.21 F4800.0 E2033.846
+G1 X48.0 Y3.39 Z21.21 F4800.0 E2033.868
+G1 X48.0 Y12.57 Z21.21 F4800.0 E2034.383
+G1 F4800.0
+G1 E2034.383
+G1 F4800.0
+M103
+G1 X48.4 Y11.79 Z21.21 F9000.0
+G1 F4800.0
+G1 E2034.383
+G1 F9000.0
+M101
+G1 X48.4 Y3.38 Z21.21 F4800.0 E2034.853
+G1 X48.8 Y3.38 Z21.21 F4800.0 E2034.875
+G1 X48.8 Y11.14 Z21.21 F4800.0 E2035.31
+G1 X49.2 Y10.6 Z21.21 F4800.0 E2035.348
+G1 X49.2 Y3.37 Z21.21 F4800.0 E2035.752
+G1 X49.6 Y3.37 Z21.21 F4800.0 E2035.774
+G1 X49.6 Y10.11 Z21.21 F4800.0 E2036.152
+G1 X50.0 Y9.73 Z21.21 F4800.0 E2036.183
+G1 X50.0 Y3.37 Z21.21 F4800.0 E2036.539
+G1 X50.4 Y3.36 Z21.21 F4800.0 E2036.562
+G1 X50.4 Y9.35 Z21.21 F4800.0 E2036.896
+G1 X50.8 Y8.96 Z21.21 F4800.0 E2036.927
+G1 X50.8 Y3.36 Z21.21 F4800.0 E2037.241
+G1 X51.2 Y3.35 Z21.21 F4800.0 E2037.264
+G1 X51.2 Y8.69 Z21.21 F4800.0 E2037.562
+G1 X51.6 Y8.41 Z21.21 F4800.0 E2037.589
+G1 X51.6 Y3.35 Z21.21 F4800.0 E2037.872
+G1 X52.0 Y3.35 Z21.21 F4800.0 E2037.895
+G1 X52.0 Y8.13 Z21.21 F4800.0 E2038.163
+G1 X52.4 Y7.89 Z21.21 F4800.0 E2038.189
+G1 X52.4 Y3.34 Z21.21 F4800.0 E2038.444
+G1 X52.8 Y3.34 Z21.21 F4800.0 E2038.466
+G1 X52.8 Y7.69 Z21.21 F4800.0 E2038.71
+G1 X53.2 Y7.49 Z21.21 F4800.0 E2038.735
+G1 X53.2 Y3.33 Z21.21 F4800.0 E2038.967
+G1 X53.6 Y3.33 Z21.21 F4800.0 E2038.99
+G1 X53.6 Y7.29 Z21.21 F4800.0 E2039.211
+G1 X54.0 Y7.09 Z21.21 F4800.0 E2039.236
+G1 X54.0 Y3.33 Z21.21 F4800.0 E2039.447
+G1 X54.4 Y3.32 Z21.21 F4800.0 E2039.47
+G1 X54.4 Y6.89 Z21.21 F4800.0 E2039.669
+G1 X54.8 Y6.75 Z21.21 F4800.0 E2039.693
+G1 X54.8 Y3.32 Z21.21 F4800.0 E2039.886
+G1 X55.2 Y3.31 Z21.21 F4800.0 E2039.908
+G1 X55.2 Y6.63 Z21.21 F4800.0 E2040.094
+G1 X55.6 Y6.5 Z21.21 F4800.0 E2040.117
+G1 X55.6 Y3.31 Z21.21 F4800.0 E2040.296
+G1 X56.0 Y3.3 Z21.21 F4800.0 E2040.318
+G1 X56.0 Y6.38 Z21.21 F4800.0 E2040.49
+G1 X56.4 Y6.25 Z21.21 F4800.0 E2040.514
+G1 X56.4 Y3.3 Z21.21 F4800.0 E2040.679
+G1 X56.8 Y3.3 Z21.21 F4800.0 E2040.702
+G1 X56.8 Y6.13 Z21.21 F4800.0 E2040.86
+G1 X57.2 Y6.03 Z21.21 F4800.0 E2040.883
+G1 X57.2 Y3.29 Z21.21 F4800.0 E2041.036
+G1 X57.6 Y3.29 Z21.21 F4800.0 E2041.059
+G1 X57.6 Y5.93 Z21.21 F4800.0 E2041.207
+G1 X58.0 Y5.84 Z21.21 F4800.0 E2041.23
+G1 X58.0 Y3.28 Z21.21 F4800.0 E2041.373
+G1 X58.4 Y3.28 Z21.21 F4800.0 E2041.396
+G1 X58.4 Y5.75 Z21.21 F4800.0 E2041.534
+G1 X58.8 Y5.66 Z21.21 F4800.0 E2041.557
+G1 X58.8 Y3.27 Z21.21 F4800.0 E2041.691
+G1 X59.2 Y3.27 Z21.21 F4800.0 E2041.713
+G1 X59.2 Y5.57 Z21.21 F4800.0 E2041.842
+G1 X59.6 Y5.48 Z21.21 F4800.0 E2041.865
+G1 X59.6 Y3.27 Z21.21 F4800.0 E2041.989
+G1 X60.0 Y3.26 Z21.21 F4800.0 E2042.011
+G1 X60.0 Y5.4 Z21.21 F4800.0 E2042.131
+G1 X60.4 Y5.33 Z21.21 F4800.0 E2042.153
+G1 X60.4 Y3.26 Z21.21 F4800.0 E2042.27
+G1 X60.8 Y3.25 Z21.21 F4800.0 E2042.292
+G1 X60.8 Y5.27 Z21.21 F4800.0 E2042.405
+G1 X61.2 Y5.21 Z21.21 F4800.0 E2042.428
+G1 X61.2 Y3.25 Z21.21 F4800.0 E2042.538
+G1 X61.6 Y3.25 Z21.21 F4800.0 E2042.56
+G1 X61.6 Y5.15 Z21.21 F4800.0 E2042.667
+G1 X62.0 Y5.09 Z21.21 F4800.0 E2042.689
+G1 X62.0 Y3.24 Z21.21 F4800.0 E2042.793
+G1 X62.4 Y3.24 Z21.21 F4800.0 E2042.815
+G1 X62.4 Y5.03 Z21.21 F4800.0 E2042.915
+G1 X62.8 Y4.97 Z21.21 F4800.0 E2042.938
+G1 X62.8 Y3.23 Z21.21 F4800.0 E2043.035
+G1 X63.2 Y3.23 Z21.21 F4800.0 E2043.057
+G1 X63.2 Y4.91 Z21.21 F4800.0 E2043.151
+G1 X63.6 Y4.84 Z21.21 F4800.0 E2043.174
+G1 X63.6 Y3.23 Z21.21 F4800.0 E2043.264
+G1 X64.0 Y3.22 Z21.21 F4800.0 E2043.287
+G1 X64.0 Y4.78 Z21.21 F4800.0 E2043.374
+G1 X64.4 Y4.72 Z21.21 F4800.0 E2043.397
+G1 X64.4 Y3.22 Z21.21 F4800.0 E2043.481
+G1 X64.8 Y3.21 Z21.21 F4800.0 E2043.503
+G1 X64.8 Y4.66 Z21.21 F4800.0 E2043.584
+G1 X65.2 Y4.6 Z21.21 F4800.0 E2043.607
+G1 X65.2 Y3.3 Z21.21 F4800.0 E2043.679
+G1 F4800.0
+G1 E2042.679
+G1 F4800.0
+M103
+G1 X54.94 Y8.05 Z21.21 F9000.0
+G1 X50.41 Y11.11 Z21.21 F9000.0
+G1 X22.4 Y60.76 Z21.21 F9000.0
+G1 F4800.0
+G1 E2043.679
+G1 F9000.0
+M101
+G1 X22.4 Y3.65 Z21.21 F4800.0 E2046.876
+G1 X22.8 Y3.65 Z21.21 F4800.0 E2046.899
+G1 X22.8 Y120.22 Z21.21 F4800.0 E2053.424
+G1 X23.2 Y120.21 Z21.21 F4800.0 E2053.446
+G1 X23.2 Y3.64 Z21.21 F4800.0 E2059.972
+G1 X23.6 Y3.64 Z21.21 F4800.0 E2059.994
+G1 X23.6 Y120.21 Z21.21 F4800.0 E2066.519
+G1 X24.0 Y120.2 Z21.21 F4800.0 E2066.542
+G1 X24.0 Y3.63 Z21.21 F4800.0 E2073.067
+G1 X24.4 Y3.63 Z21.21 F4800.0 E2073.089
+G1 X24.4 Y120.2 Z21.21 F4800.0 E2079.615
+G1 X24.8 Y120.2 Z21.21 F4800.0 E2079.637
+G1 X24.8 Y3.63 Z21.21 F4800.0 E2086.162
+G1 X25.2 Y3.62 Z21.21 F4800.0 E2086.185
+G1 X25.2 Y120.19 Z21.21 F4800.0 E2092.71
+G1 X25.6 Y120.19 Z21.21 F4800.0 E2092.732
+G1 X25.6 Y3.62 Z21.21 F4800.0 E2099.258
+G1 X26.0 Y3.62 Z21.21 F4800.0 E2099.28
+G1 X26.0 Y120.18 Z21.21 F4800.0 E2105.805
+G1 X26.4 Y120.18 Z21.21 F4800.0 E2105.828
+G1 X26.4 Y3.61 Z21.21 F4800.0 E2112.353
+G1 X26.8 Y3.61 Z21.21 F4800.0 E2112.375
+G1 X26.8 Y120.17 Z21.21 F4800.0 E2118.901
+G1 X27.2 Y120.17 Z21.21 F4800.0 E2118.923
+G1 X27.2 Y3.6 Z21.21 F4800.0 E2125.448
+G1 X27.6 Y3.6 Z21.21 F4800.0 E2125.471
+G1 X27.6 Y120.17 Z21.21 F4800.0 E2131.996
+G1 X28.0 Y120.16 Z21.21 F4800.0 E2132.019
+G1 X28.0 Y3.59 Z21.21 F4800.0 E2138.544
+G1 X28.4 Y3.59 Z21.21 F4800.0 E2138.566
+G1 X28.4 Y120.16 Z21.21 F4800.0 E2145.092
+G1 X28.8 Y120.16 Z21.21 F4800.0 E2145.114
+G1 X28.8 Y3.59 Z21.21 F4800.0 E2151.639
+G1 X29.2 Y3.58 Z21.21 F4800.0 E2151.662
+G1 X29.2 Y120.15 Z21.21 F4800.0 E2158.187
+G1 X29.6 Y120.15 Z21.21 F4800.0 E2158.209
+G1 X29.6 Y3.58 Z21.21 F4800.0 E2164.735
+G1 X30.0 Y3.57 Z21.21 F4800.0 E2164.757
+G1 X30.0 Y120.14 Z21.21 F4800.0 E2171.282
+G1 X30.4 Y120.14 Z21.21 F4800.0 E2171.305
+G1 X30.4 Y3.57 Z21.21 F4800.0 E2177.83
+G1 X30.8 Y3.56 Z21.21 F4800.0 E2177.852
+G1 X30.8 Y120.13 Z21.21 F4800.0 E2184.378
+G1 X31.2 Y120.13 Z21.21 F4800.0 E2184.4
+G1 X31.2 Y3.56 Z21.21 F4800.0 E2190.925
+G1 X31.6 Y3.56 Z21.21 F4800.0 E2190.948
+G1 X31.6 Y120.13 Z21.21 F4800.0 E2197.473
+G1 X32.0 Y120.12 Z21.21 F4800.0 E2197.495
+G1 X32.0 Y3.55 Z21.21 F4800.0 E2204.021
+G1 X32.4 Y3.55 Z21.21 F4800.0 E2204.043
+G1 X32.4 Y120.12 Z21.21 F4800.0 E2210.568
+G1 X32.8 Y120.11 Z21.21 F4800.0 E2210.591
+G1 X32.8 Y3.54 Z21.21 F4800.0 E2217.116
+G1 X33.2 Y3.54 Z21.21 F4800.0 E2217.139
+G1 X33.2 Y120.11 Z21.21 F4800.0 E2223.664
+G1 X33.6 Y120.11 Z21.21 F4800.0 E2223.686
+G1 X33.6 Y3.54 Z21.21 F4800.0 E2230.212
+G1 X34.0 Y3.53 Z21.21 F4800.0 E2230.234
+G1 X34.0 Y120.1 Z21.21 F4800.0 E2236.759
+G1 X34.4 Y120.1 Z21.21 F4800.0 E2236.782
+G1 X34.4 Y3.53 Z21.21 F4800.0 E2243.307
+G1 X34.8 Y3.52 Z21.21 F4800.0 E2243.329
+G1 X34.8 Y120.09 Z21.21 F4800.0 E2249.855
+G1 X35.2 Y120.09 Z21.21 F4800.0 E2249.877
+G1 X35.2 Y3.52 Z21.21 F4800.0 E2256.402
+G1 X35.6 Y3.52 Z21.21 F4800.0 E2256.425
+G1 X35.6 Y120.08 Z21.21 F4800.0 E2262.95
+G1 X36.0 Y120.08 Z21.21 F4800.0 E2262.972
+G1 X36.0 Y3.51 Z21.21 F4800.0 E2269.498
+G1 X36.4 Y3.51 Z21.21 F4800.0 E2269.52
+G1 X36.4 Y120.08 Z21.21 F4800.0 E2276.045
+G1 X36.8 Y120.07 Z21.21 F4800.0 E2276.068
+G1 X36.8 Y3.5 Z21.21 F4800.0 E2282.593
+G1 X37.2 Y3.5 Z21.21 F4800.0 E2282.615
+G1 X37.2 Y120.07 Z21.21 F4800.0 E2289.141
+G1 X37.6 Y120.06 Z21.21 F4800.0 E2289.163
+G1 X37.6 Y3.49 Z21.21 F4800.0 E2295.688
+G1 X38.0 Y3.49 Z21.21 F4800.0 E2295.711
+G1 X38.0 Y120.06 Z21.21 F4800.0 E2302.236
+G1 X38.4 Y120.06 Z21.21 F4800.0 E2302.259
+G1 X38.4 Y3.49 Z21.21 F4800.0 E2308.784
+G1 X38.8 Y3.48 Z21.21 F4800.0 E2308.806
+G1 X38.8 Y120.05 Z21.21 F4800.0 E2315.332
+G1 X39.2 Y120.05 Z21.21 F4800.0 E2315.354
+G1 X39.2 Y3.48 Z21.21 F4800.0 E2321.879
+G1 X39.6 Y3.47 Z21.21 F4800.0 E2321.902
+G1 X39.6 Y120.04 Z21.21 F4800.0 E2328.427
+G1 X40.0 Y120.04 Z21.21 F4800.0 E2328.449
+G1 X40.0 Y3.47 Z21.21 F4800.0 E2334.975
+G1 X40.4 Y3.46 Z21.21 F4800.0 E2334.997
+G1 X40.4 Y120.03 Z21.21 F4800.0 E2341.522
+G1 X40.8 Y120.03 Z21.21 F4800.0 E2341.545
+G1 X40.8 Y3.46 Z21.21 F4800.0 E2348.07
+G1 X41.2 Y3.46 Z21.21 F4800.0 E2348.093
+G1 X41.2 Y120.03 Z21.21 F4800.0 E2354.618
+G1 X41.6 Y120.02 Z21.21 F4800.0 E2354.64
+G1 X41.6 Y3.45 Z21.21 F4800.0 E2361.166
+G1 X42.0 Y3.45 Z21.21 F4800.0 E2361.188
+G1 X42.0 Y120.02 Z21.21 F4800.0 E2367.713
+G1 X42.4 Y120.01 Z21.21 F4800.0 E2367.736
+G1 X42.4 Y3.44 Z21.21 F4800.0 E2374.261
+G1 X42.8 Y3.44 Z21.21 F4800.0 E2374.283
+G1 X42.8 Y120.01 Z21.21 F4800.0 E2380.809
+G1 X43.2 Y120.01 Z21.21 F4800.0 E2380.831
+G1 X43.2 Y3.44 Z21.21 F4800.0 E2387.356
+G1 X43.6 Y3.43 Z21.21 F4800.0 E2387.379
+G1 X43.6 Y120.0 Z21.21 F4800.0 E2393.904
+G1 X44.0 Y120.0 Z21.21 F4800.0 E2393.926
+G1 X44.0 Y3.43 Z21.21 F4800.0 E2400.452
+G1 X44.4 Y3.42 Z21.21 F4800.0 E2400.474
+G1 X44.4 Y119.99 Z21.21 F4800.0 E2406.999
+G1 X44.8 Y119.99 Z21.21 F4800.0 E2407.022
+G1 X44.8 Y3.42 Z21.21 F4800.0 E2413.547
+G1 X45.2 Y3.42 Z21.21 F4800.0 E2413.57
+G1 X45.2 Y119.98 Z21.21 F4800.0 E2420.095
+G1 X45.6 Y119.98 Z21.21 F4800.0 E2420.117
+G1 X45.6 Y3.41 Z21.21 F4800.0 E2426.643
+G1 X46.0 Y3.41 Z21.21 F4800.0 E2426.665
+G1 X46.0 Y119.98 Z21.21 F4800.0 E2433.19
+G1 X46.4 Y119.97 Z21.21 F4800.0 E2433.213
+G1 X46.4 Y3.4 Z21.21 F4800.0 E2439.738
+G1 F4800.0
+G1 E2438.738
+G1 F4800.0
+M103
+G1 X49.07 Y105.63 Z21.21 F9000.0
+G1 X50.63 Y111.6 Z21.21 F9000.0
+G1 X54.13 Y114.7 Z21.21 F9000.0
+G1 X66.4 Y118.36 Z21.21 F9000.0
+G1 F4800.0
+G1 E2439.738
+G1 F9000.0
+M101
+G1 X66.4 Y119.68 Z21.21 F4800.0 E2439.812
+G1 X66.0 Y119.77 Z21.21 F4800.0 E2439.835
+G1 X66.0 Y118.31 Z21.21 F4800.0 E2439.916
+G1 X65.6 Y118.27 Z21.21 F4800.0 E2439.939
+G1 X65.6 Y119.77 Z21.21 F4800.0 E2440.023
+G1 X65.2 Y119.78 Z21.21 F4800.0 E2440.045
+G1 X65.2 Y118.22 Z21.21 F4800.0 E2440.133
+G1 X64.8 Y118.17 Z21.21 F4800.0 E2440.155
+G1 X64.8 Y119.78 Z21.21 F4800.0 E2440.246
+G1 X64.4 Y119.79 Z21.21 F4800.0 E2440.268
+G1 X64.4 Y118.12 Z21.21 F4800.0 E2440.362
+G1 X64.0 Y118.07 Z21.21 F4800.0 E2440.384
+G1 X64.0 Y119.79 Z21.21 F4800.0 E2440.481
+G1 X63.6 Y119.8 Z21.21 F4800.0 E2440.503
+G1 X63.6 Y118.02 Z21.21 F4800.0 E2440.602
+G1 X63.2 Y117.97 Z21.21 F4800.0 E2440.625
+G1 X63.2 Y119.8 Z21.21 F4800.0 E2440.727
+G1 X62.8 Y119.8 Z21.21 F4800.0 E2440.75
+G1 X62.8 Y117.92 Z21.21 F4800.0 E2440.855
+G1 X62.4 Y117.87 Z21.21 F4800.0 E2440.878
+G1 X62.4 Y119.81 Z21.21 F4800.0 E2440.986
+G1 X62.0 Y119.81 Z21.21 F4800.0 E2441.008
+G1 X62.0 Y117.82 Z21.21 F4800.0 E2441.12
+G1 X61.6 Y117.77 Z21.21 F4800.0 E2441.142
+G1 X61.6 Y119.82 Z21.21 F4800.0 E2441.257
+G1 X61.2 Y119.82 Z21.21 F4800.0 E2441.279
+G1 X61.2 Y117.72 Z21.21 F4800.0 E2441.396
+G1 X60.8 Y117.67 Z21.21 F4800.0 E2441.419
+G1 X60.8 Y119.82 Z21.21 F4800.0 E2441.539
+G1 X60.4 Y119.83 Z21.21 F4800.0 E2441.562
+G1 X60.4 Y117.63 Z21.21 F4800.0 E2441.685
+G1 X60.0 Y117.58 Z21.21 F4800.0 E2441.708
+G1 X60.0 Y119.83 Z21.21 F4800.0 E2441.834
+G1 X59.6 Y119.84 Z21.21 F4800.0 E2441.856
+G1 X59.6 Y117.53 Z21.21 F4800.0 E2441.986
+G1 X59.2 Y117.48 Z21.21 F4800.0 E2442.008
+G1 X59.2 Y119.84 Z21.21 F4800.0 E2442.14
+G1 X58.8 Y119.84 Z21.21 F4800.0 E2442.163
+G1 X58.8 Y117.43 Z21.21 F4800.0 E2442.298
+G1 X58.4 Y117.33 Z21.21 F4800.0 E2442.321
+G1 X58.4 Y119.85 Z21.21 F4800.0 E2442.462
+G1 X58.0 Y119.85 Z21.21 F4800.0 E2442.484
+G1 X58.0 Y117.23 Z21.21 F4800.0 E2442.631
+G1 X57.6 Y117.13 Z21.21 F4800.0 E2442.654
+G1 X57.6 Y119.86 Z21.21 F4800.0 E2442.807
+G1 X57.2 Y119.86 Z21.21 F4800.0 E2442.829
+G1 X57.2 Y117.02 Z21.21 F4800.0 E2442.988
+G1 X56.8 Y116.92 Z21.21 F4800.0 E2443.011
+G1 X56.8 Y119.86 Z21.21 F4800.0 E2443.176
+G1 X56.4 Y119.87 Z21.21 F4800.0 E2443.199
+G1 X56.4 Y116.82 Z21.21 F4800.0 E2443.37
+G1 X56.0 Y116.71 Z21.21 F4800.0 E2443.393
+G1 X56.0 Y119.87 Z21.21 F4800.0 E2443.569
+G1 X55.6 Y119.88 Z21.21 F4800.0 E2443.592
+G1 X55.6 Y116.61 Z21.21 F4800.0 E2443.775
+G1 X55.2 Y116.51 Z21.21 F4800.0 E2443.798
+G1 X55.2 Y119.88 Z21.21 F4800.0 E2443.987
+G1 X54.8 Y119.89 Z21.21 F4800.0 E2444.009
+G1 X54.8 Y116.39 Z21.21 F4800.0 E2444.205
+G1 X54.4 Y116.21 Z21.21 F4800.0 E2444.23
+G1 X54.4 Y119.89 Z21.21 F4800.0 E2444.435
+G1 X54.0 Y119.89 Z21.21 F4800.0 E2444.458
+G1 X54.0 Y116.04 Z21.21 F4800.0 E2444.673
+G1 X53.6 Y115.87 Z21.21 F4800.0 E2444.698
+G1 X53.6 Y119.9 Z21.21 F4800.0 E2444.923
+G1 X53.2 Y119.9 Z21.21 F4800.0 E2444.946
+G1 X53.2 Y115.64 Z21.21 F4800.0 E2445.184
+G1 X52.8 Y115.4 Z21.21 F4800.0 E2445.21
+G1 X52.8 Y119.91 Z21.21 F4800.0 E2445.463
+G1 X52.4 Y119.91 Z21.21 F4800.0 E2445.485
+G1 X52.4 Y115.15 Z21.21 F4800.0 E2445.752
+G1 X52.0 Y114.91 Z21.21 F4800.0 E2445.778
+G1 X52.0 Y119.92 Z21.21 F4800.0 E2446.058
+G1 X51.6 Y119.92 Z21.21 F4800.0 E2446.08
+G1 X51.6 Y114.59 Z21.21 F4800.0 E2446.378
+G1 X51.2 Y114.22 Z21.21 F4800.0 E2446.409
+G1 X51.2 Y119.92 Z21.21 F4800.0 E2446.728
+G1 X50.8 Y119.93 Z21.21 F4800.0 E2446.75
+G1 X50.8 Y113.85 Z21.21 F4800.0 E2447.09
+G1 X50.4 Y113.47 Z21.21 F4800.0 E2447.121
+G1 X50.4 Y119.93 Z21.21 F4800.0 E2447.483
+G1 X50.0 Y119.94 Z21.21 F4800.0 E2447.506
+G1 X50.0 Y112.92 Z21.21 F4800.0 E2447.898
+G1 X49.6 Y112.36 Z21.21 F4800.0 E2447.937
+G1 X49.6 Y119.94 Z21.21 F4800.0 E2448.361
+G1 X49.2 Y119.94 Z21.21 F4800.0 E2448.383
+G1 X49.2 Y111.6 Z21.21 F4800.0 E2448.85
+G1 X48.8 Y110.6 Z21.21 F4800.0 E2448.91
+G1 X48.8 Y119.95 Z21.21 F4800.0 E2449.434
+G1 X48.4 Y119.95 Z21.21 F4800.0 E2449.456
+G1 X48.4 Y109.33 Z21.21 F4800.0 E2450.051
+G1 X48.0 Y107.38 Z21.21 F4800.0 E2450.163
+G1 X48.0 Y119.96 Z21.21 F4800.0 E2450.867
+G1 X47.6 Y119.96 Z21.21 F4800.0 E2450.889
+G1 X47.6 Y87.4 Z21.21 F4800.0 E2452.712
+G1 F4800.0
+G1 E2451.712
+G1 F4800.0
+M103
+G1 X22.4 Y108.37 Z21.21 F9000.0
+G1 F4800.0
+G1 E2452.712
+G1 F9000.0
+M101
+G1 X22.4 Y120.22 Z21.21 F4800.0 E2453.375
+G1 X22.0 Y120.22 Z21.21 F4800.0 E2453.398
+G1 X22.0 Y109.67 Z21.21 F4800.0 E2453.989
+G1 F4800.0
+G1 E2453.827
+G1 F4800.0
+M103
+G1 X21.6 Y110.76 Z21.21 F9000.0
+G1 F4800.0
+G1 E2453.989
+G1 F9000.0
+M101
+G1 X21.6 Y120.23 Z21.21 F4800.0 E2454.519
+G1 X21.2 Y120.23 Z21.21 F4800.0 E2454.541
+G1 X21.2 Y111.55 Z21.21 F4800.0 E2455.028
+G1 X20.8 Y112.12 Z21.21 F4800.0 E2455.067
+G1 X20.8 Y120.24 Z21.21 F4800.0 E2455.521
+G1 X20.4 Y120.24 Z21.21 F4800.0 E2455.543
+G1 X20.4 Y112.65 Z21.21 F4800.0 E2455.968
+G1 X20.0 Y113.06 Z21.21 F4800.0 E2456.001
+G1 X20.0 Y120.25 Z21.21 F4800.0 E2456.403
+G1 X19.6 Y120.25 Z21.21 F4800.0 E2456.425
+G1 X19.6 Y113.48 Z21.21 F4800.0 E2456.804
+G1 X19.2 Y113.89 Z21.21 F4800.0 E2456.836
+G1 X19.2 Y120.25 Z21.21 F4800.0 E2457.192
+G1 X18.8 Y120.26 Z21.21 F4800.0 E2457.215
+G1 X18.8 Y114.17 Z21.21 F4800.0 E2457.555
+G1 X18.4 Y114.46 Z21.21 F4800.0 E2457.583
+G1 X18.4 Y120.26 Z21.21 F4800.0 E2457.908
+G1 X18.0 Y120.27 Z21.21 F4800.0 E2457.93
+G1 X18.0 Y114.75 Z21.21 F4800.0 E2458.239
+G1 X17.6 Y115.03 Z21.21 F4800.0 E2458.266
+G1 X17.6 Y120.27 Z21.21 F4800.0 E2458.559
+G1 X17.2 Y120.28 Z21.21 F4800.0 E2458.582
+G1 X17.2 Y115.23 Z21.21 F4800.0 E2458.864
+G1 X16.8 Y115.43 Z21.21 F4800.0 E2458.889
+G1 X16.8 Y120.28 Z21.21 F4800.0 E2459.16
+G1 X16.4 Y120.28 Z21.21 F4800.0 E2459.183
+G1 X16.4 Y115.63 Z21.21 F4800.0 E2459.443
+G1 X16.0 Y115.83 Z21.21 F4800.0 E2459.468
+G1 X16.0 Y120.29 Z21.21 F4800.0 E2459.718
+G1 X15.6 Y120.29 Z21.21 F4800.0 E2459.74
+G1 X15.6 Y116.03 Z21.21 F4800.0 E2459.979
+G1 X15.2 Y116.2 Z21.21 F4800.0 E2460.003
+G1 X15.2 Y120.3 Z21.21 F4800.0 E2460.232
+G1 X14.8 Y120.3 Z21.21 F4800.0 E2460.255
+G1 X14.8 Y116.34 Z21.21 F4800.0 E2460.476
+G1 X14.4 Y116.47 Z21.21 F4800.0 E2460.5
+G1 X14.4 Y120.3 Z21.21 F4800.0 E2460.714
+G1 X14.0 Y120.31 Z21.21 F4800.0 E2460.737
+G1 X14.0 Y116.61 Z21.21 F4800.0 E2460.944
+G1 X13.6 Y116.74 Z21.21 F4800.0 E2460.967
+G1 X13.6 Y120.31 Z21.21 F4800.0 E2461.167
+G1 X13.2 Y120.32 Z21.21 F4800.0 E2461.189
+G1 X13.2 Y116.88 Z21.21 F4800.0 E2461.382
+G1 X12.8 Y117.01 Z21.21 F4800.0 E2461.406
+G1 X12.8 Y120.32 Z21.21 F4800.0 E2461.591
+G1 X12.4 Y120.32 Z21.21 F4800.0 E2461.613
+G1 X12.4 Y117.12 Z21.21 F4800.0 E2461.792
+G1 X12.0 Y117.23 Z21.21 F4800.0 E2461.816
+G1 X12.0 Y120.33 Z21.21 F4800.0 E2461.989
+G1 X11.6 Y120.33 Z21.21 F4800.0 E2462.011
+G1 X11.6 Y117.34 Z21.21 F4800.0 E2462.179
+G1 X11.2 Y117.44 Z21.21 F4800.0 E2462.202
+G1 X11.2 Y120.34 Z21.21 F4800.0 E2462.364
+G1 X10.8 Y120.34 Z21.21 F4800.0 E2462.386
+G1 X10.8 Y117.55 Z21.21 F4800.0 E2462.543
+G1 X10.4 Y117.66 Z21.21 F4800.0 E2462.566
+G1 X10.4 Y120.34 Z21.21 F4800.0 E2462.716
+G1 X10.0 Y120.35 Z21.21 F4800.0 E2462.738
+G1 X10.0 Y117.77 Z21.21 F4800.0 E2462.883
+G1 X9.6 Y117.86 Z21.21 F4800.0 E2462.906
+G1 X9.6 Y120.35 Z21.21 F4800.0 E2463.045
+G1 X9.2 Y120.36 Z21.21 F4800.0 E2463.068
+G1 X9.2 Y117.94 Z21.21 F4800.0 E2463.203
+G1 X8.8 Y118.03 Z21.21 F4800.0 E2463.225
+G1 X8.8 Y120.36 Z21.21 F4800.0 E2463.356
+G1 X8.4 Y120.37 Z21.21 F4800.0 E2463.379
+G1 X8.4 Y118.11 Z21.21 F4800.0 E2463.505
+G1 X8.0 Y118.19 Z21.21 F4800.0 E2463.528
+G1 X8.0 Y120.37 Z21.21 F4800.0 E2463.65
+G1 X7.6 Y120.37 Z21.21 F4800.0 E2463.672
+G1 X7.6 Y118.27 Z21.21 F4800.0 E2463.79
+G1 X7.2 Y118.35 Z21.21 F4800.0 E2463.813
+G1 X7.2 Y120.38 Z21.21 F4800.0 E2463.927
+G1 X6.8 Y120.38 Z21.21 F4800.0 E2463.949
+G1 X6.8 Y118.43 Z21.21 F4800.0 E2464.058
+G1 X6.4 Y118.51 Z21.21 F4800.0 E2464.081
+G1 X6.4 Y120.39 Z21.21 F4800.0 E2464.186
+G1 X6.0 Y120.39 Z21.21 F4800.0 E2464.208
+G1 X6.0 Y118.59 Z21.21 F4800.0 E2464.309
+G1 X5.6 Y118.67 Z21.21 F4800.0 E2464.332
+G1 X5.6 Y120.39 Z21.21 F4800.0 E2464.428
+G1 X5.2 Y120.4 Z21.21 F4800.0 E2464.45
+G1 X5.2 Y118.76 Z21.21 F4800.0 E2464.542
+G1 X4.8 Y118.84 Z21.21 F4800.0 E2464.565
+G1 X4.8 Y120.4 Z21.21 F4800.0 E2464.653
+G1 F4800.0
+G1 E2464.303
+G1 F4800.0
+M103
+G1 X4.4 Y119.11 Z21.21 F9000.0
+G1 F4800.0
+G1 E2464.653
+G1 F9000.0
+M101
+G1 X4.4 Y118.92 Z21.21 F4800.0 E2464.663
+G1 F4800.0
+G1 E2463.663
+G1 F4800.0
+M103
+(</infill>)
+(</nestedRing>)
+(</rotation>)
+(</layer>)
+(<layer> 21.485 )
+(<rotation> (-1+1.22464679915e-16j) )
+(<nestedRing>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X66.787 Y5.809 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X64.755 Y6.044 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X60.223 Y6.804 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X57.34 Y7.455 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X54.984 Y8.191 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X54.3 Y8.49 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X52.946 Y9.209 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X51.502 Y10.238 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X50.535 Y11.193 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X49.803 Y12.18 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X49.339 Y13.068 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X48.603 Y15.394 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X48.31 Y18.028 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X49.214 Y105.602 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X49.546 Y108.222 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X50.3 Y110.612 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X50.762 Y111.539 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X51.505 Y112.559 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X52.706 Y113.673 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X53.974 Y114.454 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X55.367 Y115.078 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X56.473 Y115.424 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X59.005 Y116.018 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X61.939 Y116.479 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X67.938 Y117.111 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X67.98 Y121.175 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X3.002 Y121.847 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X2.96 Y117.746 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X5.022 Y117.4 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X9.455 Y116.439 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X12.588 Y115.586 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X14.799 Y114.835 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X15.525 Y114.522 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X16.878 Y113.801 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X18.313 Y112.764 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X19.267 Y111.795 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X19.987 Y110.795 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X20.438 Y109.893 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X21.148 Y107.585 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X21.431 Y105.042 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X20.526 Y17.369 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X20.182 Y14.662 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X19.404 Y12.357 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X18.927 Y11.5 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X18.184 Y10.557 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X17.003 Y9.491 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X15.781 Y8.704 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X14.442 Y8.042 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X13.513 Y7.701 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X11.373 Y7.236 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X8.028 Y6.867 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X1.809 Y6.461 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X1.767 Y2.439 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X66.746 Y1.767 Z21.485 </boundaryPoint>)
+(<boundaryPoint> X66.752 Y2.327 Z21.485 </boundaryPoint>)
+(<loop> outer )
+G1 X14.84 Y114.97 Z21.48 F9000.0
+G1 X19.54 Y111.69 Z21.48 F9000.0
+G1 X21.29 Y107.62 Z21.48 F9000.0
+G1 X20.67 Y17.34 Z21.48 F9000.0
+G1 X19.05 Y11.42 Z21.48 F9000.0
+G1 X15.84 Y8.57 Z21.48 F9000.0
+G1 X3.25 Y3.82 Z21.48 F9000.0
+G1 F4800.0
+G1 E2464.663
+G1 F9000.0
+M101
+G1 X65.36 Y3.18 Z21.48 F4800.0 E2468.141
+G1 X65.38 Y4.59 Z21.48 F4800.0 E2468.219
+G1 X59.96 Y5.43 Z21.48 F4800.0 E2468.526
+G1 X56.98 Y6.1 Z21.48 F4800.0 E2468.697
+G1 X54.47 Y6.88 Z21.48 F4800.0 E2468.844
+G1 X52.22 Y8.01 Z21.48 F4800.0 E2468.985
+G1 X50.6 Y9.16 Z21.48 F4800.0 E2469.097
+G1 X49.48 Y10.27 Z21.48 F4800.0 E2469.185
+G1 X48.61 Y11.43 Z21.48 F4800.0 E2469.266
+G1 X48.04 Y12.53 Z21.48 F4800.0 E2469.335
+G1 X47.23 Y15.1 Z21.48 F4800.0 E2469.486
+G1 X46.91 Y17.96 Z21.48 F4800.0 E2469.647
+G1 X47.81 Y105.7 Z21.48 F4800.0 E2474.559
+G1 X48.17 Y108.52 Z21.48 F4800.0 E2474.718
+G1 X49.0 Y111.14 Z21.48 F4800.0 E2474.872
+G1 X49.56 Y112.27 Z21.48 F4800.0 E2474.942
+G1 X50.45 Y113.49 Z21.48 F4800.0 E2475.027
+G1 X51.85 Y114.79 Z21.48 F4800.0 E2475.134
+G1 X53.32 Y115.69 Z21.48 F4800.0 E2475.23
+G1 X54.89 Y116.4 Z21.48 F4800.0 E2475.327
+G1 X58.74 Y117.39 Z21.48 F4800.0 E2475.549
+G1 X66.55 Y118.36 Z21.48 F4800.0 E2475.99
+G1 X66.57 Y119.79 Z21.48 F4800.0 E2476.07
+G1 X4.39 Y120.43 Z21.48 F4800.0 E2479.551
+G1 X4.37 Y118.91 Z21.48 F4800.0 E2479.636
+G1 X9.78 Y117.8 Z21.48 F4800.0 E2479.945
+G1 X13.01 Y116.92 Z21.48 F4800.0 E2480.132
+G1 X16.11 Y115.8 Z21.48 F4800.0 E2480.317
+G1 X17.62 Y114.99 Z21.48 F4800.0 E2480.413
+G1 X19.23 Y113.83 Z21.48 F4800.0 E2480.524
+G1 X20.34 Y112.7 Z21.48 F4800.0 E2480.613
+G1 X21.19 Y111.52 Z21.48 F4800.0 E2480.694
+G1 X21.74 Y110.42 Z21.48 F4800.0 E2480.763
+G1 X22.52 Y107.87 Z21.48 F4800.0 E2480.912
+G1 X22.83 Y105.11 Z21.48 F4800.0 E2481.068
+G1 X21.93 Y17.27 Z21.48 F4800.0 E2485.985
+G1 X21.55 Y14.35 Z21.48 F4800.0 E2486.15
+G1 X20.69 Y11.79 Z21.48 F4800.0 E2486.301
+G1 X20.1 Y10.72 Z21.48 F4800.0 E2486.37
+G1 X19.21 Y9.6 Z21.48 F4800.0 E2486.45
+G1 X17.86 Y8.38 Z21.48 F4800.0 E2486.552
+G1 X16.47 Y7.48 Z21.48 F4800.0 E2486.644
+G1 X14.99 Y6.75 Z21.48 F4800.0 E2486.736
+G1 X13.9 Y6.35 Z21.48 F4800.0 E2486.801
+G1 X11.59 Y5.85 Z21.48 F4800.0 E2486.934
+G1 X3.19 Y5.16 Z21.48 F4800.0 E2487.406
+G1 X3.18 Y3.82 Z21.48 F4800.0 E2487.48
+G1 X3.25 Y3.82 Z21.48 F4800.0 E2487.484
+G1 F4800.0
+G1 E2487.484
+G1 F4800.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X2.78 Y3.76 Z21.48 F9000.0
+G1 F4800.0
+G1 E2487.484
+G1 F9000.0
+M101
+G1 X2.78 Y3.43 Z21.48 F4800.0 E2487.503
+G1 X65.76 Y2.78 Z21.48 F4800.0 E2491.028
+G1 X65.78 Y4.93 Z21.48 F4800.0 E2491.149
+G1 X60.03 Y5.82 Z21.48 F4800.0 E2491.475
+G1 X57.08 Y6.49 Z21.48 F4800.0 E2491.644
+G1 X54.62 Y7.26 Z21.48 F4800.0 E2491.788
+G1 X52.42 Y8.35 Z21.48 F4800.0 E2491.926
+G1 X50.86 Y9.47 Z21.48 F4800.0 E2492.033
+G1 X49.78 Y10.54 Z21.48 F4800.0 E2492.118
+G1 X48.95 Y11.65 Z21.48 F4800.0 E2492.196
+G1 X48.41 Y12.68 Z21.48 F4800.0 E2492.261
+G1 X47.62 Y15.19 Z21.48 F4800.0 E2492.408
+G1 X47.31 Y17.98 Z21.48 F4800.0 E2492.565
+G1 X48.22 Y105.67 Z21.48 F4800.0 E2497.474
+G1 X48.56 Y108.44 Z21.48 F4800.0 E2497.631
+G1 X49.37 Y110.99 Z21.48 F4800.0 E2497.78
+G1 X49.9 Y112.06 Z21.48 F4800.0 E2497.847
+G1 X50.75 Y113.23 Z21.48 F4800.0 E2497.928
+G1 X52.1 Y114.47 Z21.48 F4800.0 E2498.031
+G1 X53.51 Y115.34 Z21.48 F4800.0 E2498.123
+G1 X55.02 Y116.02 Z21.48 F4800.0 E2498.216
+G1 X58.81 Y117.0 Z21.48 F4800.0 E2498.436
+G1 X66.95 Y118.01 Z21.48 F4800.0 E2498.894
+G1 X66.97 Y120.19 Z21.48 F4800.0 E2499.016
+G1 X3.99 Y120.84 Z21.48 F4800.0 E2502.542
+G1 X3.97 Y118.58 Z21.48 F4800.0 E2502.668
+G1 X9.69 Y117.41 Z21.48 F4800.0 E2502.995
+G1 X12.88 Y116.54 Z21.48 F4800.0 E2503.18
+G1 X15.95 Y115.43 Z21.48 F4800.0 E2503.363
+G1 X17.41 Y114.65 Z21.48 F4800.0 E2503.455
+G1 X18.97 Y113.53 Z21.48 F4800.0 E2503.563
+G1 X20.03 Y112.44 Z21.48 F4800.0 E2503.648
+G1 X20.84 Y111.31 Z21.48 F4800.0 E2503.726
+G1 X21.37 Y110.27 Z21.48 F4800.0 E2503.792
+G1 X22.13 Y107.79 Z21.48 F4800.0 E2503.937
+G1 X22.43 Y105.09 Z21.48 F4800.0 E2504.089
+G1 X21.52 Y17.3 Z21.48 F4800.0 E2509.003
+G1 X21.16 Y14.44 Z21.48 F4800.0 E2509.165
+G1 X20.32 Y11.95 Z21.48 F4800.0 E2509.312
+G1 X19.76 Y10.94 Z21.48 F4800.0 E2509.376
+G1 X18.92 Y9.87 Z21.48 F4800.0 E2509.453
+G1 X17.61 Y8.69 Z21.48 F4800.0 E2509.551
+G1 X16.27 Y7.83 Z21.48 F4800.0 E2509.64
+G1 X14.84 Y7.12 Z21.48 F4800.0 E2509.73
+G1 X13.79 Y6.74 Z21.48 F4800.0 E2509.792
+G1 X11.53 Y6.25 Z21.48 F4800.0 E2509.922
+G1 X2.8 Y5.53 Z21.48 F4800.0 E2510.412
+G1 X2.78 Y3.83 Z21.48 F4800.0 E2510.507
+G1 X2.78 Y3.76 Z21.48 F4800.0 E2510.511
+G1 F4800.0
+G1 E2510.511
+G1 F4800.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X2.38 Y3.77 Z21.48 F9000.0
+G1 F4800.0
+G1 E2510.511
+G1 F9000.0
+M101
+G1 X2.37 Y3.03 Z21.48 F4800.0 E2510.552
+G1 X66.09 Y2.37 Z21.48 F4800.0 E2514.119
+G1 X66.15 Y2.41 Z21.48 F4800.0 E2514.123
+G1 X66.18 Y5.28 Z21.48 F4800.0 E2514.284
+G1 X60.11 Y6.21 Z21.48 F4800.0 E2514.628
+G1 X57.18 Y6.88 Z21.48 F4800.0 E2514.796
+G1 X54.77 Y7.63 Z21.48 F4800.0 E2514.937
+G1 X52.63 Y8.7 Z21.48 F4800.0 E2515.071
+G1 X51.12 Y9.78 Z21.48 F4800.0 E2515.175
+G1 X50.08 Y10.8 Z21.48 F4800.0 E2515.256
+G1 X49.29 Y11.86 Z21.48 F4800.0 E2515.33
+G1 X48.78 Y12.84 Z21.48 F4800.0 E2515.392
+G1 X48.01 Y15.27 Z21.48 F4800.0 E2515.535
+G1 X47.71 Y18.0 Z21.48 F4800.0 E2515.689
+G1 X48.61 Y105.64 Z21.48 F4800.0 E2520.595
+G1 X48.96 Y108.35 Z21.48 F4800.0 E2520.748
+G1 X49.74 Y110.84 Z21.48 F4800.0 E2520.894
+G1 X50.25 Y111.85 Z21.48 F4800.0 E2520.957
+G1 X51.05 Y112.96 Z21.48 F4800.0 E2521.034
+G1 X52.34 Y114.15 Z21.48 F4800.0 E2521.132
+G1 X53.69 Y114.98 Z21.48 F4800.0 E2521.221
+G1 X55.15 Y115.64 Z21.48 F4800.0 E2521.311
+G1 X58.89 Y116.61 Z21.48 F4800.0 E2521.527
+G1 X67.34 Y117.65 Z21.48 F4800.0 E2522.004
+G1 X67.37 Y120.58 Z21.48 F4800.0 E2522.168
+G1 X3.6 Y121.24 Z21.48 F4800.0 E2525.738
+G1 X3.56 Y118.25 Z21.48 F4800.0 E2525.905
+G1 X9.6 Y117.02 Z21.48 F4800.0 E2526.25
+G1 X12.76 Y116.16 Z21.48 F4800.0 E2526.433
+G1 X15.79 Y115.06 Z21.48 F4800.0 E2526.613
+G1 X17.2 Y114.31 Z21.48 F4800.0 E2526.703
+G1 X18.7 Y113.22 Z21.48 F4800.0 E2526.807
+G1 X19.73 Y112.18 Z21.48 F4800.0 E2526.889
+G1 X20.5 Y111.11 Z21.48 F4800.0 E2526.963
+G1 X21.0 Y110.12 Z21.48 F4800.0 E2527.025
+G1 X21.74 Y107.71 Z21.48 F4800.0 E2527.166
+G1 X22.03 Y105.07 Z21.48 F4800.0 E2527.314
+G1 X21.13 Y17.33 Z21.48 F4800.0 E2532.226
+G1 X20.77 Y14.53 Z21.48 F4800.0 E2532.384
+G1 X19.95 Y12.11 Z21.48 F4800.0 E2532.527
+G1 X19.43 Y11.17 Z21.48 F4800.0 E2532.588
+G1 X18.62 Y10.15 Z21.48 F4800.0 E2532.66
+G1 X17.37 Y9.01 Z21.48 F4800.0 E2532.755
+G1 X16.08 Y8.18 Z21.48 F4800.0 E2532.841
+G1 X14.68 Y7.49 Z21.48 F4800.0 E2532.928
+G1 X13.68 Y7.12 Z21.48 F4800.0 E2532.988
+G1 X11.47 Y6.64 Z21.48 F4800.0 E2533.115
+G1 X2.4 Y5.9 Z21.48 F4800.0 E2533.624
+G1 X2.38 Y3.83 Z21.48 F4800.0 E2533.74
+G1 X2.38 Y3.77 Z21.48 F4800.0 E2533.743
+G1 F4800.0
+G1 E2533.743
+G1 F4800.0
+M103
+(</loop>)
+(<edge> outer )
+;M108 R40.0
+G1 X1.98 Y3.77 Z21.48 F9000.0
+G1 F4800.0
+G1 E2533.743
+G1 F9000.0
+M101
+G1 X1.97 Y2.64 Z21.48 F2400.0 E2533.807
+G1 X66.55 Y1.97 Z21.48 F2400.0 E2537.422
+G1 X66.58 Y5.63 Z21.48 F2400.0 E2537.627
+G1 X64.73 Y5.85 Z21.48 F2400.0 E2537.732
+G1 X60.18 Y6.61 Z21.48 F2400.0 E2537.989
+G1 X57.29 Y7.26 Z21.48 F2400.0 E2538.156
+G1 X54.91 Y8.0 Z21.48 F2400.0 E2538.295
+G1 X54.21 Y8.31 Z21.48 F2400.0 E2538.338
+G1 X52.84 Y9.04 Z21.48 F2400.0 E2538.425
+G1 X51.37 Y10.08 Z21.48 F2400.0 E2538.526
+G1 X50.38 Y11.06 Z21.48 F2400.0 E2538.603
+G1 X49.63 Y12.07 Z21.48 F2400.0 E2538.674
+G1 X49.15 Y12.99 Z21.48 F2400.0 E2538.732
+G1 X48.41 Y15.35 Z21.48 F2400.0 E2538.871
+G1 X48.11 Y18.02 Z21.48 F2400.0 E2539.021
+G1 X49.01 Y105.62 Z21.48 F2400.0 E2543.924
+G1 X49.35 Y108.27 Z21.48 F2400.0 E2544.074
+G1 X50.11 Y110.69 Z21.48 F2400.0 E2544.216
+G1 X50.59 Y111.64 Z21.48 F2400.0 E2544.276
+G1 X51.35 Y112.69 Z21.48 F2400.0 E2544.349
+G1 X52.58 Y113.83 Z21.48 F2400.0 E2544.442
+G1 X53.88 Y114.63 Z21.48 F2400.0 E2544.528
+G1 X55.3 Y115.27 Z21.48 F2400.0 E2544.615
+G1 X56.42 Y115.62 Z21.48 F2400.0 E2544.68
+G1 X58.97 Y116.21 Z21.48 F2400.0 E2544.827
+G1 X61.91 Y116.68 Z21.48 F2400.0 E2544.994
+G1 X67.74 Y117.29 Z21.48 F2400.0 E2545.322
+G1 X67.78 Y120.98 Z21.48 F2400.0 E2545.528
+G1 X3.2 Y121.64 Z21.48 F2400.0 E2549.143
+G1 X3.16 Y117.92 Z21.48 F2400.0 E2549.352
+G1 X5.06 Y117.6 Z21.48 F2400.0 E2549.46
+G1 X9.5 Y116.63 Z21.48 F2400.0 E2549.714
+G1 X12.65 Y115.78 Z21.48 F2400.0 E2549.897
+G1 X14.87 Y115.02 Z21.48 F2400.0 E2550.028
+G1 X15.61 Y114.7 Z21.48 F2400.0 E2550.073
+G1 X16.98 Y113.97 Z21.48 F2400.0 E2550.16
+G1 X18.44 Y112.92 Z21.48 F2400.0 E2550.261
+G1 X19.42 Y111.92 Z21.48 F2400.0 E2550.339
+G1 X20.16 Y110.9 Z21.48 F2400.0 E2550.41
+G1 X20.62 Y109.97 Z21.48 F2400.0 E2550.468
+G1 X21.34 Y107.63 Z21.48 F2400.0 E2550.605
+G1 X21.63 Y105.05 Z21.48 F2400.0 E2550.75
+G1 X20.73 Y17.36 Z21.48 F2400.0 E2555.66
+G1 X20.38 Y14.62 Z21.48 F2400.0 E2555.814
+G1 X19.59 Y12.28 Z21.48 F2400.0 E2555.952
+G1 X19.09 Y11.39 Z21.48 F2400.0 E2556.009
+G1 X18.33 Y10.42 Z21.48 F2400.0 E2556.078
+G1 X17.13 Y9.33 Z21.48 F2400.0 E2556.169
+G1 X15.88 Y8.53 Z21.48 F2400.0 E2556.252
+G1 X14.52 Y7.86 Z21.48 F2400.0 E2556.337
+G1 X13.57 Y7.51 Z21.48 F2400.0 E2556.394
+G1 X11.4 Y7.04 Z21.48 F2400.0 E2556.518
+G1 X8.04 Y6.67 Z21.48 F2400.0 E2556.707
+G1 X2.01 Y6.27 Z21.48 F2400.0 E2557.046
+G1 X1.98 Y3.84 Z21.48 F2400.0 E2557.182
+G1 X1.98 Y3.77 Z21.48 F2400.0 E2557.186
+G1 F4800.0
+G1 E2556.264
+G1 F2400.0
+M103
+(</edge>)
+(</boundaryPerimeter>)
+(<infill>)
+(<infillBoundary>)
+(<infillPoint> X65.375 Y4.59 Z21.485 </infillPoint>)
+(<infillPoint> X59.958 Y5.429 Z21.485 </infillPoint>)
+(<infillPoint> X56.976 Y6.102 Z21.485 </infillPoint>)
+(<infillPoint> X54.474 Y6.884 Z21.485 </infillPoint>)
+(<infillPoint> X52.217 Y8.01 Z21.485 </infillPoint>)
+(<infillPoint> X50.598 Y9.163 Z21.485 </infillPoint>)
+(<infillPoint> X49.475 Y10.273 Z21.485 </infillPoint>)
+(<infillPoint> X48.613 Y11.434 Z21.485 </infillPoint>)
+(<infillPoint> X48.041 Y12.529 Z21.485 </infillPoint>)
+(<infillPoint> X47.227 Y15.103 Z21.485 </infillPoint>)
+(<infillPoint> X46.909 Y17.958 Z21.485 </infillPoint>)
+(<infillPoint> X47.815 Y105.698 Z21.485 </infillPoint>)
+(<infillPoint> X48.173 Y108.523 Z21.485 </infillPoint>)
+(<infillPoint> X48.998 Y111.138 Z21.485 </infillPoint>)
+(<infillPoint> X49.561 Y112.268 Z21.485 </infillPoint>)
+(<infillPoint> X50.453 Y113.493 Z21.485 </infillPoint>)
+(<infillPoint> X51.855 Y114.793 Z21.485 </infillPoint>)
+(<infillPoint> X53.318 Y115.694 Z21.485 </infillPoint>)
+(<infillPoint> X54.888 Y116.398 Z21.485 </infillPoint>)
+(<infillPoint> X58.74 Y117.395 Z21.485 </infillPoint>)
+(<infillPoint> X66.551 Y118.36 Z21.485 </infillPoint>)
+(<infillPoint> X66.566 Y119.79 Z21.485 </infillPoint>)
+(<infillPoint> X4.388 Y120.433 Z21.485 </infillPoint>)
+(<infillPoint> X4.372 Y118.905 Z21.485 </infillPoint>)
+(<infillPoint> X9.783 Y117.801 Z21.485 </infillPoint>)
+(<infillPoint> X13.005 Y116.923 Z21.485 </infillPoint>)
+(<infillPoint> X16.112 Y115.796 Z21.485 </infillPoint>)
+(<infillPoint> X17.621 Y114.992 Z21.485 </infillPoint>)
+(<infillPoint> X19.228 Y113.83 Z21.485 </infillPoint>)
+(<infillPoint> X20.34 Y112.7 Z21.485 </infillPoint>)
+(<infillPoint> X21.189 Y111.522 Z21.485 </infillPoint>)
+(<infillPoint> X21.742 Y110.415 Z21.485 </infillPoint>)
+(<infillPoint> X22.525 Y107.871 Z21.485 </infillPoint>)
+(<infillPoint> X22.832 Y105.112 Z21.485 </infillPoint>)
+(<infillPoint> X21.925 Y17.273 Z21.485 </infillPoint>)
+(<infillPoint> X21.553 Y14.347 Z21.485 </infillPoint>)
+(<infillPoint> X20.69 Y11.788 Z21.485 </infillPoint>)
+(<infillPoint> X20.096 Y10.721 Z21.485 </infillPoint>)
+(<infillPoint> X19.21 Y9.597 Z21.485 </infillPoint>)
+(<infillPoint> X17.857 Y8.376 Z21.485 </infillPoint>)
+(<infillPoint> X16.472 Y7.484 Z21.485 </infillPoint>)
+(<infillPoint> X14.995 Y6.754 Z21.485 </infillPoint>)
+(<infillPoint> X13.905 Y6.353 Z21.485 </infillPoint>)
+(<infillPoint> X11.588 Y5.85 Z21.485 </infillPoint>)
+(<infillPoint> X3.195 Y5.161 Z21.485 </infillPoint>)
+(<infillPoint> X3.182 Y3.824 Z21.485 </infillPoint>)
+(<infillPoint> X65.36 Y3.181 Z21.485 </infillPoint>)
+(</infillBoundary>)
+;M108 R80.0
+G1 X3.6 Y4.8 Z21.48 F9000.0
+G1 F4800.0
+G1 E2557.186
+G1 F9000.0
+M101
+G1 X62.19 Y4.8 Z21.48 F4800.0 E2560.465
+G1 X64.77 Y4.4 Z21.48 F4800.0 E2560.612
+G1 X3.47 Y4.4 Z21.48 F4800.0 E2564.044
+G1 F4800.0
+G1 E2563.044
+G1 F4800.0
+M103
+G1 X59.7 Y5.2 Z21.48 F9000.0
+G1 F4800.0
+G1 E2564.044
+G1 F9000.0
+M101
+G1 X7.09 Y5.2 Z21.48 F4800.0 E2566.988
+G1 F4800.0
+G1 E2565.988
+G1 F4800.0
+M103
+G1 X13.62 Y7.32 Z21.48 F9000.0
+G1 X18.48 Y10.29 Z21.48 F9000.0
+G1 X20.57 Y14.57 Z21.48 F9000.0
+G1 X21.83 Y105.06 Z21.48 F9000.0
+G1 X20.81 Y110.04 Z21.48 F9000.0
+G1 X17.07 Y115.6 Z21.48 F9000.0
+G1 F4800.0
+G1 E2566.988
+G1 F9000.0
+M101
+G1 X52.63 Y115.6 Z21.48 F4800.0 E2568.979
+G1 X51.98 Y115.2 Z21.48 F4800.0 E2569.021
+G1 X17.81 Y115.2 Z21.48 F4800.0 E2570.934
+G1 X18.36 Y114.8 Z21.48 F4800.0 E2570.973
+G1 X51.45 Y114.8 Z21.48 F4800.0 E2572.825
+G1 X51.02 Y114.4 Z21.48 F4800.0 E2572.858
+G1 X18.92 Y114.4 Z21.48 F4800.0 E2574.655
+G1 X19.45 Y114.0 Z21.48 F4800.0 E2574.692
+G1 X50.59 Y114.0 Z21.48 F4800.0 E2576.435
+G1 X50.19 Y113.6 Z21.48 F4800.0 E2576.467
+G1 X19.85 Y113.6 Z21.48 F4800.0 E2578.165
+G1 X20.24 Y113.2 Z21.48 F4800.0 E2578.196
+G1 X49.89 Y113.2 Z21.48 F4800.0 E2579.856
+G1 X49.6 Y112.8 Z21.48 F4800.0 E2579.884
+G1 X20.61 Y112.8 Z21.48 F4800.0 E2581.507
+G1 X20.9 Y112.4 Z21.48 F4800.0 E2581.534
+G1 X49.31 Y112.4 Z21.48 F4800.0 E2583.125
+G1 X49.12 Y112.0 Z21.48 F4800.0 E2583.15
+G1 X21.19 Y112.0 Z21.48 F4800.0 E2584.713
+G1 X21.46 Y111.6 Z21.48 F4800.0 E2584.74
+G1 X48.91 Y111.6 Z21.48 F4800.0 E2586.277
+G1 X48.72 Y111.2 Z21.48 F4800.0 E2586.301
+G1 X21.66 Y111.2 Z21.48 F4800.0 E2587.816
+G1 X21.86 Y110.8 Z21.48 F4800.0 E2587.841
+G1 X48.6 Y110.8 Z21.48 F4800.0 E2589.338
+G1 X48.47 Y110.4 Z21.48 F4800.0 E2589.361
+G1 X22.04 Y110.4 Z21.48 F4800.0 E2590.841
+G1 X22.16 Y110.0 Z21.48 F4800.0 E2590.864
+G1 X48.34 Y110.0 Z21.48 F4800.0 E2592.33
+G1 X48.22 Y109.6 Z21.48 F4800.0 E2592.353
+G1 X22.29 Y109.6 Z21.48 F4800.0 E2593.805
+G1 X22.41 Y109.2 Z21.48 F4800.0 E2593.829
+G1 X48.09 Y109.2 Z21.48 F4800.0 E2595.266
+G1 X47.97 Y108.8 Z21.48 F4800.0 E2595.29
+G1 X22.53 Y108.8 Z21.48 F4800.0 E2596.714
+G1 X22.66 Y108.4 Z21.48 F4800.0 E2596.737
+G1 X47.88 Y108.4 Z21.48 F4800.0 E2598.149
+G1 X47.82 Y108.0 Z21.48 F4800.0 E2598.171
+G1 X22.78 Y108.0 Z21.48 F4800.0 E2599.573
+G1 X22.84 Y107.6 Z21.48 F4800.0 E2599.596
+G1 X47.77 Y107.6 Z21.48 F4800.0 E2600.992
+G1 X47.72 Y107.2 Z21.48 F4800.0 E2601.014
+G1 X22.88 Y107.2 Z21.48 F4800.0 E2602.405
+G1 X22.93 Y106.8 Z21.48 F4800.0 E2602.428
+G1 X47.67 Y106.8 Z21.48 F4800.0 E2603.813
+G1 X47.62 Y106.4 Z21.48 F4800.0 E2603.835
+G1 X22.97 Y106.4 Z21.48 F4800.0 E2605.215
+G1 X23.02 Y106.0 Z21.48 F4800.0 E2605.238
+G1 X47.57 Y106.0 Z21.48 F4800.0 E2606.612
+G1 X47.53 Y105.6 Z21.48 F4800.0 E2606.635
+G1 X23.06 Y105.6 Z21.48 F4800.0 E2608.005
+G1 X23.1 Y105.2 Z21.48 F4800.0 E2608.028
+G1 X47.53 Y105.2 Z21.48 F4800.0 E2609.395
+G1 X47.53 Y104.8 Z21.48 F4800.0 E2609.417
+G1 X23.11 Y104.8 Z21.48 F4800.0 E2610.784
+G1 X23.1 Y104.4 Z21.48 F4800.0 E2610.806
+G1 X47.52 Y104.4 Z21.48 F4800.0 E2612.173
+G1 X47.52 Y104.0 Z21.48 F4800.0 E2612.196
+G1 X23.1 Y104.0 Z21.48 F4800.0 E2613.563
+G1 X23.1 Y103.6 Z21.48 F4800.0 E2613.585
+G1 X47.51 Y103.6 Z21.48 F4800.0 E2614.952
+G1 X47.51 Y103.2 Z21.48 F4800.0 E2614.974
+G1 X23.09 Y103.2 Z21.48 F4800.0 E2616.341
+G1 X23.09 Y102.8 Z21.48 F4800.0 E2616.363
+G1 X47.51 Y102.8 Z21.48 F4800.0 E2617.73
+G1 X47.5 Y102.4 Z21.48 F4800.0 E2617.753
+G1 X23.08 Y102.4 Z21.48 F4800.0 E2619.119
+G1 X23.08 Y102.0 Z21.48 F4800.0 E2619.142
+G1 X47.5 Y102.0 Z21.48 F4800.0 E2620.509
+G1 X47.49 Y101.6 Z21.48 F4800.0 E2620.531
+G1 X23.08 Y101.6 Z21.48 F4800.0 E2621.898
+G1 X23.07 Y101.2 Z21.48 F4800.0 E2621.92
+G1 X47.49 Y101.2 Z21.48 F4800.0 E2623.287
+G1 X47.48 Y100.8 Z21.48 F4800.0 E2623.309
+G1 X23.07 Y100.8 Z21.48 F4800.0 E2624.676
+G1 X23.06 Y100.4 Z21.48 F4800.0 E2624.699
+G1 X47.48 Y100.4 Z21.48 F4800.0 E2626.065
+G1 X47.48 Y100.0 Z21.48 F4800.0 E2626.088
+G1 X23.06 Y100.0 Z21.48 F4800.0 E2627.455
+G1 X23.05 Y99.6 Z21.48 F4800.0 E2627.477
+G1 X47.47 Y99.6 Z21.48 F4800.0 E2628.844
+G1 X47.47 Y99.2 Z21.48 F4800.0 E2628.866
+G1 X23.05 Y99.2 Z21.48 F4800.0 E2630.233
+G1 X23.05 Y98.8 Z21.48 F4800.0 E2630.255
+G1 X47.46 Y98.8 Z21.48 F4800.0 E2631.622
+G1 X47.46 Y98.4 Z21.48 F4800.0 E2631.645
+G1 X23.04 Y98.4 Z21.48 F4800.0 E2633.011
+G1 X23.04 Y98.0 Z21.48 F4800.0 E2633.034
+G1 X47.45 Y98.0 Z21.48 F4800.0 E2634.401
+G1 X47.45 Y97.6 Z21.48 F4800.0 E2634.423
+G1 X23.03 Y97.6 Z21.48 F4800.0 E2635.79
+G1 X23.03 Y97.2 Z21.48 F4800.0 E2635.812
+G1 X47.45 Y97.2 Z21.48 F4800.0 E2637.179
+G1 X47.44 Y96.8 Z21.48 F4800.0 E2637.201
+G1 X23.03 Y96.8 Z21.48 F4800.0 E2638.568
+G1 X23.02 Y96.4 Z21.48 F4800.0 E2638.591
+G1 X47.44 Y96.4 Z21.48 F4800.0 E2639.957
+G1 X47.44 Y96.0 Z21.48 F4800.0 E2639.98
+G1 X23.02 Y96.0 Z21.48 F4800.0 E2641.347
+G1 X23.01 Y95.6 Z21.48 F4800.0 E2641.369
+G1 X47.43 Y95.6 Z21.48 F4800.0 E2642.736
+G1 X47.43 Y95.2 Z21.48 F4800.0 E2642.758
+G1 X23.01 Y95.2 Z21.48 F4800.0 E2644.125
+G1 X23.0 Y94.8 Z21.48 F4800.0 E2644.148
+G1 X47.42 Y94.8 Z21.48 F4800.0 E2645.514
+G1 X47.42 Y94.4 Z21.48 F4800.0 E2645.537
+G1 X23.0 Y94.4 Z21.48 F4800.0 E2646.904
+G1 X23.0 Y94.0 Z21.48 F4800.0 E2646.926
+G1 X47.41 Y94.0 Z21.48 F4800.0 E2648.293
+G1 X47.41 Y93.6 Z21.48 F4800.0 E2648.315
+G1 X22.99 Y93.6 Z21.48 F4800.0 E2649.682
+G1 X22.99 Y93.2 Z21.48 F4800.0 E2649.704
+G1 X47.41 Y93.2 Z21.48 F4800.0 E2651.071
+G1 X47.4 Y92.8 Z21.48 F4800.0 E2651.094
+G1 X22.98 Y92.8 Z21.48 F4800.0 E2652.46
+G1 X22.98 Y92.4 Z21.48 F4800.0 E2652.483
+G1 X47.4 Y92.4 Z21.48 F4800.0 E2653.85
+G1 X47.39 Y92.0 Z21.48 F4800.0 E2653.872
+G1 X22.98 Y92.0 Z21.48 F4800.0 E2655.239
+G1 X22.97 Y91.6 Z21.48 F4800.0 E2655.261
+G1 X47.39 Y91.6 Z21.48 F4800.0 E2656.628
+G1 X47.38 Y91.2 Z21.48 F4800.0 E2656.65
+G1 X22.97 Y91.2 Z21.48 F4800.0 E2658.017
+G1 X22.96 Y90.8 Z21.48 F4800.0 E2658.04
+G1 X47.38 Y90.8 Z21.48 F4800.0 E2659.406
+G1 X47.38 Y90.4 Z21.48 F4800.0 E2659.429
+G1 X22.96 Y90.4 Z21.48 F4800.0 E2660.796
+G1 X22.96 Y90.0 Z21.48 F4800.0 E2660.818
+G1 X47.37 Y90.0 Z21.48 F4800.0 E2662.185
+G1 X47.37 Y89.6 Z21.48 F4800.0 E2662.207
+G1 X22.95 Y89.6 Z21.48 F4800.0 E2663.574
+G1 X22.95 Y89.2 Z21.48 F4800.0 E2663.597
+G1 X47.37 Y89.2 Z21.48 F4800.0 E2664.963
+G1 X47.36 Y88.8 Z21.48 F4800.0 E2664.986
+G1 X22.94 Y88.8 Z21.48 F4800.0 E2666.353
+G1 X22.94 Y88.4 Z21.48 F4800.0 E2666.375
+G1 X47.36 Y88.4 Z21.48 F4800.0 E2667.742
+G1 X47.35 Y88.0 Z21.48 F4800.0 E2667.764
+G1 X22.93 Y88.0 Z21.48 F4800.0 E2669.131
+G1 X22.93 Y87.6 Z21.48 F4800.0 E2669.153
+G1 X47.35 Y87.6 Z21.48 F4800.0 E2670.52
+G1 X47.34 Y87.2 Z21.48 F4800.0 E2670.543
+G1 X22.93 Y87.2 Z21.48 F4800.0 E2671.909
+G1 X22.92 Y86.8 Z21.48 F4800.0 E2671.932
+G1 X47.34 Y86.8 Z21.48 F4800.0 E2673.299
+G1 X47.34 Y86.4 Z21.48 F4800.0 E2673.321
+G1 X22.92 Y86.4 Z21.48 F4800.0 E2674.688
+G1 X22.91 Y86.0 Z21.48 F4800.0 E2674.71
+G1 X47.33 Y86.0 Z21.48 F4800.0 E2676.077
+G1 X47.33 Y85.6 Z21.48 F4800.0 E2676.099
+G1 X22.91 Y85.6 Z21.48 F4800.0 E2677.466
+G1 X22.91 Y85.2 Z21.48 F4800.0 E2677.489
+G1 X47.32 Y85.2 Z21.48 F4800.0 E2678.855
+G1 X47.32 Y84.8 Z21.48 F4800.0 E2678.878
+G1 X22.9 Y84.8 Z21.48 F4800.0 E2680.245
+G1 X22.9 Y84.4 Z21.48 F4800.0 E2680.267
+G1 X47.31 Y84.4 Z21.48 F4800.0 E2681.634
+G1 X47.31 Y84.0 Z21.48 F4800.0 E2681.656
+G1 X22.89 Y84.0 Z21.48 F4800.0 E2683.023
+G1 X22.89 Y83.6 Z21.48 F4800.0 E2683.045
+G1 X47.31 Y83.6 Z21.48 F4800.0 E2684.412
+G1 X47.3 Y83.2 Z21.48 F4800.0 E2684.435
+G1 X22.89 Y83.2 Z21.48 F4800.0 E2685.801
+G1 X22.88 Y82.8 Z21.48 F4800.0 E2685.824
+G1 X47.3 Y82.8 Z21.48 F4800.0 E2687.191
+G1 X47.29 Y82.4 Z21.48 F4800.0 E2687.213
+G1 X22.88 Y82.4 Z21.48 F4800.0 E2688.58
+G1 X22.87 Y82.0 Z21.48 F4800.0 E2688.602
+G1 X47.29 Y82.0 Z21.48 F4800.0 E2689.969
+G1 X47.29 Y81.6 Z21.48 F4800.0 E2689.991
+G1 X22.87 Y81.6 Z21.48 F4800.0 E2691.358
+G1 X22.86 Y81.2 Z21.48 F4800.0 E2691.381
+G1 X47.28 Y81.2 Z21.48 F4800.0 E2692.747
+G1 X47.28 Y80.8 Z21.48 F4800.0 E2692.77
+G1 X22.86 Y80.8 Z21.48 F4800.0 E2694.137
+G1 X22.86 Y80.4 Z21.48 F4800.0 E2694.159
+G1 X47.27 Y80.4 Z21.48 F4800.0 E2695.526
+G1 X47.27 Y80.0 Z21.48 F4800.0 E2695.548
+G1 X22.85 Y80.0 Z21.48 F4800.0 E2696.915
+G1 X22.85 Y79.6 Z21.48 F4800.0 E2696.938
+G1 X47.27 Y79.6 Z21.48 F4800.0 E2698.304
+G1 X47.26 Y79.2 Z21.48 F4800.0 E2698.327
+G1 X22.84 Y79.2 Z21.48 F4800.0 E2699.694
+G1 X22.84 Y78.8 Z21.48 F4800.0 E2699.716
+G1 X47.26 Y78.8 Z21.48 F4800.0 E2701.083
+G1 X47.25 Y78.4 Z21.48 F4800.0 E2701.105
+G1 X22.84 Y78.4 Z21.48 F4800.0 E2702.472
+G1 X22.83 Y78.0 Z21.48 F4800.0 E2702.494
+G1 X47.25 Y78.0 Z21.48 F4800.0 E2703.861
+G1 X47.24 Y77.6 Z21.48 F4800.0 E2703.884
+G1 X22.83 Y77.6 Z21.48 F4800.0 E2705.25
+G1 X22.82 Y77.2 Z21.48 F4800.0 E2705.273
+G1 X47.24 Y77.2 Z21.48 F4800.0 E2706.64
+G1 X47.24 Y76.8 Z21.48 F4800.0 E2706.662
+G1 X22.82 Y76.8 Z21.48 F4800.0 E2708.029
+G1 X22.82 Y76.4 Z21.48 F4800.0 E2708.051
+G1 X47.23 Y76.4 Z21.48 F4800.0 E2709.418
+G1 X47.23 Y76.0 Z21.48 F4800.0 E2709.44
+G1 X22.81 Y76.0 Z21.48 F4800.0 E2710.807
+G1 X22.81 Y75.6 Z21.48 F4800.0 E2710.83
+G1 X47.22 Y75.6 Z21.48 F4800.0 E2712.196
+G1 X47.22 Y75.2 Z21.48 F4800.0 E2712.219
+G1 X22.8 Y75.2 Z21.48 F4800.0 E2713.586
+G1 X22.8 Y74.8 Z21.48 F4800.0 E2713.608
+G1 X47.22 Y74.8 Z21.48 F4800.0 E2714.975
+G1 X47.21 Y74.4 Z21.48 F4800.0 E2714.997
+G1 X22.8 Y74.4 Z21.48 F4800.0 E2716.364
+G1 X22.79 Y74.0 Z21.48 F4800.0 E2716.386
+G1 X47.21 Y74.0 Z21.48 F4800.0 E2717.753
+G1 X47.2 Y73.6 Z21.48 F4800.0 E2717.776
+G1 X22.79 Y73.6 Z21.48 F4800.0 E2719.142
+G1 X22.78 Y73.2 Z21.48 F4800.0 E2719.165
+G1 X47.2 Y73.2 Z21.48 F4800.0 E2720.532
+G1 X47.2 Y72.8 Z21.48 F4800.0 E2720.554
+G1 X22.78 Y72.8 Z21.48 F4800.0 E2721.921
+G1 X22.77 Y72.4 Z21.48 F4800.0 E2721.943
+G1 X47.19 Y72.4 Z21.48 F4800.0 E2723.31
+G1 X47.19 Y72.0 Z21.48 F4800.0 E2723.332
+G1 X22.77 Y72.0 Z21.48 F4800.0 E2724.699
+G1 X22.77 Y71.6 Z21.48 F4800.0 E2724.722
+G1 X47.18 Y71.6 Z21.48 F4800.0 E2726.088
+G1 X47.18 Y71.2 Z21.48 F4800.0 E2726.111
+G1 X22.76 Y71.2 Z21.48 F4800.0 E2727.478
+G1 X22.76 Y70.8 Z21.48 F4800.0 E2727.5
+G1 X47.17 Y70.8 Z21.48 F4800.0 E2728.867
+G1 X47.17 Y70.4 Z21.48 F4800.0 E2728.889
+G1 X22.75 Y70.4 Z21.48 F4800.0 E2730.256
+G1 X22.75 Y70.0 Z21.48 F4800.0 E2730.279
+G1 X47.17 Y70.0 Z21.48 F4800.0 E2731.645
+G1 X47.16 Y69.6 Z21.48 F4800.0 E2731.668
+G1 X22.75 Y69.6 Z21.48 F4800.0 E2733.035
+G1 X22.74 Y69.2 Z21.48 F4800.0 E2733.057
+G1 X47.16 Y69.2 Z21.48 F4800.0 E2734.424
+G1 X47.15 Y68.8 Z21.48 F4800.0 E2734.446
+G1 X22.74 Y68.8 Z21.48 F4800.0 E2735.813
+G1 X22.73 Y68.4 Z21.48 F4800.0 E2735.835
+G1 X47.15 Y68.4 Z21.48 F4800.0 E2737.202
+G1 X47.15 Y68.0 Z21.48 F4800.0 E2737.225
+G1 X22.73 Y68.0 Z21.48 F4800.0 E2738.591
+G1 X22.73 Y67.6 Z21.48 F4800.0 E2738.614
+G1 X47.14 Y67.6 Z21.48 F4800.0 E2739.981
+G1 X47.14 Y67.2 Z21.48 F4800.0 E2740.003
+G1 X22.72 Y67.2 Z21.48 F4800.0 E2741.37
+G1 X22.72 Y66.8 Z21.48 F4800.0 E2741.392
+G1 X47.13 Y66.8 Z21.48 F4800.0 E2742.759
+G1 X47.13 Y66.4 Z21.48 F4800.0 E2742.781
+G1 X22.71 Y66.4 Z21.48 F4800.0 E2744.148
+G1 X22.71 Y66.0 Z21.48 F4800.0 E2744.171
+G1 X47.13 Y66.0 Z21.48 F4800.0 E2745.537
+G1 X47.12 Y65.6 Z21.48 F4800.0 E2745.56
+G1 X22.7 Y65.6 Z21.48 F4800.0 E2746.927
+G1 X22.7 Y65.2 Z21.48 F4800.0 E2746.949
+G1 X47.12 Y65.2 Z21.48 F4800.0 E2748.316
+G1 X47.11 Y64.8 Z21.48 F4800.0 E2748.338
+G1 X22.7 Y64.8 Z21.48 F4800.0 E2749.705
+G1 X22.69 Y64.4 Z21.48 F4800.0 E2749.727
+G1 X47.11 Y64.4 Z21.48 F4800.0 E2751.094
+G1 X47.1 Y64.0 Z21.48 F4800.0 E2751.117
+G1 X22.69 Y64.0 Z21.48 F4800.0 E2752.483
+G1 X22.68 Y63.6 Z21.48 F4800.0 E2752.506
+G1 X47.1 Y63.6 Z21.48 F4800.0 E2753.873
+G1 X47.1 Y63.2 Z21.48 F4800.0 E2753.895
+G1 X22.68 Y63.2 Z21.48 F4800.0 E2755.262
+G1 X22.68 Y62.8 Z21.48 F4800.0 E2755.284
+G1 X47.09 Y62.8 Z21.48 F4800.0 E2756.651
+G1 X47.09 Y62.4 Z21.48 F4800.0 E2756.673
+G1 X22.67 Y62.4 Z21.48 F4800.0 E2758.04
+G1 X22.67 Y62.0 Z21.48 F4800.0 E2758.063
+G1 X47.08 Y62.0 Z21.48 F4800.0 E2759.429
+G1 X47.08 Y61.6 Z21.48 F4800.0 E2759.452
+G1 X22.66 Y61.6 Z21.48 F4800.0 E2760.819
+G1 X22.66 Y61.2 Z21.48 F4800.0 E2760.841
+G1 X47.08 Y61.2 Z21.48 F4800.0 E2762.208
+G1 X47.07 Y60.8 Z21.48 F4800.0 E2762.23
+G1 X22.65 Y60.8 Z21.48 F4800.0 E2763.597
+G1 X22.65 Y60.4 Z21.48 F4800.0 E2763.619
+G1 X47.07 Y60.4 Z21.48 F4800.0 E2764.986
+G1 X47.06 Y60.0 Z21.48 F4800.0 E2765.009
+G1 X22.65 Y60.0 Z21.48 F4800.0 E2766.375
+G1 X22.64 Y59.6 Z21.48 F4800.0 E2766.398
+G1 X47.06 Y59.6 Z21.48 F4800.0 E2767.765
+G1 X47.05 Y59.2 Z21.48 F4800.0 E2767.787
+G1 X22.64 Y59.2 Z21.48 F4800.0 E2769.154
+G1 X22.63 Y58.8 Z21.48 F4800.0 E2769.176
+G1 X47.05 Y58.8 Z21.48 F4800.0 E2770.543
+G1 X47.05 Y58.4 Z21.48 F4800.0 E2770.566
+G1 X22.63 Y58.4 Z21.48 F4800.0 E2771.932
+G1 X22.63 Y58.0 Z21.48 F4800.0 E2771.955
+G1 X47.04 Y58.0 Z21.48 F4800.0 E2773.322
+G1 X47.04 Y57.6 Z21.48 F4800.0 E2773.344
+G1 X22.62 Y57.6 Z21.48 F4800.0 E2774.711
+G1 X22.62 Y57.2 Z21.48 F4800.0 E2774.733
+G1 X47.03 Y57.2 Z21.48 F4800.0 E2776.1
+G1 X47.03 Y56.8 Z21.48 F4800.0 E2776.122
+G1 X22.61 Y56.8 Z21.48 F4800.0 E2777.489
+G1 X22.61 Y56.4 Z21.48 F4800.0 E2777.512
+G1 X47.03 Y56.4 Z21.48 F4800.0 E2778.878
+G1 X47.02 Y56.0 Z21.48 F4800.0 E2778.901
+G1 X22.61 Y56.0 Z21.48 F4800.0 E2780.268
+G1 X22.6 Y55.6 Z21.48 F4800.0 E2780.29
+G1 X47.02 Y55.6 Z21.48 F4800.0 E2781.657
+G1 X47.01 Y55.2 Z21.48 F4800.0 E2781.679
+G1 X22.6 Y55.2 Z21.48 F4800.0 E2783.046
+G1 X22.59 Y54.8 Z21.48 F4800.0 E2783.068
+G1 X47.01 Y54.8 Z21.48 F4800.0 E2784.435
+G1 X47.01 Y54.4 Z21.48 F4800.0 E2784.458
+G1 X22.59 Y54.4 Z21.48 F4800.0 E2785.824
+G1 X22.58 Y54.0 Z21.48 F4800.0 E2785.847
+G1 X47.0 Y54.0 Z21.48 F4800.0 E2787.214
+G1 X47.0 Y53.6 Z21.48 F4800.0 E2787.236
+G1 X22.58 Y53.6 Z21.48 F4800.0 E2788.603
+G1 X22.58 Y53.2 Z21.48 F4800.0 E2788.625
+G1 X46.99 Y53.2 Z21.48 F4800.0 E2789.992
+G1 X46.99 Y52.8 Z21.48 F4800.0 E2790.014
+G1 X22.57 Y52.8 Z21.48 F4800.0 E2791.381
+G1 X22.57 Y52.4 Z21.48 F4800.0 E2791.404
+G1 X46.98 Y52.4 Z21.48 F4800.0 E2792.77
+G1 X46.98 Y52.0 Z21.48 F4800.0 E2792.793
+G1 X22.56 Y52.0 Z21.48 F4800.0 E2794.16
+G1 X22.56 Y51.6 Z21.48 F4800.0 E2794.182
+G1 X46.98 Y51.6 Z21.48 F4800.0 E2795.549
+G1 X46.97 Y51.2 Z21.48 F4800.0 E2795.571
+G1 X22.55 Y51.2 Z21.48 F4800.0 E2796.938
+G1 X22.55 Y50.8 Z21.48 F4800.0 E2796.96
+G1 X46.97 Y50.8 Z21.48 F4800.0 E2798.327
+G1 X46.96 Y50.4 Z21.48 F4800.0 E2798.35
+G1 X22.55 Y50.4 Z21.48 F4800.0 E2799.716
+G1 X22.54 Y50.0 Z21.48 F4800.0 E2799.739
+G1 X46.96 Y50.0 Z21.48 F4800.0 E2801.106
+G1 X46.96 Y49.6 Z21.48 F4800.0 E2801.128
+G1 X22.54 Y49.6 Z21.48 F4800.0 E2802.495
+G1 X22.54 Y49.2 Z21.48 F4800.0 E2802.517
+G1 X46.95 Y49.2 Z21.48 F4800.0 E2803.884
+G1 X46.95 Y48.8 Z21.48 F4800.0 E2803.906
+G1 X22.53 Y48.8 Z21.48 F4800.0 E2805.273
+G1 X22.53 Y48.4 Z21.48 F4800.0 E2805.296
+G1 X46.94 Y48.4 Z21.48 F4800.0 E2806.662
+G1 X46.94 Y48.0 Z21.48 F4800.0 E2806.685
+G1 X22.52 Y48.0 Z21.48 F4800.0 E2808.052
+G1 X22.52 Y47.6 Z21.48 F4800.0 E2808.074
+G1 X46.94 Y47.6 Z21.48 F4800.0 E2809.441
+G1 X46.93 Y47.2 Z21.48 F4800.0 E2809.463
+G1 X22.51 Y47.2 Z21.48 F4800.0 E2810.83
+G1 X22.51 Y46.8 Z21.48 F4800.0 E2810.852
+G1 X46.93 Y46.8 Z21.48 F4800.0 E2812.219
+G1 X46.92 Y46.4 Z21.48 F4800.0 E2812.242
+G1 X22.51 Y46.4 Z21.48 F4800.0 E2813.609
+G1 X22.5 Y46.0 Z21.48 F4800.0 E2813.631
+G1 X46.92 Y46.0 Z21.48 F4800.0 E2814.998
+G1 X46.91 Y45.6 Z21.48 F4800.0 E2815.02
+G1 X22.5 Y45.6 Z21.48 F4800.0 E2816.387
+G1 X22.49 Y45.2 Z21.48 F4800.0 E2816.409
+G1 X46.91 Y45.2 Z21.48 F4800.0 E2817.776
+G1 X46.91 Y44.8 Z21.48 F4800.0 E2817.799
+G1 X22.49 Y44.8 Z21.48 F4800.0 E2819.165
+G1 X22.48 Y44.4 Z21.48 F4800.0 E2819.188
+G1 X46.9 Y44.4 Z21.48 F4800.0 E2820.555
+G1 X46.9 Y44.0 Z21.48 F4800.0 E2820.577
+G1 X22.48 Y44.0 Z21.48 F4800.0 E2821.944
+G1 X22.48 Y43.6 Z21.48 F4800.0 E2821.966
+G1 X46.89 Y43.6 Z21.48 F4800.0 E2823.333
+G1 X46.89 Y43.2 Z21.48 F4800.0 E2823.355
+G1 X22.47 Y43.2 Z21.48 F4800.0 E2824.722
+G1 X22.47 Y42.8 Z21.48 F4800.0 E2824.745
+G1 X46.89 Y42.8 Z21.48 F4800.0 E2826.111
+G1 X46.88 Y42.4 Z21.48 F4800.0 E2826.134
+G1 X22.46 Y42.4 Z21.48 F4800.0 E2827.501
+G1 X22.46 Y42.0 Z21.48 F4800.0 E2827.523
+G1 X46.88 Y42.0 Z21.48 F4800.0 E2828.89
+G1 X46.87 Y41.6 Z21.48 F4800.0 E2828.912
+G1 X22.46 Y41.6 Z21.48 F4800.0 E2830.279
+G1 X22.45 Y41.2 Z21.48 F4800.0 E2830.301
+G1 X46.87 Y41.2 Z21.48 F4800.0 E2831.668
+G1 X46.87 Y40.8 Z21.48 F4800.0 E2831.691
+G1 X22.45 Y40.8 Z21.48 F4800.0 E2833.057
+G1 X22.44 Y40.4 Z21.48 F4800.0 E2833.08
+G1 X46.86 Y40.4 Z21.48 F4800.0 E2834.447
+G1 X46.86 Y40.0 Z21.48 F4800.0 E2834.469
+G1 X22.44 Y40.0 Z21.48 F4800.0 E2835.836
+G1 X22.44 Y39.6 Z21.48 F4800.0 E2835.858
+G1 X46.85 Y39.6 Z21.48 F4800.0 E2837.225
+G1 X46.85 Y39.2 Z21.48 F4800.0 E2837.247
+G1 X22.43 Y39.2 Z21.48 F4800.0 E2838.614
+G1 X22.43 Y38.8 Z21.48 F4800.0 E2838.637
+G1 X46.84 Y38.8 Z21.48 F4800.0 E2840.003
+G1 X46.84 Y38.4 Z21.48 F4800.0 E2840.026
+G1 X22.42 Y38.4 Z21.48 F4800.0 E2841.393
+G1 X22.42 Y38.0 Z21.48 F4800.0 E2841.415
+G1 X46.84 Y38.0 Z21.48 F4800.0 E2842.782
+G1 X46.83 Y37.6 Z21.48 F4800.0 E2842.804
+G1 X22.41 Y37.6 Z21.48 F4800.0 E2844.171
+G1 X22.41 Y37.2 Z21.48 F4800.0 E2844.193
+G1 X46.83 Y37.2 Z21.48 F4800.0 E2845.56
+G1 X46.82 Y36.8 Z21.48 F4800.0 E2845.583
+G1 X22.41 Y36.8 Z21.48 F4800.0 E2846.949
+G1 X22.4 Y36.4 Z21.48 F4800.0 E2846.972
+G1 X46.82 Y36.4 Z21.48 F4800.0 E2848.339
+G1 X46.81 Y36.0 Z21.48 F4800.0 E2848.361
+G1 X22.4 Y36.0 Z21.48 F4800.0 E2849.728
+G1 X22.39 Y35.6 Z21.48 F4800.0 E2849.75
+G1 X46.81 Y35.6 Z21.48 F4800.0 E2851.117
+G1 X46.81 Y35.2 Z21.48 F4800.0 E2851.139
+G1 X22.39 Y35.2 Z21.48 F4800.0 E2852.506
+G1 X22.39 Y34.8 Z21.48 F4800.0 E2852.529
+G1 X46.8 Y34.8 Z21.48 F4800.0 E2853.895
+G1 X46.8 Y34.4 Z21.48 F4800.0 E2853.918
+G1 X22.38 Y34.4 Z21.48 F4800.0 E2855.285
+G1 X22.38 Y34.0 Z21.48 F4800.0 E2855.307
+G1 X46.8 Y34.0 Z21.48 F4800.0 E2856.674
+G1 X46.79 Y33.6 Z21.48 F4800.0 E2856.696
+G1 X22.37 Y33.6 Z21.48 F4800.0 E2858.063
+G1 X22.37 Y33.2 Z21.48 F4800.0 E2858.086
+G1 X46.79 Y33.2 Z21.48 F4800.0 E2859.452
+G1 X46.78 Y32.8 Z21.48 F4800.0 E2859.475
+G1 X22.36 Y32.8 Z21.48 F4800.0 E2860.842
+G1 X22.36 Y32.4 Z21.48 F4800.0 E2860.864
+G1 X46.78 Y32.4 Z21.48 F4800.0 E2862.231
+G1 X46.77 Y32.0 Z21.48 F4800.0 E2862.253
+G1 X22.36 Y32.0 Z21.48 F4800.0 E2863.62
+G1 X22.35 Y31.6 Z21.48 F4800.0 E2863.642
+G1 X46.77 Y31.6 Z21.48 F4800.0 E2865.009
+G1 X46.77 Y31.2 Z21.48 F4800.0 E2865.032
+G1 X22.35 Y31.2 Z21.48 F4800.0 E2866.398
+G1 X22.34 Y30.8 Z21.48 F4800.0 E2866.421
+G1 X46.76 Y30.8 Z21.48 F4800.0 E2867.788
+G1 X46.76 Y30.4 Z21.48 F4800.0 E2867.81
+G1 X22.34 Y30.4 Z21.48 F4800.0 E2869.177
+G1 X22.34 Y30.0 Z21.48 F4800.0 E2869.199
+G1 X46.75 Y30.0 Z21.48 F4800.0 E2870.566
+G1 X46.75 Y29.6 Z21.48 F4800.0 E2870.588
+G1 X22.33 Y29.6 Z21.48 F4800.0 E2871.955
+G1 X22.33 Y29.2 Z21.48 F4800.0 E2871.978
+G1 X46.74 Y29.2 Z21.48 F4800.0 E2873.344
+G1 X46.74 Y28.8 Z21.48 F4800.0 E2873.367
+G1 X22.32 Y28.8 Z21.48 F4800.0 E2874.734
+G1 X22.32 Y28.4 Z21.48 F4800.0 E2874.756
+G1 X46.74 Y28.4 Z21.48 F4800.0 E2876.123
+G1 X46.73 Y28.0 Z21.48 F4800.0 E2876.145
+G1 X22.32 Y28.0 Z21.48 F4800.0 E2877.512
+G1 X22.31 Y27.6 Z21.48 F4800.0 E2877.534
+G1 X46.73 Y27.6 Z21.48 F4800.0 E2878.901
+G1 X46.73 Y27.2 Z21.48 F4800.0 E2878.924
+G1 X22.31 Y27.2 Z21.48 F4800.0 E2880.29
+G1 X22.3 Y26.8 Z21.48 F4800.0 E2880.313
+G1 X46.72 Y26.8 Z21.48 F4800.0 E2881.68
+G1 X46.72 Y26.4 Z21.48 F4800.0 E2881.702
+G1 X22.3 Y26.4 Z21.48 F4800.0 E2883.069
+G1 X22.3 Y26.0 Z21.48 F4800.0 E2883.091
+G1 X46.71 Y26.0 Z21.48 F4800.0 E2884.458
+G1 X46.71 Y25.6 Z21.48 F4800.0 E2884.48
+G1 X22.29 Y25.6 Z21.48 F4800.0 E2885.847
+G1 X22.29 Y25.2 Z21.48 F4800.0 E2885.87
+G1 X46.7 Y25.2 Z21.48 F4800.0 E2887.236
+G1 X46.7 Y24.8 Z21.48 F4800.0 E2887.259
+G1 X22.28 Y24.8 Z21.48 F4800.0 E2888.626
+G1 X22.28 Y24.4 Z21.48 F4800.0 E2888.648
+G1 X46.7 Y24.4 Z21.48 F4800.0 E2890.015
+G1 X46.69 Y24.0 Z21.48 F4800.0 E2890.037
+G1 X22.27 Y24.0 Z21.48 F4800.0 E2891.404
+G1 X22.27 Y23.6 Z21.48 F4800.0 E2891.426
+G1 X46.69 Y23.6 Z21.48 F4800.0 E2892.793
+G1 X46.68 Y23.2 Z21.48 F4800.0 E2892.816
+G1 X22.27 Y23.2 Z21.48 F4800.0 E2894.182
+G1 X22.26 Y22.8 Z21.48 F4800.0 E2894.205
+G1 X46.68 Y22.8 Z21.48 F4800.0 E2895.572
+G1 X46.67 Y22.4 Z21.48 F4800.0 E2895.594
+G1 X22.26 Y22.4 Z21.48 F4800.0 E2896.961
+G1 X22.25 Y22.0 Z21.48 F4800.0 E2896.983
+G1 X46.67 Y22.0 Z21.48 F4800.0 E2898.35
+G1 X46.67 Y21.6 Z21.48 F4800.0 E2898.372
+G1 X22.25 Y21.6 Z21.48 F4800.0 E2899.739
+G1 X22.25 Y21.2 Z21.48 F4800.0 E2899.762
+G1 X46.66 Y21.2 Z21.48 F4800.0 E2901.129
+G1 X46.66 Y20.8 Z21.48 F4800.0 E2901.151
+G1 X22.24 Y20.8 Z21.48 F4800.0 E2902.518
+G1 X22.24 Y20.4 Z21.48 F4800.0 E2902.54
+G1 X46.65 Y20.4 Z21.48 F4800.0 E2903.907
+G1 X46.65 Y20.0 Z21.48 F4800.0 E2903.929
+G1 X22.23 Y20.0 Z21.48 F4800.0 E2905.296
+G1 X22.23 Y19.6 Z21.48 F4800.0 E2905.319
+G1 X46.65 Y19.6 Z21.48 F4800.0 E2906.685
+G1 X46.64 Y19.2 Z21.48 F4800.0 E2906.708
+G1 X22.23 Y19.2 Z21.48 F4800.0 E2908.075
+G1 X22.22 Y18.8 Z21.48 F4800.0 E2908.097
+G1 X46.64 Y18.8 Z21.48 F4800.0 E2909.464
+G1 X46.63 Y18.4 Z21.48 F4800.0 E2909.486
+G1 X22.22 Y18.4 Z21.48 F4800.0 E2910.853
+G1 X22.21 Y18.0 Z21.48 F4800.0 E2910.875
+G1 X46.63 Y18.0 Z21.48 F4800.0 E2912.242
+G1 X46.67 Y17.6 Z21.48 F4800.0 E2912.265
+G1 X22.21 Y17.6 Z21.48 F4800.0 E2913.634
+G1 X22.2 Y17.2 Z21.48 F4800.0 E2913.656
+G1 X46.71 Y17.2 Z21.48 F4800.0 E2915.028
+G1 X46.76 Y16.8 Z21.48 F4800.0 E2915.051
+G1 X22.15 Y16.8 Z21.48 F4800.0 E2916.429
+G1 X22.1 Y16.4 Z21.48 F4800.0 E2916.451
+G1 X46.8 Y16.4 Z21.48 F4800.0 E2917.834
+G1 X46.84 Y16.0 Z21.48 F4800.0 E2917.857
+G1 X22.05 Y16.0 Z21.48 F4800.0 E2919.245
+G1 X22.0 Y15.6 Z21.48 F4800.0 E2919.267
+G1 X46.89 Y15.6 Z21.48 F4800.0 E2920.661
+G1 X46.93 Y15.2 Z21.48 F4800.0 E2920.683
+G1 X21.94 Y15.2 Z21.48 F4800.0 E2922.082
+G1 X21.89 Y14.8 Z21.48 F4800.0 E2922.105
+G1 X47.03 Y14.8 Z21.48 F4800.0 E2923.512
+G1 X47.16 Y14.4 Z21.48 F4800.0 E2923.535
+G1 X21.84 Y14.4 Z21.48 F4800.0 E2924.952
+G1 X21.73 Y14.0 Z21.48 F4800.0 E2924.976
+G1 X47.28 Y14.0 Z21.48 F4800.0 E2926.406
+G1 X47.41 Y13.6 Z21.48 F4800.0 E2926.429
+G1 X21.6 Y13.6 Z21.48 F4800.0 E2927.874
+G1 X21.46 Y13.2 Z21.48 F4800.0 E2927.898
+G1 X47.53 Y13.2 Z21.48 F4800.0 E2929.357
+G1 X47.66 Y12.8 Z21.48 F4800.0 E2929.381
+G1 X21.33 Y12.8 Z21.48 F4800.0 E2930.855
+G1 X21.19 Y12.4 Z21.48 F4800.0 E2930.879
+G1 X47.79 Y12.4 Z21.48 F4800.0 E2932.368
+G1 X48.0 Y12.0 Z21.48 F4800.0 E2932.393
+G1 X21.06 Y12.0 Z21.48 F4800.0 E2933.901
+G1 X20.91 Y11.6 Z21.48 F4800.0 E2933.925
+G1 X48.21 Y11.6 Z21.48 F4800.0 E2935.454
+G1 X48.44 Y11.2 Z21.48 F4800.0 E2935.48
+G1 X20.68 Y11.2 Z21.48 F4800.0 E2937.033
+G1 X20.46 Y10.8 Z21.48 F4800.0 E2937.059
+G1 X48.73 Y10.8 Z21.48 F4800.0 E2938.642
+G1 X49.03 Y10.4 Z21.48 F4800.0 E2938.67
+G1 X20.2 Y10.4 Z21.48 F4800.0 E2940.284
+G1 X19.88 Y10.0 Z21.48 F4800.0 E2940.312
+G1 X49.35 Y10.0 Z21.48 F4800.0 E2941.962
+G1 X49.76 Y9.6 Z21.48 F4800.0 E2941.994
+G1 X19.57 Y9.6 Z21.48 F4800.0 E2943.683
+G1 X19.19 Y9.2 Z21.48 F4800.0 E2943.714
+G1 X50.16 Y9.2 Z21.48 F4800.0 E2945.448
+G1 X50.63 Y8.8 Z21.48 F4800.0 E2945.482
+G1 X18.75 Y8.8 Z21.48 F4800.0 E2947.267
+G1 X18.3 Y8.4 Z21.48 F4800.0 E2947.3
+G1 X51.19 Y8.4 Z21.48 F4800.0 E2949.141
+G1 X51.75 Y8.0 Z21.48 F4800.0 E2949.18
+G1 X17.79 Y8.0 Z21.48 F4800.0 E2951.081
+G1 X17.17 Y7.6 Z21.48 F4800.0 E2951.122
+G1 X52.41 Y7.6 Z21.48 F4800.0 E2953.095
+G1 X53.21 Y7.2 Z21.48 F4800.0 E2953.145
+G1 X16.53 Y7.2 Z21.48 F4800.0 E2955.198
+G1 X15.72 Y6.8 Z21.48 F4800.0 E2955.249
+G1 X54.01 Y6.8 Z21.48 F4800.0 E2957.392
+G1 X55.08 Y6.4 Z21.48 F4800.0 E2957.456
+G1 X14.84 Y6.4 Z21.48 F4800.0 E2959.709
+G1 X13.6 Y6.0 Z21.48 F4800.0 E2959.782
+G1 X56.36 Y6.0 Z21.48 F4800.0 E2962.176
+G1 X57.93 Y5.6 Z21.48 F4800.0 E2962.266
+G1 X11.76 Y5.6 Z21.48 F4800.0 E2964.851
+G1 F4800.0
+G1 E2963.851
+G1 F4800.0
+M103
+G1 X13.28 Y4.0 Z21.48 F9000.0
+G1 F4800.0
+G1 E2964.851
+G1 F9000.0
+M101
+G1 X65.09 Y4.0 Z21.48 F4800.0 E2967.751
+G1 X64.99 Y3.6 Z21.48 F4800.0 E2967.774
+G1 X51.96 Y3.6 Z21.48 F4800.0 E2968.504
+G1 F4800.0
+G1 E2967.504
+G1 F4800.0
+M103
+G1 X50.23 Y10.93 Z21.48 F9000.0
+G1 X48.21 Y15.31 Z21.48 F9000.0
+G1 X48.82 Y105.63 Z21.48 F9000.0
+G1 X49.93 Y110.76 Z21.48 F9000.0
+G1 X53.32 Y116.0 Z21.48 F9000.0
+G1 F4800.0
+G1 E2968.504
+G1 F9000.0
+M101
+G1 X16.32 Y116.0 Z21.48 F4800.0 E2970.574
+G1 F4800.0
+G1 E2970.445
+G1 F4800.0
+M103
+G1 X15.27 Y116.4 Z21.48 F9000.0
+G1 F4800.0
+G1 E2970.574
+G1 F9000.0
+M101
+G1 X54.21 Y116.4 Z21.48 F4800.0 E2972.754
+G1 F4800.0
+G1 E2972.569
+G1 F4800.0
+M103
+G1 X55.33 Y116.8 Z21.48 F9000.0
+G1 F4800.0
+G1 E2972.754
+G1 F9000.0
+M101
+G1 X14.17 Y116.8 Z21.48 F4800.0 E2975.058
+G1 F4800.0
+G1 E2974.877
+G1 F4800.0
+M103
+G1 X13.05 Y117.2 Z21.48 F9000.0
+G1 F4800.0
+G1 E2975.058
+G1 F9000.0
+M101
+G1 X56.87 Y117.2 Z21.48 F4800.0 E2977.511
+G1 F4800.0
+G1 E2976.915
+G1 F4800.0
+M103
+G1 X58.41 Y117.6 Z21.48 F9000.0
+G1 F4800.0
+G1 E2977.511
+G1 F9000.0
+M101
+G1 X11.59 Y117.6 Z21.48 F4800.0 E2980.132
+G1 X10.12 Y118.0 Z21.48 F4800.0 E2980.217
+G1 X61.35 Y118.0 Z21.48 F4800.0 E2983.086
+G1 X64.59 Y118.4 Z21.48 F4800.0 E2983.268
+G1 X8.25 Y118.4 Z21.48 F4800.0 E2986.422
+G1 X6.29 Y118.8 Z21.48 F4800.0 E2986.534
+G1 X66.28 Y118.8 Z21.48 F4800.0 E2989.892
+G1 X66.28 Y119.2 Z21.48 F4800.0 E2989.915
+G1 X4.66 Y119.2 Z21.48 F4800.0 E2993.364
+G1 F4800.0
+G1 E2992.364
+G1 F4800.0
+M103
+G1 X19.14 Y120.0 Z21.48 F9000.0
+G1 F4800.0
+G1 E2993.364
+G1 F9000.0
+M101
+G1 X4.74 Y120.0 Z21.48 F4800.0 E2994.17
+G1 X4.66 Y119.6 Z21.48 F4800.0 E2994.193
+G1 X57.82 Y119.6 Z21.48 F4800.0 E2997.169
+G1 F4800.0
+G1 E2996.169
+G1 F4800.0
+M103
+(</infill>)
+(</nestedRing>)
+(</rotation>)
+(</layer>)
+(<layer> 21.755 )
+(<rotation> (6.12323399574e-17+1j) )
+(<nestedRing>)
+(<boundaryPerimeter>)
+(<boundaryPoint> X66.53 Y5.583 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X64.705 Y5.794 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X60.173 Y6.554 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X57.29 Y7.205 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X54.887 Y7.955 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X54.203 Y8.254 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X52.805 Y8.997 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X51.573 Y9.852 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X50.355 Y11.013 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X49.591 Y12.039 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X49.104 Y12.971 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X48.353 Y15.344 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X48.055 Y18.028 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X48.959 Y105.602 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X49.296 Y108.272 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X50.065 Y110.71 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X50.55 Y111.681 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X51.325 Y112.739 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X52.565 Y113.885 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X54.119 Y114.819 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X55.27 Y115.314 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X56.423 Y115.673 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X58.955 Y116.267 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X61.889 Y116.728 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X67.686 Y117.341 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X67.723 Y120.924 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X3.254 Y121.589 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X3.217 Y117.967 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X9.506 Y116.688 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X12.685 Y115.822 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X14.896 Y115.071 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X15.622 Y114.758 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X17.019 Y114.013 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X18.493 Y112.944 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X19.653 Y111.725 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X20.199 Y110.937 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X20.673 Y109.991 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X21.398 Y107.635 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X21.686 Y105.042 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X20.781 Y17.369 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X20.432 Y14.612 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X19.639 Y12.26 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X19.139 Y11.359 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X18.364 Y10.377 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X17.144 Y9.279 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X15.922 Y8.492 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X14.539 Y7.806 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X13.563 Y7.451 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X11.423 Y6.986 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X8.028 Y6.612 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X2.061 Y6.222 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X2.024 Y2.691 Z21.755 </boundaryPoint>)
+(<boundaryPoint> X66.494 Y2.025 Z21.755 </boundaryPoint>)
+(<loop> outer )
+G1 X53.79 Y114.81 Z21.75 F9000.0
+G1 X50.42 Y111.75 Z21.75 F9000.0
+G1 X20.92 Y17.34 Z21.75 F9000.0
+G1 X19.26 Y11.28 Z21.75 F9000.0
+G1 X15.98 Y8.36 Z21.75 F9000.0
+G1 X3.44 Y4.32 Z21.75 F9000.0
+G1 F4800.0
+G1 E2997.169
+G1 F9000.0
+M101
+G1 X3.44 Y4.08 Z21.75 F4800.0 E2997.182
+G1 X65.11 Y3.44 Z21.75 F4800.0 E3000.635
+G1 X65.12 Y4.37 Z21.75 F4800.0 E3000.687
+G1 X59.91 Y5.18 Z21.75 F4800.0 E3000.982
+G1 X56.93 Y5.85 Z21.75 F4800.0 E3001.153
+G1 X54.38 Y6.65 Z21.75 F4800.0 E3001.302
+G1 X52.08 Y7.79 Z21.75 F4800.0 E3001.446
+G1 X50.69 Y8.76 Z21.75 F4800.0 E3001.541
+G1 X49.3 Y10.08 Z21.75 F4800.0 E3001.648
+G1 X48.4 Y11.29 Z21.75 F4800.0 E3001.732
+G1 X47.81 Y12.43 Z21.75 F4800.0 E3001.804
+G1 X46.98 Y15.05 Z21.75 F4800.0 E3001.958
+G1 X46.65 Y17.96 Z21.75 F4800.0 E3002.122
+G1 X47.56 Y105.7 Z21.75 F4800.0 E3007.034
+G1 X47.92 Y108.57 Z21.75 F4800.0 E3007.196
+G1 X48.76 Y111.24 Z21.75 F4800.0 E3007.352
+G1 X49.35 Y112.41 Z21.75 F4800.0 E3007.426
+G1 X50.27 Y113.67 Z21.75 F4800.0 E3007.513
+G1 X51.72 Y115.01 Z21.75 F4800.0 E3007.624
+G1 X53.48 Y116.07 Z21.75 F4800.0 E3007.739
+G1 X54.8 Y116.64 Z21.75 F4800.0 E3007.819
+G1 X58.69 Y117.64 Z21.75 F4800.0 E3008.044
+G1 X66.3 Y118.59 Z21.75 F4800.0 E3008.473
+G1 X66.31 Y119.54 Z21.75 F4800.0 E3008.526
+G1 X4.64 Y120.17 Z21.75 F4800.0 E3011.979
+G1 X4.63 Y119.11 Z21.75 F4800.0 E3012.038
+G1 X9.83 Y118.05 Z21.75 F4800.0 E3012.335
+G1 X13.1 Y117.16 Z21.75 F4800.0 E3012.525
+G1 X15.42 Y116.37 Z21.75 F4800.0 E3012.662
+G1 X17.75 Y115.21 Z21.75 F4800.0 E3012.808
+G1 X19.42 Y114.0 Z21.75 F4800.0 E3012.923
+G1 X20.74 Y112.61 Z21.75 F4800.0 E3013.031
+G1 X21.41 Y111.65 Z21.75 F4800.0 E3013.096
+G1 X21.98 Y110.51 Z21.75 F4800.0 E3013.167
+G1 X22.77 Y107.92 Z21.75 F4800.0 E3013.319
+G1 X23.09 Y105.11 Z21.75 F4800.0 E3013.477
+G1 X22.18 Y17.27 Z21.75 F4800.0 E3018.395
+G1 X21.8 Y14.3 Z21.75 F4800.0 E3018.563
+G1 X20.93 Y11.69 Z21.75 F4800.0 E3018.717
+G1 X20.31 Y10.58 Z21.75 F4800.0 E3018.788
+G1 X19.39 Y9.42 Z21.75 F4800.0 E3018.871
+G1 X18.0 Y8.16 Z21.75 F4800.0 E3018.976
+G1 X16.61 Y7.27 Z21.75 F4800.0 E3019.068
+G1 X15.09 Y6.52 Z21.75 F4800.0 E3019.163
+G1 X13.95 Y6.1 Z21.75 F4800.0 E3019.231
+G1 X11.64 Y5.6 Z21.75 F4800.0 E3019.363
+G1 X3.45 Y4.92 Z21.75 F4800.0 E3019.823
+G1 X3.44 Y4.32 Z21.75 F4800.0 E3019.857
+G1 F4800.0
+G1 E3019.857
+G1 F4800.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X3.04 Y4.32 Z21.75 F9000.0
+G1 F4800.0
+G1 E3019.857
+G1 F9000.0
+M101
+G1 X3.04 Y4.08 Z21.75 F4800.0 E3019.871
+G1 X3.03 Y3.68 Z21.75 F4800.0 E3019.893
+G1 X65.5 Y3.04 Z21.75 F4800.0 E3023.39
+G1 X65.52 Y4.71 Z21.75 F4800.0 E3023.484
+G1 X59.98 Y5.57 Z21.75 F4800.0 E3023.798
+G1 X57.03 Y6.24 Z21.75 F4800.0 E3023.967
+G1 X54.53 Y7.02 Z21.75 F4800.0 E3024.114
+G1 X52.29 Y8.14 Z21.75 F4800.0 E3024.254
+G1 X50.94 Y9.07 Z21.75 F4800.0 E3024.346
+G1 X49.6 Y10.35 Z21.75 F4800.0 E3024.449
+G1 X48.74 Y11.51 Z21.75 F4800.0 E3024.53
+G1 X48.18 Y12.59 Z21.75 F4800.0 E3024.598
+G1 X47.37 Y15.14 Z21.75 F4800.0 E3024.748
+G1 X47.05 Y17.98 Z21.75 F4800.0 E3024.908
+G1 X47.96 Y105.67 Z21.75 F4800.0 E3029.817
+G1 X48.31 Y108.49 Z21.75 F4800.0 E3029.976
+G1 X49.13 Y111.09 Z21.75 F4800.0 E3030.129
+G1 X49.69 Y112.2 Z21.75 F4800.0 E3030.199
+G1 X50.58 Y113.41 Z21.75 F4800.0 E3030.282
+G1 X51.96 Y114.69 Z21.75 F4800.0 E3030.388
+G1 X53.66 Y115.71 Z21.75 F4800.0 E3030.499
+G1 X54.93 Y116.26 Z21.75 F4800.0 E3030.576
+G1 X58.77 Y117.25 Z21.75 F4800.0 E3030.798
+G1 X66.69 Y118.23 Z21.75 F4800.0 E3031.245
+G1 X66.71 Y119.93 Z21.75 F4800.0 E3031.34
+G1 X4.24 Y120.58 Z21.75 F4800.0 E3034.837
+G1 X4.22 Y118.78 Z21.75 F4800.0 E3034.938
+G1 X9.74 Y117.66 Z21.75 F4800.0 E3035.253
+G1 X12.98 Y116.78 Z21.75 F4800.0 E3035.441
+G1 X15.27 Y116.0 Z21.75 F4800.0 E3035.576
+G1 X17.55 Y114.87 Z21.75 F4800.0 E3035.719
+G1 X19.15 Y113.7 Z21.75 F4800.0 E3035.83
+G1 X20.43 Y112.36 Z21.75 F4800.0 E3035.934
+G1 X21.06 Y111.45 Z21.75 F4800.0 E3035.996
+G1 X21.6 Y110.36 Z21.75 F4800.0 E3036.063
+G1 X22.38 Y107.84 Z21.75 F4800.0 E3036.211
+G1 X22.69 Y105.09 Z21.75 F4800.0 E3036.366
+G1 X21.78 Y17.3 Z21.75 F4800.0 E3041.281
+G1 X21.41 Y14.39 Z21.75 F4800.0 E3041.445
+G1 X20.56 Y11.85 Z21.75 F4800.0 E3041.595
+G1 X19.97 Y10.8 Z21.75 F4800.0 E3041.662
+G1 X19.1 Y9.69 Z21.75 F4800.0 E3041.741
+G1 X17.75 Y8.48 Z21.75 F4800.0 E3041.842
+G1 X16.42 Y7.62 Z21.75 F4800.0 E3041.931
+G1 X14.93 Y6.88 Z21.75 F4800.0 E3042.024
+G1 X13.84 Y6.49 Z21.75 F4800.0 E3042.089
+G1 X11.58 Y6.0 Z21.75 F4800.0 E3042.219
+G1 X3.05 Y5.29 Z21.75 F4800.0 E3042.698
+G1 X3.04 Y4.32 Z21.75 F4800.0 E3042.752
+G1 F4800.0
+G1 E3042.752
+G1 F4800.0
+M103
+(</loop>)
+(<loop> outer )
+G1 X2.64 Y4.32 Z21.75 F9000.0
+G1 F4800.0
+G1 E3042.752
+G1 F9000.0
+M101
+G1 X2.64 Y4.08 Z21.75 F4800.0 E3042.765
+G1 X2.63 Y3.29 Z21.75 F4800.0 E3042.81
+G1 X65.9 Y2.63 Z21.75 F4800.0 E3046.352
+G1 X65.92 Y5.05 Z21.75 F4800.0 E3046.488
+G1 X60.06 Y5.96 Z21.75 F4800.0 E3046.82
+G1 X57.13 Y6.63 Z21.75 F4800.0 E3046.988
+G1 X54.68 Y7.39 Z21.75 F4800.0 E3047.132
+G1 X52.49 Y8.48 Z21.75 F4800.0 E3047.269
+G1 X51.19 Y9.39 Z21.75 F4800.0 E3047.357
+G1 X49.9 Y10.61 Z21.75 F4800.0 E3047.457
+G1 X49.08 Y11.72 Z21.75 F4800.0 E3047.534
+G1 X48.55 Y12.74 Z21.75 F4800.0 E3047.598
+G1 X47.76 Y15.22 Z21.75 F4800.0 E3047.744
+G1 X47.45 Y18.0 Z21.75 F4800.0 E3047.9
+G1 X48.36 Y105.64 Z21.75 F4800.0 E3052.807
+G1 X48.71 Y108.4 Z21.75 F4800.0 E3052.963
+G1 X49.51 Y110.94 Z21.75 F4800.0 E3053.111
+G1 X50.04 Y112.0 Z21.75 F4800.0 E3053.178
+G1 X50.88 Y113.14 Z21.75 F4800.0 E3053.257
+G1 X52.2 Y114.37 Z21.75 F4800.0 E3053.358
+G1 X53.84 Y115.35 Z21.75 F4800.0 E3053.465
+G1 X55.06 Y115.88 Z21.75 F4800.0 E3053.54
+G1 X58.84 Y116.86 Z21.75 F4800.0 E3053.758
+G1 X67.09 Y117.88 Z21.75 F4800.0 E3054.224
+G1 X67.12 Y120.33 Z21.75 F4800.0 E3054.361
+G1 X3.85 Y120.98 Z21.75 F4800.0 E3057.903
+G1 X3.82 Y118.46 Z21.75 F4800.0 E3058.044
+G1 X9.64 Y117.27 Z21.75 F4800.0 E3058.377
+G1 X12.86 Y116.4 Z21.75 F4800.0 E3058.563
+G1 X15.11 Y115.63 Z21.75 F4800.0 E3058.696
+G1 X17.34 Y114.52 Z21.75 F4800.0 E3058.835
+G1 X18.89 Y113.4 Z21.75 F4800.0 E3058.943
+G1 X20.12 Y112.11 Z21.75 F4800.0 E3059.043
+G1 X20.72 Y111.24 Z21.75 F4800.0 E3059.101
+G1 X21.23 Y110.22 Z21.75 F4800.0 E3059.166
+G1 X21.99 Y107.76 Z21.75 F4800.0 E3059.31
+G1 X22.29 Y105.07 Z21.75 F4800.0 E3059.461
+G1 X21.38 Y17.33 Z21.75 F4800.0 E3064.373
+G1 X21.02 Y14.48 Z21.75 F4800.0 E3064.534
+G1 X20.19 Y12.02 Z21.75 F4800.0 E3064.679
+G1 X19.64 Y11.03 Z21.75 F4800.0 E3064.743
+G1 X18.8 Y9.96 Z21.75 F4800.0 E3064.818
+G1 X17.51 Y8.8 Z21.75 F4800.0 E3064.916
+G1 X16.22 Y7.97 Z21.75 F4800.0 E3065.002
+G1 X14.78 Y7.25 Z21.75 F4800.0 E3065.092
+G1 X13.73 Y6.87 Z21.75 F4800.0 E3065.154
+G1 X11.52 Y6.39 Z21.75 F4800.0 E3065.281
+G1 X2.65 Y5.66 Z21.75 F4800.0 E3065.779
+G1 X2.64 Y4.32 Z21.75 F4800.0 E3065.853
+G1 F4800.0
+G1 E3065.853
+G1 F4800.0
+M103
+(</loop>)
+(<edge> outer )
+;M108 R40.0
+G1 X2.24 Y4.33 Z21.75 F9000.0
+G1 F4800.0
+G1 E3065.853
+G1 F9000.0
+M101
+G1 X2.24 Y4.09 Z21.75 F2400.0 E3065.867
+G1 X2.23 Y2.89 Z21.75 F2400.0 E3065.934
+G1 X66.3 Y2.23 Z21.75 F2400.0 E3069.521
+G1 X66.33 Y5.41 Z21.75 F2400.0 E3069.699
+G1 X64.68 Y5.6 Z21.75 F2400.0 E3069.792
+G1 X60.13 Y6.36 Z21.75 F2400.0 E3070.049
+G1 X57.24 Y7.01 Z21.75 F2400.0 E3070.216
+G1 X54.82 Y7.77 Z21.75 F2400.0 E3070.358
+G1 X54.12 Y8.07 Z21.75 F2400.0 E3070.4
+G1 X52.7 Y8.83 Z21.75 F2400.0 E3070.49
+G1 X51.45 Y9.7 Z21.75 F2400.0 E3070.576
+G1 X50.2 Y10.88 Z21.75 F2400.0 E3070.672
+G1 X49.42 Y11.93 Z21.75 F2400.0 E3070.745
+G1 X48.92 Y12.89 Z21.75 F2400.0 E3070.806
+G1 X48.16 Y15.3 Z21.75 F2400.0 E3070.947
+G1 X47.85 Y18.02 Z21.75 F2400.0 E3071.1
+G1 X48.76 Y105.62 Z21.75 F2400.0 E3076.004
+G1 X49.1 Y108.31 Z21.75 F2400.0 E3076.156
+G1 X49.88 Y110.78 Z21.75 F2400.0 E3076.301
+G1 X50.38 Y111.79 Z21.75 F2400.0 E3076.364
+G1 X51.17 Y112.87 Z21.75 F2400.0 E3076.439
+G1 X52.44 Y114.05 Z21.75 F2400.0 E3076.536
+G1 X54.03 Y115.0 Z21.75 F2400.0 E3076.639
+G1 X55.2 Y115.5 Z21.75 F2400.0 E3076.711
+G1 X56.37 Y115.87 Z21.75 F2400.0 E3076.779
+G1 X58.92 Y116.46 Z21.75 F2400.0 E3076.926
+G1 X61.86 Y116.93 Z21.75 F2400.0 E3077.093
+G1 X67.49 Y117.52 Z21.75 F2400.0 E3077.409
+G1 X67.52 Y120.73 Z21.75 F2400.0 E3077.589
+G1 X3.45 Y121.39 Z21.75 F2400.0 E3081.176
+G1 X3.42 Y118.13 Z21.75 F2400.0 E3081.358
+G1 X9.55 Y116.88 Z21.75 F2400.0 E3081.708
+G1 X12.74 Y116.01 Z21.75 F2400.0 E3081.893
+G1 X14.97 Y115.26 Z21.75 F2400.0 E3082.025
+G1 X15.71 Y114.94 Z21.75 F2400.0 E3082.07
+G1 X17.13 Y114.18 Z21.75 F2400.0 E3082.16
+G1 X18.63 Y113.09 Z21.75 F2400.0 E3082.264
+G1 X19.81 Y111.85 Z21.75 F2400.0 E3082.36
+G1 X20.37 Y111.04 Z21.75 F2400.0 E3082.415
+G1 X20.86 Y110.07 Z21.75 F2400.0 E3082.476
+G1 X21.59 Y107.68 Z21.75 F2400.0 E3082.616
+G1 X21.89 Y105.05 Z21.75 F2400.0 E3082.764
+G1 X20.98 Y17.36 Z21.75 F2400.0 E3087.673
+G1 X20.63 Y14.57 Z21.75 F2400.0 E3087.83
+G1 X19.82 Y12.18 Z21.75 F2400.0 E3087.971
+G1 X19.31 Y11.25 Z21.75 F2400.0 E3088.031
+G1 X18.51 Y10.24 Z21.75 F2400.0 E3088.103
+G1 X17.27 Y9.12 Z21.75 F2400.0 E3088.197
+G1 X16.02 Y8.32 Z21.75 F2400.0 E3088.28
+G1 X14.62 Y7.62 Z21.75 F2400.0 E3088.367
+G1 X13.62 Y7.26 Z21.75 F2400.0 E3088.427
+G1 X11.46 Y6.79 Z21.75 F2400.0 E3088.551
+G1 X8.04 Y6.41 Z21.75 F2400.0 E3088.743
+G1 X2.26 Y6.04 Z21.75 F2400.0 E3089.067
+G1 X2.24 Y4.33 Z21.75 F2400.0 E3089.163
+G1 F4800.0
+G1 E3088.163
+G1 F2400.0
+M103
+(</edge>)
+(</boundaryPerimeter>)
+(<infill>)
+(<infillBoundary>)
+(<infillPoint> X65.118 Y4.365 Z21.755 </infillPoint>)
+(<infillPoint> X59.907 Y5.179 Z21.755 </infillPoint>)
+(<infillPoint> X56.927 Y5.852 Z21.755 </infillPoint>)
+(<infillPoint> X54.377 Y6.648 Z21.755 </infillPoint>)
+(<infillPoint> X52.083 Y7.794 Z21.755 </infillPoint>)
+(<infillPoint> X50.686 Y8.764 Z21.755 </infillPoint>)
+(<infillPoint> X49.303 Y10.082 Z21.755 </infillPoint>)
+(<infillPoint> X48.402 Y11.292 Z21.755 </infillPoint>)
+(<infillPoint> X47.806 Y12.431 Z21.755 </infillPoint>)
+(<infillPoint> X46.977 Y15.053 Z21.755 </infillPoint>)
+(<infillPoint> X46.654 Y17.958 Z21.755 </infillPoint>)
+(<infillPoint> X47.56 Y105.697 Z21.755 </infillPoint>)
+(<infillPoint> X47.923 Y108.573 Z21.755 </infillPoint>)
+(<infillPoint> X48.763 Y111.237 Z21.755 </infillPoint>)
+(<infillPoint> X49.351 Y112.413 Z21.755 </infillPoint>)
+(<infillPoint> X50.275 Y113.675 Z21.755 </infillPoint>)
+(<infillPoint> X51.72 Y115.011 Z21.755 </infillPoint>)
+(<infillPoint> X53.479 Y116.068 Z21.755 </infillPoint>)
+(<infillPoint> X54.802 Y116.637 Z21.755 </infillPoint>)
+(<infillPoint> X58.689 Y117.644 Z21.755 </infillPoint>)
+(<infillPoint> X66.299 Y118.589 Z21.755 </infillPoint>)
+(<infillPoint> X66.309 Y119.539 Z21.755 </infillPoint>)
+(<infillPoint> X4.64 Y120.175 Z21.755 </infillPoint>)
+(<infillPoint> X4.629 Y119.109 Z21.755 </infillPoint>)
+(<infillPoint> X9.83 Y118.051 Z21.755 </infillPoint>)
+(<infillPoint> X13.095 Y117.161 Z21.755 </infillPoint>)
+(<infillPoint> X15.42 Y116.372 Z21.755 </infillPoint>)
+(<infillPoint> X17.754 Y115.21 Z21.755 </infillPoint>)
+(<infillPoint> X19.419 Y114.002 Z21.755 </infillPoint>)
+(<infillPoint> X20.742 Y112.612 Z21.755 </infillPoint>)
+(<infillPoint> X21.406 Y111.653 Z21.755 </infillPoint>)
+(<infillPoint> X21.977 Y110.514 Z21.755 </infillPoint>)
+(<infillPoint> X22.775 Y107.921 Z21.755 </infillPoint>)
+(<infillPoint> X23.087 Y105.112 Z21.755 </infillPoint>)
+(<infillPoint> X22.18 Y17.274 Z21.755 </infillPoint>)
+(<infillPoint> X21.803 Y14.297 Z21.755 </infillPoint>)
+(<infillPoint> X20.925 Y11.692 Z21.755 </infillPoint>)
+(<infillPoint> X20.308 Y10.581 Z21.755 </infillPoint>)
+(<infillPoint> X19.389 Y9.416 Z21.755 </infillPoint>)
+(<infillPoint> X17.997 Y8.163 Z21.755 </infillPoint>)
+(<infillPoint> X16.614 Y7.273 Z21.755 </infillPoint>)
+(<infillPoint> X15.091 Y6.517 Z21.755 </infillPoint>)
+(<infillPoint> X13.953 Y6.103 Z21.755 </infillPoint>)
+(<infillPoint> X11.638 Y5.6 Z21.755 </infillPoint>)
+(<infillPoint> X3.447 Y4.922 Z21.755 </infillPoint>)
+(<infillPoint> X3.439 Y4.076 Z21.755 </infillPoint>)
+(<infillPoint> X65.108 Y3.439 Z21.755 </infillPoint>)
+(</infillBoundary>)
+;M108 R80.0
+G1 X13.67 Y7.07 Z21.75 F9000.0
+G1 X21.2 Y11.63 Z21.75 F9000.0
+G1 F4800.0
+G1 E3089.163
+G1 F9000.0
+M101
+G1 X21.2 Y4.17 Z21.75 F4800.0 E3089.58
+G1 X20.8 Y4.18 Z21.75 F4800.0 E3089.603
+G1 X20.8 Y10.89 Z21.75 F4800.0 E3089.979
+G1 X20.4 Y10.24 Z21.75 F4800.0 E3090.021
+G1 X20.4 Y4.18 Z21.75 F4800.0 E3090.361
+G1 X20.0 Y4.18 Z21.75 F4800.0 E3090.383
+G1 X20.0 Y9.74 Z21.75 F4800.0 E3090.694
+G1 X19.6 Y9.23 Z21.75 F4800.0 E3090.73
+G1 X19.6 Y4.19 Z21.75 F4800.0 E3091.012
+G1 X19.2 Y4.19 Z21.75 F4800.0 E3091.034
+G1 X19.2 Y8.87 Z21.75 F4800.0 E3091.296
+G1 X18.8 Y8.51 Z21.75 F4800.0 E3091.326
+G1 X18.8 Y4.2 Z21.75 F4800.0 E3091.568
+G1 X18.4 Y4.2 Z21.75 F4800.0 E3091.59
+G1 X18.4 Y8.15 Z21.75 F4800.0 E3091.811
+G1 X18.0 Y7.83 Z21.75 F4800.0 E3091.84
+G1 X18.0 Y4.21 Z21.75 F4800.0 E3092.042
+G1 X17.6 Y4.21 Z21.75 F4800.0 E3092.065
+G1 X17.6 Y7.57 Z21.75 F4800.0 E3092.253
+G1 X17.2 Y7.32 Z21.75 F4800.0 E3092.28
+G1 X17.2 Y4.21 Z21.75 F4800.0 E3092.454
+G1 X16.8 Y4.22 Z21.75 F4800.0 E3092.476
+G1 X16.8 Y7.06 Z21.75 F4800.0 E3092.635
+G1 X16.4 Y6.85 Z21.75 F4800.0 E3092.66
+G1 X16.4 Y4.22 Z21.75 F4800.0 E3092.807
+G1 X16.0 Y4.23 Z21.75 F4800.0 E3092.83
+G1 X16.0 Y6.66 Z21.75 F4800.0 E3092.966
+G1 X15.6 Y6.46 Z21.75 F4800.0 E3092.991
+G1 X15.6 Y4.23 Z21.75 F4800.0 E3093.115
+G1 X15.2 Y4.24 Z21.75 F4800.0 E3093.138
+G1 X15.2 Y6.26 Z21.75 F4800.0 E3093.251
+G1 X14.8 Y6.11 Z21.75 F4800.0 E3093.275
+G1 X14.8 Y4.24 Z21.75 F4800.0 E3093.38
+G1 X14.4 Y4.24 Z21.75 F4800.0 E3093.402
+G1 X14.4 Y5.97 Z21.75 F4800.0 E3093.499
+G1 X14.0 Y5.83 Z21.75 F4800.0 E3093.522
+G1 X14.0 Y4.25 Z21.75 F4800.0 E3093.611
+G1 X13.6 Y4.25 Z21.75 F4800.0 E3093.633
+G1 X13.6 Y5.74 Z21.75 F4800.0 E3093.717
+G1 X13.2 Y5.65 Z21.75 F4800.0 E3093.739
+G1 X13.2 Y4.26 Z21.75 F4800.0 E3093.818
+G1 X12.8 Y4.26 Z21.75 F4800.0 E3093.84
+G1 X12.8 Y5.57 Z21.75 F4800.0 E3093.913
+G1 X12.4 Y5.48 Z21.75 F4800.0 E3093.936
+G1 X12.4 Y4.26 Z21.75 F4800.0 E3094.004
+G1 X12.0 Y4.27 Z21.75 F4800.0 E3094.026
+G1 X12.0 Y5.39 Z21.75 F4800.0 E3094.089
+G1 X11.6 Y5.32 Z21.75 F4800.0 E3094.112
+G1 X11.6 Y4.27 Z21.75 F4800.0 E3094.171
+G1 X11.2 Y4.28 Z21.75 F4800.0 E3094.193
+G1 X11.2 Y5.28 Z21.75 F4800.0 E3094.249
+G1 X10.8 Y5.25 Z21.75 F4800.0 E3094.272
+G1 X10.8 Y4.28 Z21.75 F4800.0 E3094.326
+G1 X10.4 Y4.29 Z21.75 F4800.0 E3094.349
+G1 X10.4 Y5.22 Z21.75 F4800.0 E3094.401
+G1 X10.0 Y5.18 Z21.75 F4800.0 E3094.423
+G1 X10.0 Y4.29 Z21.75 F4800.0 E3094.473
+G1 X9.6 Y4.29 Z21.75 F4800.0 E3094.496
+G1 X9.6 Y5.15 Z21.75 F4800.0 E3094.544
+G1 X9.2 Y5.12 Z21.75 F4800.0 E3094.566
+G1 X9.2 Y4.3 Z21.75 F4800.0 E3094.612
+G1 X8.8 Y4.3 Z21.75 F4800.0 E3094.634
+G1 X8.8 Y5.08 Z21.75 F4800.0 E3094.678
+G1 X8.4 Y5.05 Z21.75 F4800.0 E3094.701
+G1 X8.4 Y4.3 Z21.75 F4800.0 E3094.742
+G1 X8.0 Y4.31 Z21.75 F4800.0 E3094.765
+G1 X8.0 Y5.02 Z21.75 F4800.0 E3094.805
+G1 X7.6 Y4.99 Z21.75 F4800.0 E3094.827
+G1 X7.6 Y4.31 Z21.75 F4800.0 E3094.865
+G1 X7.2 Y4.32 Z21.75 F4800.0 E3094.887
+G1 X7.2 Y4.95 Z21.75 F4800.0 E3094.923
+G1 X6.8 Y4.92 Z21.75 F4800.0 E3094.945
+G1 X6.8 Y4.32 Z21.75 F4800.0 E3094.978
+G1 X6.4 Y4.33 Z21.75 F4800.0 E3095.001
+G1 X6.4 Y4.89 Z21.75 F4800.0 E3095.032
+G1 X6.0 Y4.85 Z21.75 F4800.0 E3095.055
+G1 X6.0 Y4.33 Z21.75 F4800.0 E3095.084
+G1 X5.6 Y4.33 Z21.75 F4800.0 E3095.106
+G1 X5.6 Y4.82 Z21.75 F4800.0 E3095.133
+G1 X5.2 Y4.79 Z21.75 F4800.0 E3095.156
+G1 X5.2 Y4.34 Z21.75 F4800.0 E3095.181
+G1 X4.8 Y4.34 Z21.75 F4800.0 E3095.203
+G1 X4.8 Y4.75 Z21.75 F4800.0 E3095.226
+G1 X4.4 Y4.72 Z21.75 F4800.0 E3095.249
+G1 X4.4 Y4.35 Z21.75 F4800.0 E3095.27
+G1 X4.0 Y4.35 Z21.75 F4800.0 E3095.292
+G1 X4.0 Y4.69 Z21.75 F4800.0 E3095.311
+G1 F4800.0
+G1 E3094.311
+G1 F4800.0
+M103
+G1 X23.2 Y4.15 Z21.75 F9000.0
+G1 F4800.0
+G1 E3095.311
+G1 F9000.0
+M101
+G1 X23.2 Y88.95 Z21.75 F4800.0 E3100.058
+G1 F4800.0
+G1 E3099.058
+G1 F4800.0
+M103
+G1 X46.8 Y59.21 Z21.75 F9000.0
+G1 F4800.0
+G1 E3100.058
+G1 F9000.0
+M101
+G1 X46.8 Y119.46 Z21.75 F4800.0 E3103.431
+G1 X46.4 Y119.46 Z21.75 F4800.0 E3103.453
+G1 X46.4 Y3.91 Z21.75 F4800.0 E3109.921
+G1 X46.0 Y3.92 Z21.75 F4800.0 E3109.944
+G1 X46.0 Y119.47 Z21.75 F4800.0 E3116.412
+G1 X45.6 Y119.47 Z21.75 F4800.0 E3116.434
+G1 X45.6 Y3.92 Z21.75 F4800.0 E3122.903
+G1 X45.2 Y3.92 Z21.75 F4800.0 E3122.925
+G1 X45.2 Y119.48 Z21.75 F4800.0 E3129.394
+G1 X44.8 Y119.48 Z21.75 F4800.0 E3129.416
+G1 X44.8 Y3.93 Z21.75 F4800.0 E3135.884
+G1 X44.4 Y3.93 Z21.75 F4800.0 E3135.907
+G1 X44.4 Y119.48 Z21.75 F4800.0 E3142.375
+G1 X44.0 Y119.49 Z21.75 F4800.0 E3142.397
+G1 X44.0 Y3.94 Z21.75 F4800.0 E3148.866
+G1 X43.6 Y3.94 Z21.75 F4800.0 E3148.888
+G1 X43.6 Y119.49 Z21.75 F4800.0 E3155.356
+G1 X43.2 Y119.5 Z21.75 F4800.0 E3155.379
+G1 X43.2 Y3.95 Z21.75 F4800.0 E3161.847
+G1 X42.8 Y3.95 Z21.75 F4800.0 E3161.869
+G1 X42.8 Y119.5 Z21.75 F4800.0 E3168.338
+G1 X42.4 Y119.5 Z21.75 F4800.0 E3168.36
+G1 X42.4 Y3.95 Z21.75 F4800.0 E3174.828
+G1 X42.0 Y3.96 Z21.75 F4800.0 E3174.851
+G1 X42.0 Y119.51 Z21.75 F4800.0 E3181.319
+G1 X41.6 Y119.51 Z21.75 F4800.0 E3181.342
+G1 X41.6 Y3.96 Z21.75 F4800.0 E3187.81
+G1 X41.2 Y3.97 Z21.75 F4800.0 E3187.832
+G1 X41.2 Y119.52 Z21.75 F4800.0 E3194.301
+G1 X40.8 Y119.52 Z21.75 F4800.0 E3194.323
+G1 X40.8 Y3.97 Z21.75 F4800.0 E3200.791
+G1 X40.4 Y3.98 Z21.75 F4800.0 E3200.814
+G1 X40.4 Y119.53 Z21.75 F4800.0 E3207.282
+G1 X40.0 Y119.53 Z21.75 F4800.0 E3207.304
+G1 X40.0 Y3.98 Z21.75 F4800.0 E3213.773
+G1 X39.6 Y3.98 Z21.75 F4800.0 E3213.795
+G1 X39.6 Y119.53 Z21.75 F4800.0 E3220.263
+G1 X39.2 Y119.54 Z21.75 F4800.0 E3220.286
+G1 X39.2 Y3.99 Z21.75 F4800.0 E3226.754
+G1 X38.8 Y3.99 Z21.75 F4800.0 E3226.776
+G1 X38.8 Y119.54 Z21.75 F4800.0 E3233.245
+G1 X38.4 Y119.55 Z21.75 F4800.0 E3233.267
+G1 X38.4 Y4.0 Z21.75 F4800.0 E3239.735
+G1 X38.0 Y4.0 Z21.75 F4800.0 E3239.758
+G1 X38.0 Y119.55 Z21.75 F4800.0 E3246.226
+G1 X37.6 Y119.56 Z21.75 F4800.0 E3246.249
+G1 X37.6 Y4.0 Z21.75 F4800.0 E3252.717
+G1 X37.2 Y4.01 Z21.75 F4800.0 E3252.739
+G1 X37.2 Y119.56 Z21.75 F4800.0 E3259.208
+G1 X36.8 Y119.56 Z21.75 F4800.0 E3259.23
+G1 X36.8 Y4.01 Z21.75 F4800.0 E3265.698
+G1 X36.4 Y4.02 Z21.75 F4800.0 E3265.721
+G1 X36.4 Y119.57 Z21.75 F4800.0 E3272.189
+G1 X36.0 Y119.57 Z21.75 F4800.0 E3272.211
+G1 X36.0 Y4.02 Z21.75 F4800.0 E3278.68
+G1 X35.6 Y4.02 Z21.75 F4800.0 E3278.702
+G1 X35.6 Y119.58 Z21.75 F4800.0 E3285.17
+G1 X35.2 Y119.58 Z21.75 F4800.0 E3285.193
+G1 X35.2 Y4.03 Z21.75 F4800.0 E3291.661
+G1 X34.8 Y4.03 Z21.75 F4800.0 E3291.684
+G1 X34.8 Y119.58 Z21.75 F4800.0 E3298.152
+G1 X34.4 Y119.59 Z21.75 F4800.0 E3298.174
+G1 X34.4 Y4.04 Z21.75 F4800.0 E3304.643
+G1 X34.0 Y4.04 Z21.75 F4800.0 E3304.665
+G1 X34.0 Y119.59 Z21.75 F4800.0 E3311.133
+G1 X33.6 Y119.6 Z21.75 F4800.0 E3311.156
+G1 X33.6 Y4.04 Z21.75 F4800.0 E3317.624
+G1 X33.2 Y4.05 Z21.75 F4800.0 E3317.646
+G1 X33.2 Y119.6 Z21.75 F4800.0 E3324.115
+G1 X32.8 Y119.6 Z21.75 F4800.0 E3324.137
+G1 X32.8 Y4.05 Z21.75 F4800.0 E3330.605
+G1 X32.4 Y4.06 Z21.75 F4800.0 E3330.628
+G1 X32.4 Y119.61 Z21.75 F4800.0 E3337.096
+G1 X32.0 Y119.61 Z21.75 F4800.0 E3337.118
+G1 X32.0 Y4.06 Z21.75 F4800.0 E3343.587
+G1 X31.6 Y4.07 Z21.75 F4800.0 E3343.609
+G1 X31.6 Y119.62 Z21.75 F4800.0 E3350.077
+G1 X31.2 Y119.62 Z21.75 F4800.0 E3350.1
+G1 X31.2 Y4.07 Z21.75 F4800.0 E3356.568
+G1 X30.8 Y4.07 Z21.75 F4800.0 E3356.591
+G1 X30.8 Y119.63 Z21.75 F4800.0 E3363.059
+G1 X30.4 Y119.63 Z21.75 F4800.0 E3363.081
+G1 X30.4 Y4.08 Z21.75 F4800.0 E3369.55
+G1 X30.0 Y4.08 Z21.75 F4800.0 E3369.572
+G1 X30.0 Y119.63 Z21.75 F4800.0 E3376.04
+G1 X29.6 Y119.64 Z21.75 F4800.0 E3376.063
+G1 X29.6 Y4.09 Z21.75 F4800.0 E3382.531
+G1 X29.2 Y4.09 Z21.75 F4800.0 E3382.553
+G1 X29.2 Y119.64 Z21.75 F4800.0 E3389.022
+G1 X28.8 Y119.64 Z21.75 F4800.0 E3389.044
+G1 X28.8 Y4.09 Z21.75 F4800.0 E3395.512
+G1 X28.4 Y4.1 Z21.75 F4800.0 E3395.535
+G1 X28.4 Y119.65 Z21.75 F4800.0 E3402.003
+G1 X28.0 Y119.65 Z21.75 F4800.0 E3402.025
+G1 X28.0 Y4.1 Z21.75 F4800.0 E3408.494
+G1 X27.6 Y4.11 Z21.75 F4800.0 E3408.516
+G1 X27.6 Y119.66 Z21.75 F4800.0 E3414.985
+G1 X27.2 Y119.66 Z21.75 F4800.0 E3415.007
+G1 X27.2 Y4.11 Z21.75 F4800.0 E3421.475
+G1 X26.8 Y4.12 Z21.75 F4800.0 E3421.498
+G1 X26.8 Y119.67 Z21.75 F4800.0 E3427.966
+G1 X26.4 Y119.67 Z21.75 F4800.0 E3427.988
+G1 X26.4 Y4.12 Z21.75 F4800.0 E3434.457
+G1 X26.0 Y4.12 Z21.75 F4800.0 E3434.479
+G1 X26.0 Y119.67 Z21.75 F4800.0 E3440.947
+G1 X25.6 Y119.68 Z21.75 F4800.0 E3440.97
+G1 X25.6 Y4.13 Z21.75 F4800.0 E3447.438
+G1 X25.2 Y4.13 Z21.75 F4800.0 E3447.46
+G1 X25.2 Y119.68 Z21.75 F4800.0 E3453.929
+G1 X24.8 Y119.69 Z21.75 F4800.0 E3453.951
+G1 X24.8 Y4.14 Z21.75 F4800.0 E3460.419
+G1 X24.4 Y4.14 Z21.75 F4800.0 E3460.442
+G1 X24.4 Y119.69 Z21.75 F4800.0 E3466.91
+G1 X24.0 Y119.69 Z21.75 F4800.0 E3466.932
+G1 X24.0 Y4.14 Z21.75 F4800.0 E3473.401
+G1 X23.6 Y4.15 Z21.75 F4800.0 E3473.423
+G1 X23.6 Y119.7 Z21.75 F4800.0 E3479.891
+G1 X23.2 Y119.7 Z21.75 F4800.0 E3479.914
+G1 X23.2 Y106.63 Z21.75 F4800.0 E3480.646
+G1 F4800.0
+G1 E3479.646
+G1 F4800.0
+M103
+G1 X22.8 Y119.71 Z21.75 F9000.0
+G1 F4800.0
+G1 E3480.646
+G1 F9000.0
+M101
+G1 X22.8 Y108.79 Z21.75 F4800.0 E3481.257
+G1 F4800.0
+G1 E3480.897
+G1 F4800.0
+M103
+G1 X22.4 Y110.09 Z21.75 F9000.0
+G1 F4800.0
+G1 E3481.257
+G1 F9000.0
+M101
+G1 X22.4 Y119.71 Z21.75 F4800.0 E3481.795
+G1 X22.0 Y119.72 Z21.75 F4800.0 E3481.818
+G1 X22.0 Y111.09 Z21.75 F4800.0 E3482.3
+G1 F4800.0
+G1 E3482.3
+G1 F4800.0
+M103
+G1 X21.6 Y111.86 Z21.75 F9000.0
+G1 F4800.0
+G1 E3482.3
+G1 F9000.0
+M101
+G1 X21.6 Y119.72 Z21.75 F4800.0 E3482.74
+G1 X21.2 Y119.72 Z21.75 F4800.0 E3482.762
+G1 X21.2 Y112.44 Z21.75 F4800.0 E3483.17
+G1 X20.8 Y112.96 Z21.75 F4800.0 E3483.207
+G1 X20.8 Y119.73 Z21.75 F4800.0 E3483.586
+G1 X20.4 Y119.73 Z21.75 F4800.0 E3483.608
+G1 X20.4 Y113.38 Z21.75 F4800.0 E3483.964
+G1 X20.0 Y113.8 Z21.75 F4800.0 E3483.996
+G1 X20.0 Y119.74 Z21.75 F4800.0 E3484.329
+G1 X19.6 Y119.74 Z21.75 F4800.0 E3484.351
+G1 X19.6 Y114.22 Z21.75 F4800.0 E3484.66
+G1 X19.2 Y114.51 Z21.75 F4800.0 E3484.688
+G1 X19.2 Y119.74 Z21.75 F4800.0 E3484.981
+G1 X18.8 Y119.75 Z21.75 F4800.0 E3485.003
+G1 X18.8 Y114.8 Z21.75 F4800.0 E3485.281
+G1 X18.4 Y115.09 Z21.75 F4800.0 E3485.308
+G1 X18.4 Y119.75 Z21.75 F4800.0 E3485.57
+G1 X18.0 Y119.76 Z21.75 F4800.0 E3485.592
+G1 X18.0 Y115.38 Z21.75 F4800.0 E3485.837
+G1 X17.6 Y115.6 Z21.75 F4800.0 E3485.863
+G1 X17.6 Y119.76 Z21.75 F4800.0 E3486.096
+G1 X17.2 Y119.77 Z21.75 F4800.0 E3486.118
+G1 X17.2 Y115.8 Z21.75 F4800.0 E3486.34
+G1 X16.8 Y116.0 Z21.75 F4800.0 E3486.365
+G1 X16.8 Y119.77 Z21.75 F4800.0 E3486.576
+G1 X16.4 Y119.77 Z21.75 F4800.0 E3486.599
+G1 X16.4 Y116.2 Z21.75 F4800.0 E3486.799
+G1 X16.0 Y116.4 Z21.75 F4800.0 E3486.824
+G1 X16.0 Y119.78 Z21.75 F4800.0 E3487.013
+G1 X15.6 Y119.78 Z21.75 F4800.0 E3487.036
+G1 X15.6 Y116.59 Z21.75 F4800.0 E3487.214
+G1 X15.2 Y116.74 Z21.75 F4800.0 E3487.238
+G1 X15.2 Y119.79 Z21.75 F4800.0 E3487.408
+G1 X14.8 Y119.79 Z21.75 F4800.0 E3487.431
+G1 X14.8 Y116.88 Z21.75 F4800.0 E3487.594
+G1 X14.4 Y117.01 Z21.75 F4800.0 E3487.617
+G1 X14.4 Y119.79 Z21.75 F4800.0 E3487.773
+G1 X14.0 Y119.8 Z21.75 F4800.0 E3487.795
+G1 X14.0 Y117.15 Z21.75 F4800.0 E3487.944
+G1 X13.6 Y117.28 Z21.75 F4800.0 E3487.967
+G1 X13.6 Y119.8 Z21.75 F4800.0 E3488.108
+G1 X13.2 Y119.81 Z21.75 F4800.0 E3488.131
+G1 X13.2 Y117.42 Z21.75 F4800.0 E3488.264
+G1 X12.8 Y117.53 Z21.75 F4800.0 E3488.287
+G1 X12.8 Y119.81 Z21.75 F4800.0 E3488.415
+G1 X12.4 Y119.81 Z21.75 F4800.0 E3488.437
+G1 X12.4 Y117.64 Z21.75 F4800.0 E3488.559
+G1 X12.0 Y117.75 Z21.75 F4800.0 E3488.582
+G1 X12.0 Y119.82 Z21.75 F4800.0 E3488.698
+G1 X11.6 Y119.82 Z21.75 F4800.0 E3488.72
+G1 X11.6 Y117.86 Z21.75 F4800.0 E3488.83
+G1 X11.2 Y117.97 Z21.75 F4800.0 E3488.853
+G1 X11.2 Y119.83 Z21.75 F4800.0 E3488.957
+G1 X10.8 Y119.83 Z21.75 F4800.0 E3488.98
+G1 X10.8 Y118.08 Z21.75 F4800.0 E3489.078
+G1 X10.4 Y118.19 Z21.75 F4800.0 E3489.101
+G1 X10.4 Y119.83 Z21.75 F4800.0 E3489.194
+G1 X10.0 Y119.84 Z21.75 F4800.0 E3489.216
+G1 X10.0 Y118.3 Z21.75 F4800.0 E3489.302
+G1 X9.6 Y118.38 Z21.75 F4800.0 E3489.325
+G1 X9.6 Y119.84 Z21.75 F4800.0 E3489.407
+G1 X9.2 Y119.85 Z21.75 F4800.0 E3489.429
+G1 X9.2 Y118.47 Z21.75 F4800.0 E3489.507
+G1 X8.8 Y118.55 Z21.75 F4800.0 E3489.53
+G1 X8.8 Y119.85 Z21.75 F4800.0 E3489.603
+G1 X8.4 Y119.86 Z21.75 F4800.0 E3489.625
+G1 X8.4 Y118.63 Z21.75 F4800.0 E3489.694
+G1 X8.0 Y118.71 Z21.75 F4800.0 E3489.717
+G1 X8.0 Y119.86 Z21.75 F4800.0 E3489.781
+G1 X7.6 Y119.86 Z21.75 F4800.0 E3489.804
+G1 X7.6 Y118.79 Z21.75 F4800.0 E3489.864
+G1 X7.2 Y118.87 Z21.75 F4800.0 E3489.887
+G1 X7.2 Y119.87 Z21.75 F4800.0 E3489.942
+G1 X6.8 Y119.87 Z21.75 F4800.0 E3489.965
+G1 X6.8 Y118.95 Z21.75 F4800.0 E3490.016
+G1 X6.4 Y119.03 Z21.75 F4800.0 E3490.039
+G1 X6.4 Y119.88 Z21.75 F4800.0 E3490.086
+G1 X6.0 Y119.88 Z21.75 F4800.0 E3490.109
+G1 X6.0 Y119.11 Z21.75 F4800.0 E3490.152
+G1 X5.6 Y119.2 Z21.75 F4800.0 E3490.174
+G1 X5.6 Y119.89 Z21.75 F4800.0 E3490.213
+G1 X5.2 Y119.89 Z21.75 F4800.0 E3490.235
+G1 X5.2 Y119.28 Z21.75 F4800.0 E3490.27
+G1 F4800.0
+G1 E3489.27
+G1 F4800.0
+M103
+G1 X66.0 Y118.83 Z21.75 F9000.0
+G1 F4800.0
+G1 E3490.27
+G1 F9000.0
+M101
+G1 X66.0 Y119.06 Z21.75 F4800.0 E3490.282
+G1 X65.6 Y119.27 Z21.75 F4800.0 E3490.307
+G1 X65.6 Y118.78 Z21.75 F4800.0 E3490.334
+G1 X65.2 Y118.73 Z21.75 F4800.0 E3490.357
+G1 X65.2 Y119.27 Z21.75 F4800.0 E3490.387
+G1 X64.8 Y119.27 Z21.75 F4800.0 E3490.409
+G1 X64.8 Y118.69 Z21.75 F4800.0 E3490.442
+G1 X64.4 Y118.64 Z21.75 F4800.0 E3490.465
+G1 X64.4 Y119.28 Z21.75 F4800.0 E3490.501
+G1 X64.0 Y119.28 Z21.75 F4800.0 E3490.523
+G1 X64.0 Y118.59 Z21.75 F4800.0 E3490.562
+G1 X63.6 Y118.54 Z21.75 F4800.0 E3490.585
+G1 X63.6 Y119.29 Z21.75 F4800.0 E3490.627
+G1 X63.2 Y119.29 Z21.75 F4800.0 E3490.649
+G1 X63.2 Y118.49 Z21.75 F4800.0 E3490.694
+G1 X62.8 Y118.44 Z21.75 F4800.0 E3490.717
+G1 X62.8 Y119.3 Z21.75 F4800.0 E3490.765
+G1 X62.4 Y119.3 Z21.75 F4800.0 E3490.787
+G1 X62.4 Y118.39 Z21.75 F4800.0 E3490.838
+G1 X62.0 Y118.34 Z21.75 F4800.0 E3490.861
+G1 X62.0 Y119.3 Z21.75 F4800.0 E3490.915
+G1 X61.6 Y119.31 Z21.75 F4800.0 E3490.937
+G1 X61.6 Y118.29 Z21.75 F4800.0 E3490.994
+G1 X61.2 Y118.24 Z21.75 F4800.0 E3491.017
+G1 X61.2 Y119.31 Z21.75 F4800.0 E3491.077
+G1 X60.8 Y119.31 Z21.75 F4800.0 E3491.099
+G1 X60.8 Y118.19 Z21.75 F4800.0 E3491.162
+G1 X60.4 Y118.14 Z21.75 F4800.0 E3491.185
+G1 X60.4 Y119.32 Z21.75 F4800.0 E3491.251
+G1 X60.0 Y119.32 Z21.75 F4800.0 E3491.273
+G1 X60.0 Y118.09 Z21.75 F4800.0 E3491.342
+G1 X59.6 Y118.04 Z21.75 F4800.0 E3491.365
+G1 X59.6 Y119.33 Z21.75 F4800.0 E3491.437
+G1 X59.2 Y119.33 Z21.75 F4800.0 E3491.46
+G1 X59.2 Y117.99 Z21.75 F4800.0 E3491.535
+G1 X58.8 Y117.94 Z21.75 F4800.0 E3491.557
+G1 X58.8 Y119.34 Z21.75 F4800.0 E3491.635
+G1 X58.4 Y119.34 Z21.75 F4800.0 E3491.658
+G1 X58.4 Y117.86 Z21.75 F4800.0 E3491.741
+G1 X58.0 Y117.75 Z21.75 F4800.0 E3491.764
+G1 X58.0 Y119.34 Z21.75 F4800.0 E3491.853
+G1 X57.6 Y119.35 Z21.75 F4800.0 E3491.875
+G1 X57.6 Y117.65 Z21.75 F4800.0 E3491.97
+G1 X57.2 Y117.55 Z21.75 F4800.0 E3491.994
+G1 X57.2 Y119.35 Z21.75 F4800.0 E3492.095
+G1 X56.8 Y119.36 Z21.75 F4800.0 E3492.117
+G1 X56.8 Y117.44 Z21.75 F4800.0 E3492.224
+G1 X56.4 Y117.34 Z21.75 F4800.0 E3492.247
+G1 X56.4 Y119.36 Z21.75 F4800.0 E3492.36
+G1 X56.0 Y119.36 Z21.75 F4800.0 E3492.383
+G1 X56.0 Y117.24 Z21.75 F4800.0 E3492.502
+G1 X55.6 Y117.13 Z21.75 F4800.0 E3492.525
+G1 X55.6 Y119.37 Z21.75 F4800.0 E3492.65
+G1 X55.2 Y119.37 Z21.75 F4800.0 E3492.673
+G1 X55.2 Y117.03 Z21.75 F4800.0 E3492.804
+G1 X54.8 Y116.92 Z21.75 F4800.0 E3492.827
+G1 X54.8 Y119.38 Z21.75 F4800.0 E3492.964
+G1 X54.4 Y119.38 Z21.75 F4800.0 E3492.987
+G1 X54.4 Y116.77 Z21.75 F4800.0 E3493.133
+G1 X54.0 Y116.6 Z21.75 F4800.0 E3493.157
+G1 X54.0 Y119.39 Z21.75 F4800.0 E3493.313
+G1 X53.6 Y119.39 Z21.75 F4800.0 E3493.336
+G1 X53.6 Y116.42 Z21.75 F4800.0 E3493.502
+G1 X53.2 Y116.23 Z21.75 F4800.0 E3493.527
+G1 X53.2 Y119.39 Z21.75 F4800.0 E3493.704
+G1 X52.8 Y119.4 Z21.75 F4800.0 E3493.726
+G1 X52.8 Y115.99 Z21.75 F4800.0 E3493.917
+G1 X52.4 Y115.75 Z21.75 F4800.0 E3493.943
+G1 X52.4 Y119.4 Z21.75 F4800.0 E3494.148
+G1 X52.0 Y119.41 Z21.75 F4800.0 E3494.17
+G1 X52.0 Y115.51 Z21.75 F4800.0 E3494.389
+G1 X51.6 Y115.27 Z21.75 F4800.0 E3494.415
+G1 X51.6 Y119.41 Z21.75 F4800.0 E3494.647
+G1 X51.2 Y119.41 Z21.75 F4800.0 E3494.669
+G1 X51.2 Y114.91 Z21.75 F4800.0 E3494.921
+G1 X50.8 Y114.54 Z21.75 F4800.0 E3494.952
+G1 X50.8 Y119.42 Z21.75 F4800.0 E3495.225
+G1 X50.4 Y119.42 Z21.75 F4800.0 E3495.247
+G1 X50.4 Y114.17 Z21.75 F4800.0 E3495.541
+G1 X50.0 Y113.77 Z21.75 F4800.0 E3495.573
+G1 X50.0 Y119.43 Z21.75 F4800.0 E3495.889
+G1 X49.6 Y119.43 Z21.75 F4800.0 E3495.912
+G1 X49.6 Y113.23 Z21.75 F4800.0 E3496.259
+G1 X49.2 Y112.68 Z21.75 F4800.0 E3496.297
+G1 X49.2 Y119.44 Z21.75 F4800.0 E3496.675
+G1 X48.8 Y119.44 Z21.75 F4800.0 E3496.697
+G1 X48.8 Y111.94 Z21.75 F4800.0 E3497.117
+G1 X48.4 Y111.02 Z21.75 F4800.0 E3497.173
+G1 X48.4 Y119.44 Z21.75 F4800.0 E3497.645
+G1 X48.0 Y119.45 Z21.75 F4800.0 E3497.668
+G1 X48.0 Y109.75 Z21.75 F4800.0 E3498.211
+G1 X47.6 Y108.25 Z21.75 F4800.0 E3498.297
+G1 X47.6 Y119.45 Z21.75 F4800.0 E3498.924
+G1 X47.2 Y119.46 Z21.75 F4800.0 E3498.947
+G1 X47.2 Y97.96 Z21.75 F4800.0 E3500.15
+G1 F4800.0
+G1 E3499.15
+G1 F4800.0
+M103
+G1 X22.8 Y50.2 Z21.75 F9000.0
+G1 F4800.0
+G1 E3500.15
+G1 F9000.0
+M101
+G1 X22.8 Y4.16 Z21.75 F4800.0 E3502.728
+G1 X22.4 Y4.16 Z21.75 F4800.0 E3502.75
+G1 X22.4 Y16.78 Z21.75 F4800.0 E3503.456
+G1 F4800.0
+G1 E3502.456
+G1 F4800.0
+M103
+G1 X22.0 Y14.0 Z21.75 F9000.0
+G1 F4800.0
+G1 E3503.456
+G1 F9000.0
+M101
+G1 X22.0 Y4.17 Z21.75 F4800.0 E3504.007
+G1 X21.6 Y4.17 Z21.75 F4800.0 E3504.03
+G1 X21.6 Y12.82 Z21.75 F4800.0 E3504.514
+G1 F4800.0
+G1 E3503.514
+G1 F4800.0
+M103
+G1 X46.8 Y14.68 Z21.75 F9000.0
+G1 F4800.0
+G1 E3504.514
+G1 F9000.0
+M101
+G1 X46.8 Y3.91 Z21.75 F4800.0 E3505.117
+G1 X47.2 Y3.9 Z21.75 F4800.0 E3505.139
+G1 X47.2 Y13.42 Z21.75 F4800.0 E3505.672
+G1 F4800.0
+G1 E3505.41
+G1 F4800.0
+M103
+G1 X47.6 Y12.22 Z21.75 F9000.0
+G1 F4800.0
+G1 E3505.672
+G1 F9000.0
+M101
+G1 X47.6 Y3.9 Z21.75 F4800.0 E3506.138
+G1 X48.0 Y3.9 Z21.75 F4800.0 E3506.16
+G1 X48.0 Y11.46 Z21.75 F4800.0 E3506.583
+G1 X48.4 Y10.83 Z21.75 F4800.0 E3506.625
+G1 X48.4 Y3.89 Z21.75 F4800.0 E3507.013
+G1 X48.8 Y3.89 Z21.75 F4800.0 E3507.036
+G1 X48.8 Y10.29 Z21.75 F4800.0 E3507.394
+G1 X49.2 Y9.79 Z21.75 F4800.0 E3507.429
+G1 X49.2 Y3.88 Z21.75 F4800.0 E3507.76
+G1 X49.6 Y3.88 Z21.75 F4800.0 E3507.783
+G1 X49.6 Y9.41 Z21.75 F4800.0 E3508.092
+G1 X50.0 Y9.03 Z21.75 F4800.0 E3508.123
+G1 X50.0 Y3.88 Z21.75 F4800.0 E3508.412
+G1 X50.4 Y3.87 Z21.75 F4800.0 E3508.434
+G1 X50.4 Y8.65 Z21.75 F4800.0 E3508.702
+G1 X50.8 Y8.34 Z21.75 F4800.0 E3508.73
+G1 X50.8 Y3.87 Z21.75 F4800.0 E3508.98
+G1 X51.2 Y3.86 Z21.75 F4800.0 E3509.003
+G1 X51.2 Y8.07 Z21.75 F4800.0 E3509.238
+G1 X51.6 Y7.79 Z21.75 F4800.0 E3509.265
+G1 X51.6 Y3.86 Z21.75 F4800.0 E3509.485
+G1 X52.0 Y3.85 Z21.75 F4800.0 E3509.508
+G1 X52.0 Y7.52 Z21.75 F4800.0 E3509.713
+G1 X52.4 Y7.32 Z21.75 F4800.0 E3509.738
+G1 X52.4 Y3.85 Z21.75 F4800.0 E3509.932
+G1 X52.8 Y3.85 Z21.75 F4800.0 E3509.955
+G1 X52.8 Y7.12 Z21.75 F4800.0 E3510.138
+G1 X53.2 Y6.92 Z21.75 F4800.0 E3510.163
+G1 X53.2 Y3.84 Z21.75 F4800.0 E3510.336
+G1 X53.6 Y3.84 Z21.75 F4800.0 E3510.358
+G1 X53.6 Y6.72 Z21.75 F4800.0 E3510.52
+G1 X54.0 Y6.52 Z21.75 F4800.0 E3510.545
+G1 X54.0 Y3.83 Z21.75 F4800.0 E3510.695
+G1 X54.4 Y3.83 Z21.75 F4800.0 E3510.717
+G1 X54.4 Y6.35 Z21.75 F4800.0 E3510.858
+G1 X54.8 Y6.22 Z21.75 F4800.0 E3510.882
+G1 X54.8 Y3.83 Z21.75 F4800.0 E3511.016
+G1 X55.2 Y3.82 Z21.75 F4800.0 E3511.038
+G1 X55.2 Y6.1 Z21.75 F4800.0 E3511.166
+G1 X55.6 Y5.97 Z21.75 F4800.0 E3511.189
+G1 X55.6 Y3.82 Z21.75 F4800.0 E3511.31
+G1 X56.0 Y3.81 Z21.75 F4800.0 E3511.332
+G1 X56.0 Y5.85 Z21.75 F4800.0 E3511.446
+G1 X56.4 Y5.72 Z21.75 F4800.0 E3511.47
+G1 X56.4 Y3.81 Z21.75 F4800.0 E3511.577
+G1 X56.8 Y3.81 Z21.75 F4800.0 E3511.599
+G1 X56.8 Y5.6 Z21.75 F4800.0 E3511.699
+G1 X57.2 Y5.5 Z21.75 F4800.0 E3511.722
+G1 X57.2 Y3.8 Z21.75 F4800.0 E3511.818
+G1 X57.6 Y3.8 Z21.75 F4800.0 E3511.84
+G1 X57.6 Y5.41 Z21.75 F4800.0 E3511.931
+G1 X58.0 Y5.32 Z21.75 F4800.0 E3511.954
+G1 X58.0 Y3.79 Z21.75 F4800.0 E3512.039
+G1 X58.4 Y3.79 Z21.75 F4800.0 E3512.062
+G1 X58.4 Y5.23 Z21.75 F4800.0 E3512.142
+G1 X58.8 Y5.14 Z21.75 F4800.0 E3512.165
+G1 X58.8 Y3.79 Z21.75 F4800.0 E3512.241
+G1 X59.2 Y3.78 Z21.75 F4800.0 E3512.264
+G1 X59.2 Y5.05 Z21.75 F4800.0 E3512.335
+G1 X59.6 Y4.96 Z21.75 F4800.0 E3512.358
+G1 X59.6 Y3.78 Z21.75 F4800.0 E3512.424
+G1 X60.0 Y3.77 Z21.75 F4800.0 E3512.446
+G1 X60.0 Y4.88 Z21.75 F4800.0 E3512.508
+G1 X60.4 Y4.82 Z21.75 F4800.0 E3512.531
+G1 X60.4 Y3.77 Z21.75 F4800.0 E3512.59
+G1 X60.8 Y3.76 Z21.75 F4800.0 E3512.612
+G1 X60.8 Y4.76 Z21.75 F4800.0 E3512.668
+G1 X61.2 Y4.69 Z21.75 F4800.0 E3512.691
+G1 X61.2 Y3.76 Z21.75 F4800.0 E3512.743
+G1 X61.6 Y3.76 Z21.75 F4800.0 E3512.765
+G1 X61.6 Y4.63 Z21.75 F4800.0 E3512.814
+G1 X62.0 Y4.57 Z21.75 F4800.0 E3512.837
+G1 X62.0 Y3.75 Z21.75 F4800.0 E3512.883
+G1 X62.4 Y3.75 Z21.75 F4800.0 E3512.905
+G1 X62.4 Y4.51 Z21.75 F4800.0 E3512.947
+G1 X62.8 Y4.44 Z21.75 F4800.0 E3512.97
+G1 X62.8 Y3.74 Z21.75 F4800.0 E3513.009
+G1 X63.2 Y3.74 Z21.75 F4800.0 E3513.032
+G1 X63.2 Y4.38 Z21.75 F4800.0 E3513.068
+G1 X63.6 Y4.32 Z21.75 F4800.0 E3513.09
+G1 X63.6 Y3.73 Z21.75 F4800.0 E3513.123
+G1 X64.0 Y3.73 Z21.75 F4800.0 E3513.145
+G1 X64.0 Y4.26 Z21.75 F4800.0 E3513.175
+G1 X64.4 Y4.19 Z21.75 F4800.0 E3513.197
+G1 X64.4 Y3.73 Z21.75 F4800.0 E3513.224
+G1 X64.8 Y3.92 Z21.75 F4800.0 E3513.248
+G1 X64.8 Y4.13 Z21.75 F4800.0 E3513.26
+G1 F4800.0
+G1 E3512.26
+G1 F4800.0
+M103
+(</infill>)
+(</nestedRing>)
+(</rotation>)
+(</layer>)
+(</crafting>)
+M104 S0
+;M113 S0.0
